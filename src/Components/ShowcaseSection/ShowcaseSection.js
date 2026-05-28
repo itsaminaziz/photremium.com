@@ -12,7 +12,7 @@ const TOOLS = [
   { key: 'qrCodeGenerator',  image: 'qr-code-generator.webp',  link: '/qr-code-generator'   },
   { key: 'qrCodeScanner',    image: 'qr-code-scanner.webp',    link: '/qr-code-scanner'     },
   { key: 'blurFace',         image: 'blur-face.webp',          link: '/face-blur'           },
-  { key: 'removeBackground', image: 'background-remover.webp', link: '/remove-background'   },
+  { key: 'removeBackgroundAI', image: 'background-remover.webp', link: '/remove-background-ai' },
   { key: 'watermarkImage',   image: 'watermark-image.webp',    link: '/watermark-image'     },
 ];
 

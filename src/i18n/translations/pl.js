@@ -1031,6 +1031,239 @@ common: {
     typeHere: 'Wpisz tutaj...',
     linkCorners: 'Połącz Narożniki',
     separateCorners: 'Rozdziel Narożniki',
+    blog: {
+      tocTitle: 'Spis treści',
+      sections: [
+        {
+          id: 'wm-blog-intro',
+          tocLabel: 'Przegląd narzędzia do znaków wodnych',
+          title: 'Jak dodać znak wodny do swoich obrazów online — kompletny przewodnik po narzędziu do znaków wodnych Photremium',
+          paragraphs: [
+            'Właśnie skończyłeś edycję pięknej fotografii. Może to zdjęcie produktu dla Twojego sklepu, portret z sesji klienta albo dzieło sztuki cyfrowej, nad którym spędziłeś wiele godzin, dopracowując każdy detal. I pojawia się pytanie, przed którym w końcu staje każdy twórca: jak chronić tę pracę, zanim ją udostępnisz?',
+            'Większość profesjonalistów dochodzi do jednego rozwiązania: znaku wodnego — i nie bez powodu. Prawidłowo umieszczony znak wodny działa jak trwały podpis Twojej pracy, dzięki czemu jest możliwa do śledzenia, oznaczona marką i znacznie trudniejsza do kradzieży.',
+            'Problem, na który trafia większość osób, jest jednak prosty: narzędzia dostępne online są albo zbyt nieporęczne, albo ukryte za subskrypcją, albo tworzą tak ciężki znak wodny, że całkowicie psują obraz.',
+            'Narzędzie Watermark Image od Photremium zostało stworzone, aby to wszystko naprawić. To w pełni oparte na przeglądarce, darmowe i niewymagające konta środowisko do znakowania wodnego, które działa bezpośrednio w Twojej przeglądarce, bez wysyłania plików na serwer. Wszystko pozostaje lokalnie, wszystko działa szybko, a poziom kontroli twórczej dorównuje temu, czego można oczekiwać od aplikacji desktopowej. W tym przewodniku pokażemy dokładnie, jak to działa, dla kogo jest przeznaczone i jak uzyskiwać najlepsze możliwe rezultaty — za każdym razem.',
+          ],
+        },
+        {
+          id: 'wm-blog-what-is',
+          tocLabel: 'Czym jest znak wodny',
+          title: 'Czym jest znak wodny i dlaczego ma znaczenie?',
+          paragraphs: [
+            'Zanim przejdziemy do samego narzędzia, warto zrozumieć, co robi znak wodny i dlaczego tak wielu fotografów, projektantów i twórców treści uważa go za coś, z czego nie można zrezygnować.',
+            'Znak wodny to widoczna nakładka dodawana do obrazu — zwykle tekst, logo lub symbol praw autorskich — która identyfikuje twórcę albo właściciela treści. W przeciwieństwie do metadanych (ukrytych w pliku i możliwych do usunięcia w kilka sekund) znak wodny jest wizualnie wbudowany w sam obraz. Nie da się go po prostu kliknąć prawym przyciskiem i usunąć bez zauważalnego pogorszenia jakości obrazu.',
+          ],
+          subSections: [
+            {
+              title: 'Dlaczego twórcy używają znaków wodnych',
+              paragraphs: [
+                'Praktyczne powody znakowania obrazów sprowadzają się do trzech głównych kwestii.',
+              ],
+              bullets: [
+                'Identyfikacja własności. Gdy Twoja praca krąży po mediach społecznościowych, tablicach Pinterest albo zostaje osadzona w wpisach blogowych, pierwotna atrybucja często znika. Znak wodny sprawia, że Twoje imię albo marka podążają za obrazem, gdziekolwiek trafi.',
+                'Ochrona przed kradzieżą. Większość przypadkowych złodziei obrazów szuka najłatwiejszej drogi. Profesjonalnie wyglądający znak wodny, zwłaszcza dobrze umieszczony i lekko przezroczysty, wysyła jasny sygnał: ten obraz należy do kogoś, kto dba o swoją pracę.',
+                'Ochrona portfolio klienta. Fotografowie pokazujący podglądy klientom przed końcową płatnością często używają znaków wodnych, aby klienci nie korzystali z podglądu bez opłacenia faktury. Subtelny znak wodny robi to bez nadmiernego rozpraszania przy ocenie podglądu.',
+              ],
+            },
+            {
+              title: 'Kto powinien znakować swoje obrazy',
+              paragraphs: [
+                'Jeśli należysz do którejkolwiek z poniższych grup, znakowanie obrazów przed publikacją online nie jest opcjonalne — jest niezbędne:',
+              ],
+              bullets: [
+                'Fotografowie freelancerzy udostępniający galerie klientom',
+                'Graficy dystrybuujący próbki portfolio',
+                'Sprzedawcy e-commerce pokazujący zdjęcia produktów przed umowami licencyjnymi',
+                'Artyści cyfrowi publikujący swoje prace w mediach społecznościowych',
+                'Blogerzy i twórcy treści, których obrazy są regularnie ponownie wykorzystywane',
+                'Autorzy zdjęć stockowych budujący rozpoznawalną markę',
+              ],
+            },
+          ],
+        },
+        {
+          id: 'wm-blog-workspace',
+          tocLabel: 'Panele obszaru roboczego',
+          title: 'Wewnątrz narzędzia do znaków wodnych Photremium: trzy-panelowy obszar roboczy stworzony do rzeczywistych workflow',
+          paragraphs: [
+            'To, co wyróżnia narzędzie do znaków wodnych Photremium na tle podstawowych internetowych watermarkerów, to konstrukcja obszaru roboczego. Zamiast prostego podejścia „wpisz tekst, wybierz pozycję, gotowe”, narzędzie oferuje układ trzech paneli, który przypomina profesjonalne oprogramowanie do projektowania — z tą różnicą, że działa całkowicie w przeglądarce i nie wymaga instalacji.',
+          ],
+          subSections: [
+            {
+              title: 'Lewy panel canvas',
+              paragraphs: [
+                'Panel canvas zajmuje największą część ekranu i pokazuje dokładnie, jak wygląda obraz po zastosowaniu znaku wodnego w czasie rzeczywistym. Każda zmiana — regulacja krycia, przesuwanie warstwy tekstowej, zmiana rozmiaru logo — od razu pojawia się na canvasie. Nie ma przycisku „podgląd”, który trzeba kliknąć. To, co widzisz, to dokładnie to, co otrzymasz.',
+                'Canvas zawiera też wbudowany pasek powiększenia, który pozwala przybliżać obraz do precyzyjnego wyrównania i oddalać go, by zobaczyć całość. Funkcja dopasowania do ekranu automatycznie oblicza najlepszą początkową skalę na podstawie rozmiaru ekranu, więc nawet obrazy w wysokiej rozdzielczości otwierają się w wygodnym rozmiarze roboczym. Prowadnice wyrównania pojawiają się dynamicznie, gdy przeciągasz warstwę blisko poziomego lub pionowego środka obrazu, zatrzaskując znak wodny dokładnie na środku z satysfakcjonującą precyzją, jaką zwykle daje tylko Photoshop.',
+              ],
+            },
+            {
+              title: 'Prawy panel ustawień',
+              paragraphs: [
+                'Prawy panel to centrum sterowania. Tutaj zarządzasz warstwami znaku wodnego, dostosowujesz ich wygląd i uruchamiasz finalny eksport. Na desktopie pozostaje przypięty do prawej strony ekranu. Na urządzeniach mobilnych wysuwa się od dołu jako dolny panel — uruchamiany pływającym przyciskiem zębatki — dzięki czemu nigdy nie zasłania canvasu podczas pracy.',
+                'W prawym panelu znajdziesz menedżer warstw, który wyświetla każdy dodany element znaku wodnego. Każdy wpis pokazuje typ warstwy (tekst lub obraz), jej aktualną nazwę albo treść oraz trzy szybkie przyciski: przełącznik widoczności (ikona oka), przełącznik blokady, który zamraża pozycję warstwy podczas pracy nad innymi, oraz przycisk usuwania.',
+              ],
+            },
+            {
+              title: 'Lewy pasek podglądu (tryb wielu obrazów)',
+              paragraphs: [
+                'Gdy pracujesz z wieloma obrazami naraz — np. serią zdjęć produktu albo pełną sesją portretową — po lewej stronie ekranu pojawia się pionowy pasek miniatur. To kolejka obrazów, pokazująca miniaturowe podglądy każdego wgranego pliku. Kliknięcie dowolnej miniatury natychmiast przełącza canvas na ten obraz, dzięki czemu możesz sprawdzać wygląd znaku wodnego w różnych kompozycjach bez utraty ustawień warstw.',
+                'Pasek pokazuje też rozmiar pliku w KB lub MB oraz etykietę formatu (JPG, PNG, WEBP), więc od razu wiesz, z czym pracujesz.',
+              ],
+            },
+          ],
+        },
+        {
+          id: 'wm-blog-steps',
+          tocLabel: 'Krok po kroku',
+          title: 'Krok po kroku: jak dodać znak wodny do obrazu w Photremium',
+          paragraphs: [
+            'Ten przewodnik opiera się bezpośrednio na tym, jak narzędzie działa od środka — od systemu przesyłania metodą przeciągnij i upuść po silnik renderowania canvasu, który zapisuje znak wodny na obrazie na stałe przed pobraniem.',
+          ],
+          steps: [
+            {
+              heading: 'Krok 1 — prześlij swój obraz/obrazy',
+              paragraphsBefore: [
+                'Wejdź na photremium.com/watermark-image. Trafisz na ekran przesyłania z prostym obszarem przeciągnij-i-upuść na środku strony.',
+                'Masz trzy sposoby dodania obrazu do narzędzia:',
+              ],
+              bullets: [
+                'Przeciągnij i upuść. Przeciągnij jeden lub więcej plików graficznych z pulpitu bezpośrednio do strefy upuszczania. Narzędzie akceptuje każdy standardowy format obrazu — JPEG, PNG, WEBP i inne. Gdy przeciągasz pliki nad obszarem roboczym, wokół całego obszaru pojawia się fioletowa ramka z komunikatem „Drop images to add for watermarking”, więc wiesz, że upuszczenie zostało zarejestrowane.',
+                'Kliknij, aby przeglądać. Kliknij przycisk „Choose Files” w strefie upuszczania, aby otworzyć systemowy selektor plików. Możesz zaznaczyć wiele plików jednocześnie, używając Ctrl+Click (Windows) lub Cmd+Click (Mac).',
+                'Wklej ze schowka. Jeśli skopiowałeś obraz do schowka — zrzut ekranu, innej aplikacji albo przeglądarki — po prostu naciśnij Ctrl+V (lub Cmd+V na Macu) na stronie znaku wodnego, a obraz zostanie załadowany bezpośrednio do obszaru roboczego. Działa to nawet wtedy, gdy wczytano już wiele obrazów.',
+              ],
+              paragraphsAfter: [
+                'Gdy tylko załaduje się pierwszy obraz, obszar roboczy przechodzi ze strony przesyłania do pełnego edytora trzy-panelowego, a canvas pokazuje obraz w automatycznie obliczonym powiększeniu dopasowanym do ekranu.',
+              ],
+            },
+            {
+              heading: 'Krok 2 — dodaj warstwę znaku wodnego w formie tekstu',
+              paragraphsBefore: [
+                'Kliknij fioletowy przycisk „Add Text” w prawym panelu. Na canvasie pojawi się nowa warstwa tekstowa z domyślnym tekstem zastępczym „Type here...” już zaznaczonym.',
+                'Możesz od razu zacząć pisać. Tekst pojawia się na canvasie na biało, w Arialu, w domyślnym rozmiarze dopasowanym do wymiarów obrazu. Z górnego paska narzędzi, który pojawia się po zaznaczeniu warstwy tekstowej, możesz dostosować każdy aspekt tekstu:',
+              ],
+              bullets: [
+                'Rodzina czcionek — wybierz spośród 12 wbudowanych fontów, w tym Arial, Georgia, Impact, Brush Script MT, Comic Sans MS i innych',
+                'Rozmiar czcionki — wpisz własną wartość w pikselach bezpośrednio lub użyj przycisków zwiększania i zmniejszania',
+                'Pogrubienie, kursywa, podkreślenie — włącz dowolną kombinację tych stylów',
+                'Kolor tekstu — kliknij próbkę koloru, aby otworzyć selektor i wybrać dowolny kolor hex',
+                'Kolor tła — dodaj kolorowe tło za tekstem, aby uzyskać wygląd etykiety albo odznaki',
+                'Obrys — ustaw szerokość i kolor obrysu, aby uzyskać maksymalną czytelność na jasnych i ciemnych obrazach',
+                'Krycie — ustaw od 0% (niewidoczne) do 100% (w pełni nieprzezroczyste); większość znaków wodnych mieści się między 30% a 60%',
+                'Wyrównanie — wyrównaj tekst do lewej, środka albo prawej w obrębie jego pola',
+                'Obrót — obracaj warstwę tekstową pod dowolnym kątem, z magnetycznymi punktami przy 0°, 90°, 180° i 270° dla szybkiego ustawienia pod prostym kątem',
+              ],
+              paragraphsAfter: [
+                'Aby przesunąć tekst, kliknij go i przeciągnij w dowolne miejsce na canvasie. Do precyzyjnego ustawiania piksel po pikselu użyj strzałek na klawiaturze (przytrzymaj Shift, aby przesuwać o 10 pikseli). Aby zmienić rozmiar pola tekstowego, przeciągnij dowolny z ośmiu uchwytów zmiany rozmiaru (rogi i krawędzie), które pojawiają się wokół zaznaczonej warstwy.',
+              ],
+            },
+            {
+              heading: 'Krok 3 — dodaj warstwę znaku wodnego w formie obrazu (logo)',
+              paragraphsBefore: [
+                'Jeśli chcesz użyć logo, podpisu albo dowolnego obrazu jako znaku wodnego zamiast tekstu — albo obok niego — kliknij niebieski przycisk „Add Image” w prawym panelu. Otworzy się selektor plików, abyś mógł wybrać plik obrazu znaku wodnego z urządzenia.',
+                'Narzędzie automatycznie skaluje obraz znaku wodnego do około 30% szerokości canvasu, zachowując oryginalne proporcje, i centruje go na canvasie. Stamtąd możesz przeciągnąć go w dowolne miejsce, zmieniać jego rozmiar uchwytami narożnymi (które zachowują proporcje) albo obracać go za pomocą specjalnego uchwytu obrotu, który pojawia się nad zaznaczoną warstwą.',
+                'Dla warstw znaku wodnego typu obrazowego prawy panel pokazuje dodatkowe opcje:',
+              ],
+              bullets: [
+                'Krycie — tak samo jak w warstwach tekstowych, idealne dla przezroczystych logo PNG',
+                'Odbicie poziome / Odbicie pionowe — w razie potrzeby odwróć znak wodny lustrzanie',
+                'Szerokość obramowania, kolor obramowania i styl obramowania — dodaj widoczną ramkę wokół logo znakującego',
+                'Promień narożników — zaokrąglij rogi logo, jednolicie albo z osobną kontrolą każdego rogu',
+                'Obrót — ten sam płynny sposób obracania co w warstwach tekstowych',
+              ],
+            },
+            {
+              heading: 'Krok 4 — skonfiguruj kafelkowanie (opcjonalnie)',
+              paragraphsBefore: [
+                'Jedną z bardziej zaawansowanych funkcji narzędzia jest kafelkowanie — możliwość powtarzania znaku wodnego na całym obrazie w układzie siatki. Jest to szczególnie przydatne, gdy chcesz uczynić obraz nieprzydatnym do ponownej publikacji, a nie tylko oznaczonym marką.',
+                'Przy zaznaczonej warstwie poszukaj opcji tile w pasku narzędzi. Możesz ustawić:',
+              ],
+              bullets: [
+                'Brak — pojedyncze umieszczenie (domyślne)',
+                'Siatka 2×2 — powtarza znak wodny w układzie 2 kolumny × 2 wiersze',
+                'Siatka 3×3 — powtarza w siatce 3×3, aby uzyskać gęstsze pokrycie',
+              ],
+              paragraphsAfter: [
+                'Możesz też dostosować odstęp między kafelkami, który kontroluje przerwę między każdą powtórzoną instancją. Canvas pokazuje duchowe podglądy wszystkich skopiowanych kafelków, dzięki czemu możesz zobaczyć pełny wzór pokrycia przed pobraniem.',
+              ],
+            },
+            {
+              heading: 'Krok 5 — użyj menedżera warstw dla wielu znaków wodnych',
+              paragraphsBefore: [
+                'Możesz dodać dowolną liczbę warstw — swobodnie łącząc tekstowe i obrazowe znaki wodne. Menedżer warstw w prawym panelu wyświetla je wszystkie. Możesz:',
+              ],
+              bullets: [
+                'Pokazywać/ukrywać poszczególne warstwy za pomocą ikony oka — przydatne do przełączania się między różnymi wersjami znaku wodnego bez usuwania czegokolwiek',
+                'Zablokować warstwę, aby zapobiec przypadkowemu przesunięciu podczas pracy nad innymi warstwami',
+                'Usunąć warstwę na stałe',
+              ],
+              paragraphsAfter: [
+                'Kliknięcie dowolnego wpisu warstwy na liście zaznacza go jednocześnie na canvasie, co ułatwia przełączanie między warstwami bez szukania ich na obrazie.',
+              ],
+            },
+            {
+              heading: 'Krok 6 — przełączaj się między wieloma obrazami',
+              paragraphsBefore: [
+                'Jeśli przesłałeś więcej niż jeden obraz, użyj paska miniatur po lewej stronie, aby przełączać aktywny obraz canvasu. Skonfigurowane warstwy znaku wodnego są stosowane uniwersalnie — zostaną wyrenderowane na każdym obrazie w Twojej partii podczas eksportu.',
+                'Narzędzie wykonuje też kontrolę spójności rozdzielczości w całej partii. Jeśli obrazy mają znacznie różne wymiary (ponad 5% różnicy szerokości lub wysokości), pojawi się ostrzeżenie informujące, że pozycja znaku wodnego może wyglądać inaczej na poszczególnych obrazach z powodu różnicy wielkości. Silnik obsługuje to płynnie dzięki algorytmowi proporcjonalnego przeliczania pozycji: oblicza położenie znaku wodnego jako procent wymiarów obrazu referencyjnego i stosuje tę samą proporcjonalną pozycję do każdego innego obrazu w partii, zachowując wizualny zamysł nawet przy różnych rozdzielczościach.',
+              ],
+            },
+            {
+              heading: 'Krok 7 — ustaw preferencje pobierania',
+              paragraphsBefore: [
+                'W przypadku pojedynczego obrazu kliknij przycisk „Download” pod canvasem, aby zapisać bezpośrednio obraz ze znakiem wodnym. Nazwa pliku zostanie automatycznie ustawiona na oryginalną nazwę z dopiskiem „-watermarked” przed rozszerzeniem. Obrazy JPEG są eksportowane z jakością 0.95 — na tyle wysoką, że przy zwykłym rozmiarze oglądania są nie do odróżnienia od oryginału. Obrazy PNG są eksportowane jako bezstratne PNG.',
+                'W przypadku wsadów (wiele obrazów) masz dwa tryby pobierania, które możesz wybrać w prawym panelu:',
+              ],
+              bullets: [
+                'Plik ZIP — wszystkie obrazy ze znakiem wodnym są pakowane do jednego archiwum ZIP, które pobierzesz jednym kliknięciem. Narzędzie dynamicznie ładuje JSZip, aby obsłużyć kompresję.',
+                'Osobne pliki — każdy obraz pobiera się jako oddzielny plik z krótką przerwą między pobraniami, aby uniknąć ograniczeń przeglądarki.',
+              ],
+            },
+            {
+              heading: 'Krok 8 — pobierz i sprawdź',
+              paragraphsBefore: [
+                'Po kliknięciu przycisku pobierania (lub przycisku „Watermark & Download All” dla wsadów) narzędzie renderuje każdy obraz na ukrytym elemencie HTML5 canvas w pełnej natywnej rozdzielczości — nie w skali podglądu, którą widzisz na ekranie. Oznacza to, że wyeksportowany obraz ma 100% oryginalnych wymiarów pikselowych, a znak wodny jest narysowany w proporcjonalnie poprawnym rozmiarze. Otwórz pobrany plik i przybliż, aby sprawdzić, czy pozycja i jakość znaku wodnego odpowiadają Twoim oczekiwaniom.',
+                'Jeśli coś wygląda nie tak, po prostu wróć do obszaru roboczego — Twoje warstwy wciąż tam są — popraw ustawienia i pobierz ponownie.',
+              ],
+            },
+          ],
+        },
+        {
+          id: 'wm-blog-tips',
+          tocLabel: 'Wskazówki pro',
+          title: 'Wskazówki pro, aby uzyskać najlepsze rezultaty',
+          bullets: [
+            'Używaj półprzezroczystego logo PNG, jeśli chcesz uzyskać najbardziej profesjonalny efekt. Znak wodny z logo na przezroczystym tle i kryciem 40–50% wygląda znacznie lepiej niż zwykły tekst. Wyeksportuj logo z narzędzia projektowego jako PNG z przezroczystością alfa, zanim użyjesz go jako warstwy obrazu.',
+            'Umieszczaj znak wodny tam, gdzie jego przycięcie odbiera wartość. Prawy dolny róg to najczęstsze miejsce znaku wodnego — i najłatwiejsze do wycięcia. Dla lepszej ochrony rozważ umieszczenie znaku wodnego na wizualnie ważnym obszarze obrazu, na przykład na twarzy, detalu produktu albo punkcie centralnym. Opcja diagonal tile jest jeszcze trudniejsza do usunięcia bez wyraźnego pogorszenia obrazu.',
+            'Korzystaj z funkcji blokady podczas pracy z wieloma warstwami. Gdy jesteś zadowolony z głównej pozycji znaku wodnego, zablokuj tę warstwę przed dodawaniem kolejnych. Dzięki temu nie przesuniesz jej przypadkowo, pracując nad innymi elementami.',
+            'Testuj na jasnych i ciemnych fragmentach obrazu. Biały znak wodny jest niewidoczny na jasnym niebie, ale doskonale czytelny na ciemnym cieniu. Dodaj delikatny obrys albo kolor tła, aby zachować czytelność niezależnie od tego, co znajduje się pod znakiem wodnym.',
+            'Skróty klawiaturowe zawsze oszczędzają czas. Strzałki przesuwają zaznaczoną warstwę o jeden piksel na raz. Shift+Strzałka przesuwa o dziesięć pikseli. Klawisz Delete natychmiast usuwa zaznaczoną warstwę. Te skróty sprawiają, że dopracowanie położenia jest dużo szybsze niż przeciąganie.',
+          ],
+        },
+        {
+          id: 'wm-blog-privacy',
+          tocLabel: 'Prywatność i bezpieczeństwo',
+          title: 'Prywatność i bezpieczeństwo: dlaczego przetwarzanie w przeglądarce ma znaczenie',
+          paragraphs: [
+            'Jedną z największych obaw wielu twórców korzystających z narzędzi online jest to, gdzie właściwie trafiają ich obrazy. W przypadku narzędzi działających po stronie serwera obraz jest wysyłany na serwer dostawcy, tam przetwarzany, a następnie odsyłany z powrotem. Oznacza to, że Twoje nieopublikowane prace, zdjęcia klientów albo wrażliwe obrazy produktów przechodzą przez cudzą infrastrukturę.',
+            'Narzędzie do znaków wodnych Photremium przetwarza wszystko lokalnie w Twojej przeglądarce. Obrazy są ładowane do pamięci Twojego urządzenia za pomocą File API przeglądarki i nigdy nie są przesyłane przez internet. Renderowanie znaku wodnego odbywa się na elemencie HTML5 canvas działającym w JavaScript, całkowicie w obrębie karty przeglądarki. Gdy zamkniesz stronę albo klikniesz „Start Over”, wszystkie dane obrazu są zwalniane z pamięci i usuwane. Nic nie jest przechowywane poza Twoim własnym urządzeniem.',
+          ],
+        },
+        {
+          id: 'wm-blog-summary',
+          tocLabel: 'Podsumowanie końcowe',
+          title: 'Dlaczego narzędzie do znaków wodnych Photremium zasługuje na stałe miejsce w Twoim workflow',
+          paragraphs: [
+            'W internecie dostępnych jest dziesiątki narzędzi do znakowania obrazów. To, co odróżnia narzędzie warte zapisania w zakładkach od tego, o którym można zapomnieć, to zwykle połączenie szybkości, kontroli i wiarygodności.',
+            'Szybkość ma znaczenie, bo znakowanie wodne nie powinno znacząco wydłużać Twojego workflow po obróbce. Narzędzie Photremium ładuje się natychmiast, przetwarza lokalnie i eksportuje w pełnej rozdzielczości w kilka sekund — nawet przy dużych partiach. Nie ma czekania na przetwarzanie po stronie serwera, nie ma kolejki i nie ma czasu renderowania, który rośnie wraz z liczbą osób online jednocześnie.',
+            'Kontrola ma znaczenie, bo źle wyglądający znak wodny jest gorszy niż jego brak — sprawia, że marka wygląda nieprofesjonalnie. System warstw, sterowanie poszczególnymi właściwościami na pasku narzędzi, podgląd canvasu w czasie rzeczywistym i obsługa skrótów klawiaturowych razem dają poziom kontroli naprawdę porównywalny z dedykowanym oprogramowaniem desktopowym.',
+            'Wiarygodność ma znaczenie, bo Twoje nieopublikowane prace są cenne. Świadomość, że obrazy nigdy nie opuszczają internetu i nie trafiają na serwer zewnętrzny, oznacza, że możesz znakować zdjęcia klientów, niewydane obrazy produktów i wrażliwe prace twórcze bez obaw o obsługę danych, naruszenia po stronie serwera czy zmiany zasad dostawcy chmurowego.',
+            'Niezależnie od tego, czy dodajesz szybki komunikat praw autorskich do jednego zdjęcia, czy przetwarzasz całą sesję 200 obrazów przed udostępnieniem galerii klientowi, narzędzie Watermark Image od Photremium daje Ci wszystko, czego potrzebujesz, aby zrobić to dobrze — całkowicie za darmo, całkowicie prywatnie i z wystarczającą elastycznością twórczą, by znak wodny wyglądał jak naturalna część obrazu, a nie coś przyklejonego na wierzchu.',
+            'Wejdź na photremium.com/watermark-image i wypróbuj je. Pierwszy obraz ze znakiem wodnym jest dosłownie oddalony o trzydzieści sekund.',
+            'Photremium oferuje zestaw opartych na przeglądarce narzędzi do edycji i przetwarzania obrazów. Wszystkie narzędzia działają lokalnie w przeglądarce — Twoje obrazy pozostają na Twoim urządzeniu.',
+          ],
+        },
+      ],
+    },
   },
 
   qrGenerator: {
@@ -1514,11 +1747,16 @@ common: {
       { q: 'Czy moje obrazy są wysyłane na serwer?', a: 'Nie. Model AI działa w pełni w przeglądarce przy użyciu WebAssembly.' },
     ],
     watermarkImage: [
-      { q: 'Jakie rodzaje znaków wodnych można dodać?', a: 'Możesz dodawać tekstowe znaki wodne z niestandardowymi czcionkami, rozmiarami, kolorami i kryciem, a także graficzne znaki wodne jak loga.' },
-      { q: 'Czy mogę zastosować ten sam znak wodny do wielu obrazów?', a: 'Tak. Prześlij wiele obrazów, skonfiguruj znak wodny raz, a zostanie zastosowany do wszystkich.' },
-      { q: 'Czy znak wodny obniża jakość obrazu?', a: 'Nie. Znak wodny jest kompozytowany na oryginalnym obrazie w pełnej rozdzielczości.' },
-      { q: 'Czy mogę regulować krycie znaku wodnego?', a: 'Oczywiście. Użyj suwaka krycia, aby dostosować.' },
-      { q: 'Czy dane są przesyłane na serwer?', a: 'Nie. Całe przetwarzanie znaków wodnych odbywa się lokalnie w przeglądarce.' },
+      { q: '1. Czy narzędzie Photremium do znaków wodnych jest bezpłatne?', a: 'Tak — narzędzie na photremium.com/watermark-image jest darmowe i nie wymaga konta ani subskrypcji. Możesz stosować znaki wodne do pojedynczych obrazów lub całych partii bez ograniczeń.' },
+      { q: '2. Ile obrazów można przetworzyć jednocześnie?', a: 'Narzędzie obsługuje operacje wsadowe. Możesz przeciągnąć cały folder lub wybrać wiele plików — ograniczenie praktyczne wynika z pamięci urządzenia.' },
+      { q: '3. Jakie formaty obrazów są obsługiwane?', a: 'Obsługiwane są formaty czytane przez File API: JPEG, JPG, PNG, WEBP, GIF (statyczny), BMP i SVG. Format wyjściowy odpowiada formatowi wejściowemu.' },
+      { q: '4. Czy znak wodny będzie wyglądał tak samo na obrazach o różnych rozdzielczościach?', a: 'Tak. Silnik proporcjonalnego pozycjonowania oblicza względne położenie i skalę, zachowując wygląd znaku wodnego w całej partii.' },
+      { q: '5. Czy mogę użyć własnego logo zamiast tekstu?', a: 'Tak. Przycisk "Add Image" pozwala załadować PNG z przezroczystym tłem, które zachowa przezroczystość i posłuży jako warstwa znaku wodnego.' },
+      { q: '6. Jak ustawić półprzezroczystość znaku wodnego?', a: 'Wybierz warstwę znaku wodnego na kanwie i ustaw suwak krycia. 30–50% daje zwykle subtelny, profesjonalny efekt.' },
+      { q: '7. Czy można dodać kilka warstw znaków wodnych?', a: 'Tak — system warstw obsługuje dowolną liczbę warstw, każda może mieć własne ustawienia.' },
+      { q: '8. Co robi funkcja tiling i kiedy jej używać?', a: 'Tiling powtarza znak wodny w siatce po całym obrazie; przydatne gdy chcesz zapobiec nieautoryzowanemu użyciu obrazu.' },
+      { q: '9. Czy narzędzie działa na urządzeniach mobilnych?', a: 'Tak — interfejs jest responsywny: miniatury stają się przewijaną linią, panel ustawień wysuwa się z dołu, a kontrolki obsługują dotyk.' },
+      { q: '10. Czy moje obrazy są prywatne i czy są wysyłane na serwer?', a: 'Obrazy nie opuszczają urządzenia. Cały proces odbywa się lokalnie w przeglądarce z użyciem Canvas API; nie wykonuje się żadnego uploadu danych obrazów.' },
     ],
     qrCodeGenerator: [
       { q: 'Czy ten kod QR wygasa?', a: 'Nie, te kody QR nie wygasają i gwarantują wsparcie na całe życie. Ponieważ przechowują zahardkodowane instrukcje w postaci bitów wewnątrz kwadratowych pól, informacje w nich przechowywane nie mogą być zmieniane ani usuwane. Możesz uzyskać dostęp do informacji w kodzie, po prostu skanując go dowolnym aparatem, nawet po latach.' },

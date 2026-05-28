@@ -1028,6 +1028,239 @@ common: {
     typeHere: 'Nhập ở đây...',
     linkCorners: 'Liên Kết Góc',
     separateCorners: 'Tách Góc',
+    blog: {
+      tocTitle: 'Mục lục',
+      sections: [
+        {
+          id: 'wm-blog-intro',
+          tocLabel: 'Tổng quan công cụ hình mờ',
+          title: 'Cách thêm hình mờ vào ảnh online — Hướng dẫn đầy đủ về công cụ Hình Mờ của Photremium',
+          paragraphs: [
+            'Bạn vừa hoàn tất chỉnh sửa một bức ảnh đẹp. Có thể đó là ảnh sản phẩm cho cửa hàng, chân dung từ buổi chụp với khách, hoặc tác phẩm nghệ thuật số bạn đã dày công hoàn thiện. Và rồi câu hỏi mà mọi người sáng tạo đều gặp phải xuất hiện: làm sao bảo vệ nó trước khi chia sẻ?',
+            'Câu trả lời của hầu hết chuyên gia là: hình mờ — và hoàn toàn có lý. Hình mờ được đặt đúng vị trí sẽ hoạt động như chữ ký vĩnh viễn, giúp tác phẩm có thể truy vết, gắn thương hiệu và khó bị đánh cắp hơn nhiều.',
+            'Vấn đề là: nhiều công cụ online hoặc quá rườm rà, bị khóa sau gói đăng ký, hoặc tạo ra hình mờ quá nặng khiến ảnh bị hỏng hoàn toàn.',
+            'Công cụ Hình Mờ của Photremium được tạo ra để giải quyết tất cả những điều đó. Đây là một không gian làm việc gắn hình mờ hoàn toàn chạy trên trình duyệt, miễn phí, không cần tài khoản và không bao giờ tải file lên máy chủ. Mọi thứ đều chạy cục bộ, rất nhanh, và mức độ kiểm soát sáng tạo có thể sánh ngang phần mềm desktop. Trong hướng dẫn này, chúng tôi sẽ cho bạn thấy cách công cụ hoạt động, dành cho ai và cách để luôn có kết quả tốt nhất.',
+          ],
+        },
+        {
+          id: 'wm-blog-what-is',
+          tocLabel: 'Hình mờ là gì',
+          title: 'Hình mờ là gì và tại sao quan trọng?',
+          paragraphs: [
+            'Trước khi đi sâu vào công cụ, hãy hiểu hình mờ làm gì và vì sao nhiều nhiếp ảnh gia, nhà thiết kế và nhà sáng tạo nội dung coi nó là điều không thể thiếu.',
+            'Hình mờ là lớp phủ hiển thị trên ảnh — thường là văn bản, logo hoặc ký hiệu bản quyền — dùng để nhận diện người tạo hoặc chủ sở hữu nội dung. Khác với metadata (ẩn trong file và có thể bị gỡ trong vài giây), hình mờ được nhúng trực quan vào ảnh. Bạn không thể chỉ bấm chuột phải để xóa nó mà không làm giảm rõ rệt chất lượng hình ảnh.',
+          ],
+          subSections: [
+            {
+              title: 'Vì sao người sáng tạo dùng hình mờ',
+              paragraphs: [
+                'Những lý do thực tế để gắn hình mờ thường quy về ba điểm cốt lõi.',
+              ],
+              bullets: [
+                'Xác định quyền sở hữu. Khi tác phẩm của bạn được chia sẻ trên mạng xã hội, bảng Pinterest hoặc nhúng vào bài blog, phần ghi công gốc thường bị mất. Hình mờ đảm bảo tên hoặc thương hiệu của bạn đi kèm theo ảnh ở bất cứ đâu.',
+                'Ngăn chặn đánh cắp. Hầu hết kẻ lấy ảnh trái phép chọn con đường dễ nhất. Một hình mờ trông chuyên nghiệp, đặt đúng chỗ và hơi trong suốt gửi đi tín hiệu rõ ràng: ảnh này thuộc về người bảo vệ tác phẩm của mình.',
+                'Bảo vệ portfolio cho khách. Các nhiếp ảnh gia thường gửi bản xem trước cho khách trước khi thanh toán cuối cùng và dùng hình mờ để tránh việc bị sử dụng mà chưa thanh toán. Hình mờ tinh tế giúp bảo vệ mà không gây khó đánh giá.',
+              ],
+            },
+            {
+              title: 'Ai nên gắn hình mờ cho ảnh',
+              paragraphs: [
+                'Nếu bạn thuộc một trong các nhóm sau, việc gắn hình mờ trước khi chia sẻ online không phải lựa chọn — mà là điều cần thiết:',
+              ],
+              bullets: [
+                'Nhiếp ảnh gia freelance chia sẻ album với khách hàng',
+                'Nhà thiết kế đồ họa phát hành mẫu portfolio',
+                'Người bán e-commerce hiển thị ảnh sản phẩm trước khi ký thỏa thuận cấp phép',
+                'Nghệ sĩ số chia sẻ tác phẩm trên nền tảng xã hội',
+                'Blogger và creator có ảnh bị tái sử dụng thường xuyên',
+                'Cộng tác viên ảnh stock xây dựng thương hiệu nhận diện',
+              ],
+            },
+          ],
+        },
+        {
+          id: 'wm-blog-workspace',
+          tocLabel: 'Bảng điều khiển không gian làm việc',
+          title: 'Bên trong công cụ Hình Mờ Photremium: không gian làm việc ba bảng cho quy trình thực tế',
+          paragraphs: [
+            'Điều làm công cụ hình mờ của Photremium khác biệt với các công cụ cơ bản online là thiết kế không gian làm việc. Thay vì chỉ “nhập chữ, chọn vị trí, xong”, công cụ cung cấp bố cục ba bảng giống phần mềm thiết kế chuyên nghiệp — nhưng chạy hoàn toàn trong trình duyệt, không cần cài đặt.',
+          ],
+          subSections: [
+            {
+              title: 'Bảng canvas bên trái',
+              paragraphs: [
+                'Bảng canvas chiếm phần lớn màn hình và hiển thị chính xác hình ảnh của bạn với hình mờ theo thời gian thực. Mọi thay đổi — chỉnh độ mờ, kéo vị trí chữ, thay kích thước logo — đều cập nhật ngay trên canvas. Không có nút “preview”. Bạn thấy gì là kết quả đó.',
+                'Canvas có thanh công cụ zoom tích hợp, giúp phóng to để căn chính xác và thu nhỏ để nhìn tổng thể. Tính năng zoom-to-fit tự động tính tỉ lệ ban đầu tốt nhất dựa trên kích thước màn hình để ảnh độ phân giải cao vẫn dễ làm việc. Các đường dẫn căn chỉnh xuất hiện khi bạn kéo lớp gần tâm ngang hoặc dọc, giúp khóa hình mờ vào chính giữa với độ chính xác mà bạn thường chỉ thấy ở Photoshop.',
+              ],
+            },
+            {
+              title: 'Bảng cài đặt bên phải',
+              paragraphs: [
+                'Bảng bên phải là trung tâm điều khiển. Đây là nơi bạn quản lý các lớp hình mờ, tùy chỉnh diện mạo và kích hoạt xuất cuối. Trên desktop, bảng cố định bên phải. Trên mobile, bảng trượt lên như bottom sheet — mở bằng nút bánh răng nổi — nên không che canvas khi bạn làm việc.',
+                'Trong bảng bên phải có trình quản lý lớp, liệt kê mọi phần tử hình mờ bạn đã thêm. Mỗi mục hiển thị loại lớp (văn bản hoặc ảnh), tên hoặc nội dung và ba nút nhanh: bật/tắt hiển thị (biểu tượng mắt), khóa vị trí và xóa.',
+              ],
+            },
+            {
+              title: 'Dải xem trước bên trái (chế độ nhiều ảnh)',
+              paragraphs: [
+                'Khi bạn làm việc với nhiều ảnh cùng lúc — ví dụ một lô ảnh sản phẩm hoặc cả buổi chụp chân dung — một dải thumbnail dọc xuất hiện ở mép trái màn hình. Đây là hàng đợi ảnh, hiển thị bản xem trước của mọi file đã tải. Nhấp vào bất kỳ thumbnail nào để chuyển canvas sang ảnh đó ngay lập tức, giúp bạn kiểm tra hình mờ trên các bố cục khác nhau mà không mất thiết lập lớp.',
+                'Dải này cũng hiển thị dung lượng file theo KB hoặc MB và định dạng (JPG, PNG, WEBP) để bạn luôn biết mình đang xử lý gì chỉ trong một cái nhìn.',
+              ],
+            },
+          ],
+        },
+        {
+          id: 'wm-blog-steps',
+          tocLabel: 'Từng bước',
+          title: 'Từng bước: cách thêm hình mờ trên Photremium',
+          paragraphs: [
+            'Hướng dẫn này dựa trực tiếp trên cách công cụ hoạt động — từ hệ thống upload kéo-thả đến engine render trên canvas ghi hình mờ vĩnh viễn vào ảnh trước khi tải về.',
+          ],
+          steps: [
+            {
+              heading: 'Bước 1 — Tải ảnh lên',
+              paragraphsBefore: [
+                'Truy cập photremium.com/watermark-image. Bạn sẽ vào màn hình upload với khu vực dropzone sạch ở giữa trang.',
+                'Bạn có ba cách đưa ảnh vào công cụ:',
+              ],
+              bullets: [
+                'Drag and drop. Kéo một hoặc nhiều file ảnh từ desktop vào dropzone. Công cụ hỗ trợ các định dạng phổ biến — JPEG, PNG, WEBP, và nhiều hơn. Khi kéo file vào khu vực làm việc, một viền tím xuất hiện kèm thông báo “Drop images to add for watermarking” để báo nhận drop.',
+                'Click to browse. Nhấp nút “Choose Files” trong dropzone để mở trình chọn file. Bạn có thể chọn nhiều file cùng lúc bằng Ctrl+Click (Windows) hoặc Cmd+Click (Mac).',
+                'Paste from clipboard. Nếu bạn đã sao chép ảnh vào clipboard — từ screenshot, ứng dụng khác, hoặc trình duyệt — chỉ cần nhấn Ctrl+V (hoặc Cmd+V trên Mac) trên trang watermark là ảnh sẽ được tải trực tiếp vào workspace. Cách này vẫn hoạt động khi đã có nhiều ảnh được tải.',
+              ],
+              paragraphsAfter: [
+                'Khi ảnh đầu tiên được tải, workspace chuyển từ màn hình upload sang trình chỉnh sửa ba bảng đầy đủ và canvas hiển thị ảnh với mức zoom fit-to-screen được tính tự động.',
+              ],
+            },
+            {
+              heading: 'Bước 2 — Thêm lớp hình mờ văn bản',
+              paragraphsBefore: [
+                'Nhấp nút màu tím “Add Text” ở bảng bên phải. Một lớp văn bản mới xuất hiện trên canvas với placeholder “Type here...” đã được chọn sẵn.',
+                'Bạn có thể gõ ngay lập tức. Văn bản được render trực tiếp trên canvas bằng Arial trắng với kích thước mặc định phù hợp với ảnh. Từ thanh công cụ phía trên (xuất hiện khi lớp văn bản được chọn), bạn có thể tùy chỉnh mọi chi tiết của chữ:',
+              ],
+              bullets: [
+                'Font family — chọn từ 12 font tích hợp gồm Arial, Georgia, Impact, Brush Script MT, Comic Sans MS và nhiều font khác',
+                'Font size — nhập giá trị pixel tùy chỉnh hoặc dùng điều khiển tăng/giảm',
+                'Bold, italic, underline — bật bất kỳ комбинация kiểu nào',
+                'Text color — nhấp ô màu để mở bộ chọn màu và chọn bất kỳ màu hex nào',
+                'Background color — thêm nền màu sau chữ để tạo kiểu nhãn/badge',
+                'Stroke (outline) — đặt độ dày và màu viền để chữ dễ đọc trên nền sáng/tối',
+                'Opacity — kéo từ 0% (ẩn) đến 100% (hiện rõ); đa số hình mờ nằm trong khoảng 30%–60%',
+                'Alignment — căn trái, giữa hoặc phải trong hộp chữ',
+                'Rotation — xoay lớp chữ ở bất kỳ góc nào, có điểm snap tại 0°, 90°, 180° và 270° để đặt nhanh',
+              ],
+              paragraphsAfter: [
+                'Để di chuyển chữ, nhấp và kéo đến vị trí mong muốn trên canvas. Để căn chỉnh chính xác từng pixel, dùng phím mũi tên (giữ Shift để di chuyển 10 px). Để thay đổi kích thước hộp chữ, kéo một trong tám tay nắm (góc và cạnh) quanh lớp được chọn.',
+              ],
+            },
+            {
+              heading: 'Bước 3 — Thêm lớp hình mờ ảnh (logo)',
+              paragraphsBefore: [
+                'Nếu bạn muốn dùng logo, chữ ký hoặc ảnh làm hình mờ thay vì — hoặc cùng với — chữ, nhấp nút màu xanh “Add Image” ở bảng bên phải. Trình chọn file mở ra để bạn chọn ảnh hình mờ từ thiết bị.',
+                'Công cụ tự động đặt kích thước ảnh hình mờ khoảng 30% chiều rộng canvas, giữ nguyên tỉ lệ và căn giữa. Bạn có thể kéo đến bất kỳ vị trí nào, thay đổi kích thước bằng tay nắm góc (giữ tỉ lệ) hoặc xoay bằng tay nắm xoay phía trên lớp đã chọn.',
+                'Với lớp hình mờ dạng ảnh, bảng bên phải có thêm các điều khiển:',
+              ],
+              bullets: [
+                'Opacity — giống lớp chữ, lý tưởng cho logo PNG trong suốt',
+                'Flip horizontal / Flip vertical — lật gương hình mờ khi cần',
+                'Border width, border color, and border style — thêm viền nhìn thấy quanh logo',
+                'Border radius — bo tròn các góc logo, đồng đều hoặc tách từng góc',
+                'Rotation — hành vi xoay mượt giống lớp chữ',
+              ],
+            },
+            {
+              heading: 'Bước 4 — Cấu hình lặp (tùy chọn)',
+              paragraphsBefore: [
+                'Một tính năng mạnh là lặp (tiling) — khả năng lặp hình mờ phủ khắp ảnh theo dạng lưới. Điều này đặc biệt hữu ích nếu bạn muốn làm ảnh khó bị tái sử dụng chứ không chỉ gắn nhãn.',
+                'Khi chọn một lớp, hãy tìm tùy chọn tile trên toolbar. Bạn có thể đặt thành:',
+              ],
+              bullets: [
+                'None — đặt một lần (mặc định)',
+                'Grid 2×2 — lặp theo lưới 2 cột, 2 hàng',
+                'Grid 3×3 — lặp theo lưới 3×3 để phủ dày hơn',
+              ],
+              paragraphsAfter: [
+                'Bạn cũng có thể điều chỉnh khoảng cách lặp, kiểm soát khoảng trống giữa mỗi bản sao. Canvas hiển thị bản xem trước mờ của tất cả bản sao để bạn thấy toàn bộ mẫu phủ trước khi tải xuống.',
+              ],
+            },
+            {
+              heading: 'Bước 5 — Dùng trình quản lý lớp cho nhiều hình mờ',
+              paragraphsBefore: [
+                'Bạn có thể thêm bao nhiêu lớp tùy ý — trộn văn bản và hình ảnh. Trình quản lý lớp ở bảng bên phải liệt kê tất cả. Bạn có thể:',
+              ],
+              bullets: [
+                'Hiện/ẩn từng lớp bằng biểu tượng mắt — hữu ích để chuyển giữa các phiên bản hình mờ mà không xóa',
+                'Khóa một lớp để tránh bị dịch chuyển khi làm việc với lớp khác',
+                'Xóa một lớp vĩnh viễn',
+              ],
+              paragraphsAfter: [
+                'Nhấp bất kỳ mục nào trong danh sách sẽ chọn lớp tương ứng trên canvas, giúp bạn chuyển nhanh giữa các lớp mà không phải tìm trên ảnh.',
+              ],
+            },
+            {
+              heading: 'Bước 6 — Chuyển giữa nhiều ảnh',
+              paragraphsBefore: [
+                'Nếu bạn tải lên nhiều hơn một ảnh, dùng dải thumbnail bên trái để chuyển ảnh đang chỉnh trên canvas. Các lớp hình mờ bạn cấu hình sẽ áp dụng đồng loạt — chúng sẽ được render lên mọi ảnh trong lô khi xuất.',
+                'Công cụ cũng kiểm tra tính nhất quán độ phân giải trong lô. Nếu ảnh có kích thước khác biệt đáng kể (hơn 5% về chiều rộng hoặc chiều cao), sẽ có cảnh báo rằng vị trí hình mờ có thể khác do khác kích thước. Engine xử lý bằng thuật toán tái định vị theo tỷ lệ: tính vị trí hình mờ theo phần trăm kích thước ảnh tham chiếu và áp dụng tỷ lệ đó cho mọi ảnh khác, giữ được ý đồ thị giác ngay cả khi khác độ phân giải.',
+              ],
+            },
+            {
+              heading: 'Bước 7 — Thiết lập tùy chọn tải xuống',
+              paragraphsBefore: [
+                'Với ảnh đơn, nhấp nút “Download” dưới canvas để lưu ảnh có hình mờ. Tên file sẽ tự động thêm “-watermarked” trước phần mở rộng. Ảnh JPEG được xuất ở chất lượng 0.95 — đủ cao để khó phân biệt với ảnh gốc ở kích thước xem bình thường. PNG được xuất dạng lossless PNG.',
+                'Với lô ảnh (nhiều ảnh), bạn có hai chế độ tải xuống trong bảng bên phải:',
+              ],
+              bullets: [
+                'ZIP file — tất cả ảnh có hình mờ được đóng gói trong một file ZIP tải một lần. Công cụ tải JSZip động để xử lý nén.',
+                'Separate files — mỗi ảnh được tải thành file riêng với một khoảng trễ nhỏ giữa các lần tải để tránh trình duyệt hạn chế.',
+              ],
+            },
+            {
+              heading: 'Bước 8 — Tải xuống và kiểm tra',
+              paragraphsBefore: [
+                'Sau khi nhấp nút tải xuống (hoặc “Watermark & Download All” cho lô), công cụ render từng ảnh trên một canvas HTML5 ẩn ở độ phân giải gốc — không phải kích thước xem trước trên màn hình. Điều này nghĩa là ảnh xuất giữ 100% kích thước pixel gốc với hình mờ được vẽ đúng tỷ lệ. Mở file đã tải và zoom để kiểm tra vị trí và chất lượng hình mờ có đúng mong đợi hay không.',
+                'Nếu thấy chưa ổn, chỉ cần quay lại workspace — các lớp vẫn còn — chỉnh lại và tải xuống lại.',
+              ],
+            },
+          ],
+        },
+        {
+          id: 'wm-blog-tips',
+          tocLabel: 'Mẹo chuyên nghiệp',
+          title: 'Mẹo chuyên nghiệp để có kết quả tốt nhất',
+          bullets: [
+            'Hãy dùng logo PNG bán trong suốt để tạo cảm giác chuyên nghiệp. Logo nền trong suốt với 40–50% độ mờ trông chỉn chu hơn nhiều so với chữ đặc. Hãy xuất logo từ phần mềm thiết kế dưới dạng PNG có alpha trước khi dùng làm lớp ảnh.',
+            'Đặt hình mờ ở vị trí mà cắt xén sẽ làm giảm giá trị. Góc dưới phải là vị trí phổ biến nhất — và cũng dễ bị cắt nhất. Muốn bảo vệ tốt hơn, hãy đặt lên vùng quan trọng như khuôn mặt, chi tiết sản phẩm hoặc điểm nhấn. Tùy chọn tile chéo khó gỡ hơn mà không làm giảm chất lượng ảnh.',
+            'Dùng tính năng khóa khi làm với nhiều lớp. Khi đã hài lòng vị trí hình mờ chính, hãy khóa nó trước khi thêm các lớp phụ để tránh bị đẩy lệch.',
+            'Kiểm tra trên vùng sáng và tối. Hình mờ trắng sẽ biến mất trên bầu trời sáng nhưng rõ trên vùng tối. Thêm viền mảnh hoặc nền nhẹ để đảm bảo dễ đọc bất kể nội dung bên dưới.',
+            'Phím tắt luôn tiết kiệm thời gian. Phím mũi tên di chuyển lớp đang chọn từng 1 pixel. Shift+Arrow di chuyển 10 pixel. Phím Delete xóa ngay lớp đang chọn. Những phím tắt này giúp tinh chỉnh nhanh hơn nhiều so với kéo thả.',
+          ],
+        },
+        {
+          id: 'wm-blog-privacy',
+          tocLabel: 'Quyền riêng tư và bảo mật',
+          title: 'Quyền riêng tư và bảo mật: vì sao xử lý trong trình duyệt quan trọng',
+          paragraphs: [
+            'Một lo ngại phổ biến khi dùng công cụ online là: ảnh của bạn thực sự đi đâu? Với công cụ hình mờ dựa trên server, ảnh sẽ được tải lên máy chủ của nhà cung cấp, xử lý tại đó rồi gửi lại. Điều này có nghĩa là tác phẩm chưa công bố, ảnh khách hàng hoặc ảnh sản phẩm nhạy cảm đi qua hạ tầng của bên thứ ba.',
+            'Công cụ hình mờ Photremium xử lý mọi thứ cục bộ trong trình duyệt. Ảnh được nạp vào bộ nhớ thiết bị qua File API của trình duyệt và không bao giờ truyền qua internet. Việc render hình mờ diễn ra trên phần tử canvas HTML5 bằng JavaScript, hoàn toàn trong tab trình duyệt. Khi bạn đóng trang hoặc nhấn “Start Over”, toàn bộ dữ liệu ảnh được giải phóng khỏi bộ nhớ và loại bỏ. Không có gì được lưu bên ngoài thiết bị của bạn.',
+          ],
+        },
+        {
+          id: 'wm-blog-summary',
+          tocLabel: 'Tóm tắt cuối',
+          title: 'Vì sao công cụ Hình Mờ Photremium xứng đáng có chỗ trong quy trình thường xuyên của bạn',
+          paragraphs: [
+            'Có hàng chục công cụ hình mờ online. Điều phân biệt một công cụ đáng lưu với một công cụ dễ quên thường là sự kết hợp giữa tốc độ, khả năng kiểm soát và độ tin cậy.',
+            'Tốc độ quan trọng vì hình mờ không nên làm chậm quy trình hậu kỳ của bạn. Công cụ Photremium tải tức thì, xử lý cục bộ và xuất ở độ phân giải đầy đủ trong vài giây — kể cả với lô lớn. Không phải chờ xử lý server, không có hàng đợi, và không có thời gian render tăng theo số người dùng cùng lúc.',
+            'Khả năng kiểm soát quan trọng vì một hình mờ trông sai còn tệ hơn không dùng hình mờ — khiến thương hiệu trông thiếu chuyên nghiệp. Hệ thống lớp, điều khiển theo thuộc tính, preview canvas thời gian thực và hỗ trợ phím tắt tạo nên mức kiểm soát thực sự tương đương phần mềm desktop chuyên dụng.',
+            'Độ tin cậy quan trọng vì tác phẩm chưa công bố của bạn rất có giá trị. Biết rằng ảnh của bạn không bao giờ đi qua internet tới server của bên thứ ba nghĩa là bạn có thể gắn hình mờ cho ảnh khách, ảnh sản phẩm chưa phát hành và nội dung sáng tạo nhạy cảm mà không lo về xử lý dữ liệu, rò rỉ server hay thay đổi chính sách của nhà cung cấp cloud.',
+            'Dù bạn đang thêm thông báo bản quyền nhanh cho một bức ảnh hay xử lý cả buổi chụp 200 ảnh trước khi chia sẻ album khách, công cụ Hình Mờ Photremium mang đến mọi thứ cần thiết để làm đúng — hoàn toàn miễn phí, hoàn toàn riêng tư, và đủ linh hoạt để hình mờ trông như một phần của ảnh chứ không phải dán lên.',
+            'Hãy ghé photremium.com/watermark-image và thử ngay. Ảnh hình mờ đầu tiên của bạn chỉ cách đúng ba mươi giây.',
+            'Photremium cung cấp bộ công cụ chỉnh sửa và xử lý ảnh chạy trên trình duyệt. Tất cả công cụ chạy cục bộ — ảnh của bạn luôn ở trên thiết bị của bạn.',
+          ],
+        },
+      ],
+    },
   },
 
   qrGenerator: {
@@ -1513,11 +1746,16 @@ common: {
       { q: 'Ảnh của tôi có được gửi đến máy chủ không?', a: 'Không. Mô hình AI chạy hoàn toàn trong trình duyệt bằng WebAssembly.' },
     ],
     watermarkImage: [
-      { q: 'Có thể thêm những loại hình mờ nào?', a: 'Bạn có thể thêm hình mờ văn bản với phông chữ, kích thước, màu sắc và độ mờ tùy chỉnh, cũng như hình mờ ảnh như logo.' },
-      { q: 'Tôi có thể áp dụng cùng một hình mờ lên nhiều ảnh không?', a: 'Có. Tải nhiều ảnh, cấu hình hình mờ một lần và nó sẽ được áp dụng cho tất cả.' },
-      { q: 'Hình mờ có làm giảm chất lượng ảnh không?', a: 'Không. Hình mờ được kết hợp trên ảnh gốc với độ phân giải đầy đủ.' },
-      { q: 'Tôi có thể điều chỉnh độ mờ không?', a: 'Tất nhiên rồi. Sử dụng thanh trượt độ mờ để điều chỉnh.' },
-      { q: 'Dữ liệu có được tải lên máy chủ không?', a: 'Không. Tất cả xử lý hình mờ được thực hiện cục bộ trong trình duyệt.' },
+      { q: '1. Công cụ tạo hình mờ của Photremium có hoàn toàn miễn phí không?', a: 'Có, công cụ hình mờ tại photremium.com/watermark-image được dùng miễn phí, không cần tài khoản và không cần đăng ký gói dịch vụ. Bạn có thể gắn hình mờ cho từng ảnh hoặc cả loạt ảnh mà không gặp paywall, không bị yêu cầu đăng ký bắt buộc và không có giới hạn tải xuống. Công cụ này được duy trì bằng cách làm cho toàn bộ nền tảng Photremium đủ hữu ích để người dùng muốn quay lại, chứ không phải bằng cách khóa từng tính năng riêng lẻ.' },
+      { q: '2. Tôi có thể gắn hình mờ cho bao nhiêu ảnh cùng lúc?', a: 'Công cụ hỗ trợ gắn hình mờ hàng loạt cho nhiều ảnh cùng lúc. Bạn có thể kéo thả cả một thư mục ảnh vào vùng tải lên, hoặc dùng Ctrl+Click trong hộp chọn tệp để chọn hàng chục tệp một lần. Thanh thumbnail bên trái sẽ hiển thị tất cả ảnh, và khi bạn nhấn “Watermark & Download All”, công cụ sẽ render từng ảnh với các lớp hình mờ đã cấu hình rồi đóng gói chúng vào một tệp ZIP duy nhất, hoặc tải xuống từng tệp riêng nếu bạn muốn. Trên thực tế, kích thước lô bị giới hạn bởi bộ nhớ khả dụng của thiết bị chứ không phải bởi bất kỳ giới hạn nhân tạo nào của công cụ.' },
+      { q: '3. Hỗ trợ những định dạng ảnh nào cho đầu vào và đầu ra?', a: 'Đầu vào chấp nhận mọi định dạng ảnh mà File API của trình duyệt xử lý được, về thực tế gồm JPEG, JPG, PNG, WEBP, GIF (tĩnh), BMP và SVG. Ở đầu ra, định dạng sẽ khớp với ảnh gốc: nếu bạn tải lên PNG thì sẽ nhận lại PNG; nếu tải lên JPEG thì sẽ nhận lại JPEG với chất lượng 0,95. Cách giữ nguyên định dạng này giúp bạn không vô tình chuyển một PNG không mất dữ liệu sang JPEG có mất dữ liệu.' },
+      { q: '4. Hình mờ có trông giống nhau trên các ảnh có độ phân giải khác nhau không?', a: 'Có, nhờ bộ máy định vị lại theo tỷ lệ của công cụ. Khi bạn có một lô ảnh với kích thước khác nhau, hình mờ sẽ được thiết kế trên ảnh tham chiếu, tức là ảnh bạn đang chọn trong canvas. Khi xuất, bộ máy tính trọng tâm của từng lớp hình mờ trên ảnh tham chiếu, biểu diễn vị trí đó dưới dạng độ lệch theo phần trăm so với tâm ảnh và áp dụng cùng độ lệch tỷ lệ đó lên từng ảnh đích. Kích thước hình mờ cũng được thu/phóng theo tỷ lệ bằng yếu tố nhỏ hơn giữa tỷ lệ chiều rộng và chiều cao để đảm bảo nó không bao giờ vượt ra ngoài khung ảnh. Kết quả là hình mờ giữ nguyên vị trí tương đối và kích thước tương đối trên toàn bộ lô ảnh, ngay cả khi kích thước ảnh thay đổi.' },
+      { q: '5. Tôi có thể dùng logo hoặc chữ ký của riêng mình làm hình mờ thay vì văn bản không?', a: 'Hoàn toàn có thể. Nút “Add Image” ở panel bên phải cho phép bạn tải lên bất kỳ ảnh nào từ thiết bị để dùng làm lớp hình mờ. Tệp PNG có nền trong suốt hoạt động tốt nhất vì độ trong suốt được giữ nguyên, nên chỉ logo của bạn hiển thị mà không có khung trắng hay khung màu phía sau. Bạn có thể kéo các góc để đổi kích thước, xoay, lật, điều chỉnh độ mờ và thậm chí thêm viền hoặc bo góc. Nhiều người dùng giữ riêng một phiên bản logo nền trong suốt để dùng cho mục đích gắn hình mờ.' },
+      { q: '6. Làm thế nào để tôi làm hình mờ trong suốt hoặc bán trong suốt?', a: 'Chọn lớp hình mờ bằng cách nhấp vào nó. Trong thanh công cụ phía trên xuất hiện, hãy tìm điều khiển độ mờ, nó hiển thị giá trị phần trăm và cho phép bạn nhập trực tiếp hoặc kéo thanh trượt. Nếu bạn muốn một hình mờ tinh tế và chuyên nghiệp, không lấn át nội dung ảnh, mức 30–50% thường là lựa chọn tốt nhất. Nếu bạn muốn thông báo bản quyền rõ hơn và khó bỏ qua hơn, 70–80% sẽ phù hợp. Bạn cũng có thể bật tắt nhanh khả năng hiển thị của lớp trong trình quản lý lớp bằng biểu tượng con mắt để so sánh ảnh có và không có hình mờ.' },
+      { q: '7. Tôi có thể thêm nhiều hình mờ vào cùng một ảnh không?', a: 'Có, hệ thống lớp hỗ trợ số lượng lớp hình mờ không giới hạn và mỗi lớp có thể được cấu hình riêng. Bạn có thể có một thông báo bản quyền dạng văn bản ở góc dưới bên phải, một logo ở góc trên bên trái và một lớp phủ dạng tile “SAMPLE” cùng lúc. Mỗi lớp có độ mờ, xoay, vị trí, kích thước và thiết lập kiểu riêng. Trình quản lý lớp ở panel bên phải giúp sắp xếp chúng, và bạn có thể bật hoặc tắt từng lớp mà không cần xóa, rất tiện để thử nhiều kết hợp trước khi hoàn tất.' },
+      { q: '8. Tính năng tiling là gì và khi nào nên dùng?', a: 'Tiling sẽ lặp hình mờ của bạn theo dạng lưới trên toàn bộ ảnh. Tùy chọn Grid 2×2 đặt bốn bản sao theo bố cục hai nhân hai; Grid 3×3 đặt chín bản sao theo bố cục ba nhân ba. Điều khiển khoảng cách tile cho phép chỉnh khoảng trống giữa các bản sao. Tiling hữu ích nhất khi bạn muốn làm cho ảnh không thể sử dụng nếu không có sự cho phép. Một hình mờ chỉ đặt ở góc khá dễ bị cắt bỏ, nhưng mẫu phủ toàn ảnh sẽ khiến bức ảnh gần như không thể dùng nếu thiếu hình mờ. Cách này phù hợp cho bản xem trước hợp đồng, ảnh minh họa nháp để khách duyệt, hoặc bất kỳ nội dung nào không nên được sử dụng tự do trước khi thanh toán.' },
+      { q: '9. Công cụ này có hoạt động trên điện thoại và máy tính bảng không?', a: 'Có, công cụ hoàn toàn responsive và được thiết kế cho di động. Trên màn hình hẹp hơn 900 pixel, bố cục ba cột sẽ chuyển thành bố cục xếp chồng: dải thumbnail chuyển thành một hàng cuộn ngang ở trên cùng, canvas chiếm vùng chính, và panel cài đặt trở thành một bottom sheet trượt lên khi bạn chạm vào nút bánh răng nổi. Tất cả phần tử tương tác, như kéo lớp, tay nắm thay đổi kích thước và xoay, đều hỗ trợ chạm bằng các sự kiện touchstart và touchmove. Các tay nắm đổi kích thước cũng lớn hơn một chút trên di động, 16×16 pixel thay vì kích thước trên desktop, để dễ chạm chính xác bằng ngón tay hơn.' },
+      { q: '10. Dữ liệu ảnh của tôi có riêng tư không? Ảnh của tôi có được tải lên máy chủ nào không?', a: 'Ảnh của bạn không bao giờ rời khỏi thiết bị. Toàn bộ quy trình hình mờ, từ tải ảnh, render lớp cho đến xuất tệp cuối cùng, diễn ra ngay trong trình duyệt của bạn bằng JavaScript và HTML5 Canvas API. Khi bạn tải ảnh lên, File API tạo biểu diễn trong bộ nhớ của tệp. Khi bạn thêm lớp hình mờ, nó được vẽ lên một phần tử canvas ẩn. Khi bạn tải xuống kết quả, dữ liệu pixel của canvas được chuyển thành Blob và đưa cho trình duyệt để tải xuống, hoàn toàn cục bộ. Không có bất kỳ yêu cầu mạng nào chứa dữ liệu ảnh của bạn. Ngoài ra, công cụ còn có bảo vệ khi rời trang: nếu bạn cố đóng hoặc điều hướng đi khi ảnh còn đang mở, trình duyệt sẽ yêu cầu xác nhận để tránh mất phiên làm việc dang dở.' },
     ],
     qrCodeGenerator: [
       { q: 'Mã QR này có hết hạn không?', a: 'Không, những mã QR này không hết hạn và đảm bảo hỗ trợ suốt đời. Vì chúng lưu trữ các hướng dẫn được mã hóa dưới dạng các bit bên trong hộp vuông, thông tin được lưu trữ trong đó không thể được thay đổi hoặc xóa. Bạn có thể truy cập thông tin trong mã chỉ bằng cách quét nó bằng bất kỳ camera nào ngay cả sau nhiều năm.' },

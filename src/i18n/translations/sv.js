@@ -1030,6 +1030,185 @@ common: {
     typeHere: 'Skriv här...',
     linkCorners: 'Länka Hörn',
     separateCorners: 'Separera Hörn',
+    blog: {
+      tocTitle: 'Innehåll',
+      sections: [
+        {
+          id: 'wm-blog-intro',
+          tocLabel: 'Översikt över vattenstämplingsverktyget',
+          title: 'Så lägger du till en vattenstämpel på dina bilder online - den fullständiga guiden till Photremiums vattenstämplingsverktyg',
+          paragraphs: [
+            'Du har precis avslutat redigeringen av ett vackert fotografi. Kanske är det en produktbild för din butik, ett porträtt från en kundsession eller ett digitalt konstverk som du har lagt timmar på att finslipa. Och nu kommer frågan som varje skapare till slut ställs inför: Hur skyddar jag det innan jag delar det?',
+            'Svaret som de flesta professionella landar i är en vattenstämpel - och det av goda skäl. En korrekt placerad vattenstämpel fungerar som en permanent signatur på ditt arbete, gör det spårbart, märkt och betydligt svårare att stjäla.',
+            'Här är problemet som de flesta stöter på: de verktyg som finns online är antingen för klumpiga, låsta bakom prenumerationer eller ger en så tung vattenstämpel att hela bilden förstörs.',
+            'Photremiums Watermark Image-verktyg byggdes för att lösa allt detta. Det är en helt webbläsarbaserad, gratis vattenstämpelsarbetsyta utan krav på konto som körs direkt i din webbläsare utan att någonsin ladda upp dina filer till en server. Allt stannar lokalt, allt går snabbt och den kreativa kontrollnivå som erbjuds kan mäta sig med det du skulle förvänta dig av ett skrivbordsprogram. I den här guiden går vi igenom exakt hur det fungerar, vem det är byggt för och hur du får bästa möjliga resultat - varje gång.',
+          ],
+        },
+        {
+          id: 'wm-blog-what-is',
+          tocLabel: 'Vad är en vattenstämpel',
+          title: 'Vad är en vattenstämpel och varför spelar den roll?',
+          paragraphs: [
+            'Innan vi går in i själva verktyget är det värt att förstå vad en vattenstämpel gör och varför så många fotografer, formgivare och innehållsskapare anser att den är oumbärlig.',
+            'En vattenstämpel är ett synligt överlägg som läggs till i en bild - vanligtvis text, en logotyp eller en copyrightsymbol - som identifierar upphovspersonen eller ägaren till innehållet. Till skillnad från metadata (som är dold i filen och kan tas bort på några sekunder) är en vattenstämpel visuellt inbäddad i själva bilden. Du kan inte bara högerklicka och ta bort den utan att märkbart försämra bildkvaliteten.',
+          ],
+          subSections: [
+            {
+              title: 'Varför skapare använder vattenstämplar',
+              paragraphs: [
+                'De praktiska skälen till att vattenstämpla dina bilder handlar om tre centrala frågor.',
+              ],
+              bullets: [
+                'Identifiering av äganderätt. När ditt arbete delas på sociala medier, Pinterest-tavlor eller bäddas in i blogginlägg försvinner ofta den ursprungliga attributionen. En vattenstämpel ser till att ditt namn eller varumärke följer med bilden vart den än hamnar.',
+                'Avskräckning mot stöld. De flesta som stjäl bilder letar efter den enklaste vägen. En professionellt utformad vattenstämpel, särskilt en som är välplacerad och något transparent, skickar en tydlig signal: den här bilden tillhör någon som bryr sig om sitt arbete.',
+                'Skydd av kundportfölj. Fotografer som delar förhandsvisningar med kunder före slutbetalning använder ofta vattenstämplar för att förhindra att kunden använder förhandsvisningen utan att reglera fakturan. En diskret vattenstämpel uppnår detta utan att göra förhandsvisningen för störande att bedöma.',
+              ],
+            },
+            {
+              title: 'Vem bör vattenstämpla sina bilder',
+              paragraphs: [
+                'Om du passar in i någon av följande kategorier är det inte valfritt att vattenstämpla dina bilder innan du delar dem online - det är nödvändigt:',
+              ],
+              bullets: [
+                'Frilansfotografer som delar gallerier med kunder',
+                'Grafiska formgivare som distribuerar portföljexempel',
+                'E-handelsförsäljare som visar produktbilder före licensavtal',
+                'Digitala konstnärer som delar arbete på sociala plattformar',
+                'Bloggare och innehållsskapare vars bilder regelbundet återanvänds',
+                'Bidragsgivare till stockfoton som bygger ett igenkännbart varumärke',
+              ],
+            },
+          ],
+        },
+        {
+          id: 'wm-blog-workspace',
+          tocLabel: 'Arbetsytans paneler',
+          title: 'Inuti Photremiums vattenstämpelverktyg: En arbetsyta med tre paneler byggd för verkliga arbetsflöden',
+          paragraphs: [
+            'Det som gör Photremiums vattenstämpelverktyg bättre än enkla online-verktyg är dess arbetsyte-design. I stället för att erbjuda ett enkelt "skriv text, välj position, klart"-flöde, ger verktyget en layout med tre paneler som påminner om det du hittar i professionell designmjukvara - men det körs helt i din webbläsare, utan installation.',
+          ],
+          subSections: [
+            {
+              title: 'Den vänstra canvaspanelen',
+              paragraphs: [
+                'Canvaspanelen upptar den största delen av skärmen och visar exakt hur din bild ser ut med vattenstämpeln applicerad i realtid. Varje ändring du gör - justerar opacitet, flyttar ett textlager, ändrar storlek på en logotyp - visas direkt på canvasen. Det finns ingen "förhandsgranska"-knapp att klicka på. Det du ser är det du får.',
+                'Canvasen innehåller också ett inbyggt zoomverktygsfält som låter dig zooma in för exakt justering och zooma ut för helhetsbilden. Funktionen zooma-till-passa beräknar automatiskt den bästa startskalan utifrån din skärmstorlek, så även högupplösta bilder öppnas i en bekväm arbetsstorlek. Justeringsguider visas dynamiskt när du drar ett lager nära bildens horisontella eller vertikala mitt, och snäpper vattenstämpeln till en perfekt centrerad position med en tillfredsställande precision som du normalt bara skulle få i Photoshop.',
+              ],
+            },
+            {
+              title: 'Den högra inställningspanelen',
+              paragraphs: [
+                'Den högra panelen är kontrollcentret. Här hanterar du dina vattenstämpellager, anpassar deras utseende och startar den slutliga exporten. På desktop ligger den fast på skärmens högra sida. På mobila enheter skjuts den upp som ett bottom sheet - aktiverat av en flytande kugghjulsknapp - så att den aldrig täcker din canvas medan du arbetar.',
+                'I den högra panelen hittar du lagerhanteraren, som listar varje vattenstämpelelement du har lagt till. Varje lagerpost visar lagertypen (text eller bild), dess aktuella namn eller innehåll och tre snabbåtgärdsknappar: en synlighetsväxel (ögonikonen), en låsväxel för att frysa ett lags position medan du arbetar med andra, och en ta bort-knapp.',
+              ],
+            },
+            {
+              title: 'Den vänstra förhandsvisningslisten (flera bilder-läge)',
+              paragraphs: [
+                'När du arbetar med flera bilder samtidigt - en mängd produktfoton, en full porträttsession - visas en vertikal miniatyrremsa längst till vänster på skärmen. Det är bildkön, som visar förminskade förhandsvisningar av varje fil du har laddat. Om du klickar på en miniatyr växlar canvasen omedelbart till den bilden, så att du kan kontrollera hur vattenstämpeln ser ut i olika kompositioner utan att förlora dina lagerinställningar.',
+                'Listen visar också en storleksavläsning i KB eller MB för varje fil, tillsammans med filformatetiketten (JPG, PNG, WEBP), så att du alltid snabbt ser vad du arbetar med.',
+              ],
+            },
+          ],
+        },
+        {
+          id: 'wm-blog-steps',
+          tocLabel: 'Steg för steg',
+          title: 'Steg för steg: Så lägger du till en vattenstämpel på din bild i Photremium',
+          paragraphs: [
+            'Den här genomgången är direkt baserad på hur verktyget fungerar under huven - från drag-och-släpp-uppladdningen till canvasrenderingsmotorn som skriver din vattenstämpel permanent på bilden innan nedladdning.',
+          ],
+          steps: [
+            {
+              heading: 'Steg 1 - Ladda upp din/dina bilder',
+              paragraphsBefore: [
+                'Gå till photremium.com/watermark-image. Du landar på uppladdningsskärmen, som visar en ren drag-and-drop-zon i mitten av sidan.',
+                'Du har tre sätt att få in din bild i verktyget:',
+              ],
+              bullets: [
+                'Dra och släpp. Dra en eller flera bildfiler från skrivbordet direkt till zonen. Verktyget accepterar alla vanliga bildformat - JPEG, PNG, WEBP och fler. När du drar filer över arbetsytan aktiveras en lila kant runt hela området med prompten "Drop images to add for watermarking", så att du ser att släppet registreras.',
+                'Klicka för att bläddra. Klicka på knappen "Choose Files" i zonen för att öppna systemets filväljare. Du kan markera flera filer samtidigt med Ctrl+klick (Windows) eller Cmd+klick (Mac).',
+                'Klistra in från urklipp. Om du har kopierat en bild till urklippet - från en skärmdump, en annan app eller en webbläsare - trycker du bara på Ctrl+V (eller Cmd+V på Mac) medan du är på vattenstämpelsidan, så laddas bilden direkt in i arbetsytan. Det fungerar även när flera bilder redan är laddade.',
+              ],
+              paragraphsAfter: [
+                'När den första bilden har laddats övergår arbetsytan från uppladdningsskärmen till den fullständiga redigeraren med tre paneler, och canvasen visar din bild med en automatiskt beräknad zoomnivå som passar skärmen.',
+              ],
+            },
+            {
+              heading: 'Steg 2 - Lägg till ett textlager för vattenstämpel',
+              paragraphsBefore: [
+                'Klicka på den lila knappen "Add Text" i den högra panelen. Ett nytt textlager visas på canvasen med platshållartexten "Type here..." förvald.',
+                'Du kan börja skriva direkt. Texten renderas live på canvasen i vit Arial med en standardstorlek anpassad efter bildens dimensioner. I det övre verktygsfältet som visas när textlagret är markerat kan du anpassa varje del av texten:',
+              ],
+              bullets: [
+                'Typsnitt - välj bland 12 inbyggda typsnitt inklusive Arial, Georgia, Impact, Brush Script MT, Comic Sans MS med flera',
+                'Textstorlek - skriv in ett eget pixelvärde direkt eller använd stegen',
+                'Fet, kursiv, understruken - slå på valfri kombination av dessa stilar',
+                'Textfärg - klicka på färgrutan för att öppna färgväljaren och välj valfri hexfärg',
+                'Bakgrundsfärg - lägg till en färgad bakgrund bakom texten för ett etikett- eller badge-liknande utseende',
+                'Stroke (kontur) - ställ in konturbredd och färg för maximal läsbarhet på både ljusa och mörka bilder',
+                'Opacitet - justera opaciteten från 0% (osynlig) till 100% (helt opak); de flesta vattenstämplar ligger mellan 30% och 60%',
+                'Justering - vänster, center eller höger inom textrutan',
+                'Rotation - rotera textlagret till valfri vinkel, med magnetiska snäppunkter vid 0°, 90°, 180° och 270° för snabb rak placering',
+              ],
+              paragraphsAfter: [
+                'För att flytta texten klickar du och drar den vart som helst på canvasen. För exakt pixelplacering kan du använda piltangenterna på tangentbordet (håll Shift för steg om 10 pixlar). För att ändra storlek på textrutan drar du i något av de åtta handtagen för storleksändring (hörn och kanter) som visas runt det markerade lagret.',
+              ],
+            },
+            {
+              heading: 'Steg 3 - Lägg till ett bildlager för vattenstämpel (logotyp)',
+              paragraphsBefore: [
+                'Om du vill använda en logotyp, signatur eller någon annan bild som vattenstämpel i stället för - eller tillsammans med - text, klickar du på den blå knappen "Add Image" i den högra panelen. Din filväljare öppnas så att du kan välja vattenstämpelbilden från enheten.',
+                'Verktyget storleksanpassar automatiskt vattenstämpelbilden till ungefär 30% av canvasens bredd samtidigt som det ursprungliga bildförhållandet bevaras, och centrerar den på canvasen. Därifrån kan du dra den till valfri position, ändra storlek med hörnhandtagen (som låser proportionerna) eller rotera den med det särskilda roteringshandtaget som visas ovanför det markerade lagret.',
+                'För vattenstämpellager av bildtyp visar den högra panelen dessutom extra kontroller:',
+              ],
+              bullets: [
+                'Opacitet - samma som för textlager, idealiskt för transparenta PNG-logotyper',
+                'Vänd horisontellt / vänd vertikalt - spegla vattenstämpeln vid behov',
+                'Rambredd, ramfärg och ramstil - lägg till en synlig ram runt logotypvattenstämpeln',
+                'Hörnradie - rundade hörn på logotypvattenstämpeln, antingen jämnt eller med separat kontroll för varje hörn',
+                'Rotation - samma mjuka rotationsbeteende som för textlager',
+              ],
+            },
+          ],
+        },
+        {
+          id: 'wm-blog-tips',
+          tocLabel: 'Proffstips',
+          title: 'Proffstips för att få bästa resultat',
+          bullets: [
+            'Använd en halvtransparent PNG-logotyp för maximal professionalitet. En logotypvattenstämpel med transparent bakgrund och 40-50% opacitet ser mycket mer polerad ut än ren text. Exportera din logotyp från ditt designverktyg som en PNG med alfa-transparens innan du använder den som bildlager.',
+            'Placera din vattenstämpel där beskärning tar bort värde. Det nedre högra hörnet är den vanligaste placeringen - och den enklaste att beskära bort. För starkare skydd, överväg att placera din vattenstämpel över ett visuellt viktigt område av bilden, till exempel över ett ansikte, en produktdetalj eller fokuspunkten. Den diagonala kaklingsvyn är ännu svårare att ta bort utan att försämra bilden avsevärt.',
+            'Använd låsfunktionen när du arbetar med flera lager. När du är nöjd med huvudvattenstämpelns placering, lås det lagret innan du lägger till sekundära lager. Det förhindrar att du råkar flytta det medan du arbetar med andra element.',
+            'Testa över ljusa och mörka områden i bilden. En vit vattenstämpel är osynlig mot en ljus himmel men perfekt läsbar mot en mörk skugga. Lägg till en diskret kontur eller bakgrundsfärg för att säkerställa läsbarhet oavsett vad som finns under vattenstämpeln.',
+            'Tangentbordsgenvägar sparar alltid tid. Piltangenterna flyttar markerade lager en pixel i taget. Skift + pil flyttar tio pixlar i taget. Delete-tangenten tar bort det markerade lagret direkt. Dessa genvägar gör finjustering mycket snabbare än att dra med musen.',
+          ],
+        },
+        {
+          id: 'wm-blog-privacy',
+          tocLabel: 'Sekretess och säkerhet',
+          title: 'Sekretess och säkerhet: Varför webbläsarbaserad bearbetning spelar roll',
+          paragraphs: [
+            'En oro många skapare har när de använder onlineverktyg är vart deras bilder faktiskt tar vägen. Med serverbaserade vattenstämpelverktyg laddas din bild upp till leverantörens server, bearbetas där och skickas sedan tillbaka till dig. Det betyder att ditt opublicerade arbete, klientfoton eller känsliga produktbilder passerar genom någon annans infrastruktur.',
+            'Photremiums vattenstämpelverktyg bearbetar allt lokalt i din webbläsare. Dina bilder läses in i enhetens minne med webbläsarens File API och skickas aldrig över internet. Renderingen av vattenstämpeln sker på ett HTML5-canvaselement som kör JavaScript helt inom webbläsarfliken. När du stänger sidan eller klickar på "Start Over" frigörs all bilddata från minnet och kastas bort. Inget lagras någon annanstans än på din egen enhet.',
+          ],
+        },
+        {
+          id: 'wm-blog-summary',
+          tocLabel: 'Slutlig sammanfattning',
+          title: 'Varför Photremiums vattenstämpelverktyg förtjänar en plats i ditt ordinarie arbetsflöde',
+          paragraphs: [
+            'Det finns dussintals vattenstämpelverktyg online. Det som skiljer ett verktyg värt att bokmärka från ett verktyg värt att glömma är oftast en kombination av hastighet, kontroll och tillförlitlighet.',
+            'Hastighet spelar roll eftersom vattenstämpling inte ska lägga till någon större tid i ditt efterbehandlingsflöde. Photremium-verktyget laddas direkt, bearbetar lokalt och exporterar i full upplösning på några sekunder - även för stora batcher. Ingen väntan på serverbearbetning, ingen kö, ingen renderingtidsökning som beror på hur många användare som är online samtidigt.',
+            'Kontroll spelar roll eftersom en vattenstämpel som ser fel ut är värre än ingen vattenstämpel alls - den får ditt varumärke att se oprofessionellt ut. Lagersystemet, de egenskapsspecifika kontrollerna i verktygsfältet, den realtidsvisa förhandsgranskningen på canvasen och stödet för tangentbordsgenvägar ger tillsammans en kontrollnivå som verkligen kan jämföras med dedikerad skrivbordsprogramvara.',
+            'Tillförlitlighet spelar roll eftersom ditt opublicerade arbete är värdefullt. Att veta att dina bilder aldrig lämnar internet och går till en tredje parts server betyder att du kan vattenstämpla klientfoton, ännu inte lanserade produktbilder och känsligt kreativt arbete utan någon oro för datahantering, serverintrång eller policyändringar hos en molnleverantör.',
+            'Oavsett om du lägger till en snabb copyrightnotis på ett enda foto eller bearbetar en hel fotografering med 200 bilder innan du delar ett kundgalleri, ger Photremiums Watermark Image-verktyg dig verktygen att göra det rätt - helt gratis, helt privat och med tillräcklig kreativ flexibilitet för att få vattenstämpeln att se ut som om den hör hemma i bilden snarare än fastklistrad ovanpå den.',
+            'Gå till photremium.com/watermark-image och prova själv. Din första vattenstämplade bild är bokstavligen trettio sekunder bort.',
+            'Photremium erbjuder en uppsättning webbläsarbaserade verktyg för bildredigering och bildbearbetning. Alla verktyg körs lokalt i din webbläsare - dina bilder stannar på din enhet.',
+          ],
+        },
+      ],
+    },
   },
 
   qrGenerator: {
@@ -1515,11 +1694,16 @@ common: {
       { q: 'Skickas mina bilder till en server?', a: 'Nej. AI-modellen körs helt i webbläsaren med WebAssembly.' },
     ],
     watermarkImage: [
-      { q: 'Vilka typer av vattenstämplar kan läggas till?', a: 'Du kan lägga till textvattenstämplar med anpassade typsnitt, storlekar, färger och opacitet, samt bildvattenstämplar som logotyper.' },
-      { q: 'Kan jag använda samma vattenstämpel på flera bilder?', a: 'Ja. Ladda upp flera bilder, konfigurera vattenstämpeln en gång och den tillämpas på alla.' },
-      { q: 'Minskar vattenstämpeln bildkvaliteten?', a: 'Nej. Vattenstämpeln komponeras på originalbilden i full upplösning.' },
-      { q: 'Kan jag justera vattenstämpelns opacitet?', a: 'Absolut. Använd opacitetsreglaget för att justera.' },
-      { q: 'Skickas data till en server?', a: 'Nej. All vattenstämpelhantering sker lokalt i webbläsaren.' },
+      { q: '1. Är Photremiums vattenstämpelverktyg helt gratis att använda?', a: 'Ja, vattenstämpelverktyget på photremium.com/watermark-image är gratis att använda utan konto och utan prenumeration. Du kan lägga vattenstämpel på enstaka bilder eller hela batcher utan betalvägg, utan tvingad registrering och utan någon nedladdningsgräns. Verktyget finansieras genom att hela Photremium-plattformen blir tillräckligt användbar för att folk ska vilja komma tillbaka, inte genom att låsa enskilda funktioner.' },
+      { q: '2. Hur många bilder kan jag lägga vattenstämpel på samtidigt?', a: 'Verktyget stöder batchbearbetning av flera bilder samtidigt. Du kan dra och släppa en hel mapp med bilder i uppladdningsytan, eller använda Ctrl+klick i filväljaren för att markera dussintals filer på en gång. Vänsterpanelen visar alla miniatyrer, och när du klickar på “Vattenstämpla och ladda ner alla” renderar verktyget varje bild med dina valda vattenstämpellager innan de paketeras i en enda ZIP-fil, eller laddas ner som separata filer om du föredrar det. I praktiken begränsas batchstorleken av enhetens tillgängliga minne, inte av någon artificiell gräns i verktyget.' },
+      { q: '3. Vilka bildformat stöds för in- och utdata?', a: 'Inmatningen accepterar alla bildformat som webbläsarens File API klarar av, vilket i praktiken betyder JPEG, JPG, PNG, WEBP, GIF (statisk), BMP och SVG. För utdata följer formatet källbilden: laddar du upp en PNG får du tillbaka en PNG; laddar du upp en JPEG får du tillbaka en JPEG med kvalitet 0,95. Det här bevarar formatet så att du inte råkar konvertera en förlustfri PNG till en förlustkomprimerad JPEG.' },
+      { q: '4. Kommer min vattenstämpel att se likadan ut på bilder med olika upplösning?', a: 'Ja, tack vare verktygets proportionella omplaceringsmotor. När du har en batch med bilder i olika dimensioner skapas vattenstämpeln på referensbilden, alltså den som är vald i arbetsytan. Vid export beräknar motorn tyngdpunkten för varje vattenstämpellager på referensbilden, uttrycker positionen som ett fraktionellt avstånd från bildens centrum och använder samma proportionella förskjutning på varje målbilder. Storleken skalar också proportionellt med den mindre av de två skalfaktorerna, alltså breddförhållande eller höjdförhållande, så att vattenstämpeln aldrig hamnar utanför bildens kant. Resultatet är en vattenstämpel som behåller sin relativa placering och storlek genom hela batchen även när bildstorlekarna varierar.' },
+      { q: '5. Kan jag använda min egen logotyp eller signatur som vattenstämpel i stället för text?', a: 'Absolut. Knappen “Lägg till bild” i högra panelen låter dig ladda upp valfri bild från enheten och använda den som ett vattenstämpellager. PNG-filer med transparent bakgrund fungerar bäst eftersom transparensen bevaras, så att bara logotypen syns utan en vit eller färgad ruta bakom. Du kan ändra storleken genom att dra i hörnhandtagen, rotera, spegelvända, justera opaciteten och även lägga till kant eller rundade hörn. Många användare sparar en transparent version av sin logotyp just för vattenstämplar.' },
+      { q: '6. Hur gör jag min vattenstämpel genomskinlig eller halvgenomskinlig?', a: 'Markera vattenstämpellagret genom att klicka på det. I den övre verktygsraden som visas hittar du opacitetskontrollen, som visar ett procentvärde och låter dig skriva in ett tal direkt eller dra i reglaget. För en diskret och professionell vattenstämpel som inte tar över bilden är 30–50% opacitet det vanligaste valet. För ett tydligare upphovsrättsmärke som är svårare att missa fungerar 70–80% bra. Du kan också snabbt jämföra genom att slå av och på lagrets synlighet i lagerhanteraren med ögonikonen.' },
+      { q: '7. Kan jag lägga till flera vattenstämplar i en enda bild?', a: 'Ja, lagerbaseringen stöder ett obegränsat antal vattenstämpellager som kan konfigureras var för sig. Du kan ha ett textmärke för upphovsrätt nere till höger, en logotyp uppe till vänster och ett upprepat “SAMPLE”-lager samtidigt. Varje lager har egen opacitet, rotation, position, storlek och stilinställningar. Lagerhanteraren i högerpanelen håller ordning på dem, och du kan slå av eller på enskilda lager utan att radera dem, vilket gör det enkelt att testa olika kombinationer innan du bestämmer dig.' },
+      { q: '8. Vad gör tiling-funktionen och när bör jag använda den?', a: 'Tiling upprepar din vattenstämpel i ett rutmönster över hela bilden. Alternativet Grid 2×2 placerar fyra kopior i en två gånger två-matris; Grid 3×3 placerar nio kopior i en tre gånger tre-matris. Kontroll för tile-avstånd justerar mellanrummen mellan kopiorna. Tiling är mest användbart när du vill göra en bild oanvändbar utan tillstånd. En vattenstämpel i ett hörn är relativt lätt att beskära bort, men ett rutmönster över hela bilden gör den i praktiken oanvändbar utan vattenstämpeln. Den metoden passar för kontraktsförhandsvisningar, utkast till kundgranskning eller annat content som inte ska kunna användas fritt innan betalning.' },
+      { q: '9. Fungerar verktyget på mobiltelefoner och surfplattor?', a: 'Ja, verktyget är helt responsivt och byggt för mobil användning. På skärmar smalare än 900 pixlar växlar den trepaneliga layouten till en staplad vy: miniatyrerna blir en horisontellt skrollbar rad överst, arbetsytan fyller huvudytan och inställningspanelen blir ett nederblad som skjuts upp när du trycker på den flytande kugghjulsknappen. Alla interaktiva element, som dragning av lager, storlekshandtag och rotation, är touchaktiverade med touchstart- och touchmove-händelser. Storlekshandtagen är också något större på mobil, 16×16 pixlar i stället för skrivbordsversionens storlek, så att de är lättare att träffa med fingret.' },
+      { q: '10. Är mina bilddata privata? Laddas mina foton upp till någon server?', a: 'Dina bilder lämnar aldrig din enhet. Hela vattenstämpelflödet, från att ladda bilder till att rendera lager och exportera den färdiga filen, sker i din webbläsare med JavaScript och HTML5 Canvas API. När du laddar upp en bild skapar File API en minnesrepresentation av filen. När du lägger till ett vattenstämpellager ritas det på ett osynligt canvas-element. När du laddar ner resultatet omvandlas canvasens pixeldata till en Blob och skickas till webbläsaren för nedladdning, helt lokalt. Ingen nätverksförfrågan som innehåller bilddata görs. Dessutom finns ett skydd mot att lämna sidan: om du försöker stänga eller navigera bort medan bilder är laddade, ber webbläsaren dig bekräfta så att du inte råkar förlora pågående arbete.' },
     ],
     qrCodeGenerator: [
       { q: 'Förfaller denna QR-kod?', a: 'Nej, dessa QR-koder förfaller inte och garanterar livslång support. Eftersom de lagrar hårdkodade instruktioner i form av bitar i kvadratiska rutor, kan informationen som lagras i dem inte ändras eller tas bort. Du kan komma åt information i koden bara genom att skanna den med valfri kamera, även efter år.' },

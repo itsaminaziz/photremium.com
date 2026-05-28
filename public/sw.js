@@ -1,4 +1,4 @@
-const CACHE_VERSION = 'photremium.com-assets-v2';
+const CACHE_VERSION = 'photremium.com-assets-v3-network-first';
 const CACHE_NAME = `${CACHE_VERSION}`;
 
 const ASSETS_TO_CACHE = [
@@ -45,25 +45,53 @@ self.addEventListener('fetch', (event) => {
   const requestUrl = new URL(event.request.url);
   if (requestUrl.origin !== self.location.origin) return;
 
-  const isCachedAsset = scopedAssets.includes(requestUrl.pathname);
-  if (!isCachedAsset) return;
+  const pathname = requestUrl.pathname;
+  
+  // IMPORTANT: Never cache JS bundles - they must hit network first for instant updates
+  const isJsBundle = pathname.includes('/static/js/') || pathname.includes('bundle') || pathname.endsWith('.js');
+  const isCachedAsset = scopedAssets.includes(pathname);
 
-  event.respondWith(
-    caches.match(event.request).then((cachedResponse) => {
-      if (cachedResponse) return cachedResponse;
-
-      return fetch(event.request).then((networkResponse) => {
-        if (!networkResponse || networkResponse.status !== 200) {
+  // Strategy 1: JS bundles - network-first (network revalidate, cached fallback)
+  if (isJsBundle) {
+    event.respondWith(
+      fetch(event.request)
+        .then((networkResponse) => {
+          if (!networkResponse || networkResponse.status !== 200) {
+            return networkResponse;
+          }
+          const responseClone = networkResponse.clone();
+          caches.open(CACHE_NAME).then((cache) => {
+            cache.put(event.request, responseClone);
+          });
           return networkResponse;
-        }
+        })
+        .catch(() => {
+          // If network fails, use cached version
+          return caches.match(event.request);
+        })
+    );
+    return;
+  }
 
-        const responseClone = networkResponse.clone();
-        caches.open(CACHE_NAME).then((cache) => {
-          cache.put(event.request, responseClone);
+  // Strategy 2: Static assets (images, etc) - cache-first
+  if (isCachedAsset) {
+    event.respondWith(
+      caches.match(event.request).then((cachedResponse) => {
+        if (cachedResponse) return cachedResponse;
+
+        return fetch(event.request).then((networkResponse) => {
+          if (!networkResponse || networkResponse.status !== 200) {
+            return networkResponse;
+          }
+
+          const responseClone = networkResponse.clone();
+          caches.open(CACHE_NAME).then((cache) => {
+            cache.put(event.request, responseClone);
+          });
+
+          return networkResponse;
         });
-
-        return networkResponse;
-      });
-    })
-  );
+      })
+    );
+  }
 });

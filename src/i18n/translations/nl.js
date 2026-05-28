@@ -1031,6 +1031,239 @@ common: {
     typeHere: 'Typ hier...',
     linkCorners: 'Hoeken Koppelen',
     separateCorners: 'Hoeken Scheiden',
+    blog: {
+      tocTitle: 'Inhoud',
+      sections: [
+        {
+          id: 'wm-blog-intro',
+          tocLabel: 'Overzicht van de watermerkgereedschap',
+          title: 'Hoe voeg je online een watermerk toe aan je afbeeldingen — de complete gids voor Photremium’s watermerkgereedschap',
+          paragraphs: [
+            'Je hebt net een prachtige foto bewerkt. Misschien is het een productfoto voor je winkel, een portret uit een klantensessie of een digitaal kunstwerk waaraan je uren hebt gesleuteld. En dan komt de vraag die elke maker uiteindelijk moet beantwoorden: hoe bescherm je het voordat je het deelt?',
+            'Het antwoord waar de meeste professionals op uitkomen is een watermerk — en met goede reden. Een goed geplaatst watermerk werkt als een permanente handtekening op je werk, waardoor het herleidbaar, gebrandmerkt en aanzienlijk moeilijker te stelen is.',
+            'Het probleem waar de meeste mensen tegenaan lopen is simpel: de online tools zijn ofwel te onhandig, zitten achter een abonnement, of produceren een zó zwaar watermerk dat het de afbeelding volledig verpest.',
+            'Photremium’s Watermark Image-tool is gebouwd om dat allemaal op te lossen. Het is een volledig browsergebaseerde, gratis, accountloze watermerk-werkruimte die rechtstreeks in je browser draait zonder je bestanden ooit naar een server te uploaden. Alles blijft lokaal, alles blijft snel en het niveau van creatieve controle is vergelijkbaar met wat je van desktopsoftware zou verwachten. In deze gids laten we precies zien hoe het werkt, voor wie het is gemaakt en hoe je telkens weer de beste resultaten behaalt.',
+          ],
+        },
+        {
+          id: 'wm-blog-what-is',
+          tocLabel: 'Wat is een watermerk',
+          title: 'Wat is een watermerk en waarom is het belangrijk?',
+          paragraphs: [
+            'Voordat we in de tool zelf duiken, is het nuttig om te begrijpen wat een watermerk doet en waarom zoveel fotografen, ontwerpers en contentmakers het onmisbaar vinden.',
+            'Een watermerk is een zichtbare overlay die aan een afbeelding wordt toegevoegd — meestal tekst, een logo of een copyrightsymbool — en die de maker of eigenaar van de inhoud identificeert. In tegenstelling tot metadata (die verborgen in het bestand zitten en in enkele seconden kunnen worden verwijderd) is een watermerk visueel in de afbeelding zelf ingebed. Je kunt het niet zomaar met een rechtermuisklik verwijderen zonder de beeldkwaliteit merkbaar aan te tasten.',
+          ],
+          subSections: [
+            {
+              title: 'Waarom makers watermerken gebruiken',
+              paragraphs: [
+                'De praktische redenen om je afbeeldingen van een watermerk te voorzien komen neer op drie kernpunten.',
+              ],
+              bullets: [
+                'Eigendom identificeren. Wanneer je werk wordt gedeeld op sociale media, Pinterest-borden of wordt ingebed in blogposts, raakt de oorspronkelijke bronvermelding vaak kwijt. Een watermerk zorgt ervoor dat je naam of merk met de afbeelding meereist, waar die ook belandt.',
+                'Diefstal ontmoedigen. De meeste gelegenheidsdieven van afbeeldingen zoeken de weg van de minste weerstand. Een professioneel ogend watermerk, vooral wanneer het goed gepositioneerd en licht transparant is, geeft een duidelijk signaal: deze afbeelding behoort toe aan iemand die om zijn werk geeft.',
+                'Bescherming van klantportfolio’s. Fotografen die previews delen met klanten vóór de eindbetaling, gebruiken vaak watermerken om te voorkomen dat klanten de preview gebruiken zonder de factuur te voldoen. Een subtiel watermerk bereikt dit zonder de preview te veel af te leiden.',
+              ],
+            },
+            {
+              title: 'Wie zou zijn afbeeldingen van een watermerk moeten voorzien',
+              paragraphs: [
+                'Als je in een van de volgende categorieën valt, is het niet optioneel om je afbeeldingen vóór het online delen van een watermerk te voorzien — het is essentieel:',
+              ],
+              bullets: [
+                'Freelance fotografen die galerijen delen met klanten',
+                'Grafisch ontwerpers die portfoliosamples verspreiden',
+                'E-commerceverkopers die productfoto’s tonen vóór licentieafspraken',
+                'Digitale kunstenaars die hun werk delen op sociale platforms',
+                'Bloggers en contentmakers van wie afbeeldingen regelmatig opnieuw worden gebruikt',
+                'Stockfotobijdragers die een herkenbaar merk opbouwen',
+              ],
+            },
+          ],
+        },
+        {
+          id: 'wm-blog-workspace',
+          tocLabel: 'Werkruimtepanelen',
+          title: 'Binnen Photremium’s watermerkgereedschap: een werkruimte met drie panelen, gebouwd voor echte workflows',
+          paragraphs: [
+            'Wat de watermerktool van Photremium onderscheidt van eenvoudige online watermerk-tools is het werkruimteontwerp. In plaats van een simpele “typ tekst, kies positie, klaar”-aanpak, biedt de tool een indeling met drie panelen die doet denken aan professionele ontwerpsoftware — behalve dat het volledig in je browser draait, zonder installatie.',
+          ],
+          subSections: [
+            {
+              title: 'Het linker canvaspaneel',
+              paragraphs: [
+                'Het canvaspaneel neemt het grootste deel van het scherm in beslag en laat je precies zien hoe je afbeelding eruitziet met het watermerk in realtime toegepast. Elke wijziging die je aanbrengt — de dekking aanpassen, een tekstlaag verplaatsen, een logo schalen — zie je direct op het canvas. Er is geen knop “preview” om op te klikken. Wat je ziet is wat je krijgt.',
+                'Het canvas bevat ook een ingebouwde zoomwerkbalk, zodat je kunt inzoomen voor precieze uitlijning en uitzoomen voor het grotere geheel. De functie zoom-to-fit berekent automatisch de beste beginschaal op basis van je schermgrootte, zodat zelfs hoge-resolutie afbeeldingen op een comfortabele werkmaat worden geladen. Uitlijningshulplijnen verschijnen dynamisch wanneer je een laag dicht bij het horizontale of verticale midden van de afbeelding sleept, waardoor het watermerk met een bevredigende precisie precies gecentreerd wordt — iets wat je normaal alleen uit Photoshop zou verwachten.',
+              ],
+            },
+            {
+              title: 'Het rechter instellingenpaneel',
+              paragraphs: [
+                'Het rechterpaneel is het controlecentrum. Hier beheer je je watermerklagen, pas je hun uiterlijk aan en start je de uiteindelijke export. Op desktop staat het vast aan de rechterkant van het scherm. Op mobiele apparaten schuift het omhoog als een bottom sheet — aangestuurd door een zwevende tandwielknop — zodat het je canvas nooit bedekt terwijl je werkt.',
+                'Binnen het rechterpaneel vind je de lagenbeheerder, die elk toegevoegd watermerkelement opsomt. Elke laagregel toont het type laag (tekst of afbeelding), de huidige naam of inhoud, en drie snelle actieknoppen: een zichtbaarheidsschakelaar (het oog-icoon), een vergrendelschakelaar om een laag op zijn plek te houden terwijl je aan andere lagen werkt, en een verwijderknop.',
+              ],
+            },
+            {
+              title: 'De linkse previewstrook (meerdere afbeeldingen)',
+              paragraphs: [
+                'Wanneer je met meerdere afbeeldingen tegelijk werkt — een batch productfoto’s, een complete portretsessie — verschijnt er uiterst links een verticale miniatuurstrook. Dat is de afbeeldingsrij, met verkleinde previews van elk bestand dat je hebt geladen. Door op een miniatuur te klikken schakel je je canvas direct naar die afbeelding, zodat je kunt controleren hoe het watermerk eruitziet in verschillende composities zonder je laaginstellingen te verliezen.',
+                'De strook toont ook de bestandsgrootte in KB of MB, plus het bestandsformaatlabel (JPG, PNG, WEBP), zodat je in één oogopslag weet waarmee je werkt.',
+              ],
+            },
+          ],
+        },
+        {
+          id: 'wm-blog-steps',
+          tocLabel: 'Stap voor stap',
+          title: 'Stap voor stap: hoe je een watermerk toevoegt aan je afbeelding in Photremium',
+          paragraphs: [
+            'Deze uitleg is rechtstreeks gebaseerd op hoe de tool onder de motorkap werkt — van het uploaden via slepen en neerzetten tot de canvas-renderengine die je watermerk permanent op de afbeelding schrijft vóór het downloaden.',
+          ],
+          steps: [
+            {
+              heading: 'Stap 1 — Upload je afbeelding(en)',
+              paragraphsBefore: [
+                'Ga naar photremium.com/watermark-image. Je komt op het uploadscherm terecht, met een nette drag-and-dropzone in het midden van de pagina.',
+                'Je hebt drie manieren om je afbeelding in de tool te krijgen:',
+              ],
+              bullets: [
+                'Slepen en neerzetten. Sleep een of meer afbeeldingsbestanden vanaf je bureaublad rechtstreeks naar de dropzone. De tool accepteert elk standaard afbeeldingsformaat — JPEG, PNG, WEBP en meer. Wanneer je bestanden over de werkruimte sleept, activeert er een paarse rand rond het hele gebied met de visuele melding “Drop images to add for watermarking”, zodat je weet dat het neerzetten wordt geregistreerd.',
+                'Klik om te bladeren. Klik op de knop “Choose Files” in de dropzone om de bestandskiezer van je systeem te openen. Je kunt meerdere bestanden tegelijk selecteren met Ctrl+Click (Windows) of Cmd+Click (Mac).',
+                'Plakken vanuit het klembord. Als je een afbeelding naar je klembord hebt gekopieerd — vanuit een screenshot, een andere app of een webbrowser — druk dan gewoon op Ctrl+V (of Cmd+V op Mac) terwijl je op de watermarkpagina bent en de afbeelding wordt direct in de werkruimte geladen. Dit werkt zelfs wanneer er al meerdere afbeeldingen zijn geladen.',
+              ],
+              paragraphsAfter: [
+                'Zodra de eerste afbeelding is geladen, schakelt de werkruimte over van het uploadscherm naar de volledige driepanelen-editor, en het canvas toont je afbeelding op een automatisch berekend zoomniveau dat op het scherm past.',
+              ],
+            },
+            {
+              heading: 'Stap 2 — Voeg een tekst-watermerklag toe',
+              paragraphsBefore: [
+                'Klik op de paarse knop “Add Text” in het rechterpaneel. Er verschijnt een nieuwe tekstlaag op je canvas met de standaard placeholdertekst “Type here...” al geselecteerd.',
+                'Je kunt meteen beginnen te typen. De tekst wordt live op het canvas weergegeven in wit Arial, op een standaardgrootte die is afgestemd op de afmetingen van je afbeelding. Vanuit de bovenste werkbalk die verschijnt wanneer de tekstlaag is geselecteerd, kun je elk aspect van de tekst aanpassen:',
+              ],
+              bullets: [
+                'Lettertypefamilie — kies uit 12 ingebouwde lettertypen, waaronder Arial, Georgia, Impact, Brush Script MT, Comic Sans MS en meer',
+                'Lettergrootte — typ direct een aangepaste pixelwaarde of gebruik de stapknoppen',
+                'Vet, cursief, onderstrepen — schakel elke combinatie van deze stijlen in',
+                'Tekstkleur — klik op het kleurstaal om de kleurkiezer te openen en kies elke hexkleur',
+                'Achtergrondkleur — voeg een gekleurde achtergrond achter je tekst toe voor een label- of badge-uiterlijk',
+                'Lijn (outline) — stel een lijnbreedte en kleur in voor maximale leesbaarheid op lichte en donkere afbeeldingen',
+                'Dekking — schuif van 0% (onzichtbaar) tot 100% (volledig ondoorzichtig); de meeste watermerken zitten tussen 30% en 60%',
+                'Uitlijning — links, gecentreerd of rechts uitlijnen binnen het kader',
+                'Rotatie — roteer de tekstlaag naar elke hoek, met magnetische snap-punten bij 0°, 90°, 180° en 270° voor snelle rechte plaatsing',
+              ],
+              paragraphsAfter: [
+                'Om de tekst te verplaatsen, klik en sleep je hem naar elke gewenste plek op het canvas. Voor fijne pixel-nauwkeurige plaatsing gebruik je de pijltoetsen op je toetsenbord (houd Shift ingedrukt voor stappen van 10 pixels). Om het tekstvak te schalen, sleep je een van de acht resize-handles (hoeken en randen) die rond de geselecteerde laag verschijnen.',
+              ],
+            },
+            {
+              heading: 'Stap 3 — Voeg een afbeeldings- (logo) watermerklag toe',
+              paragraphsBefore: [
+                'Als je een logo, handtekening of elke andere afbeelding als watermerk wilt gebruiken in plaats van — of naast — tekst, klik dan op de blauwe knop “Add Image” in het rechterpaneel. Je bestandskiezer opent zodat je het watermerkafbeeldingsbestand van je apparaat kunt selecteren.',
+                'De tool schaalt de watermerkafbeelding automatisch naar ongeveer 30% van de breedte van je canvas, met behoud van de oorspronkelijke beeldverhouding, en centreert deze op het canvas. Van daaruit kun je hem naar elke positie slepen, van formaat wijzigen met de hoekhandvatten (die de beeldverhouding behouden) of roteren met de speciale draaigreep die boven de geselecteerde laag verschijnt.',
+                'Voor watermerklagen van het afbeeldingstype biedt het rechterpaneel extra instellingen:',
+              ],
+              bullets: [
+                'Dekking — hetzelfde als bij tekstlagen, ideaal voor transparante PNG-logo’s',
+                'Horizontaal spiegelen / Verticaal spiegelen — spiegel het watermerk indien nodig',
+                'Randbreedte, randkleur en randstijl — voeg een zichtbare rand toe rond het logo-watermerk',
+                'Randradius — rond de hoeken van het logo-watermerk af, uniform of per hoek afzonderlijk',
+                'Rotatie — hetzelfde vloeiende rotatiegedrag als bij tekstlagen',
+              ],
+            },
+            {
+              heading: 'Stap 4 — Stel tiling in (optioneel)',
+              paragraphsBefore: [
+                'Een van de krachtigste functies in de tool is tiling — de mogelijkheid om je watermerk over de hele afbeelding in een rasterpatroon te herhalen. Dit is vooral handig wanneer je een afbeelding onbruikbaar wilt maken voor herpublicatie in plaats van alleen maar te brandmerken.',
+                'Met een geselecteerde laag zoek je in de werkbalk naar de tile-optie. Je kunt deze instellen op:',
+              ],
+              bullets: [
+                'Geen — enkele plaatsing (standaard)',
+                '2×2 raster — herhaalt het watermerk in een patroon van 2 kolommen en 2 rijen',
+                '3×3 raster — herhaalt in een 3×3 raster voor dichtere dekking',
+              ],
+              paragraphsAfter: [
+                'Je kunt ook de tile-afstand aanpassen, wat de ruimte tussen elke herhaling bepaalt. Het canvas toont ghost-previews van alle getegelde kopieën, zodat je het volledige dekkingspatroon kunt zien voordat je downloadt.',
+              ],
+            },
+            {
+              heading: 'Stap 5 — Gebruik de lagenbeheerder voor meerdere watermerken',
+              paragraphsBefore: [
+                'Je kunt zoveel lagen toevoegen als je wilt — tekst- en afbeeldingswatermerken vrij combineren. De lagenbeheerder in het rechterpaneel toont ze allemaal. Je kunt:',
+              ],
+              bullets: [
+                'Individuele lagen tonen/verbergen met het oog-icoon — handig om te wisselen tussen verschillende watermerkversies zonder iets te verwijderen',
+                'Een laag vergrendelen om te voorkomen dat deze per ongeluk verschuift terwijl je aan andere lagen werkt',
+                'Een laag permanent verwijderen',
+              ],
+              paragraphsAfter: [
+                'Door op een laag in de lijst te klikken, selecteer je die ook direct op het canvas, zodat je gemakkelijk tussen lagen kunt schakelen zonder op de afbeelding te hoeven zoeken.',
+              ],
+            },
+            {
+              heading: 'Stap 6 — Wissel tussen meerdere afbeeldingen',
+              paragraphsBefore: [
+                'Als je meer dan één afbeelding hebt geüpload, gebruik dan de miniatuurstrook links om de actieve canvasafbeelding te wisselen. De watermerklagen die je hebt ingesteld, gelden universeel — ze worden bij export op elke afbeelding in je batch gerenderd.',
+                'De tool voert ook een controle op resolutieconsistentie uit over je batch. Als je afbeeldingen aanzienlijk verschillende afmetingen hebben (meer dan 5% verschil in breedte of hoogte), verschijnt er een waarschuwing die aangeeft dat de watermerkpositie er per afbeelding anders uit kan zien door het verschil in grootte. De engine handelt dit soepel af via een proportioneel herplaatsingsalgoritme: hij berekent de watermerkpositie als percentage van de afmetingen van de referentieafbeelding en past dezelfde proportionele plaatsing toe op elke andere afbeelding in de batch, zodat de visuele intentie behouden blijft, zelfs bij verschillende resoluties.',
+              ],
+            },
+            {
+              heading: 'Stap 7 — Stel je downloadvoorkeuren in',
+              paragraphsBefore: [
+                'Voor opdrachten met één afbeelding klik je op de knop “Download” onder het canvas om de watermerkafbeelding direct op te slaan. De bestandsnaam wordt automatisch ingesteld op je oorspronkelijke bestandsnaam met “-watermarked” vóór de extensie. JPEG-afbeeldingen worden geëxporteerd op kwaliteit 0.95 — hoog genoeg om op normale weergavegroottes niet te onderscheiden te zijn van het origineel. PNG-afbeeldingen worden als verliesloze PNG geëxporteerd.',
+                'Voor batchopdrachten (meerdere afbeeldingen) heb je twee downloadmodi die je in het rechterpaneel kunt kiezen:',
+              ],
+              bullets: [
+                'ZIP-bestand — alle watermerkafbeeldingen worden verpakt in één ZIP-archief dat met één klik wordt gedownload. De tool laadt JSZip dynamisch om de compressie af te handelen.',
+                'Losse bestanden — elke afbeelding wordt als een afzonderlijk bestand gedownload, met een korte pauze tussen elke download om browser-throttling te voorkomen.',
+              ],
+            },
+            {
+              heading: 'Stap 8 — Download en controleer',
+              paragraphsBefore: [
+                'Na het klikken op de downloadknop (of de knop “Watermark & Download All” voor batches) rendert de tool elke afbeelding op een verborgen HTML5 canvas-element op volledige native resolutie — niet op het verkleinde previewformaat dat je op het scherm ziet. Dat betekent dat de geëxporteerde afbeelding op 100% van de oorspronkelijke pixelafmetingen staat, met het watermerk op proportioneel juiste grootte getekend. Open het gedownloade bestand en zoom in om te controleren of de plaatsing en kwaliteit van het watermerk aan je verwachtingen voldoen.',
+                'Ziet iets er niet goed uit, ga dan gewoon terug naar de werkruimte — je lagen zijn er nog steeds — pas aan en download opnieuw.',
+              ],
+            },
+          ],
+        },
+        {
+          id: 'wm-blog-tips',
+          tocLabel: 'Pro-tips',
+          title: 'Pro-tips voor de beste resultaten',
+          bullets: [
+            'Gebruik een semi-transparant PNG-logo voor een zo professioneel mogelijke uitstraling. Een logo-watermerk met een transparante achtergrond en 40–50% dekking ziet er veel verzorgder uit dan solide tekst. Exporteer je logo vanuit je ontwerptool als PNG met alfatransparantie voordat je het als afbeeldingslaag gebruikt.',
+            'Plaats je watermerk op een plek waar het wegcroppen ervan waarde wegneemt. De rechteronderhoek is de meest voorkomende watermerkpositie — en de makkelijkste om weg te snijden. Voor sterkere bescherming kun je je watermerk over een visueel belangrijk deel van de afbeelding plaatsen, zoals over een gezicht, een productdetail of het focuspunt. De diagonale tile-optie is nog moeilijker te verwijderen zonder de afbeelding merkbaar te verslechteren.',
+            'Gebruik de vergrendelfunctie wanneer je met meerdere lagen werkt. Zodra je tevreden bent met de primaire watermerkpositie, vergrendel je die laag voordat je secundaire lagen toevoegt. Zo voorkom je dat je hem per ongeluk verplaatst terwijl je aan andere elementen werkt.',
+            'Test op lichte en donkere delen van je afbeelding. Een wit watermerk is onzichtbaar tegen een heldere lucht maar perfect leesbaar op een donkere schaduw. Voeg een subtiele lijn of achtergrondkleur toe om de leesbaarheid te garanderen, ongeacht wat er onder het watermerk zit.',
+            'Sneltoetsen besparen altijd tijd. Pijltjestoetsen verplaatsen de geselecteerde laag één pixel tegelijk. Shift+Pijl verplaatst tien pixels per keer. De Delete-toets verwijdert de geselecteerde laag onmiddellijk. Deze sneltoetsen maken het fijnafstemmen van de plaatsing veel sneller dan slepen.',
+          ],
+        },
+        {
+          id: 'wm-blog-privacy',
+          tocLabel: 'Privacy en veiligheid',
+          title: 'Privacy en veiligheid: waarom browsergebaseerde verwerking belangrijk is',
+          paragraphs: [
+            'Een zorg die veel makers hebben bij online tools is waar hun afbeeldingen eigenlijk naartoe gaan. Bij servergebaseerde watermerkgereedschappen wordt je afbeelding geüpload naar de server van de aanbieder, daar verwerkt en vervolgens weer teruggestuurd. Dat betekent dat je ongepubliceerde werk, klantfoto’s of gevoelige productafbeeldingen door andermans infrastructuur gaan.',
+            'Photremium’s watermerkgereedschap verwerkt alles lokaal in je browser. Je afbeeldingen worden in het geheugen van je apparaat geladen met behulp van de File API van de browser en worden nooit via internet verzonden. Het renderen van het watermerk gebeurt op een HTML5 canvas-element dat in JavaScript draait, volledig binnen je browsertab. Wanneer je de pagina sluit of op “Start Over” klikt, worden alle afbeeldingsgegevens uit het geheugen vrijgegeven en verwijderd. Er wordt niets opgeslagen buiten je eigen apparaat.',
+          ],
+        },
+        {
+          id: 'wm-blog-summary',
+          tocLabel: 'Eindsamenvatting',
+          title: 'Waarom Photremium’s watermerkgereedschap een vaste plek in je reguliere workflow verdient',
+          paragraphs: [
+            'Er zijn tientallen watermerkgereedschappen online beschikbaar. Wat een tool de moeite waard maakt om te bookmarken in plaats van te vergeten, is meestal een combinatie van snelheid, controle en betrouwbaarheid.',
+            'Snelheid is belangrijk omdat watermerken geen significante tijd aan je nabewerkingsworkflow zouden moeten toevoegen. Photremium laadt direct, verwerkt lokaal en exporteert binnen enkele seconden op volledige resolutie — zelfs bij grote batches. Er is geen server-side wachttijd, geen wachtrij en geen renderduur die oploopt met het aantal mensen dat tegelijkertijd online is.',
+            'Controle is belangrijk omdat een verkeerd ogend watermerk erger is dan helemaal geen watermerk — het maakt je merk onprofessioneel. Het lagen-systeem, de per-eigenschapbediening in de werkbalk, de realtime canvas-preview en de ondersteuning voor sneltoetsen leveren samen een controleniveau op dat echt vergelijkbaar is met speciale desktopsoftware.',
+            'Betrouwbaarheid is belangrijk omdat je ongepubliceerde werk waardevol is. Weten dat je afbeeldingen nooit via internet naar een derde server gaan, betekent dat je klantfoto’s, nog niet uitgebrachte productafbeeldingen en gevoelige creatieve werken kunt watermerken zonder zorgen over gegevensverwerking, serverinbreuken of beleidswijzigingen van een cloudprovider.',
+            'Of je nu een snelle copyrightmelding toevoegt aan één foto of een hele shoot van 200 afbeeldingen verwerkt voordat je een klantengalerij deelt, de Watermark Image-tool van Photremium geeft je de middelen om het goed te doen — volledig gratis, volledig privé en met genoeg creatieve flexibiliteit om het watermerk te laten lijken alsof het bij de afbeelding hoort in plaats van er bovenop geplakt te zijn.',
+            'Ga naar photremium.com/watermark-image en probeer het uit. Je eerste watermerkafbeelding is letterlijk dertig seconden verwijderd.',
+            'Photremium biedt een reeks browsergebaseerde tools voor beeldbewerking en -verwerking. Alle tools draaien lokaal in je browser — je afbeeldingen blijven op je apparaat.',
+          ],
+        },
+      ],
+    },
   },
 
   qrGenerator: {
@@ -1516,11 +1749,16 @@ common: {
       { q: 'Worden mijn afbeeldingen naar een server gestuurd?', a: 'Nee. Het AI-model draait volledig in de browser met WebAssembly.' },
     ],
     watermarkImage: [
-      { q: 'Welke soorten watermerken kunnen worden toegevoegd?', a: 'U kunt tekstwatermerken toevoegen met aangepaste lettertypen, grootten, kleuren en dekking, evenals afbeeldingswatermerken zoals logo\'s.' },
-      { q: 'Kan ik hetzelfde watermerk toevoegen aan meerdere afbeeldingen?', a: 'Ja. Upload meerdere afbeeldingen, configureer het watermerk eenmaal en het wordt op alle toegepast.' },
-      { q: 'Verlaagt het watermerk de afbeeldingskwaliteit?', a: 'Nee. Het watermerk wordt samengesteld op de originele afbeelding in volledige resolutie.' },
-      { q: 'Kan ik de dekking van het watermerk aanpassen?', a: 'Zeker. Gebruik de dekkingsschuifregelaar om aan te passen.' },
-      { q: 'Worden gegevens naar een server gestuurd?', a: 'Nee. Alle watermerking vindt lokaal in de browser plaats.' },
+      { q: '1. Is het Photremium watermerkgereedschap gratis?', a: 'Ja, het gereedschap op photremium.com/watermark-image is gratis en vereist geen account of abonnement. U kunt watermerken aan enkelvoudige afbeeldingen of hele batches toevoegen zonder betaalmuur.' },
+      { q: '2. Hoeveel afbeeldingen kan ik tegelijk verwerken?', a: 'Het gereedschap ondersteunt batch verwerking. U kunt een hele map slepen of meerdere bestanden tegelijk selecteren — de praktische limiet wordt bepaald door het geheugen van uw apparaat.' },
+      { q: '3. Welke beeldformaten worden ondersteund?', a: 'Ondersteunt formaten die door de File API worden gelezen: JPEG, JPG, PNG, WEBP, GIF (statisch), BMP en SVG. De uitvoer behoudt het originele formaat.' },
+      { q: '4. Ziet het watermerk er hetzelfde uit op verschillende resoluties?', a: 'Ja. De proportionele positioneringsengine berekent relatieve positie en schaal, waardoor het uiterlijk van het watermerk binnen een batch consistent blijft.' },
+      { q: '5. Kan ik mijn eigen logo als watermerk gebruiken?', a: 'Ja. Met de knop "Add Image" kunt u een PNG met transparante achtergrond uploaden dat als watermerklaag wordt gebruikt.' },
+      { q: '6. Hoe maak ik het watermerk halfdoorzichtig?', a: 'Selecteer de watermerklaag op het canvas en pas de dekking aan met de schuifregelaar. 30–50% geeft meestal een subtiel, professioneel resultaat.' },
+      { q: '7. Kan ik meerdere watermerklagen in één afbeelding toevoegen?', a: 'Ja. Het lagen systeem ondersteunt meerdere lagen, elk met eigen instellingen.' },
+      { q: '8. Wat doet de tiling-functie en wanneer gebruik je die?', a: 'Tiling herhaalt het watermerk in een raster over de hele afbeelding; handig om ongeautoriseerd gebruik te ontmoedigen.' },
+      { q: '9. Werkt het gereedschap op mobiele apparaten?', a: 'Ja — de interface is responsive: miniaturen worden een scrollbare rij, het instellingenpaneel verschijnt als een onderlade en bedieningselementen ondersteunen touch.' },
+      { q: '10. Zijn mijn afbeeldingen privé en worden ze naar een server gestuurd?', a: 'Uw afbeeldingen blijven op uw apparaat. Alle verwerking gebeurt lokaal in de browser met Canvas API; er is geen upload van afbeeldingsgegevens.' },
     ],
     qrCodeGenerator: [
       { q: 'Verloopt deze QR-code?', a: 'Nee, deze QR-codes vervallen niet en garanderen ondersteuning voor het leven. Omdat zij gehardcodeerde instructies opslaan in de vorm van bits in vierkante vaken, kan de informatie erin niet worden gewijzigd of verwijderd. U kunt de informatie in de code gewoon openen door deze met elke camera te scannen, zelfs na jaren.' },

@@ -131,7 +131,7 @@ const HomePasteAssistant = () => {
     { id: 'compressor', label: t('nav.imageCompressor'), icon: 'fa-solid fa-compress', path: '/image-compressor', supportsMultiple: true },
     { id: 'resizer', label: t('nav.resizeImage'), icon: 'fa-solid fa-up-right-and-down-left-from-center', path: '/resize-image', supportsMultiple: true },
     { id: 'crop', label: t('nav.cropImage'), icon: 'fa-solid fa-crop-simple', path: '/crop-image', supportsMultiple: true },
-    { id: 'removebg', label: t('nav.removeBackground'), icon: 'fa-solid fa-eraser', path: '/remove-background', supportsMultiple: true },
+    { id: 'removebg', label: t('nav.removeBackground'), icon: 'fa-solid fa-eraser', path: '/remove-background-ai', supportsMultiple: true },
     { id: 'watermark', label: t('nav.watermarkImage'), icon: 'fa-solid fa-stamp', path: '/watermark-image', supportsMultiple: true },
   ]), [t]);
 

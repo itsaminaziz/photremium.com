@@ -1022,6 +1022,239 @@ const id = {
     typeHere: 'Ketik di sini...',
     linkCorners: 'Hubungkan sudut',
     separateCorners: 'Pisahkan sudut',
+    blog: {
+      tocTitle: 'Daftar Isi',
+      sections: [
+        {
+          id: 'wm-blog-intro',
+          tocLabel: 'Ringkasan Alat Tanda Air',
+          title: 'Cara Menambahkan Tanda Air ke Gambar Secara Online — Panduan Lengkap Alat Tanda Air Photremium',
+          paragraphs: [
+            'Anda baru saja selesai mengedit foto yang indah. Mungkin itu foto produk untuk toko Anda, potret dari sesi klien, atau karya seni digital yang Anda sempurnakan berjam-jam. Dan sekarang muncul pertanyaan yang pada akhirnya dihadapi setiap kreator: bagaimana melindunginya sebelum dibagikan?',
+            'Jawaban yang dipilih sebagian besar profesional adalah tanda air — dan itu masuk akal. Tanda air yang ditempatkan dengan tepat bertindak sebagai tanda tangan permanen, membuat karya Anda dapat dilacak, berlabel, dan jauh lebih sulit untuk dicuri.',
+            'Masalah yang sering dihadapi adalah: alat online yang tersedia terlalu rumit, terkunci di balik langganan, atau menghasilkan tanda air yang terlalu berat sehingga merusak gambar.',
+            'Alat Tanda Air Gambar Photremium dibuat untuk memperbaiki semua itu. Ini adalah ruang kerja pemberian tanda air berbasis browser sepenuhnya, gratis, tanpa akun, dan berjalan langsung di browser Anda tanpa pernah mengunggah file ke server. Semuanya tetap lokal, semuanya tetap cepat, dan tingkat kontrol kreatifnya setara dengan aplikasi desktop. Dalam panduan ini, kami akan menjelaskan cara kerjanya, siapa yang cocok menggunakannya, dan bagaimana mendapatkan hasil terbaik — setiap saat.',
+          ],
+        },
+        {
+          id: 'wm-blog-what-is',
+          tocLabel: 'Apa Itu Tanda Air',
+          title: 'Apa Itu Tanda Air dan Mengapa Penting?',
+          paragraphs: [
+            'Sebelum masuk ke alatnya, penting untuk memahami apa fungsi tanda air dan mengapa begitu banyak fotografer, desainer, dan kreator konten menganggapnya wajib.',
+            'Tanda air adalah overlay yang terlihat pada gambar — biasanya teks, logo, atau simbol hak cipta — yang mengidentifikasi pembuat atau pemilik konten. Berbeda dari metadata (yang tersembunyi di dalam file dan bisa dihapus dalam hitungan detik), tanda air tertanam secara visual pada gambar. Anda tidak bisa sekadar klik kanan dan menghapusnya tanpa menurunkan kualitas gambar secara nyata.',
+          ],
+          subSections: [
+            {
+              title: 'Mengapa Kreator Menggunakan Tanda Air',
+              paragraphs: [
+                'Alasan praktis untuk memberi tanda air pada gambar umumnya bermuara pada tiga hal utama.',
+              ],
+              bullets: [
+                'Identifikasi kepemilikan. Ketika karya Anda dibagikan di media sosial, papan Pinterest, atau disematkan di blog, atribusi asli sering hilang. Tanda air memastikan nama atau merek Anda tetap menyertai gambar ke mana pun ia tersebar.',
+                'Pencegahan pencurian. Banyak pencuri gambar kasual mencari jalan termudah. Tanda air yang terlihat profesional, ditempatkan dengan baik dan sedikit transparan, mengirim sinyal yang jelas: gambar ini milik seseorang yang menjaga karyanya.',
+                'Perlindungan portofolio klien. Fotografer yang membagikan pratinjau sebelum pembayaran akhir sering memakai tanda air agar klien tidak menggunakan pratinjau tanpa melunasi pembayaran. Tanda air yang halus melindungi tanpa mengganggu penilaian karya.',
+              ],
+            },
+            {
+              title: 'Siapa yang Perlu Memberi Tanda Air pada Gambar',
+              paragraphs: [
+                'Jika Anda termasuk salah satu kategori berikut, memberi tanda air sebelum membagikan gambar secara online bukanlah pilihan — itu penting:',
+              ],
+              bullets: [
+                'Fotografer lepas yang membagikan galeri kepada klien',
+                'Desainer grafis yang mendistribusikan sampel portofolio',
+                'Penjual e-commerce yang menampilkan foto produk sebelum perjanjian lisensi',
+                'Seniman digital yang membagikan karya di platform sosial',
+                'Blogger dan kreator konten yang gambarnya sering digunakan ulang',
+                'Kontributor foto stok yang membangun merek yang mudah dikenali',
+              ],
+            },
+          ],
+        },
+        {
+          id: 'wm-blog-workspace',
+          tocLabel: 'Panel Ruang Kerja',
+          title: 'Di Dalam Alat Tanda Air Photremium: Ruang Kerja Tiga Panel untuk Alur Kerja Nyata',
+          paragraphs: [
+            'Yang membedakan alat tanda air Photremium dari watermark online dasar adalah desain ruang kerjanya. Alih-alih sekadar “ketik teks, pilih posisi, selesai”, alat ini menyediakan tata letak tiga panel yang meniru software desain profesional — tetapi berjalan sepenuhnya di browser, tanpa instalasi.',
+          ],
+          subSections: [
+            {
+              title: 'Panel Kanvas di Kiri',
+              paragraphs: [
+                'Panel kanvas mengambil area terbesar di layar dan menunjukkan seperti apa gambar Anda dengan tanda air secara real-time. Setiap perubahan — mengatur opasitas, memindahkan lapisan teks, mengubah ukuran logo — langsung terlihat di kanvas. Tidak ada tombol “preview”. Apa yang Anda lihat adalah hasilnya.',
+                'Kanvas juga memiliki toolbar zoom bawaan, sehingga Anda dapat zoom in untuk presisi dan zoom out untuk melihat keseluruhan. Fitur zoom-to-fit secara otomatis menghitung skala awal terbaik berdasarkan ukuran layar, sehingga gambar beresolusi tinggi tetap nyaman untuk dikerjakan. Panduan alignment muncul secara dinamis saat Anda menyeret lapisan mendekati pusat horizontal atau vertikal, dan membuat tanda air terkunci tepat di tengah dengan presisi yang biasanya hanya Anda dapatkan di Photoshop.',
+              ],
+            },
+            {
+              title: 'Panel Pengaturan di Kanan',
+              paragraphs: [
+                'Panel kanan adalah pusat kontrol. Di sinilah Anda mengelola lapisan tanda air, menyesuaikan tampilannya, dan menjalankan ekspor akhir. Di desktop, panel ini tetap di sisi kanan layar. Di perangkat mobile, panel ini muncul sebagai bottom sheet yang digerakkan tombol roda gigi mengambang, sehingga tidak menutupi kanvas saat Anda bekerja.',
+                'Di panel kanan terdapat pengelola lapisan, yang menampilkan semua elemen tanda air yang Anda tambahkan. Setiap entri lapisan menampilkan tipe (teks atau gambar), nama/konten, dan tiga tombol aksi cepat: toggle visibilitas (ikon mata), toggle kunci untuk mengunci posisi lapisan, dan tombol hapus.',
+              ],
+            },
+            {
+              title: 'Strip Pratinjau di Kiri (Mode Multi-Gambar)',
+              paragraphs: [
+                'Saat Anda bekerja dengan banyak gambar sekaligus — misalnya batch foto produk atau sesi potret penuh — sebuah strip thumbnail vertikal muncul di sisi kiri layar. Ini adalah antrean gambar, yang menampilkan pratinjau mini dari setiap file yang Anda muat. Klik salah satu thumbnail untuk langsung beralih ke gambar itu di kanvas, sehingga Anda dapat memeriksa tampilan tanda air pada komposisi yang berbeda tanpa kehilangan pengaturan lapisan.',
+                'Strip ini juga menampilkan ukuran file dalam KB atau MB serta format file (JPG, PNG, WEBP), sehingga Anda selalu tahu apa yang sedang Anda kerjakan sekilas.',
+              ],
+            },
+          ],
+        },
+        {
+          id: 'wm-blog-steps',
+          tocLabel: 'Langkah demi Langkah',
+          title: 'Langkah demi Langkah: Cara Menambahkan Tanda Air di Photremium',
+          paragraphs: [
+            'Panduan ini didasarkan langsung pada cara kerja alat di balik layar — dari sistem upload drag-and-drop hingga mesin rendering kanvas yang menuliskan tanda air secara permanen ke gambar sebelum diunduh.',
+          ],
+          steps: [
+            {
+              heading: 'Langkah 1 — Unggah Gambar Anda',
+              paragraphsBefore: [
+                'Buka photremium.com/watermark-image. Anda akan masuk ke layar upload dengan area dropzone di tengah halaman.',
+                'Ada tiga cara untuk memasukkan gambar ke alat ini:',
+              ],
+              bullets: [
+                'Drag and drop. Seret satu atau beberapa file gambar dari desktop langsung ke dropzone. Alat ini menerima format gambar standar — JPEG, PNG, WEBP, dan lainnya. Saat Anda menyeret file ke area kerja, batas ungu muncul di seluruh area dengan pesan “Drop images to add for watermarking”, menandakan drop terdeteksi.',
+                'Click to browse. Klik tombol “Choose Files” di dalam dropzone untuk membuka pemilih file. Anda dapat memilih beberapa file sekaligus menggunakan Ctrl+Click (Windows) atau Cmd+Click (Mac).',
+                'Paste from clipboard. Jika Anda menyalin gambar ke clipboard — dari tangkapan layar, aplikasi lain, atau browser — cukup tekan Ctrl+V (atau Cmd+V di Mac) pada halaman watermark dan gambar akan dimuat langsung ke ruang kerja. Ini tetap berfungsi meski beberapa gambar sudah dimuat sebelumnya.',
+              ],
+              paragraphsAfter: [
+                'Begitu gambar pertama dimuat, ruang kerja beralih dari layar upload ke editor tiga panel penuh, dan kanvas menampilkan gambar Anda pada level zoom fit-to-screen yang dihitung otomatis.',
+              ],
+            },
+            {
+              heading: 'Langkah 2 — Tambahkan Lapisan Teks Tanda Air',
+              paragraphsBefore: [
+                'Klik tombol ungu “Add Text” di panel kanan. Sebuah lapisan teks baru muncul di kanvas dengan placeholder “Type here...” yang sudah terpilih.',
+                'Anda dapat langsung mengetik. Teks dirender secara live di kanvas dalam Arial putih dengan ukuran default yang disesuaikan dengan dimensi gambar. Dari toolbar atas yang muncul saat lapisan teks dipilih, Anda dapat menyesuaikan semua aspek teks:',
+              ],
+              bullets: [
+                'Font family — pilih dari 12 font bawaan termasuk Arial, Georgia, Impact, Brush Script MT, Comic Sans MS, dan lainnya',
+                'Font size — ketik nilai piksel khusus atau gunakan kontrol naik/turun',
+                'Bold, italic, underline — aktifkan kombinasi gaya apa pun',
+                'Text color — klik swatch warna untuk membuka pemilih warna dan memilih warna hex apa pun',
+                'Background color — tambahkan latar belakang berwarna untuk tampilan label atau badge',
+                'Stroke (outline) — atur lebar dan warna garis untuk keterbacaan maksimum di gambar terang maupun gelap',
+                'Opacity — geser dari 0% (tak terlihat) hingga 100% (sepenuhnya terlihat); kebanyakan tanda air berada di 30–60%',
+                'Alignment — rata kiri, tengah, atau kanan di dalam bounding box',
+                'Rotation — putar lapisan teks ke sudut mana pun dengan titik snap magnetik di 0°, 90°, 180°, dan 270° untuk penempatan cepat',
+              ],
+              paragraphsAfter: [
+                'Untuk memindahkan teks, klik dan seret ke mana saja di kanvas. Untuk penempatan presisi piksel, gunakan tombol panah pada keyboard (tahan Shift untuk langkah 10 piksel). Untuk mengubah ukuran kotak teks, seret salah satu dari delapan handle (sudut dan sisi) yang muncul di sekitar lapisan yang dipilih.',
+              ],
+            },
+            {
+              heading: 'Langkah 3 — Tambahkan Lapisan Tanda Air Gambar (Logo)',
+              paragraphsBefore: [
+                'Jika Anda ingin menggunakan logo, tanda tangan, atau gambar sebagai tanda air, klik tombol biru “Add Image” di panel kanan. Pemilih file akan terbuka sehingga Anda dapat memilih gambar tanda air dari perangkat Anda.',
+                'Alat ini otomatis mengatur ukuran gambar tanda air sekitar 30% dari lebar kanvas dengan mempertahankan rasio aspek aslinya, dan memusatkannya di kanvas. Setelah itu, Anda dapat menyeretnya ke posisi mana pun, mengubah ukurannya dengan handle sudut (rasio aspek tetap), atau memutarnya dengan handle rotasi khusus yang muncul di atas lapisan yang dipilih.',
+                'Untuk lapisan tanda air tipe gambar, panel kanan menampilkan kontrol tambahan:',
+              ],
+              bullets: [
+                'Opacity — sama seperti lapisan teks, ideal untuk logo PNG transparan',
+                'Flip horizontal / Flip vertical — cerminkan tanda air jika diperlukan',
+                'Border width, border color, and border style — tambahkan border yang terlihat di sekitar logo tanda air',
+                'Border radius — bulatkan sudut logo tanda air, baik seragam maupun per sudut',
+                'Rotation — perilaku rotasi halus yang sama seperti lapisan teks',
+              ],
+            },
+            {
+              heading: 'Langkah 4 — Atur Tiling (Opsional)',
+              paragraphsBefore: [
+                'Salah satu fitur yang lebih kuat adalah tiling — kemampuan untuk mengulang tanda air di seluruh gambar dalam pola grid. Ini sangat berguna jika Anda ingin membuat gambar sulit digunakan ulang, bukan sekadar memberi label.',
+                'Dengan lapisan yang dipilih, cari opsi tile di toolbar. Anda dapat mengaturnya menjadi:',
+              ],
+              bullets: [
+                'None — penempatan tunggal (default)',
+                'Grid 2×2 — mengulang tanda air dalam pola 2 kolom, 2 baris',
+                'Grid 3×3 — mengulang dalam grid 3×3 untuk cakupan lebih rapat',
+              ],
+              paragraphsAfter: [
+                'Anda juga dapat mengatur jarak antar tile, yang mengontrol jarak antar setiap pengulangan. Kanvas menampilkan pratinjau bayangan dari semua salinan tile sehingga Anda bisa melihat pola cakupan penuh sebelum mengunduh.',
+              ],
+            },
+            {
+              heading: 'Langkah 5 — Gunakan Pengelola Lapisan untuk Banyak Tanda Air',
+              paragraphsBefore: [
+                'Anda dapat menambahkan sebanyak mungkin lapisan — mencampur tanda air teks dan gambar. Pengelola lapisan di panel kanan menampilkan semuanya. Anda dapat:',
+              ],
+              bullets: [
+                'Menampilkan/menyembunyikan lapisan dengan ikon mata — berguna untuk beralih antar versi tanda air tanpa menghapus apa pun',
+                'Mengunci lapisan untuk mencegah pergeseran saat mengerjakan lapisan lain',
+                'Menghapus lapisan secara permanen',
+              ],
+              paragraphsAfter: [
+                'Klik salah satu entri lapisan di daftar akan memilihnya di kanvas secara bersamaan, sehingga Anda dapat berpindah antar lapisan dengan mudah tanpa mencari-cari di gambar.',
+              ],
+            },
+            {
+              heading: 'Langkah 6 — Berpindah di Antara Banyak Gambar',
+              paragraphsBefore: [
+                'Jika Anda mengunggah lebih dari satu gambar, gunakan strip thumbnail di kiri untuk beralih gambar aktif. Lapisan tanda air yang Anda atur berlaku secara universal — semuanya akan dirender pada setiap gambar saat diekspor.',
+                'Alat ini juga memeriksa konsistensi resolusi pada batch Anda. Jika gambar memiliki dimensi yang sangat berbeda (lebih dari 5% perbedaan lebar atau tinggi), muncul peringatan bahwa posisi tanda air bisa terlihat berbeda karena variasi ukuran. Mesin menanganinya dengan algoritme pemposisian ulang proporsional: posisi tanda air dihitung sebagai persentase dari dimensi gambar referensi dan diterapkan secara proporsional ke setiap gambar lainnya, sehingga menjaga niat visual bahkan di resolusi yang berbeda.',
+              ],
+            },
+            {
+              heading: 'Langkah 7 — Atur Preferensi Unduhan',
+              paragraphsBefore: [
+                'Untuk pekerjaan satu gambar, klik tombol “Download” di bawah kanvas untuk menyimpan gambar bertanda air secara langsung. Nama file otomatis menggunakan nama asli dengan tambahan “-watermarked” sebelum ekstensi. Gambar JPEG diekspor pada kualitas 0.95 — cukup tinggi sehingga sulit dibedakan dari aslinya pada ukuran tampilan normal. Gambar PNG diekspor sebagai PNG tanpa kehilangan kualitas.',
+                'Untuk pekerjaan batch (banyak gambar), tersedia dua mode unduhan di panel kanan:',
+              ],
+              bullets: [
+                'ZIP file — semua gambar bertanda air dikemas ke dalam satu arsip ZIP dan diunduh dengan satu klik. Alat ini memuat JSZip secara dinamis untuk kompresi.',
+                'Separate files — setiap gambar diunduh sebagai file terpisah dengan jeda singkat antar unduhan untuk mencegah throttling browser.',
+              ],
+            },
+            {
+              heading: 'Langkah 8 — Unduh dan Verifikasi',
+              paragraphsBefore: [
+                'Setelah Anda menekan tombol unduh (atau tombol “Watermark & Download All” untuk batch), alat ini merender setiap gambar pada elemen canvas HTML5 tersembunyi dengan resolusi asli penuh — bukan pada ukuran pratinjau yang tampak di layar. Ini berarti gambar yang diekspor berada pada 100% dimensi piksel aslinya dengan tanda air pada ukuran proporsional yang benar. Buka file yang diunduh dan zoom untuk memverifikasi bahwa penempatan dan kualitas tanda air sesuai harapan Anda.',
+                'Jika ada yang kurang tepat, cukup kembali ke ruang kerja — lapisan Anda masih ada — sesuaikan, lalu unduh kembali.',
+              ],
+            },
+          ],
+        },
+        {
+          id: 'wm-blog-tips',
+          tocLabel: 'Tips Pro',
+          title: 'Tips Pro untuk Hasil Terbaik',
+          bullets: [
+            'Gunakan logo PNG semi-transparan untuk kesan profesional maksimal. Tanda air logo dengan latar transparan pada opasitas 40–50% terlihat jauh lebih rapi dibanding teks solid. Ekspor logo Anda dari alat desain sebagai PNG dengan alpha transparency sebelum digunakan sebagai lapisan gambar.',
+            'Tempatkan tanda air di area yang jika dipotong akan mengurangi nilai. Sudut kanan bawah adalah penempatan paling umum — dan paling mudah dipotong. Untuk perlindungan lebih kuat, pertimbangkan menempatkan tanda air di area visual penting seperti wajah, detail produk, atau titik fokus. Opsi tile diagonal jauh lebih sulit dihapus tanpa merusak gambar.',
+            'Gunakan fitur kunci saat bekerja dengan banyak lapisan. Setelah posisi tanda air utama Anda pas, kunci lapisan itu sebelum menambahkan lapisan sekunder. Ini mencegah pergeseran yang tidak disengaja.',
+            'Uji di area terang dan gelap. Tanda air putih tidak terlihat di langit cerah namun terbaca di bayangan gelap. Tambahkan garis tipis atau warna latar agar keterbacaan terjaga apa pun konten di bawahnya.',
+            'Shortcut keyboard selalu menghemat waktu. Tombol panah memindahkan lapisan terpilih satu piksel per langkah. Shift+Arrow memindahkan sepuluh piksel per langkah. Tombol Delete menghapus lapisan terpilih secara instan. Ini membuat penyetelan posisi jauh lebih cepat dibanding menyeret.',
+          ],
+        },
+        {
+          id: 'wm-blog-privacy',
+          tocLabel: 'Privasi dan Keamanan',
+          title: 'Privasi dan Keamanan: Mengapa Pemrosesan Berbasis Browser Itu Penting',
+          paragraphs: [
+            'Salah satu kekhawatiran yang sering dimiliki kreator saat menggunakan alat online adalah: ke mana sebenarnya gambar mereka pergi? Dengan alat tanda air berbasis server, gambar Anda diunggah ke server penyedia, diproses di sana, lalu dikirim kembali kepada Anda. Itu berarti karya yang belum dipublikasikan, foto klien, atau gambar produk sensitif melewati infrastruktur pihak lain.',
+            'Alat tanda air Photremium memproses semuanya secara lokal di browser Anda. Gambar Anda dimuat ke memori perangkat menggunakan File API browser dan tidak pernah dikirim melalui internet. Rendering tanda air dilakukan pada elemen canvas HTML5 yang berjalan dengan JavaScript, sepenuhnya di dalam tab browser Anda. Saat Anda menutup halaman atau menekan “Start Over”, semua data gambar dilepaskan dari memori dan dibuang. Tidak ada yang disimpan di luar perangkat Anda.',
+          ],
+        },
+        {
+          id: 'wm-blog-summary',
+          tocLabel: 'Ringkasan Akhir',
+          title: 'Mengapa Alat Tanda Air Photremium Layak Masuk ke Alur Kerja Rutin Anda',
+          paragraphs: [
+            'Ada puluhan alat tanda air yang tersedia secara online. Yang membedakan alat yang layak dibookmark dari yang mudah dilupakan biasanya adalah kombinasi kecepatan, kontrol, dan kepercayaan.',
+            'Kecepatan penting karena pemberian tanda air tidak boleh menambah banyak waktu pada alur pascaproses. Alat Photremium memuat instan, memproses secara lokal, dan mengekspor pada resolusi penuh dalam hitungan detik — bahkan untuk batch besar. Tidak ada menunggu pemrosesan server, tidak ada antrean, dan tidak ada waktu render yang meningkat seiring jumlah pengguna online pada saat bersamaan.',
+            'Kontrol penting karena tanda air yang terlihat buruk lebih buruk daripada tidak memakai tanda air sama sekali — itu membuat brand Anda terlihat tidak profesional. Sistem lapisan, kontrol per properti di toolbar, pratinjau kanvas real-time, dan dukungan shortcut keyboard memberikan tingkat kontrol yang sebanding dengan software desktop khusus.',
+            'Kepercayaan penting karena karya Anda yang belum dipublikasikan sangat berharga. Mengetahui bahwa gambar Anda tidak pernah melewati internet ke server pihak ketiga berarti Anda dapat memberi tanda air pada foto klien, gambar produk yang belum dirilis, dan karya kreatif sensitif tanpa khawatir tentang penanganan data, pelanggaran server, atau perubahan kebijakan penyedia cloud.',
+            'Baik Anda menambahkan pemberitahuan hak cipta cepat pada satu foto atau memproses seluruh sesi 200 gambar untuk galeri klien, alat Tanda Air Gambar Photremium memberi Anda alat untuk melakukannya dengan benar — sepenuhnya gratis, sepenuhnya privat, dan cukup fleksibel agar tanda air terlihat menyatu dengan gambar, bukan sekadar ditempel di atasnya.',
+            'Kunjungi photremium.com/watermark-image dan coba sendiri. Gambar bertanda air pertama Anda benar-benar hanya tiga puluh detik lagi.',
+            'Photremium menawarkan rangkaian alat pengeditan dan pemrosesan gambar berbasis browser. Semua alat berjalan secara lokal di browser Anda — gambar Anda tetap berada di perangkat Anda.',
+          ],
+        },
+      ],
+    },
   },
   qrGenerator: {
     seo: {
@@ -1517,11 +1750,16 @@ const id = {
       { q: 'Apakah gambar saya dikirim ke server?', a: 'Tidak. Model AI berjalan sepenuhnya di browser Anda menggunakan WebAssembly. Gambar Anda tetap ada di perangkat Anda setiap saat.' },
     ],
     watermarkImage: [
-      { q: 'Jenis tanda air apa yang bisa saya tambahkan?', a: 'Anda dapat menambahkan tanda air teks dengan font, ukuran, warna, dan opasitas khusus, serta tanda air gambar (seperti logo). Keduanya dapat diposisikan, diputar, dan diubin.' },
-      { q: 'Bisakah saya menerapkan tanda air yang sama ke beberapa gambar?', a: 'Ya. Unggah beberapa gambar, konfigurasikan tanda air Anda sekali, dan akan diterapkan ke semuanya dalam satu batch.' },
-      { q: 'Apakah tanda air akan mengurangi kualitas gambar saya?', a: 'Tidak. Tanda air dikomposit pada gambar asli dengan resolusi penuh. Anda mendapatkan kualitas yang sama dengan file sumber.' },
-      { q: 'Bisakah saya menyesuaikan opasitas tanda air?', a: 'Tentu saja. Gunakan slider opasitas untuk membuat tanda air sehalus atau seprominen yang Anda inginkan — dari hampir tidak terlihat hingga sepenuhnya solid.' },
-      { q: 'Apakah ada data yang diunggah ke server?', a: 'Tidak. Semua penanda air dilakukan secara lokal di browser Anda. Gambar dan logo Anda tidak pernah ditransmisikan ke mana pun.' },
+      { q: '1. Apakah alat Watermark Photremium sepenuhnya gratis?', a: 'Ya, alat watermark di photremium.com/watermark-image sepenuhnya gratis tanpa akun dan tanpa langganan. Anda dapat memberi watermark pada satu gambar atau satu batch penuh tanpa paywall, tanpa pendaftaran wajib, dan tanpa batas unduhan. Alat ini didukung karena nilai platform Photremium secara keseluruhan, bukan dengan mengunci fitur inti.' },
+      { q: '2. Berapa banyak gambar yang bisa saya watermark sekaligus?', a: 'Alat ini mendukung watermark batch untuk banyak gambar. Anda bisa menyeret satu folder penuh ke area unggah atau memilih puluhan file dengan Ctrl+Click. Strip thumbnail di kiri menampilkan semuanya, dan ketika Anda klik "Watermark & Download All", alat akan merender setiap gambar lalu mengemasnya dalam ZIP (atau mengunduhnya sebagai file terpisah — sesuai pilihan Anda). Secara praktis, batasnya adalah memori perangkat Anda, bukan batas buatan.' },
+      { q: '3. Format apa yang didukung untuk input dan output?', a: 'Input menerima format yang dapat ditangani oleh File API browser — biasanya JPEG, JPG, PNG, WEBP, GIF (statis), BMP, dan SVG. Output mempertahankan format asli: jika Anda unggah PNG, Anda mendapat PNG; jika unggah JPEG, Anda mendapat JPEG dengan kualitas 0.95. Ini mencegah konversi PNG lossless menjadi JPG lossy tanpa sengaja.' },
+      { q: '4. Apakah watermark akan terlihat sama pada gambar dengan resolusi berbeda?', a: 'Ya, melalui mesin reposisi proporsional. Saat Anda memiliki batch dengan dimensi berbeda, watermark dibuat pada gambar referensi (yang sedang aktif di kanvas). Saat ekspor, mesin menghitung posisi setiap layer sebagai offset fraksional dari pusat gambar referensi lalu menerapkan offset yang sama pada gambar lain. Ukuran watermark juga diskalakan secara proporsional menggunakan faktor skala yang lebih kecil (rasio lebar vs tinggi) agar tidak melewati batas gambar. Hasilnya: watermark mempertahankan posisi dan ukuran relatif di seluruh batch.' },
+      { q: '5. Bisakah saya menggunakan logo atau tanda tangan sebagai watermark alih-alih teks?', a: 'Tentu. Tombol "Add Image" di panel kanan memungkinkan Anda mengunggah file gambar sebagai layer watermark. PNG dengan background transparan paling ideal — transparansi tetap terjaga sehingga hanya logo yang terlihat. Anda dapat mengubah ukuran dengan handle sudut (rasio otomatis tetap), memutar, membalik, mengatur opasitas, bahkan menambah border atau sudut membulat. Banyak pengguna menyiapkan versi logo transparan khusus untuk watermark.' },
+      { q: '6. Bagaimana membuat watermark transparan atau semi-transparan?', a: 'Pilih layer watermark di kanvas. Di toolbar atas akan ada kontrol opasitas dengan persentase — Anda bisa mengetik angka atau menggeser. Untuk watermark yang halus dan profesional, 30–50% biasanya ideal. Untuk watermark yang lebih tegas, 70–80% bekerja baik. Anda juga dapat membandingkan dengan menyalakan/mematikan layer melalui ikon mata di layer manager.' },
+      { q: '7. Bisakah saya menambahkan beberapa watermark pada satu gambar?', a: 'Ya — sistem layer mendukung jumlah watermark tak terbatas, masing-masing dapat dikonfigurasi sendiri. Anda dapat memiliki teks hak cipta di kanan bawah, logo di kiri atas, dan overlay "SAMPLE" berubin secara bersamaan. Tiap layer punya opasitas, rotasi, posisi, ukuran, dan gaya sendiri. Layer manager membantu mengatur dan memungkinkan toggle tanpa menghapus untuk mencoba kombinasi berbeda.' },
+      { q: '8. Apa fungsi tiling dan kapan sebaiknya digunakan?', a: 'Tiling mengulang watermark dalam pola grid di seluruh gambar. Grid 2×2 menempatkan empat salinan; Grid 3×3 menempatkan sembilan. Kontrol jarak mengatur celah antar salinan. Tiling berguna saat Anda ingin gambar tidak dapat digunakan ulang tanpa izin — watermark tunggal di sudut bisa dipotong, sedangkan pola penuh sulit dihapus tanpa merusak gambar. Ini umum untuk preview kontrak, draft karya, atau konten sebelum pembayaran.' },
+      { q: '9. Apakah alat ini bekerja di ponsel dan tablet?', a: 'Ya, alat ini sepenuhnya responsif dan dirancang untuk mobile. Pada layar di bawah 900px, layout tiga panel berubah menjadi bertumpuk: strip thumbnail menjadi baris horizontal, kanvas tetap di tengah, dan panel pengaturan menjadi lembar bawah yang dibuka dengan tombol gear mengambang. Semua interaksi — drag, resize handle, rotasi — mendukung sentuhan. Handle sedikit lebih besar di mobile (16×16 px) agar mudah disentuh.' },
+      { q: '10. Apakah data gambar saya pribadi? Apakah foto diunggah ke server?', a: 'Gambar Anda tidak pernah meninggalkan perangkat. Seluruh alur watermark — memuat gambar, merender layer, mengekspor file akhir — berjalan di browser menggunakan JavaScript dan HTML5 Canvas API. File API membuat representasi di memori, layer digambar ke canvas tersembunyi, dan saat download data piksel diubah menjadi Blob untuk diunduh secara lokal. Tidak ada request jaringan yang membawa data gambar. Selain itu, ada penjaga saat keluar halaman: jika Anda menutup halaman saat gambar masih dimuat, browser akan meminta konfirmasi untuk mencegah kehilangan pekerjaan.' },
     ],
     qrCodeGenerator: [
       { q: 'Apakah kode QR ini kedaluwarsa?', a: 'Tidak, kode QR ini tidak memiliki masa kedaluwarsa dan dapat digunakan seumur hidup. Karena kode ini menyimpan instruksi yang dikodekan permanen dalam bentuk bit di dalam kotak-kotak, informasi di dalamnya tidak dapat diubah atau dihapus. Anda tetap dapat mengakses informasi tersebut hanya dengan memindainya menggunakan kamera apa pun, bahkan setelah bertahun-tahun.' },

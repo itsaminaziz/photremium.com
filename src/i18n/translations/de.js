@@ -895,6 +895,238 @@ const de = {
     typeHere: 'Hier eingeben...',
     linkCorners: 'Ecken verbinden',
     separateCorners: 'Ecken trennen',
+    blog: {
+      tocTitle: 'Inhalt',
+      sections: [
+        {
+          id: 'wm-blog-intro',
+          tocLabel: 'Tool-Überblick',
+          title: 'So fügen Sie Ihren Bildern online ein Wasserzeichen hinzu — Der komplette Guide zum Wasserzeichen-Tool von Photremium',
+          paragraphs: [
+            'Sie haben gerade ein wunderschönes Foto fertig bearbeitet. Vielleicht ist es ein Produktbild für Ihren Shop, ein Porträt aus einer Kundensession oder ein digitales Artwork, an dem Sie stundenlang gefeilt haben. Und jetzt kommt die Frage, der sich jeder Creator irgendwann stellt: Wie schützen Sie es, bevor Sie es teilen?',
+            'Die Antwort, auf die die meisten Profis kommen, lautet: Wasserzeichen — aus gutem Grund. Ein richtig platziertes Wasserzeichen wirkt wie eine dauerhafte Signatur, macht Ihre Arbeit nachvollziehbar und gebrandet und erschwert Diebstahl erheblich.',
+            'Das Problem, auf das viele stoßen: Online-Tools sind entweder zu umständlich, hinter Abos versteckt oder setzen ein so schweres Wasserzeichen, dass das Bild leidet.',
+            'Das Wasserzeichen-Tool von Photremium wurde genau dafür gebaut. Es läuft vollständig im Browser, ist kostenlos, ohne Konto nutzbar und lädt Ihre Dateien niemals auf einen Server hoch. Alles bleibt lokal, alles bleibt schnell, und der kreative Kontrollgrad konkurriert mit Desktop-Software. In diesem Guide zeigen wir Ihnen, wie es funktioniert, für wen es gedacht ist und wie Sie jedes Mal die besten Ergebnisse erzielen.',
+          ],
+        },
+        {
+          id: 'wm-blog-what-is',
+          tocLabel: 'Was ist ein Wasserzeichen',
+          title: 'Was ist ein Wasserzeichen und warum ist es wichtig?',
+          paragraphs: [
+            'Bevor wir ins Tool eintauchen, lohnt es sich zu verstehen, was ein Wasserzeichen leistet und warum so viele Fotografen, Designer und Content Creator es für unverzichtbar halten.',
+            'Ein Wasserzeichen ist eine sichtbare Überlagerung in einem Bild — meist Text, Logo oder Copyright-Symbol — die den Urheber oder Eigentümer identifiziert. Im Gegensatz zu Metadaten (die im File verborgen sind und in Sekunden entfernt werden können) ist ein Wasserzeichen visuell in das Bild eingebettet. Man kann es nicht einfach mit Rechtsklick entfernen, ohne die Bildqualität sichtbar zu beeinträchtigen.',
+          ],
+          subSections: [
+            {
+              title: 'Warum Creators Wasserzeichen nutzen',
+              paragraphs: [
+                'Die praktischen Gründe für Wasserzeichen lassen sich auf drei Kernpunkte reduzieren.',
+              ],
+              bullets: [
+                'Eigentumskennzeichnung. Wenn Ihre Arbeit in sozialen Netzwerken, Pinterest-Boards oder Blogposts geteilt wird, geht die ursprüngliche Zuordnung oft verloren. Ein Wasserzeichen stellt sicher, dass Ihr Name oder Ihre Marke mit dem Bild mitwandert.',
+                'Diebstahlabschreckung. Die meisten Bilddiebe suchen den einfachsten Weg. Ein professionelles, gut platziertes und leicht transparentes Wasserzeichen sendet ein klares Signal: Dieses Bild gehört jemandem, der seine Arbeit schützt.',
+                'Schutz von Kundenportfolios. Fotografen, die Vorschauen vor der finalen Zahlung teilen, nutzen Wasserzeichen, um unautorisierte Nutzung zu verhindern. Ein dezentes Wasserzeichen schützt, ohne die Beurteilung zu stören.',
+              ],
+            },
+            {
+              title: 'Wer sollte Wasserzeichen verwenden?',
+              paragraphs: [
+                'Wenn Sie in eine der folgenden Kategorien fallen, ist Wasserzeichen vor dem Teilen kein „Nice-to-have“, sondern Pflicht:',
+              ],
+              bullets: [
+                'Freelance-Fotografen, die Galerien mit Kunden teilen',
+                'Grafikdesigner, die Portfolio-Samples veröffentlichen',
+                'E-Commerce-Verkäufer, die Produktfotos vor Lizenzierung zeigen',
+                'Digitale Künstler, die in sozialen Netzwerken posten',
+                'Blogger und Content Creator, deren Bilder häufig weiterverwendet werden',
+                'Stockfoto-Autoren, die eine wiedererkennbare Marke aufbauen',
+              ],
+            },
+          ],
+        },
+        {
+          id: 'wm-blog-workspace',
+          tocLabel: 'Arbeitsbereich',
+          title: 'Im Wasserzeichen-Tool von Photremium: Ein Drei-Panel-Workspace für echte Workflows',
+          paragraphs: [
+            'Was das Photremium-Wasserzeichen-Tool von einfachen Online-Wasserzeichnern unterscheidet, ist sein Workspace-Design. Statt eines simplen „Text tippen, Position wählen, fertig“ bietet es ein Drei-Panel-Layout wie in professioneller Designsoftware — nur eben im Browser, ohne Installation.',
+          ],
+          subSections: [
+            {
+              title: 'Das linke Canvas-Panel',
+              paragraphs: [
+                'Das Canvas-Panel nimmt den größten Teil des Bildschirms ein und zeigt Ihr Bild mit Wasserzeichen in Echtzeit. Jede Änderung — Deckkraft, Textposition, Logo-Größe — erscheint sofort. Kein „Vorschau“-Button. What you see is what you get.',
+                'Das Canvas enthält zudem eine Zoom-Leiste zum präzisen Ausrichten. Die Zoom-to-fit-Funktion berechnet automatisch die beste Anfangsgröße für Ihren Bildschirm, sodass auch hochauflösende Bilder komfortabel angezeigt werden. Ausrichtungshilfen erscheinen dynamisch, wenn Sie einen Layer nahe der horizontalen oder vertikalen Mitte bewegen, und snappen das Wasserzeichen exakt zentriert — wie in Photoshop.',
+              ],
+            },
+            {
+              title: 'Das rechte Einstellungen-Panel',
+              paragraphs: [
+                'Das rechte Panel ist die Schaltzentrale. Hier verwalten Sie Ihre Wasserzeichen-Layer, passen deren Aussehen an und starten den Export. Auf dem Desktop sitzt es fix rechts. Auf mobilen Geräten erscheint es als Bottom Sheet über einen schwebenden Zahnrad-Button, ohne die Leinwand zu verdecken.',
+                'Im rechten Panel finden Sie den Layer-Manager, der jedes Element auflistet. Jede Zeile zeigt den Layer-Typ (Text oder Bild), den aktuellen Namen oder Inhalt sowie drei Schnellaktionen: Sichtbarkeit (Augen-Symbol), Sperren (Position fixieren) und Löschen.',
+              ],
+            },
+            {
+              title: 'Die linke Vorschauleiste (Multi-Image-Modus)',
+              paragraphs: [
+                'Wenn Sie mehrere Bilder auf einmal bearbeiten — etwa Produktfotos oder eine komplette Session — erscheint links eine vertikale Thumbnail-Leiste. Das ist die Bild-Warteschlange. Ein Klick auf ein Thumbnail lädt das Bild sofort ins Canvas, ohne Ihre Layer-Einstellungen zu verlieren.',
+                'Die Leiste zeigt außerdem Dateigröße in KB/MB sowie das Format (JPG, PNG, WEBP), damit Sie jederzeit wissen, womit Sie arbeiten.',
+              ],
+            },
+          ],
+        },
+        {
+          id: 'wm-blog-steps',
+          tocLabel: 'Schritt für Schritt',
+          title: 'Schritt für Schritt: So fügen Sie ein Wasserzeichen hinzu',
+          paragraphs: [
+            'Diese Anleitung folgt genau dem tatsächlichen Ablauf des Tools — vom Drag-and-Drop-Upload bis zum Canvas-Rendern vor dem Download.',
+          ],
+          steps: [
+            {
+              heading: 'Schritt 1 — Bild(er) hochladen',
+              paragraphsBefore: [
+                'Öffnen Sie photremium.com/watermark-image. Sie sehen eine saubere Dropzone in der Mitte der Seite.',
+                'Es gibt drei Wege, Ihre Bilder zu laden:',
+              ],
+              bullets: [
+                'Drag & Drop. Ziehen Sie ein oder mehrere Bilddateien in die Dropzone. Das Tool akzeptiert JPEG, PNG, WEBP und mehr. Beim Draggen erscheint ein violetter Rahmen mit dem Hinweis „Drop images to add for watermarking“.',
+                'Klicken & auswählen. Klicken Sie auf „Choose Files“, um den Dateiauswahldialog zu öffnen. Mehrfachauswahl ist mit Ctrl+Click (Windows) oder Cmd+Click (Mac) möglich.',
+                'Aus der Zwischenablage einfügen. Wenn Sie ein Bild kopiert haben, drücken Sie Ctrl+V (Cmd+V auf Mac) — das Bild wird direkt geladen, auch wenn bereits mehrere Bilder vorhanden sind.',
+              ],
+              paragraphsAfter: [
+                'Sobald das erste Bild geladen ist, wechselt die Ansicht in den vollen Drei-Panel-Editor, und das Bild erscheint im automatisch berechneten Zoom-to-fit.',
+              ],
+            },
+            {
+              heading: 'Schritt 2 — Text-Wasserzeichen hinzufügen',
+              paragraphsBefore: [
+                'Klicken Sie im rechten Panel auf den lila „Add Text“-Button. Ein neuer Text-Layer erscheint mit dem Platzhalter „Type here...“.',
+                'Sie können sofort los tippen. Der Text wird live im Canvas angezeigt. In der oberen Toolbar können Sie alles anpassen:',
+              ],
+              bullets: [
+                'Font family — Auswahl aus 12 integrierten Fonts wie Arial, Georgia, Impact, Brush Script MT, Comic Sans MS u. a.',
+                'Font size — Pixelwert direkt eingeben oder per Controls verändern',
+                'Bold, italic, underline — Kombination aus Stilen',
+                'Text color — Farbe per Picker wählen',
+                'Background color — farbiger Hintergrund hinter Text für Label/Badge',
+                'Stroke (outline) — Kontur für bessere Lesbarkeit auf hellen/dunklen Bildern',
+                'Opacity — von 0% bis 100%; die meisten Wasserzeichen liegen bei 30–60%',
+                'Alignment — links, zentriert oder rechts ausrichten',
+                'Rotation — beliebiger Winkel mit Snap-Punkten bei 0°, 90°, 180°, 270°',
+              ],
+              paragraphsAfter: [
+                'Zum Verschieben ziehen Sie den Text. Für pixelgenaue Positionierung nutzen Sie die Pfeiltasten (Shift für 10 px). Zum Skalieren ziehen Sie die acht Handles am Rand.',
+              ],
+            },
+            {
+              heading: 'Schritt 3 — Bild- (Logo-)Wasserzeichen hinzufügen',
+              paragraphsBefore: [
+                'Wenn Sie ein Logo oder eine Signatur verwenden möchten, klicken Sie auf „Add Image“ im rechten Panel und wählen Sie die Datei. Das Tool skaliert das Logo automatisch auf ca. 30% der Canvas-Breite und zentriert es.',
+                'Danach können Sie es frei positionieren, über Eckgriffe skalieren (mit fixem Seitenverhältnis) oder mit dem Rotationsgriff drehen. Für Bild-Layer stehen zusätzliche Controls zur Verfügung:',
+              ],
+              bullets: [
+                'Opacity — wie bei Text, ideal für transparente PNG-Logos',
+                'Flip horizontal / Flip vertical — Spiegelung',
+                'Border width, border color, border style — sichtbarer Rahmen',
+                'Border radius — Ecken abrunden, einheitlich oder pro Ecke',
+                'Rotation — gleiches Drehverhalten wie bei Text',
+              ],
+            },
+            {
+              heading: 'Schritt 4 — Tiling (optional)',
+              paragraphsBefore: [
+                'Eine der stärksten Funktionen ist Tiling — das Wiederholen Ihres Wasserzeichens in einem Raster über das gesamte Bild. Das ist ideal, wenn Sie eine Weiterverwendung verhindern möchten.',
+                'Wählen Sie einen Layer und setzen Sie Tile auf:',
+              ],
+              bullets: [
+                'None — Einzelplatzierung (Standard)',
+                'Grid 2×2 — Wiederholung im 2x2-Raster',
+                'Grid 3×3 — Wiederholung im 3x3-Raster',
+              ],
+              paragraphsAfter: [
+                'Sie können außerdem den Abstand zwischen den Kacheln einstellen. Das Canvas zeigt Ghost-Previews aller Kopien.',
+              ],
+            },
+            {
+              heading: 'Schritt 5 — Layer-Manager nutzen',
+              paragraphsBefore: [
+                'Sie können beliebig viele Layer hinzufügen. Der Layer-Manager listet sie alle. Sie können:',
+              ],
+              bullets: [
+                'Layer über das Augen-Icon ein-/ausblenden',
+                'Layer sperren, um versehentliches Verschieben zu verhindern',
+                'Layer löschen',
+              ],
+              paragraphsAfter: [
+                'Ein Klick auf einen Layer in der Liste wählt ihn gleichzeitig auf dem Canvas aus.',
+              ],
+            },
+            {
+              heading: 'Schritt 6 — Zwischen mehreren Bildern wechseln',
+              paragraphsBefore: [
+                'Wenn Sie mehrere Bilder hochgeladen haben, verwenden Sie die Thumbnail-Leiste links. Ihre Layer-Einstellungen gelten für alle Bilder beim Export.',
+                'Das Tool prüft auch auf unterschiedliche Auflösungen. Bei Abweichungen über 5% erscheint ein Hinweis. Die Platzierung wird proportional übertragen, sodass der Wasserzeichen-Look konsistent bleibt.',
+              ],
+            },
+            {
+              heading: 'Schritt 7 — Download-Einstellungen wählen',
+              paragraphsBefore: [
+                'Für einzelne Bilder klicken Sie auf „Download“ unter dem Canvas. Der Dateiname erhält automatisch „-watermarked“. JPEGs werden mit 0.95 Qualität exportiert, PNGs bleiben verlustfrei.',
+                'Für Batch-Jobs stehen zwei Modi im rechten Panel zur Verfügung:',
+              ],
+              bullets: [
+                'ZIP — alle Bilder in einer ZIP-Datei',
+                'Separate — jedes Bild wird einzeln heruntergeladen',
+              ],
+            },
+            {
+              heading: 'Schritt 8 — Download und Kontrolle',
+              paragraphsBefore: [
+                'Beim Download rendert das Tool jedes Bild auf einer versteckten Canvas in voller Originalauflösung — nicht in der Bildschirmvorschau. So erhalten Sie die exakten Pixelmaße mit korrekt skalierter Wasserzeichenposition. Öffnen Sie die Datei und zoomen Sie hinein, um das Ergebnis zu prüfen.',
+                'Wenn etwas nicht passt, kehren Sie zurück, passen Sie an und laden Sie erneut herunter.',
+              ],
+            },
+          ],
+        },
+        {
+          id: 'wm-blog-tips',
+          tocLabel: 'Pro Tipps',
+          title: 'Pro-Tipps für beste Ergebnisse',
+          bullets: [
+            'Verwenden Sie ein halbtransparentes PNG-Logo. Ein Logo-Wasserzeichen mit 40–50% Deckkraft wirkt deutlich professioneller als Volltext.',
+            'Platzieren Sie das Wasserzeichen dort, wo ein Zuschnitt Wert zerstört. Die rechte untere Ecke ist am häufigsten — und am leichtesten zu entfernen. Für mehr Schutz legen Sie es über einen wichtigen Bildbereich. Diagonales Tiling ist noch schwerer zu entfernen.',
+            'Nutzen Sie die Sperre bei mehreren Layern. Wenn die Hauptposition sitzt, sperren Sie den Layer, bevor Sie weitere hinzufügen.',
+            'Testen Sie helle und dunkle Bereiche. Weißer Text verschwindet auf hellem Himmel, ist aber auf Schatten lesbar. Eine feine Kontur oder Hintergrundfarbe sorgt für bessere Lesbarkeit.',
+            'Tastenkürzel sparen Zeit. Pfeiltasten bewegen 1 px, Shift+Arrow 10 px. Delete löscht den Layer sofort.',
+          ],
+        },
+        {
+          id: 'wm-blog-privacy',
+          tocLabel: 'Datenschutz',
+          title: 'Datenschutz & Sicherheit: Warum Browser-Verarbeitung wichtig ist',
+          paragraphs: [
+            'Viele Creator fragen sich, wohin ihre Bilder bei Online-Tools wandern. Bei serverbasierten Wasserzeichnern wird das Bild hochgeladen, dort verarbeitet und zurückgesendet. Das bedeutet: unveröffentlichte Arbeiten laufen über fremde Infrastruktur.',
+            'Das Photremium-Tool verarbeitet alles lokal im Browser. Bilder werden via File API in den Gerätespeicher geladen und niemals übers Internet übertragen. Das Rendern erfolgt per HTML5 Canvas innerhalb des Tabs. Beim Schließen oder „Start Over“ wird der Speicher freigegeben. Nichts wird außerhalb Ihres Geräts gespeichert.',
+          ],
+        },
+        {
+          id: 'wm-blog-summary',
+          tocLabel: 'Zusammenfassung',
+          title: 'Warum das Wasserzeichen-Tool von Photremium einen festen Platz im Workflow verdient',
+          paragraphs: [
+            'Es gibt Dutzende Wasserzeichen-Tools. Ob eines sich lohnt, entscheidet meist die Kombination aus Geschwindigkeit, Kontrolle und Vertrauen.',
+            'Geschwindigkeit zählt, denn Wasserzeichen sollten keinen großen Zeitverlust verursachen. Photremium lädt sofort, verarbeitet lokal und exportiert in voller Auflösung in Sekunden — selbst bei großen Stapeln. Keine Server-Warteschlangen, keine Wartezeiten.',
+            'Kontrolle zählt, denn ein schlechtes Wasserzeichen wirkt unprofessionell. Das Layer-System, die Property-Controls, das Live-Preview und die Shortcuts bieten Kontrolle auf Desktop-Niveau.',
+            'Vertrauen zählt, weil unveröffentlichte Arbeiten wertvoll sind. Wenn Ihre Bilder nie das Gerät verlassen, können Sie Kundenfotos, unreleased Produktbilder oder sensibles Material ohne Sorgen bearbeiten.',
+            'Egal ob ein einzelnes Foto mit Copyright oder ein Batch von 200 Bildern — das Photremium-Wasserzeichen-Tool liefert die richtige Lösung: vollständig kostenlos, vollständig privat und flexibel genug, damit der Wasserzeichen-Look zur Bildästhetik passt.',
+            'Besuchen Sie photremium.com/watermark-image und probieren Sie es aus. Ihr erstes Wasserzeichen ist in 30 Sekunden fertig.',
+            'Photremium bietet eine Suite browserbasierter Bildtools. Alle Tools laufen lokal — Ihre Bilder bleiben auf Ihrem Gerät.',
+          ],
+        },
+      ],
+    },
   },
 
   qrGenerator: {
@@ -1394,11 +1626,16 @@ const de = {
       { q: 'Werden meine Bilder an einen Server gesendet?', a: 'Nein. Das KI-Modell läuft vollständig in Ihrem Browser mit WebAssembly.' },
     ],
     watermarkImage: [
-      { q: 'Welche Arten von Wasserzeichen kann ich hinzufügen?', a: 'Sie können Textwasserzeichen mit benutzerdefinierter Schriftart, Größe, Farbe und Deckkraft hinzufügen sowie Bildwasserzeichen wie ein Logo.' },
-      { q: 'Kann ich dasselbe Wasserzeichen auf mehrere Bilder anwenden?', a: 'Ja. Laden Sie mehrere Bilder hoch, konfigurieren Sie Ihr Wasserzeichen einmal und es wird auf alle angewendet.' },
-      { q: 'Verringert das Wasserzeichen meine Bildqualität?', a: 'Nein. Das Wasserzeichen wird auf das Originalbild in voller Auflösung aufgebracht.' },
-      { q: 'Kann ich die Deckkraft des Wasserzeichens anpassen?', a: 'Absolut. Verwenden Sie den Deckkraftregler, um es nach Belieben einzustellen.' },
-      { q: 'Werden Daten auf einen Server hochgeladen?', a: 'Nein. Alles wird lokal in Ihrem Browser durchgeführt.' },
+      { q: '1. Ist das Photremium-Wasserzeichen-Tool komplett kostenlos?', a: 'Ja, das Wasserzeichen-Tool unter photremium.com/watermark-image ist vollständig kostenlos, ohne Konto und ohne Abo. Sie können einzelne Bilder oder ganze Stapel ohne Paywall, ohne erzwungene Registrierung und ohne Download-Limits markieren. Das Tool wird dadurch getragen, dass Photremium insgesamt nützlich ist — nicht durch das Sperren von Kernfunktionen.' },
+      { q: '2. Wie viele Bilder kann ich gleichzeitig wasserzeichnen?', a: 'Das Tool unterstützt Batch-Wasserzeichen für viele Bilder. Sie können einen ganzen Ordner per Drag-and-Drop hochladen oder mit Ctrl+Click dutzende Dateien auswählen. Die linke Vorschauleiste zeigt alle Dateien, und mit "Watermark & Download All" rendert das Tool jedes Bild und packt es in ein ZIP (oder lädt sie als separate Dateien herunter — je nach Auswahl). In der Praxis ist das Limit der verfügbare Arbeitsspeicher Ihres Geräts, nicht eine künstliche Begrenzung.' },
+      { q: '3. Welche Formate werden für Ein- und Ausgabe unterstützt?', a: 'Als Eingabe werden alle Formate unterstützt, die die File API Ihres Browsers verarbeiten kann — typischerweise JPEG, JPG, PNG, WEBP, GIF (statisch), BMP und SVG. Als Ausgabe bleibt das Format erhalten: PNG bleibt PNG, JPEG bleibt JPEG (mit Qualität 0.95). So wird verhindert, dass ein verlustfreies PNG versehentlich in ein verlustbehaftetes JPG konvertiert wird.' },
+      { q: '4. Sieht das Wasserzeichen bei unterschiedlichen Auflösungen gleich aus?', a: 'Ja, dank der proportionalen Repositionierung. Bei Bildern mit verschiedenen Abmessungen wird das Wasserzeichen auf dem Referenzbild erstellt. Beim Export berechnet die Engine die Position jedes Layers als relative Abweichung vom Bildzentrum und wendet dieselbe Proportion auf jedes Zielbild an. Die Größe wird proportional skaliert (basierend auf dem kleineren Verhältnis aus Breite oder Höhe), sodass der Layer nicht über den Rand hinausgeht. Ergebnis: gleichbleibende relative Position und Größe in der gesamten Serie.' },
+      { q: '5. Kann ich mein eigenes Logo oder eine Signatur als Wasserzeichen verwenden?', a: 'Absolut. Mit "Add Image" im rechten Panel können Sie eine Bilddatei als Wasserzeichen-Layer hochladen. PNGs mit Transparenz sind ideal — die Transparenz bleibt erhalten, sodass nur das Logo sichtbar ist. Sie können das Logo über Eckgriffe skalieren (Seitenverhältnis bleibt erhalten), drehen, spiegeln, die Deckkraft ändern und sogar Rahmen oder abgerundete Ecken hinzufügen. Viele Nutzer halten eine transparente Logo-Datei speziell fürs Wasserzeichen bereit.' },
+      { q: '6. Wie mache ich das Wasserzeichen transparent oder halbtransparent?', a: 'Wählen Sie den Wasserzeichen-Layer auf der Leinwand. In der oberen Toolbar finden Sie den Deckkraftregler mit Prozentwert — Sie können tippen oder ziehen. Für ein dezentes, professionelles Wasserzeichen sind 30–50% üblich; für ein deutliches Copyright 70–80%. Zum schnellen Vergleich können Sie die Sichtbarkeit im Layer-Manager (Augen-Symbol) ein- und ausschalten.' },
+      { q: '7. Kann ich mehrere Wasserzeichen auf einem Bild verwenden?', a: 'Ja — das Layer-System unterstützt unbegrenzt viele Wasserzeichen, jeweils unabhängig konfigurierbar. Sie können gleichzeitig einen Text-Hinweis unten rechts, ein Logo oben links und ein gekacheltes "SAMPLE" verwenden. Jeder Layer hat eigene Deckkraft, Rotation, Position, Größe und Stil. Der Layer-Manager organisiert alles und erlaubt das Ein-/Ausblenden ohne Löschen, damit Sie Varianten testen können.' },
+      { q: '8. Was macht die Kachel-Funktion und wann sollte ich sie nutzen?', a: 'Kacheln wiederholt Ihr Wasserzeichen in einem Raster über das gesamte Bild. Grid 2×2 erzeugt vier Kopien, Grid 3×3 neun Kopien. Der Abstand-Regler steuert die Lücken. Kacheln ist ideal, wenn Sie das Bild unbrauchbar für unautorisierte Nutzung machen möchten — ein einzelnes Wasserzeichen in der Ecke lässt sich oft wegschneiden, ein flächiges Muster hingegen kaum, ohne das Bild zu zerstören. Das ist typisch für Vertragsvorschauen, Entwürfe oder Inhalte vor der Bezahlung.' },
+      { q: '9. Funktioniert das Tool auf Smartphones und Tablets?', a: 'Ja, das Tool ist vollständig responsiv und für Mobilgeräte optimiert. Unter 900px wird die Drei-Panel-Ansicht gestapelt: Die Miniaturen werden zu einer horizontalen Leiste, die Leinwand bleibt im Zentrum, und die Einstellungen erscheinen als Bottom-Sheet über einen schwebenden Zahnrad-Button. Alle Interaktionen — Ziehen, Skalieren, Drehen — sind touchfähig. Die Griffe sind auf Mobilgeräten größer (16×16 px) für bessere Bedienbarkeit.' },
+      { q: '10. Sind meine Bilddaten privat? Werden Fotos auf Server hochgeladen?', a: 'Ihre Bilder verlassen Ihr Gerät nicht. Der gesamte Workflow — Laden, Rendern, Exportieren — läuft im Browser mit JavaScript und der HTML5 Canvas API. Die File API lädt das Bild in den Speicher, der Wasserzeichen-Layer wird auf eine Offscreen-Canvas gezeichnet, und beim Download werden die Pixel in einen Blob umgewandelt, der lokal gespeichert wird. Es gibt keine Netzwerkanfragen mit Bilddaten. Zusätzlich schützt eine Seiten-Verlasser-Abfrage davor, dass Sie eine aktive Session versehentlich verlieren.' },
     ],
     qrCodeGenerator: [
       { q: 'Läuft dieser QR-Code irgendwann ab?', a: 'Nein, diese QR-Codes laufen nicht ab und bieten lebenslange Nutzung. Da sie fest codierte Anweisungen in Form von Bits in quadratischen Modulen speichern, können die darin gespeicherten Informationen nicht geändert oder entfernt werden. Sie können die Informationen auch nach Jahren noch mit jeder Kamera durch einfaches Scannen abrufen.' },

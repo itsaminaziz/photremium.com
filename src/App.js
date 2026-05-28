@@ -1,6 +1,6 @@
-import React, { useMemo } from 'react';
+import React, { useEffect, useMemo } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
-import { HelmetProvider } from 'react-helmet-async';
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { LanguageProvider } from './context/LanguageContext';
 import { ContactProvider } from './context/ContactContext';
 import Navbar from './Components/Navbar/Navbar';
@@ -13,13 +13,17 @@ import ImageCompressor from './Components/Pages/ImageCompressor';
 import ResizeImage from './Components/Pages/ResizeImage';
 import CropImage from './Components/Pages/CropImage';
 import RemoveBackground from './Components/Pages/RemoveBackground';
+import RemoveBackgroundAI from './Components/Pages/RemoveBackgroundAI';
 import WatermarkImage from './Components/Pages/WatermarkImage';
 import QRCodeGenerator from './Components/Pages/QRCodeGenerator';
 import QRCodeScanner from './Components/Pages/QRCodeScanner';
 import FaceBlur from './Components/Pages/FaceBlur';
 import PrivacyPolicy from './Components/Pages/PrivacyPolicy';
 import SitemapPage from './Components/Pages/SitemapPage';
+import ImageSharing from './Components/ImageSharing/ImageSharing';
 import NotFound from './Components/Pages/NotFound';
+import Blogs from './Components/Pages/Blogs';
+import BlogDetail from './Components/Pages/BlogDetail';
 import ScrollToTop from './Components/ScrollToTop';
 import { LANG_CODES } from './i18n/languages';
 import './App.css';
@@ -63,14 +67,47 @@ function PageRouter() {
       <Route path="resize-image" element={<ResizeImage />} />
       <Route path="crop-image" element={<CropImage />} />
       <Route path="remove-background" element={<RemoveBackground />} />
+      <Route path="remove-background-ai" element={<RemoveBackgroundAI />} />
       <Route path="watermark-image" element={<WatermarkImage />} />
       <Route path="qr-code-generator" element={<QRCodeGenerator />} />
       <Route path="qr-code-scanner" element={<QRCodeScanner />} />
       <Route path="face-blur" element={<FaceBlur />} />
+        <Route path="image-sharing" element={<ImageSharing />} />
       <Route path="privacy-policy" element={<PrivacyPolicy />} />
       <Route path="sitemap" element={<SitemapPage />} />
+      <Route path="blogs" element={<Blogs />} />
+      <Route path="blogs/:slug" element={<BlogDetail />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
+  );
+}
+
+const CANONICAL_BASE = 'https://photremium.com';
+
+const normalizeCanonicalPath = (pathname) => {
+  if (!pathname || pathname === '/') return '/';
+  return pathname.replace(/\/+$/, '');
+};
+
+function CanonicalLink() {
+  const location = useLocation();
+  const canonicalPath = normalizeCanonicalPath(location.pathname);
+  const canonicalUrl = `${CANONICAL_BASE}${canonicalPath}`;
+
+  useEffect(() => {
+    let canonicalTag = document.querySelector('link[rel="canonical"]');
+    if (!canonicalTag) {
+      canonicalTag = document.createElement('link');
+      canonicalTag.setAttribute('rel', 'canonical');
+      document.head.appendChild(canonicalTag);
+    }
+    canonicalTag.setAttribute('href', canonicalUrl);
+  }, [canonicalUrl]);
+
+  return (
+    <Helmet key={canonicalUrl}>
+      <link rel="canonical" href={canonicalUrl} />
+    </Helmet>
   );
 }
 
@@ -82,6 +119,7 @@ function App() {
         <LanguageProvider>
           <ContactProvider>
             <ScrollToTop />
+            <CanonicalLink />
             <div className="App">
               <Navbar />
               <main className="main-content">

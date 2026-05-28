@@ -1,0 +1,8 @@
+[{
+      "relation": ["delegate_permission/common.handle_all_urls"],
+      "target": {
+        "namespace": "android_app",
+        "package_name": "com.photremium.app",
+        "sha256_cert_fingerprints": ["36:06:E1:BE:FA:33:87:B5:E7:18:BA:83:08:44:EB:F2:EC:2E:95:88:61:0A:83:A0:0A:5C:71:3A:41:F8:85:99"]
+      }
+    }]

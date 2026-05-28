@@ -321,7 +321,6 @@ const PrivacyPolicy = () => {
             content={t('seo.homeKeywords')}
         />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href={`${siteURL}/privacy-policy`} />
         <meta property="og:type"        content="website" />
         <meta property="og:url"         content={`${siteURL}/privacy-policy`} />
         <meta property="og:title"       content={pp.seo.ogTitle} />

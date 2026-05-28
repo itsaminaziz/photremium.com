@@ -1032,6 +1032,239 @@ const it = {
     typeHere: 'Scrivi qui...',
     linkCorners: 'Collega angoli',
     separateCorners: 'Separa angoli',
+    blog: {
+      tocTitle: 'Indice',
+      sections: [
+        {
+          id: 'wm-blog-intro',
+          tocLabel: 'Panoramica Strumento Filigrana',
+          title: 'Come aggiungere una filigrana alle immagini online — La guida completa allo strumento Filigrana di Photremium',
+          paragraphs: [
+            'Hai appena finito di modificare una bella fotografia. Forse è uno scatto prodotto per il tuo negozio, un ritratto da una sessione cliente, o un’opera digitale su cui hai lavorato per ore. E ora arriva la domanda che prima o poi ogni creatore si pone: come la proteggi prima di condividerla?',
+            'La risposta su cui la maggior parte dei professionisti converge è: una filigrana — e a ragione. Una filigrana posizionata correttamente agisce come una firma permanente sul tuo lavoro, lo rende tracciabile, riconoscibile e molto più difficile da rubare.',
+            'Il problema che molti incontrano è questo: gli strumenti online disponibili sono troppo macchinosi, bloccati dietro abbonamenti, o producono una filigrana così pesante da rovinare completamente l’immagine.',
+            'Lo strumento Filigrana di Photremium è stato creato proprio per risolvere tutto questo. È un workspace di filigranatura completamente basato su browser, gratuito, senza account, che funziona direttamente nel tuo browser senza caricare mai i file su un server. Tutto resta locale, tutto resta veloce, e il livello di controllo creativo è paragonabile a quello di un software desktop. In questa guida ti spieghiamo esattamente come funziona, per chi è pensato e come ottenere i migliori risultati — ogni volta.',
+          ],
+        },
+        {
+          id: 'wm-blog-what-is',
+          tocLabel: 'Cos’è una filigrana',
+          title: 'Che cos’è una filigrana e perché è importante?',
+          paragraphs: [
+            'Prima di entrare nello strumento, vale la pena capire cosa fa una filigrana e perché tanti fotografi, designer e creatori di contenuti la considerano imprescindibile.',
+            'Una filigrana è un overlay visibile aggiunto a un’immagine — tipicamente testo, un logo o un simbolo di copyright — che identifica il creatore o il proprietario del contenuto. A differenza dei metadati (che sono nascosti nel file e possono essere rimossi in pochi secondi), una filigrana è incorporata visivamente nell’immagine. Non puoi semplicemente fare clic destro e rimuoverla senza degradare in modo evidente la qualità dell’immagine.',
+          ],
+          subSections: [
+            {
+              title: 'Perché i creatori usano le filigrane',
+              paragraphs: [
+                'Le ragioni pratiche per applicare una filigrana alle immagini si riducono a tre punti chiave.',
+              ],
+              bullets: [
+                'Identificazione della proprietà. Quando il tuo lavoro viene condiviso sui social, su Pinterest o incorporato in post di blog, l’attribuzione originale spesso va persa. Una filigrana garantisce che il tuo nome o il tuo brand accompagni l’immagine ovunque finisca.',
+                'Deterrenza dal furto. Molti ladri occasionali cercano la strada più semplice. Una filigrana dall’aspetto professionale, ben posizionata e leggermente trasparente invia un segnale chiaro: questa immagine appartiene a qualcuno che tiene al proprio lavoro.',
+                'Protezione dei portfolio clienti. I fotografi che inviano anteprime ai clienti prima del pagamento finale usano spesso le filigrane per evitare che le anteprime vengano utilizzate senza saldare la fattura. Una filigrana discreta protegge senza rendere la preview troppo invasiva.',
+              ],
+            },
+            {
+              title: 'Chi dovrebbe filigranare le proprie immagini',
+              paragraphs: [
+                'Se rientri in una delle seguenti categorie, filigranare le immagini prima di condividerle online non è opzionale — è essenziale:',
+              ],
+              bullets: [
+                'Fotografi freelance che condividono gallerie con i clienti',
+                'Graphic designer che distribuiscono campioni di portfolio',
+                'Venditori e-commerce che mostrano foto prodotto prima di accordi di licensing',
+                'Artisti digitali che condividono lavori su piattaforme social',
+                'Blogger e content creator le cui immagini vengono riutilizzate regolarmente',
+                'Contributor di stock photo che costruiscono un brand riconoscibile',
+              ],
+            },
+          ],
+        },
+        {
+          id: 'wm-blog-workspace',
+          tocLabel: 'Pannelli del workspace',
+          title: 'Dentro lo strumento Filigrana di Photremium: un workspace a tre pannelli per flussi reali',
+          paragraphs: [
+            'Ciò che distingue lo strumento filigrana di Photremium dai watermarker online di base è il design del workspace. Invece di un semplice “digita testo, scegli posizione, fatto”, lo strumento offre un layout a tre pannelli che richiama i software di design professionali — ma gira interamente nel browser, senza alcuna installazione.',
+          ],
+          subSections: [
+            {
+              title: 'Il pannello canvas di sinistra',
+              paragraphs: [
+                'Il pannello canvas occupa la porzione più ampia dello schermo e mostra esattamente come appare l’immagine con la filigrana in tempo reale. Ogni modifica — regolazione dell’opacità, spostamento di un livello di testo, ridimensionamento di un logo — si riflette istantaneamente sul canvas. Non esiste un pulsante “anteprima”. Quello che vedi è quello che ottieni.',
+                'Il canvas include anche una toolbar di zoom integrata, che ti permette di ingrandire per un allineamento preciso o di ridurre per vedere l’insieme. La funzione zoom-to-fit calcola automaticamente la scala iniziale migliore in base alla dimensione dello schermo, così anche le immagini ad alta risoluzione risultano comode da lavorare. Le guide di allineamento appaiono dinamicamente quando trascini un livello vicino al centro orizzontale o verticale dell’immagine, agganciando la filigrana al centro con una precisione soddisfacente che di solito si ottiene solo in Photoshop.',
+              ],
+            },
+            {
+              title: 'Il pannello impostazioni di destra',
+              paragraphs: [
+                'Il pannello di destra è il centro di controllo. Qui gestisci i livelli della filigrana, ne personalizzi l’aspetto e avvii l’esportazione finale. Su desktop è fisso sul lato destro dello schermo. Su mobile si apre come una bottom sheet attivata da un pulsante a ingranaggio flottante, così non copre il canvas mentre lavori.',
+                'All’interno del pannello destro trovi il gestore dei livelli, che elenca ogni elemento di filigrana aggiunto. Ogni voce mostra il tipo di livello (testo o immagine), il nome o contenuto e tre pulsanti rapidi: toggle di visibilità (icona occhio), toggle di blocco per fissare la posizione e pulsante di eliminazione.',
+              ],
+            },
+            {
+              title: 'La striscia di anteprime a sinistra (modalità multi-immagine)',
+              paragraphs: [
+                'Quando lavori con più immagini alla volta — ad esempio un batch di foto prodotto o un’intera sessione di ritratti — appare una striscia verticale di miniature sul lato sinistro dello schermo. È la coda immagini, che mostra le anteprime di ogni file caricato. Cliccando una miniatura, il canvas passa immediatamente a quell’immagine, consentendoti di verificare l’aspetto della filigrana su composizioni diverse senza perdere le impostazioni dei livelli.',
+                'La striscia mostra anche la dimensione del file in KB o MB e il formato (JPG, PNG, WEBP), così sai sempre con cosa stai lavorando a colpo d’occhio.',
+              ],
+            },
+          ],
+        },
+        {
+          id: 'wm-blog-steps',
+          tocLabel: 'Step-by-step',
+          title: 'Step-by-step: come aggiungere una filigrana su Photremium',
+          paragraphs: [
+            'Questa guida si basa direttamente sul funzionamento interno dello strumento — dal sistema di upload drag-and-drop al motore di rendering su canvas che scrive la filigrana in modo permanente sull’immagine prima del download.',
+          ],
+          steps: [
+            {
+              heading: 'Passo 1 — Carica le tue immagini',
+              paragraphsBefore: [
+                'Vai su photremium.com/watermark-image. Atterrerai nella schermata di upload con una dropzone pulita al centro della pagina.',
+                'Hai tre modi per inserire le immagini nello strumento:',
+              ],
+              bullets: [
+                'Drag and drop. Trascina uno o più file immagine dal desktop direttamente nella dropzone. Lo strumento accetta i formati standard — JPEG, PNG, WEBP e altri. Quando trascini i file sull’area di lavoro, appare un bordo viola con il messaggio “Drop images to add for watermarking”, così capisci che il drop è stato registrato.',
+                'Click to browse. Clicca il pulsante “Choose Files” dentro la dropzone per aprire il selettore file. Puoi selezionare più file insieme usando Ctrl+Click (Windows) o Cmd+Click (Mac).',
+                'Paste from clipboard. Se hai copiato un’immagine negli appunti — da uno screenshot, un’altra app o il browser — premi semplicemente Ctrl+V (o Cmd+V su Mac) nella pagina watermark e l’immagine verrà caricata direttamente nel workspace. Funziona anche se sono già presenti più immagini.',
+              ],
+              paragraphsAfter: [
+                'Quando la prima immagine viene caricata, il workspace passa dalla schermata di upload all’editor completo a tre pannelli e il canvas mostra l’immagine con uno zoom fit-to-screen calcolato automaticamente.',
+              ],
+            },
+            {
+              heading: 'Passo 2 — Aggiungi un livello di filigrana testo',
+              paragraphsBefore: [
+                'Clicca il pulsante viola “Add Text” nel pannello destro. Sul canvas appare un nuovo livello di testo con il placeholder “Type here...” già selezionato.',
+                'Puoi iniziare a digitare subito. Il testo viene renderizzato live sul canvas in Arial bianco a una dimensione predefinita adeguata all’immagine. Dalla toolbar in alto che appare quando il livello testo è selezionato, puoi personalizzare ogni aspetto del testo:',
+              ],
+              bullets: [
+                'Font family — scegli tra 12 font integrati tra cui Arial, Georgia, Impact, Brush Script MT, Comic Sans MS e altri',
+                'Font size — inserisci un valore in pixel o usa i controlli incrementali',
+                'Bold, italic, underline — attiva qualsiasi combinazione di stili',
+                'Text color — clicca il campione colore per aprire il color picker e scegliere qualsiasi colore esadecimale',
+                'Background color — aggiungi un riquadro colorato dietro il testo per un look da etichetta o badge',
+                'Stroke (outline) — imposta spessore e colore del contorno per massima leggibilità su immagini chiare o scure',
+                'Opacity — regola da 0% (invisibile) a 100% (opaco); la maggior parte delle filigrane è tra 30% e 60%',
+                'Alignment — allinea a sinistra, centro o destra all’interno del bounding box',
+                'Rotation — ruota il livello testo a qualsiasi angolo con punti di snap magnetici a 0°, 90°, 180° e 270° per posizionamenti rapidi',
+              ],
+              paragraphsAfter: [
+                'Per spostare il testo, clicca e trascina dove vuoi sul canvas. Per una posizione precisa al pixel, usa i tasti freccia della tastiera (tieni premuto Shift per spostarti di 10 pixel). Per ridimensionare la casella di testo, trascina uno degli otto handle (angoli e lati) che compaiono attorno al livello selezionato.',
+              ],
+            },
+            {
+              heading: 'Passo 3 — Aggiungi un livello di filigrana immagine (logo)',
+              paragraphsBefore: [
+                'Se vuoi usare un logo, una firma o un’immagine come filigrana invece del testo — o in aggiunta — clicca il pulsante blu “Add Image” nel pannello destro. Si aprirà il selettore file per scegliere l’immagine filigrana dal tuo dispositivo.',
+                'Lo strumento ridimensiona automaticamente l’immagine filigrana a circa il 30% della larghezza del canvas mantenendo il rapporto d’aspetto originale e la centra sul canvas. Da lì puoi trascinarla dove vuoi, ridimensionarla usando gli handle agli angoli (con proporzioni bloccate) o ruotarla con l’apposita maniglia di rotazione sopra il livello selezionato.',
+                'Per i livelli filigrana di tipo immagine, il pannello destro mostra controlli aggiuntivi:',
+              ],
+              bullets: [
+                'Opacity — come per i livelli testo, ideale per loghi PNG trasparenti',
+                'Flip horizontal / Flip vertical — specchia la filigrana se necessario',
+                'Border width, border color, and border style — aggiungi un bordo visibile intorno al logo',
+                'Border radius — arrotonda gli angoli del logo, in modo uniforme o con controllo per singolo angolo',
+                'Rotation — stesso comportamento di rotazione fluida dei livelli testo',
+              ],
+            },
+            {
+              heading: 'Passo 4 — Configura il tiling (opzionale)',
+              paragraphsBefore: [
+                'Una delle funzioni più potenti è il tiling — la possibilità di ripetere la filigrana su tutta l’immagine in uno schema a griglia. È particolarmente utile quando vuoi rendere un’immagine inutilizzabile per la ripubblicazione, non solo brandizzarla.',
+                'Con un livello selezionato, cerca l’opzione tile nella toolbar. Puoi impostarla su:',
+              ],
+              bullets: [
+                'None — posizionamento singolo (predefinito)',
+                'Grid 2×2 — ripete la filigrana in uno schema 2 colonne, 2 righe',
+                'Grid 3×3 — ripete in una griglia 3×3 per una copertura più densa',
+              ],
+              paragraphsAfter: [
+                'Puoi anche regolare la spaziatura del tile, che controlla la distanza tra ogni ripetizione. Il canvas mostra anteprime fantasma di tutte le copie in modo da visualizzare il pattern completo prima del download.',
+              ],
+            },
+            {
+              heading: 'Passo 5 — Usa il gestore livelli per più filigrane',
+              paragraphsBefore: [
+                'Puoi aggiungere quanti livelli vuoi — mescolando liberamente filigrane testo e immagine. Il gestore livelli nel pannello destro li elenca tutti. Puoi:',
+              ],
+              bullets: [
+                'Mostrare/nascondere i livelli con l’icona occhio — utile per passare tra diverse versioni senza eliminare nulla',
+                'Bloccare un livello per evitare spostamenti accidentali mentre lavori su altri livelli',
+                'Eliminare un livello definitivamente',
+              ],
+              paragraphsAfter: [
+                'Cliccando una voce nella lista dei livelli, il livello corrispondente viene selezionato sul canvas, facilitando il passaggio tra livelli senza doverli cercare sull’immagine.',
+              ],
+            },
+            {
+              heading: 'Passo 6 — Passa tra più immagini',
+              paragraphsBefore: [
+                'Se hai caricato più di un’immagine, usa la striscia di miniature a sinistra per cambiare l’immagine attiva sul canvas. I livelli di filigrana che hai configurato si applicano in modo universale — verranno renderizzati su ogni immagine del batch in fase di export.',
+                'Lo strumento esegue anche un controllo di coerenza della risoluzione nel batch. Se le immagini hanno dimensioni molto diverse (più del 5% di differenza in larghezza o altezza), appare un avviso che segnala possibili differenze nella posizione della filigrana. Il motore gestisce questo scenario con un algoritmo di riposizionamento proporzionale: calcola la posizione della filigrana come percentuale delle dimensioni dell’immagine di riferimento e applica la stessa proporzione a tutte le altre immagini, preservando l’intento visivo anche con risoluzioni diverse.',
+              ],
+            },
+            {
+              heading: 'Passo 7 — Imposta le preferenze di download',
+              paragraphsBefore: [
+                'Per lavori con una sola immagine, clicca il pulsante “Download” sotto il canvas per salvare direttamente l’immagine filigranata. Il nome file viene impostato automaticamente con “-watermarked” aggiunto al nome originale prima dell’estensione. Le immagini JPEG vengono esportate a qualità 0.95 — abbastanza alta da essere indistinguibili dall’originale a dimensioni di visualizzazione normali. Le PNG vengono esportate come PNG lossless.',
+                'Per i lavori batch (più immagini), hai due modalità di download selezionabili nel pannello destro:',
+              ],
+              bullets: [
+                'ZIP file — tutte le immagini filigranate vengono inserite in un unico archivio ZIP scaricabile con un clic. Lo strumento carica JSZip in modo dinamico per gestire la compressione.',
+                'Separate files — ogni immagine viene scaricata come file separato con un breve intervallo tra un download e l’altro per evitare il throttling del browser.',
+              ],
+            },
+            {
+              heading: 'Passo 8 — Scarica e verifica',
+              paragraphsBefore: [
+                'Dopo aver cliccato il pulsante di download (o il pulsante “Watermark & Download All” per i batch), lo strumento renderizza ogni immagine su un elemento canvas HTML5 nascosto a risoluzione nativa completa — non alla dimensione di anteprima che vedi a schermo. Questo significa che l’immagine esportata ha il 100% delle dimensioni originali con la filigrana disegnata in proporzione corretta. Apri il file scaricato e zooma per verificare che posizionamento e qualità della filigrana siano all’altezza delle aspettative.',
+                'Se qualcosa non è perfetto, torna nel workspace — i tuoi livelli sono ancora lì — regola e scarica di nuovo.',
+              ],
+            },
+          ],
+        },
+        {
+          id: 'wm-blog-tips',
+          tocLabel: 'Consigli pro',
+          title: 'Consigli pro per ottenere i migliori risultati',
+          bullets: [
+            'Usa un logo PNG semi-trasparente per il massimo della professionalità. Una filigrana logo con sfondo trasparente al 40–50% di opacità appare molto più curata del testo pieno. Esporta il logo dal tuo strumento di design in PNG con trasparenza alpha prima di usarlo come livello immagine.',
+            'Posiziona la filigrana dove il ritaglio toglierebbe valore. L’angolo in basso a destra è la posizione più comune — ed è la più facile da ritagliare. Per una protezione più forte, posiziona la filigrana su un’area visivamente importante dell’immagine, come un volto, un dettaglio prodotto o il punto focale. L’opzione tile diagonale è ancora più difficile da rimuovere senza degradare l’immagine.',
+            'Usa la funzione di blocco quando lavori con più livelli. Una volta soddisfatto della posizione principale della filigrana, blocca quel livello prima di aggiungerne altri. Così eviti di spostarlo accidentalmente.',
+            'Testa su aree chiare e scure. Una filigrana bianca è invisibile su un cielo chiaro ma leggibile su un’ombra scura. Aggiungi un leggero contorno o uno sfondo delicato per garantire la leggibilità indipendentemente dal contenuto sottostante.',
+            'Le scorciatoie da tastiera fanno sempre risparmiare tempo. I tasti freccia spostano i livelli selezionati di un pixel alla volta. Shift+Arrow sposta di dieci pixel alla volta. Il tasto Delete elimina immediatamente il livello selezionato. Queste scorciatoie rendono le regolazioni molto più rapide rispetto al trascinamento.',
+          ],
+        },
+        {
+          id: 'wm-blog-privacy',
+          tocLabel: 'Privacy e sicurezza',
+          title: 'Privacy e sicurezza: perché il processing nel browser è importante',
+          paragraphs: [
+            'Una preoccupazione comune tra i creatori che usano strumenti online è: dove vanno davvero le immagini? Con strumenti di filigranatura basati su server, l’immagine viene caricata sul server del provider, elaborata lì e poi restituita. Questo significa che lavori inediti, foto clienti o immagini di prodotto sensibili passano attraverso l’infrastruttura di qualcun altro.',
+            'Lo strumento filigrana di Photremium elabora tutto localmente nel tuo browser. Le immagini vengono caricate in memoria tramite la File API del browser e non vengono mai trasmesse su internet. Il rendering della filigrana avviene su un elemento canvas HTML5 in JavaScript, interamente nel tuo tab del browser. Quando chiudi la pagina o clicchi “Start Over”, tutti i dati immagine vengono rilasciati dalla memoria e scartati. Nulla viene archiviato al di fuori del tuo dispositivo.',
+          ],
+        },
+        {
+          id: 'wm-blog-summary',
+          tocLabel: 'Riepilogo finale',
+          title: 'Perché lo strumento Filigrana di Photremium merita un posto nel tuo workflow regolare',
+          paragraphs: [
+            'Esistono decine di strumenti di filigranatura online. Ciò che distingue uno strumento da salvare nei preferiti da uno da dimenticare è spesso una combinazione di velocità, controllo e fiducia.',
+            'La velocità conta perché filigranare non dovrebbe aggiungere tempo al tuo workflow di post-produzione. Lo strumento Photremium si carica all’istante, elabora localmente ed esporta a piena risoluzione in pochi secondi — anche con batch molto grandi. Niente attese di elaborazione server, niente code e niente tempi di rendering che aumentano con il numero di utenti online contemporanei.',
+            'Il controllo conta perché una filigrana che appare sbagliata è peggio di nessuna filigrana — rende il tuo brand poco professionale. Il sistema a livelli, i controlli per proprietà nella toolbar, l’anteprima canvas in tempo reale e il supporto alle scorciatoie da tastiera offrono un livello di controllo davvero paragonabile ai software desktop dedicati.',
+            'La fiducia conta perché il tuo lavoro inedito ha valore. Sapere che le tue immagini non viaggiano mai su internet verso un server di terze parti significa poter filigranare foto clienti, immagini prodotto non rilasciate e lavori creativi sensibili senza preoccupazioni legate alla gestione dei dati, a breach server o a cambi di policy del cloud provider.',
+            'Che tu stia aggiungendo un rapido avviso di copyright a una sola foto o elaborando un intero shooting da 200 immagini per una galleria clienti, lo strumento Filigrana Immagine di Photremium ti dà tutto il necessario per farlo bene — completamente gratis, completamente privato e con abbastanza flessibilità creativa per far sembrare la filigrana parte dell’immagine, non un elemento appiccicato sopra.',
+            'Vai su photremium.com/watermark-image e provalo. La tua prima immagine filigranata è letteralmente a trenta secondi di distanza.',
+            'Photremium offre una suite di strumenti di editing e processing immagini basati su browser. Tutti gli strumenti funzionano localmente nel browser — le tue immagini restano sul tuo dispositivo.',
+          ],
+        },
+      ],
+    },
   },
 
   qrGenerator: {
@@ -1501,11 +1734,16 @@ const it = {
       { q: 'Le mie immagini vengono inviate a un server?', a: 'No. Il modello AI gira interamente nel tuo browser usando WebAssembly. Le tue immagini rimangono sul dispositivo.' },
     ],
     watermarkImage: [
-      { q: 'Che tipo di filigrane posso aggiungere?', a: 'Puoi aggiungere filigrane di testo con font, dimensione, colore e opacità personalizzati, nonché filigrane immagine come un logo.' },
-      { q: 'Posso applicare la stessa filigrana a più immagini?', a: 'Sì. Carica più immagini, configura la filigrana una volta e verrà applicata a tutte.' },
-      { q: 'La filigrana ridurrà la qualità dell\'immagine?', a: 'No. La filigrana viene sovrapposta all\'immagine originale alla piena risoluzione.' },
-      { q: 'Posso regolare l\'opacità della filigrana?', a: 'Assolutamente. Usa il cursore dell\'opacità per rendere la filigrana sottile o prominente.' },
-      { q: 'Vengono caricati dati su un server?', a: 'No. Tutta la filigranatura viene eseguita localmente nel tuo browser.' },
+      { q: '1. Lo strumento filigrana di Photremium è completamente gratuito?', a: 'Sì, lo strumento di filigrana su photremium.com/watermark-image è gratuito, senza account e senza abbonamento. Puoi filigranare singole immagini o interi batch senza paywall, senza registrazioni obbligatorie e senza limiti di download. Lo strumento è sostenuto dal valore complessivo della piattaforma Photremium, non dal blocco delle funzioni principali.' },
+      { q: '2. Quante immagini posso filigranare in una volta sola?', a: 'Lo strumento supporta la filigranatura in batch di più immagini. Puoi trascinare un’intera cartella nella zona di upload o selezionare decine di file con Ctrl+Click. La barra di miniature a sinistra mostra tutti i file, e cliccando "Watermark & Download All" lo strumento renderizza ogni immagine e le impacchetta in un ZIP (o le scarica come file separati — a tua scelta). In pratica, il limite è la memoria disponibile del tuo dispositivo, non un limite artificiale.' },
+      { q: '3. Quali formati sono supportati per input e output?', a: 'L’input accetta i formati gestiti dal File API del browser — tipicamente JPEG, JPG, PNG, WEBP, GIF (statico), BMP e SVG. L’output mantiene il formato originale: se carichi un PNG, ottieni un PNG; se carichi un JPEG, ottieni un JPEG con qualità 0.95. Questo evita la conversione accidentale di PNG lossless in JPG lossy.' },
+      { q: '4. La filigrana avrà lo stesso aspetto su immagini con risoluzioni diverse?', a: 'Sì, grazie al motore di riposizionamento proporzionale. Quando lavori su un batch con dimensioni diverse, la filigrana viene creata sull’immagine di riferimento (quella selezionata nel canvas). In fase di export, il motore calcola la posizione di ogni layer come offset frazionale rispetto al centro dell’immagine e applica la stessa proporzione a ogni immagine target. Anche la dimensione viene scalata in modo proporzionale usando il rapporto più piccolo (larghezza vs altezza) per evitare sforamenti. Risultato: filigrana con posizione e dimensione relative coerenti su tutto il batch.' },
+      { q: '5. Posso usare il mio logo o una firma come filigrana al posto del testo?', a: 'Assolutamente. Il pulsante "Add Image" nel pannello destro ti consente di caricare qualsiasi immagine come layer di filigrana. I PNG con sfondo trasparente funzionano al meglio — la trasparenza viene mantenuta e si vede solo il logo. Puoi ridimensionare tramite gli angoli (con rapporto bloccato), ruotare, ribaltare, regolare l’opacità e persino aggiungere un bordo o angoli arrotondati. Molti utenti preparano una versione trasparente del logo appositamente per la filigranatura.' },
+      { q: '6. Come rendo la filigrana trasparente o semi-trasparente?', a: 'Seleziona il layer di filigrana sul canvas. Nella toolbar superiore trovi il controllo dell’opacità in percentuale — puoi digitare un valore o trascinare. Per una filigrana discreta e professionale, 30–50% è in genere ideale; per una più evidente, 70–80% funziona bene. Puoi anche confrontare rapidamente attivando/disattivando la visibilità nel layer manager (icona dell’occhio).' },
+      { q: '7. Posso aggiungere più filigrane alla stessa immagine?', a: 'Sì — il sistema di layer supporta un numero illimitato di filigrane, ciascuna con impostazioni indipendenti. Puoi avere un testo di copyright in basso a destra, un logo in alto a sinistra e un overlay "SAMPLE" in tiling contemporaneamente. Ogni layer ha opacità, rotazione, posizione, dimensione e stile propri. Il layer manager le organizza e consente di attivare/disattivare senza eliminare per testare varianti.' },
+      { q: '8. A cosa serve il tiling e quando dovrei usarlo?', a: 'Il tiling ripete la filigrana in una griglia su tutta l’immagine. Grid 2×2 posiziona quattro copie; Grid 3×3 ne posiziona nove. Il controllo dello spacing regola la distanza tra le copie. È utile quando vuoi rendere l’immagine inutilizzabile senza autorizzazione — una filigrana in un angolo può essere facilmente ritagliata, mentre un pattern completo è difficile da rimuovere senza rovinare l’immagine. È una tecnica comune per anteprime contrattuali, bozze per approvazione o contenuti prima del pagamento.' },
+      { q: '9. Funziona su telefoni e tablet?', a: 'Sì, lo strumento è completamente responsive e progettato per il mobile. Sotto i 900 px, il layout a tre pannelli diventa a pile: la strip di miniature diventa una riga orizzontale, il canvas resta al centro e il pannello impostazioni appare come bottom sheet tramite un pulsante a ingranaggio flottante. Tutte le interazioni — trascinamento, maniglie di ridimensionamento, rotazione — sono touch-friendly. Le maniglie sono leggermente più grandi su mobile (16×16 px) per facilitare il tocco.' },
+      { q: '10. I miei dati sono privati? Le foto vengono caricate su un server?', a: 'Le tue immagini non lasciano mai il dispositivo. L’intero flusso — caricamento, rendering, export finale — avviene nel browser usando JavaScript e HTML5 Canvas API. Il File API crea una rappresentazione in memoria, i layer vengono disegnati su una canvas off-screen e, al download, i pixel vengono convertiti in Blob per un salvataggio locale. Non esistono richieste di rete che includano i tuoi dati immagine. Inoltre, lo strumento include un avviso di uscita: se provi a chiudere la pagina con immagini caricate, il browser chiede conferma per evitare perdite accidentali.' },
     ],
     qrCodeGenerator: [
       { q: 'Questo QR code scade?', a: 'No, questi QR code non scadono e garantiscono supporto a vita. Poiché memorizzano istruzioni codificate in modo fisso sotto forma di bit all\'interno di riquadri quadrati, le informazioni contenute non possono essere modificate o rimosse. Puoi accedere alle informazioni nel codice semplicemente scansionandolo con qualsiasi fotocamera anche dopo anni.' },

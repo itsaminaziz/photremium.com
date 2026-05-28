@@ -822,6 +822,239 @@ const ptBr = {
     typeHere: 'Digite aqui...',
     linkCorners: 'Vincular cantos',
     separateCorners: 'Separar cantos',
+    blog: {
+      tocTitle: 'Conteúdo',
+      sections: [
+        {
+          id: 'wm-blog-intro',
+          tocLabel: 'Visão geral da ferramenta de marca d\'água',
+          title: 'Como adicionar marca d\'água às suas imagens online — o guia completo da ferramenta de marca d\'água da Photremium',
+          paragraphs: [
+            'Você acabou de terminar de editar uma bela fotografia. Pode ser uma foto de produto para sua loja, um retrato de uma sessão de cliente ou uma peça de arte digital que você passou horas aperfeiçoando. E agora vem a pergunta que todo criador acaba enfrentando: como proteger isso antes de compartilhar?',
+            'A resposta a que a maioria dos profissionais chega é a marca d\'água — e com bons motivos. Uma marca d\'água posicionada corretamente atua como uma assinatura permanente do seu trabalho, tornando-o rastreável, com a sua marca e muito mais difícil de roubar.',
+            'O problema que a maioria das pessoas enfrenta é o seguinte: as ferramentas disponíveis online são ou muito complicadas, ou travadas atrás de assinaturas, ou produzem uma marca d\'água tão pesada que estragam a imagem por completo.',
+            'A ferramenta Watermark Image da Photremium foi criada para resolver tudo isso. É um espaço de trabalho de marca d\'água totalmente baseado no navegador, gratuito e sem necessidade de conta, que roda diretamente no seu navegador sem nunca enviar seus arquivos para um servidor. Tudo permanece local, tudo permanece rápido, e o nível de controle criativo que ela oferece rivaliza com o que você esperaria de um aplicativo de desktop. Neste guia, vamos mostrar exatamente como ela funciona, para quem foi criada e como obter os melhores resultados possíveis — sempre.',
+          ],
+        },
+        {
+          id: 'wm-blog-what-is',
+          tocLabel: 'O que é uma marca d\'água',
+          title: 'O que é uma marca d\'água e por que isso importa?',
+          paragraphs: [
+            'Antes de mergulhar na ferramenta em si, vale entender o que uma marca d\'água faz e por que tantos fotógrafos, designers e criadores de conteúdo a consideram indispensável.',
+            'Uma marca d\'água é uma sobreposição visível adicionada a uma imagem — normalmente texto, um logotipo ou um símbolo de copyright — que identifica o criador ou proprietário do conteúdo. Diferente dos metadados (que ficam escondidos dentro do arquivo e podem ser removidos em segundos), a marca d\'água fica incorporada visualmente na própria imagem. Você não pode simplesmente clicar com o botão direito e removê-la sem degradar visivelmente a qualidade da imagem.',
+          ],
+          subSections: [
+            {
+              title: 'Por que criadores usam marcas d\'água',
+              paragraphs: [
+                'Os motivos práticos para marcar suas imagens se resumem a três preocupações centrais.',
+              ],
+              bullets: [
+                'Identificação de propriedade. Quando seu trabalho é compartilhado em redes sociais, painéis do Pinterest ou incorporado em posts de blog, a atribuição original muitas vezes se perde. A marca d\'água garante que seu nome ou sua marca acompanhem a imagem onde quer que ela vá.',
+                'Dissuasão contra roubo. A maioria dos ladrões casuais de imagens procura o caminho de menor resistência. Uma marca d\'água com aparência profissional, especialmente bem posicionada e levemente transparente, envia um sinal claro: esta imagem pertence a alguém que se importa com seu trabalho.',
+                'Proteção do portfólio do cliente. Fotógrafos que compartilham prévias com clientes antes do pagamento final frequentemente usam marcas d\'água para impedir que o cliente use a prévia sem quitar a fatura. Uma marca d\'água sutil faz isso sem tornar a prévia distraente demais para avaliação.',
+              ],
+            },
+            {
+              title: 'Quem deve marcar suas imagens',
+              paragraphs: [
+                'Se você se encaixa em qualquer uma das categorias a seguir, marcar suas imagens antes de compartilhar online não é opcional — é essencial:',
+              ],
+              bullets: [
+                'Fotógrafos freelancers que compartilham galerias com clientes',
+                'Designers gráficos que distribuem amostras de portfólio',
+                'Vendedores de e-commerce que mostram fotos de produtos antes de acordos de licenciamento',
+                'Artistas digitais que compartilham trabalhos em plataformas sociais',
+                'Blogueiros e criadores de conteúdo cujas imagens são regularmente reutilizadas',
+                'Contribuidores de fotos de banco de imagens construindo uma marca reconhecível',
+              ],
+            },
+          ],
+        },
+        {
+          id: 'wm-blog-workspace',
+          tocLabel: 'Painéis do espaço de trabalho',
+          title: 'Por dentro da ferramenta de marca d\'água da Photremium: um espaço de trabalho de três painéis criado para fluxos reais',
+          paragraphs: [
+            'O que faz a ferramenta de marca d\'água da Photremium se destacar dos marcadores de imagem online básicos é o design do espaço de trabalho. Em vez de oferecer uma abordagem simples de “digite o texto, escolha a posição, pronto”, a ferramenta fornece um layout de três painéis que espelha o que você encontraria em um software de design profissional — só que funciona totalmente no navegador, sem necessidade de instalação.',
+          ],
+          subSections: [
+            {
+              title: 'O painel esquerdo do canvas',
+              paragraphs: [
+                'O painel do canvas ocupa a maior parte da tela e mostra exatamente como sua imagem fica com a marca d\'água aplicada em tempo real. Cada alteração que você faz — ajustar a opacidade, reposicionar uma camada de texto, redimensionar um logotipo — aparece instantaneamente no canvas. Não existe botão de “preview” para clicar. O que você vê é o que você obtém.',
+                'O canvas também inclui uma barra de zoom integrada, permitindo ampliar para um alinhamento preciso e reduzir para ver o quadro geral. O recurso de ajustar à tela calcula automaticamente a melhor escala inicial com base no tamanho da sua tela, então até imagens em alta resolução abrem em um tamanho confortável de trabalho. Guias de alinhamento aparecem dinamicamente quando você arrasta uma camada perto do centro horizontal ou vertical da imagem, encaixando a marca d\'água em uma posição perfeitamente centralizada com uma precisão que normalmente você só esperaria do Photoshop.',
+              ],
+            },
+            {
+              title: 'O painel de configurações à direita',
+              paragraphs: [
+                'O painel da direita é o centro de controle. É ali que você gerencia suas camadas de marca d\'água, personaliza sua aparência e dispara a exportação final. No desktop, ele fica fixo no lado direito da tela. Em dispositivos móveis, ele sobe como uma folha inferior — acionada por um botão de engrenagem flutuante — para nunca cobrir seu canvas enquanto você trabalha.',
+                'Dentro do painel direito você encontra o gerenciador de camadas, que lista cada elemento de marca d\'água adicionado. Cada item mostra o tipo de camada (texto ou imagem), seu nome ou conteúdo atual e três botões de ação rápida: um alternador de visibilidade (ícone de olho), um alternador de bloqueio para congelar a posição da camada enquanto você trabalha nas outras, e um botão de exclusão.',
+              ],
+            },
+            {
+              title: 'A faixa de pré-visualização à esquerda (modo com várias imagens)',
+              paragraphs: [
+                'Quando você trabalha com várias imagens ao mesmo tempo — um lote de fotos de produto, uma sessão de retratos inteira — uma faixa vertical de miniaturas aparece na extremidade esquerda da tela. Essa é a fila de imagens, mostrando prévias reduzidas de cada arquivo carregado. Clicar em qualquer miniatura troca seu canvas para essa imagem instantaneamente, permitindo verificar como a marca d\'água fica em diferentes composições sem perder suas configurações de camada.',
+                'A faixa também mostra o tamanho de cada arquivo em KB ou MB, junto com a etiqueta do formato (JPG, PNG, WEBP), para que você sempre saiba com o que está trabalhando de relance.',
+              ],
+            },
+          ],
+        },
+        {
+          id: 'wm-blog-steps',
+          tocLabel: 'Passo a passo',
+          title: 'Passo a passo: como adicionar uma marca d\'água à sua imagem no Photremium',
+          paragraphs: [
+            'Este guia se baseia diretamente em como a ferramenta funciona por baixo dos panos — desde o sistema de upload por arrastar e soltar até o mecanismo de renderização do canvas que escreve sua marca d\'água permanentemente na imagem antes do download.',
+          ],
+          steps: [
+            {
+              heading: 'Passo 1 — faça upload da sua imagem/imagens',
+              paragraphsBefore: [
+                'Acesse photremium.com/watermark-image. Você chegará à tela de upload, que apresenta uma área de arrastar e soltar limpa no centro da página.',
+                'Você tem três maneiras de levar sua imagem para a ferramenta:',
+              ],
+              bullets: [
+                'Arraste e solte. Arraste um ou mais arquivos de imagem da sua área de trabalho diretamente para a zona de soltura. A ferramenta aceita qualquer formato padrão de imagem — JPEG, PNG, WEBP e mais. Quando você arrasta arquivos sobre o espaço de trabalho, uma borda roxa é ativada ao redor de toda a área com o aviso visual “Drop images to add for watermarking”, para que você saiba que a ação de soltar foi registrada.',
+                'Clique para procurar. Clique no botão “Choose Files” dentro da zona de soltura para abrir o seletor de arquivos do sistema. Você pode selecionar vários arquivos de uma vez usando Ctrl+Click (Windows) ou Cmd+Click (Mac).',
+                'Cole da área de transferência. Se você copiou uma imagem para a área de transferência — de uma captura de tela, outro aplicativo ou um navegador — basta pressionar Ctrl+V (ou Cmd+V no Mac) na página da marca d\'água e a imagem será carregada diretamente no espaço de trabalho. Isso funciona mesmo quando várias imagens já estão carregadas.',
+              ],
+              paragraphsAfter: [
+                'Assim que a primeira imagem carrega, o espaço de trabalho sai da tela de upload e entra no editor completo de três painéis, e o canvas exibe sua imagem em um nível de zoom ajustado automaticamente para caber na tela.',
+              ],
+            },
+            {
+              heading: 'Passo 2 — adicione uma camada de marca d\'água de texto',
+              paragraphsBefore: [
+                'Clique no botão roxo “Add Text” no painel direito. Uma nova camada de texto aparece no canvas com o texto de espaço reservado padrão “Type here...” já selecionado.',
+                'Você pode começar a digitar imediatamente. O texto é renderizado ao vivo no canvas em Arial branco, com um tamanho padrão ajustado às dimensões da sua imagem. Na barra superior que aparece quando a camada de texto está selecionada, você pode personalizar todos os aspectos do texto:',
+              ],
+              bullets: [
+                'Família da fonte — escolha entre 12 fontes integradas, incluindo Arial, Georgia, Impact, Brush Script MT, Comic Sans MS e mais',
+                'Tamanho da fonte — digite um valor em pixels diretamente ou use os controles de incremento',
+                'Negrito, itálico, sublinhado — ative qualquer combinação desses estilos',
+                'Cor do texto — clique na amostra de cor para abrir o seletor e escolher qualquer cor hex',
+                'Cor de fundo — adicione um fundo colorido atrás do texto para um visual de rótulo ou selo',
+                'Contorno (stroke) — defina largura e cor do contorno para máxima legibilidade em imagens claras e escuras',
+                'Opacidade — ajuste de 0% (invisível) a 100% (totalmente opaco); a maioria das marcas d\'água fica entre 30% e 60%',
+                'Alinhamento — alinhe o texto à esquerda, ao centro ou à direita dentro da caixa delimitadora',
+                'Rotação — gire a camada de texto para qualquer ângulo, com pontos magnéticos em 0°, 90°, 180° e 270° para posicionamento rápido em ângulos retos',
+              ],
+              paragraphsAfter: [
+                'Para mover o texto, clique e arraste para qualquer lugar no canvas. Para posicionamento fino e preciso, use as setas do teclado (segure Shift para passos de 10 pixels). Para redimensionar a caixa de texto, arraste qualquer uma das oito alças de redimensionamento (cantos e bordas) que aparecem ao redor da camada selecionada.',
+              ],
+            },
+            {
+              heading: 'Passo 3 — adicione uma camada de marca d\'água de imagem (logotipo)',
+              paragraphsBefore: [
+                'Se quiser usar um logotipo, assinatura ou qualquer imagem como marca d\'água em vez de — ou além de — texto, clique no botão azul “Add Image” no painel direito. O seletor de arquivos será aberto para que você escolha o arquivo de imagem da marca d\'água no seu dispositivo.',
+                'A ferramenta redimensiona automaticamente a imagem da marca d\'água para cerca de 30% da largura do canvas, mantendo a proporção original, e a centraliza no canvas. A partir daí, você pode arrastá-la para qualquer posição, redimensioná-la usando as alças de canto (que preservam a proporção) ou rotacioná-la usando a alça dedicada que aparece acima da camada selecionada.',
+                'Para camadas de marca d\'água do tipo imagem, o painel direito expõe controles adicionais:',
+              ],
+              bullets: [
+                'Opacidade — igual às camadas de texto, ideal para logos PNG transparentes',
+                'Virar horizontal / Virar vertical — espelhe a marca d\'água se necessário',
+                'Largura da borda, cor da borda e estilo da borda — adicione uma borda visível ao redor do logotipo da marca d\'água',
+                'Raio da borda — arredonde os cantos do logo, de forma uniforme ou com controle separado para cada canto',
+                'Rotação — o mesmo comportamento suave de rotação das camadas de texto',
+              ],
+            },
+            {
+              heading: 'Passo 4 — configure o tiling (opcional)',
+              paragraphsBefore: [
+                'Um dos recursos mais poderosos da ferramenta é o tiling — a capacidade de repetir sua marca d\'água em toda a imagem em um padrão de grade. Isso é especialmente útil quando você quer tornar uma imagem inutilizável para republicação, em vez de apenas marcada com a sua marca.',
+                'Com uma camada selecionada, procure a opção tile na barra de ferramentas. Você pode defini-la para:',
+              ],
+              bullets: [
+                'Nenhum — posicionamento único (padrão)',
+                'Grade 2×2 — repete a marca d\'água em um padrão de 2 colunas por 2 linhas',
+                'Grade 3×3 — repete em uma grade 3×3 para cobertura mais densa',
+              ],
+              paragraphsAfter: [
+                'Você também pode ajustar o espaçamento dos tiles, que controla a distância entre cada repetição. O canvas mostra prévias fantasmas de todas as cópias em tile, para que você veja o padrão completo de cobertura antes de baixar.',
+              ],
+            },
+            {
+              heading: 'Passo 5 — use o gerenciador de camadas para várias marcas d\'água',
+              paragraphsBefore: [
+                'Você pode adicionar quantas camadas quiser — misturando livremente marcas d\'água de texto e imagem. O gerenciador de camadas no painel direito lista todas elas. Você pode:',
+              ],
+              bullets: [
+                'Mostrar/ocultar camadas individuais usando o ícone de olho — útil para alternar entre diferentes versões da marca d\'água sem apagar nada',
+                'Bloquear uma camada para evitar reposicionamento acidental enquanto trabalha em outras',
+                'Excluir uma camada permanentemente',
+              ],
+              paragraphsAfter: [
+                'Clicar em qualquer item da lista também o seleciona no canvas, facilitando alternar entre camadas sem ficar procurando pela imagem.',
+              ],
+            },
+            {
+              heading: 'Passo 6 — alterne entre várias imagens',
+              paragraphsBefore: [
+                'Se você enviou mais de uma imagem, use a faixa de miniaturas à esquerda para alternar a imagem ativa do canvas. As camadas de marca d\'água que você configurou se aplicam universalmente — elas serão renderizadas em todas as imagens do seu lote no momento da exportação.',
+                'A ferramenta também faz uma verificação de consistência de resolução em todo o lote. Se suas imagens tiverem dimensões muito diferentes (mais de 5% de diferença em largura ou altura), um aviso aparecerá informando que a posição da marca d\'água pode parecer diferente entre as imagens devido à variação de tamanho. O mecanismo lida com isso de forma elegante por meio de um algoritmo de reposicionamento proporcional: ele calcula a posição da marca d\'água como uma porcentagem das dimensões da imagem de referência e aplica o mesmo posicionamento proporcional a cada outra imagem do lote, preservando a intenção visual mesmo em resoluções diferentes.',
+              ],
+            },
+            {
+              heading: 'Passo 7 — defina suas preferências de download',
+              paragraphsBefore: [
+                'Para trabalhos com uma única imagem, clique no botão “Download” abaixo do canvas para salvar a imagem com marca d\'água diretamente. O nome do arquivo será definido automaticamente como o nome original com “-watermarked” acrescentado antes da extensão. Imagens JPEG são exportadas com qualidade 0.95 — alta o suficiente para serem indistinguíveis do original em tamanhos normais de visualização. Imagens PNG são exportadas como PNG sem perdas.',
+                'Para trabalhos em lote (várias imagens), você tem dois modos de download selecionáveis no painel direito:',
+              ],
+              bullets: [
+                'Arquivo ZIP — todas as imagens com marca d\'água são empacotadas em um único arquivo ZIP baixado com um clique. A ferramenta carrega JSZip dinamicamente para lidar com a compressão.',
+                'Arquivos separados — cada imagem é baixada como um arquivo individual com um pequeno intervalo entre os downloads para evitar limitação do navegador.',
+              ],
+            },
+            {
+              heading: 'Passo 8 — baixe e verifique',
+              paragraphsBefore: [
+                'Depois de clicar no botão de download (ou no botão “Watermark & Download All” para lotes), a ferramenta renderiza cada imagem em um elemento HTML5 canvas oculto na resolução nativa total — não no tamanho de prévia reduzido que você vê na tela. Isso significa que a imagem exportada está com 100% das dimensões originais em pixels, com a marca d\'água desenhada no tamanho proporcionalmente correto. Abra o arquivo baixado e amplie para verificar se o posicionamento e a qualidade da marca d\'água atendem às suas expectativas.',
+                'Se algo parecer estranho, basta voltar ao espaço de trabalho — suas camadas ainda estarão lá — ajustar e baixar novamente.',
+              ],
+            },
+          ],
+        },
+        {
+          id: 'wm-blog-tips',
+          tocLabel: 'Dicas profissionais',
+          title: 'Dicas profissionais para obter os melhores resultados',
+          bullets: [
+            'Use um logo PNG semitransparente para um visual mais profissional. Uma marca d\'água com fundo transparente e opacidade entre 40% e 50% parece muito mais refinada do que texto sólido. Exporte seu logotipo da sua ferramenta de design como PNG com transparência alfa antes de usá-lo como camada de imagem.',
+            'Posicione sua marca d\'água onde o corte dela retire valor. O canto inferior direito é o posicionamento mais comum — e o mais fácil de remover por corte. Para uma proteção mais forte, considere colocar a marca d\'água em uma área visualmente importante da imagem, como o rosto, um detalhe do produto ou o ponto focal. A opção de tile diagonal é ainda mais difícil de remover sem degradar significativamente a imagem.',
+            'Use o recurso de bloqueio ao trabalhar com várias camadas. Assim que estiver satisfeito com a posição principal da sua marca d\'água, bloqueie essa camada antes de adicionar camadas secundárias. Isso evita mexer nela sem querer enquanto trabalha em outros elementos.',
+            'Teste em áreas claras e escuras da imagem. Uma marca d\'água branca some em um céu claro, mas fica perfeitamente legível em uma sombra escura. Adicione um contorno sutil ou uma cor de fundo para garantir legibilidade independentemente do que estiver por baixo.',
+            'Os atalhos de teclado sempre economizam tempo. As setas movem a camada selecionada um pixel por vez. Shift+seta move dez pixels por vez. A tecla Delete remove instantaneamente a camada selecionada. Esses atalhos tornam o ajuste fino muito mais rápido do que arrastar.',
+          ],
+        },
+        {
+          id: 'wm-blog-privacy',
+          tocLabel: 'Privacidade e segurança',
+          title: 'Privacidade e segurança: por que o processamento no navegador importa',
+          paragraphs: [
+            'Uma preocupação comum de muitos criadores ao usar ferramentas online é para onde suas imagens realmente vão. Em ferramentas de marca d\'água baseadas em servidor, sua imagem é enviada ao servidor do provedor, processada lá e depois devolvida a você. Isso significa que seu trabalho ainda não publicado, fotos de clientes ou imagens sensíveis de produtos passam pela infraestrutura de outra pessoa.',
+            'A ferramenta de marca d\'água da Photremium processa tudo localmente no seu navegador. Suas imagens são carregadas na memória do seu dispositivo usando a File API do navegador e nunca são transmitidas pela internet. A renderização da marca d\'água acontece em um elemento HTML5 canvas executando em JavaScript, inteiramente dentro da aba do seu navegador. Quando você fecha a página ou clica em “Start Over”, todos os dados da imagem são liberados da memória e descartados. Nada é armazenado fora do seu próprio dispositivo.',
+          ],
+        },
+        {
+          id: 'wm-blog-summary',
+          tocLabel: 'Resumo final',
+          title: 'Por que a ferramenta de marca d\'água da Photremium merece um lugar no seu fluxo de trabalho regular',
+          paragraphs: [
+            'Existem dezenas de ferramentas de marca d\'água disponíveis online. O que separa uma ferramenta que vale a pena salvar nos favoritos de outra que vale esquecer é geralmente uma combinação de velocidade, controle e confiabilidade.',
+            'Velocidade importa porque marcar imagens com água não deve adicionar tempo significativo ao seu fluxo de pós-processamento. A ferramenta da Photremium carrega instantaneamente, processa localmente e exporta em resolução total em segundos — mesmo para lotes grandes. Não há espera por processamento no servidor, não há fila e não há tempo de renderização que aumente conforme mais usuários ficam online ao mesmo tempo.',
+            'Controle importa porque uma marca d\'água com aparência errada é pior do que nenhuma marca d\'água — isso faz sua marca parecer pouco profissional. O sistema de camadas, os controles por propriedade na barra de ferramentas, a pré-visualização em tempo real no canvas e o suporte a atalhos de teclado se somam a um nível de controle realmente comparável ao de softwares desktop dedicados.',
+            'Confiabilidade importa porque seu trabalho ainda não publicado é valioso. Saber que suas imagens nunca trafegam pela internet até um servidor de terceiros significa que você pode marcar fotos de clientes, imagens de produtos não lançados e trabalhos criativos sensíveis sem qualquer preocupação com tratamento de dados, falhas do lado do servidor ou mudanças de política de um provedor de nuvem.',
+            'Seja para adicionar um aviso de copyright rápido a uma única foto ou para processar uma sessão inteira com 200 imagens antes de compartilhar uma galeria de cliente, a ferramenta Watermark Image da Photremium oferece os recursos para fazer isso direito — totalmente grátis, totalmente privada e com flexibilidade criativa suficiente para fazer a marca d\'água parecer parte da imagem, e não algo colado por cima.',
+            'Acesse photremium.com/watermark-image e experimente. Sua primeira imagem com marca d\'água está literalmente a trinta segundos de distância.',
+            'A Photremium oferece um conjunto de ferramentas de edição e processamento de imagens baseadas no navegador. Todas as ferramentas rodam localmente no seu navegador — suas imagens permanecem no seu dispositivo.',
+          ],
+        },
+      ],
+    },
   },
 
   qrGenerator: {
@@ -1194,11 +1427,16 @@ const ptBr = {
       { q: 'Minhas imagens são enviadas para um servidor?', a: 'Não. O modelo de IA roda inteiramente no seu navegador usando WebAssembly.' },
     ],
     watermarkImage: [
-      { q: 'Que tipos de marcas d\'agua posso adicionar?', a: 'Você pode adicionar marcas d\'agua de texto com fonte, tamanho, cor e opacidade personalizados, bem como marcas d\'agua de imagem como um logotipo.' },
-      { q: 'Posso aplicar a mesma marca d\'agua a várias imagens?', a: 'Sim. Faça upload de várias imagens, configure sua marca d\'agua uma vez e ela será aplicada a todas.' },
-      { q: 'A marca d\'agua vai reduzir a qualidade da minha imagem?', a: 'Não. A marca d\'agua é composta sobre a imagem original em resolução total.' },
-      { q: 'Posso ajustar a opacidade da marca d\'agua?', a: 'Com certeza. Use o controle deslizante de opacidade para ajustá-la como preferir.' },
-      { q: 'Algum dado é enviado para um servidor?', a: 'Não. Todo o processo de marca d\'agua é feito localmente no seu navegador.' },
+    { q: '1. A ferramenta de marca d\'agua da Photremium é totalmente gratuita?', a: 'Sim, a ferramenta em photremium.com/watermark-image é gratuita e não requer conta ou assinatura. Você pode aplicar marca d\'agua a imagens individuais ou lotes inteiros sem paywall e sem limites artificiais.' },
+    { q: '2. Quantas imagens posso processar ao mesmo tempo?', a: 'A ferramenta suporta processamento em lote. Arraste uma pasta inteira ou selecione muitos arquivos — o limite prático depende da memória do seu dispositivo.' },
+    { q: '3. Quais formatos de imagem são suportados?', a: 'Suporta formatos lidos pelo File API do navegador: JPEG, JPG, PNG, WEBP, GIF (estático), BMP e SVG. A saída mantém o formato de entrada.' },
+    { q: '4. A marca d\'agua ficará igual em imagens com resoluções diferentes?', a: 'Sim. O motor de reposicionamento proporcional calcula posição e escala relativas para cada imagem, mantendo a aparência da marca d\'agua no lote.' },
+    { q: '5. Posso usar meu próprio logotipo em vez de texto?', a: 'Sim. O botão "Add Image" permite enviar um PNG com fundo transparente, que preserva a transparência e é usado como camada de marca d\'agua.' },
+    { q: '6. Como deixar a marca d\'agua semitransparente?', a: 'Selecione a camada da marca d\'agua no canvas e ajuste o slider de opacidade. 30–50% geralmente funciona bem para um resultado discreto.' },
+    { q: '7. Posso adicionar várias camadas de marca d\'agua em uma única imagem?', a: 'Sim. O sistema de camadas suporta múltiplas camadas, cada uma com suas próprias configurações.' },
+    { q: '8. O que faz a função tiling e quando usar?', a: 'Tiling repete a marca d\'agua em uma grade por toda a imagem — útil para impedir o uso não autorizado do conteúdo.' },
+    { q: '9. A ferramenta funciona em dispositivos móveis?', a: 'Sim — a interface é responsiva: miniaturas viram uma faixa rolável, o painel de configurações aparece como drawer inferior e os controles suportam toque.' },
+    { q: '10. Minhas imagens são privadas e são enviadas para algum servidor?', a: 'As imagens permanecem no seu dispositivo. Todo o processamento é local no navegador usando Canvas API; não há upload dos dados de imagem.' },
     ],
     qrCodeGenerator: [
       { q: 'Este QR Code expira?', a: 'Não, esses QR Codes não expiram e garantem suporte vitalício. Como armazenam instruções codificadas em forma de bits dentro de módulos quadrados, as informações armazenadas neles não podem ser removidas. Você pode acessar as informações escaneando com qualquer câmera mesmo depois de anos.' },

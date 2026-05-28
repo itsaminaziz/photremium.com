@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect, useCallback, useMemo } from 'react';
-import { useLocation } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import SEO from '../SEO/SEO';
 import FAQ from '../FAQ/FAQ';
 import MobileImportPopup from '../MobileImportPopup/MobileImportPopup';
@@ -36,8 +36,7 @@ const unitFromPx = (px, unit) => {
   return px;
 };
 
-/* Resize using canvas */
-const resizeImage = (file, targetW, targetH) =>
+const resizeOrCropImage = (file, targetW, targetH, cropToFit) =>
   new Promise((resolve, reject) => {
     const img = new Image();
     const url = URL.createObjectURL(file);
@@ -48,8 +47,29 @@ const resizeImage = (file, targetW, targetH) =>
       const ctx = canvas.getContext('2d');
       ctx.imageSmoothingEnabled = true;
       ctx.imageSmoothingQuality = 'high';
-      ctx.drawImage(img, 0, 0, targetW, targetH);
-      /* Preserve original format */
+
+      const srcW = img.naturalWidth;
+      const srcH = img.naturalHeight;
+      const srcAspect = srcW / srcH;
+      const targetAspect = targetW / targetH;
+
+      if (cropToFit && Math.abs(srcAspect - targetAspect) > 0.002) {
+        let sx = 0;
+        let sy = 0;
+        let sw = srcW;
+        let sh = srcH;
+        if (srcAspect > targetAspect) {
+          sw = Math.round(srcH * targetAspect);
+          sx = Math.round((srcW - sw) / 2);
+        } else {
+          sh = Math.round(srcW / targetAspect);
+          sy = Math.round((srcH - sh) / 2);
+        }
+        ctx.drawImage(img, sx, sy, sw, sh, 0, 0, targetW, targetH);
+      } else {
+        ctx.drawImage(img, 0, 0, targetW, targetH);
+      }
+
       const mime = file.type || 'image/png';
       canvas.toBlob(
         (blob) => {
@@ -91,11 +111,256 @@ const RESIZE_MODES = [
   { value: 'inch', tKey: 'byInches' },
 ];
 
+const RESIZE_TEMPLATES = [
+  {
+    name: 'YouTube Thumbnail',
+    slug: 'yt-thumbnail',
+    icon: 'fa-brands fa-youtube',
+    width: 1280,
+    height: 720,
+    unit: 'px',
+    seoTitle: 'YouTube Thumbnail Size (1280x720) Resizer | Photremium',
+    seoDesc: 'Resize images to YouTube thumbnail size 1280x720 for crisp previews and better click-through.',
+    seoKeywords: 'youtube thumbnail size, 1280x720, youtube thumbnail resizer',
+  },
+  {
+    name: 'YouTube Banner',
+    slug: 'yt-banner',
+    icon: 'fa-brands fa-youtube',
+    width: 2560,
+    height: 1440,
+    unit: 'px',
+    seoTitle: 'YouTube Banner Size (2560x1440) Resizer | Photremium',
+    seoDesc: 'Resize images to YouTube channel art size 2560x1440 for professional branding.',
+    seoKeywords: 'youtube banner size, 2560x1440, channel art resizer',
+  },
+  {
+    name: 'Instagram Post',
+    slug: 'ig-post',
+    icon: 'fa-brands fa-instagram',
+    width: 1080,
+    height: 1080,
+    unit: 'px',
+    seoTitle: 'Instagram Post Size (1080x1080) Resizer | Photremium',
+    seoDesc: 'Resize images to Instagram post size 1080x1080 for sharp square posts.',
+    seoKeywords: 'instagram post size, 1080x1080, instagram square resizer',
+  },
+  {
+    name: 'Instagram Story',
+    slug: 'ig-story',
+    icon: 'fa-brands fa-instagram',
+    width: 1080,
+    height: 1920,
+    unit: 'px',
+    seoTitle: 'Instagram Story Size (1080x1920) Resizer | Photremium',
+    seoDesc: 'Resize images to Instagram story size 1080x1920 for full-screen stories.',
+    seoKeywords: 'instagram story size, 1080x1920, story resizer',
+  },
+  {
+    name: 'Instagram Reel',
+    slug: 'ig-reel',
+    icon: 'fa-brands fa-instagram',
+    width: 1080,
+    height: 1920,
+    unit: 'px',
+    seoTitle: 'Instagram Reel Size (1080x1920) Resizer | Photremium',
+    seoDesc: 'Resize images to Instagram Reel size 1080x1920 for vertical content.',
+    seoKeywords: 'instagram reel size, 1080x1920, reel thumbnail resizer',
+  },
+  {
+    name: 'Facebook Post',
+    slug: 'fb-post',
+    icon: 'fa-brands fa-facebook',
+    width: 1200,
+    height: 630,
+    unit: 'px',
+    seoTitle: 'Facebook Post Size (1200x630) Resizer | Photremium',
+    seoDesc: 'Resize images to Facebook post size 1200x630 for link previews and posts.',
+    seoKeywords: 'facebook post size, 1200x630, facebook resizer',
+  },
+  {
+    name: 'Facebook Cover',
+    slug: 'fb-cover',
+    icon: 'fa-brands fa-facebook',
+    width: 820,
+    height: 312,
+    unit: 'px',
+    seoTitle: 'Facebook Cover Size (820x312) Resizer | Photremium',
+    seoDesc: 'Resize images to Facebook cover size 820x312 for profile headers.',
+    seoKeywords: 'facebook cover size, 820x312, facebook header resizer',
+  },
+  {
+    name: 'X Post',
+    slug: 'x-post',
+    icon: 'fa-brands fa-x-twitter',
+    width: 1600,
+    height: 900,
+    unit: 'px',
+    seoTitle: 'X Post Size (1600x900) Resizer | Photremium',
+    seoDesc: 'Resize images to X post size 1600x900 for optimal previews.',
+    seoKeywords: 'x post size, twitter image size, 1600x900 resizer',
+  },
+  {
+    name: 'X Header',
+    slug: 'x-header',
+    icon: 'fa-brands fa-x-twitter',
+    width: 1500,
+    height: 500,
+    unit: 'px',
+    seoTitle: 'X Header Size (1500x500) Resizer | Photremium',
+    seoDesc: 'Resize images to X header size 1500x500 for profile banners.',
+    seoKeywords: 'x header size, twitter header size, 1500x500 resizer',
+  },
+  {
+    name: 'LinkedIn Post',
+    slug: 'li-post',
+    icon: 'fa-brands fa-linkedin',
+    width: 1200,
+    height: 627,
+    unit: 'px',
+    seoTitle: 'LinkedIn Post Size (1200x627) Resizer | Photremium',
+    seoDesc: 'Resize images to LinkedIn post size 1200x627 for clean previews.',
+    seoKeywords: 'linkedin post size, 1200x627, linkedin resizer',
+  },
+  {
+    name: 'LinkedIn Banner',
+    slug: 'li-banner',
+    icon: 'fa-brands fa-linkedin',
+    width: 1584,
+    height: 396,
+    unit: 'px',
+    seoTitle: 'LinkedIn Banner Size (1584x396) Resizer | Photremium',
+    seoDesc: 'Resize images to LinkedIn banner size 1584x396 for profile headers.',
+    seoKeywords: 'linkedin banner size, 1584x396, linkedin header resizer',
+  },
+  {
+    name: 'Pinterest Pin',
+    slug: 'pinterest-pin',
+    icon: 'fa-brands fa-pinterest',
+    width: 1000,
+    height: 1500,
+    unit: 'px',
+    seoTitle: 'Pinterest Pin Size (1000x1500) Resizer | Photremium',
+    seoDesc: 'Resize images to Pinterest pin size 1000x1500 for tall pins.',
+    seoKeywords: 'pinterest pin size, 1000x1500, pinterest resizer',
+  },
+  {
+    name: 'TikTok Video',
+    slug: 'tiktok-video',
+    icon: 'fa-brands fa-tiktok',
+    width: 1080,
+    height: 1920,
+    unit: 'px',
+    seoTitle: 'TikTok Size (1080x1920) Resizer | Photremium',
+    seoDesc: 'Resize images to TikTok size 1080x1920 for vertical content.',
+    seoKeywords: 'tiktok size, 1080x1920, tiktok resizer',
+  },
+  {
+    name: 'Snapchat Story',
+    slug: 'snapchat-story',
+    icon: 'fa-brands fa-snapchat',
+    width: 1080,
+    height: 1920,
+    unit: 'px',
+    seoTitle: 'Snapchat Story Size (1080x1920) Resizer | Photremium',
+    seoDesc: 'Resize images to Snapchat story size 1080x1920 for full-screen stories.',
+    seoKeywords: 'snapchat story size, 1080x1920, snapchat resizer',
+  },
+  {
+    name: 'A4 Print',
+    slug: 'a4-print',
+    icon: 'fa-regular fa-file-lines',
+    width: 2480,
+    height: 3508,
+    unit: 'px',
+    seoTitle: 'A4 Size (2480x3508) Resizer | Photremium',
+    seoDesc: 'Resize images to A4 size 2480x3508 at 300 DPI for print-ready files.',
+    seoKeywords: 'a4 size px, 2480x3508, print resizer',
+  },
+  {
+    name: 'A5 Print',
+    slug: 'a5-print',
+    icon: 'fa-regular fa-file-lines',
+    width: 1748,
+    height: 2480,
+    unit: 'px',
+    seoTitle: 'A5 Size (1748x2480) Resizer | Photremium',
+    seoDesc: 'Resize images to A5 size 1748x2480 at 300 DPI for print.',
+    seoKeywords: 'a5 size px, 1748x2480, print resizer',
+  },
+  {
+    name: '4K UHD',
+    slug: '4k-uhd',
+    icon: 'fa-solid fa-tv',
+    width: 3840,
+    height: 2160,
+    unit: 'px',
+    seoTitle: '4K UHD Size (3840x2160) Resizer | Photremium',
+    seoDesc: 'Resize images to 4K UHD 3840x2160 for crisp displays.',
+    seoKeywords: '4k size, 3840x2160, uhd resizer',
+  },
+  {
+    name: 'Desktop Wallpaper',
+    slug: 'desktop-wallpaper',
+    icon: 'fa-solid fa-desktop',
+    width: 1920,
+    height: 1080,
+    unit: 'px',
+    seoTitle: 'Desktop Wallpaper Size (1920x1080) Resizer | Photremium',
+    seoDesc: 'Resize images to desktop wallpaper size 1920x1080.',
+    seoKeywords: 'desktop wallpaper size, 1920x1080, wallpaper resizer',
+  },
+  {
+    name: 'Web Banner',
+    slug: 'web-banner',
+    icon: 'fa-solid fa-window-maximize',
+    width: 1920,
+    height: 480,
+    unit: 'px',
+    seoTitle: 'Web Banner Size (1920x480) Resizer | Photremium',
+    seoDesc: 'Resize images to web banner size 1920x480 for hero sections.',
+    seoKeywords: 'web banner size, 1920x480, hero image resizer',
+  },
+  {
+    name: 'Square Thumb',
+    slug: 'square-thumb',
+    icon: 'fa-solid fa-border-all',
+    width: 800,
+    height: 800,
+    unit: 'px',
+    seoTitle: 'Square Thumbnail Size (800x800) Resizer | Photremium',
+    seoDesc: 'Resize images to square thumbnail size 800x800 for grids and listings.',
+    seoKeywords: 'square thumbnail, 800x800, square resizer',
+  },
+  {
+    name: 'iPhone 14 Pro',
+    slug: 'iphone-14-pro',
+    icon: 'fa-solid fa-mobile-screen-button',
+    width: 1290,
+    height: 2796,
+    unit: 'px',
+    seoTitle: 'iPhone 14 Pro Wallpaper Size (1290x2796) Resizer | Photremium',
+    seoDesc: 'Resize images to iPhone 14 Pro wallpaper size 1290x2796.',
+    seoKeywords: 'iphone 14 pro wallpaper, 1290x2796, iphone wallpaper resizer',
+  },
+  {
+    name: 'iPad Pro 12.9',
+    slug: 'ipad-pro-12-9',
+    icon: 'fa-solid fa-tablet-screen-button',
+    width: 2048,
+    height: 2732,
+    unit: 'px',
+    seoTitle: 'iPad Pro 12.9 Wallpaper Size (2048x2732) Resizer | Photremium',
+    seoDesc: 'Resize images to iPad Pro 12.9 wallpaper size 2048x2732.',
+    seoKeywords: 'ipad pro wallpaper, 2048x2732, ipad resizer',
+  },
+];
+
 /* ============================================= */
 /*             IMAGE RESIZER PAGE                */
 /* ============================================= */
 const ResizeImage = () => {
-  const { t, lang } = useLanguage();
+  const { t, lang, localePath } = useLanguage();
   const isBlogRtl = lang === 'ur' || lang === 'ar';
   const blog = t('resizer.blog');
   const blogSections = useMemo(() => (Array.isArray(blog?.sections) ? blog.sections : []), [blog]);
@@ -121,6 +386,9 @@ const ResizeImage = () => {
   const [height, setHeight] = useState('');
   const [lockAspect, setLockAspect] = useState(true);
   const [dontEnlarge, setDontEnlarge] = useState(true);
+  const [activeTemplate, setActiveTemplate] = useState(null);
+  const [templatesOpen, setTemplatesOpen] = useState(false);
+  const [templateQuery, setTemplateQuery] = useState('');
 
   /* Aspect ratio from first image */
   const [aspectRatio, setAspectRatio] = useState(1);
@@ -132,6 +400,34 @@ const ResizeImage = () => {
   const addFileInputRef = useRef(null);
   const didPrefillFromStateRef = useRef(false);
   const dragDepthRef = useRef(0);
+
+  const templateParam = useMemo(() => new URLSearchParams(location.search).get('template'), [location.search]);
+  const templatePreview = useMemo(() => RESIZE_TEMPLATES.slice(0, 6), []);
+  const filteredTemplates = useMemo(() => {
+    const q = templateQuery.trim().toLowerCase();
+    if (!q) return RESIZE_TEMPLATES;
+    return RESIZE_TEMPLATES.filter((tpl) => {
+      const text = `${tpl.name} ${tpl.slug}`.toLowerCase();
+      return text.includes(q);
+    });
+  }, [templateQuery]);
+
+  const applyTemplate = useCallback((tpl) => {
+    if (!tpl) return;
+    setActiveTemplate(tpl);
+    setResizeMode('pixel');
+    setLockAspect(true);
+    setWidth(tpl.width);
+    setHeight(tpl.height);
+    setAspectRatio(tpl.width / tpl.height);
+    setImages((prev) => prev.map((img) => ({ ...img, resizedBlob: null, resizedSize: null })));
+  }, []);
+
+  useEffect(() => {
+    if (!templateParam) return;
+    const tpl = RESIZE_TEMPLATES.find((t) => t.slug === templateParam);
+    if (tpl) applyTemplate(tpl);
+  }, [templateParam, applyTemplate]);
 
   /* --- warn before reload --- */
   useEffect(() => {
@@ -213,6 +509,7 @@ const ResizeImage = () => {
   const handleWidthChange = (val) => {
     const v = val === '' ? '' : Number(val);
     setWidth(v);
+    if (activeTemplate) setActiveTemplate(null);
     if (lockAspect && v !== '' && aspectRatio) {
       if (resizeMode === 'percentage') {
         setHeight(v);
@@ -229,6 +526,7 @@ const ResizeImage = () => {
   const handleHeightChange = (val) => {
     const v = val === '' ? '' : Number(val);
     setHeight(v);
+    if (activeTemplate) setActiveTemplate(null);
     if (lockAspect && v !== '' && aspectRatio) {
       if (resizeMode === 'percentage') {
         setWidth(v);
@@ -256,6 +554,7 @@ const ResizeImage = () => {
       }
     }
     setResizeMode(mode);
+    setActiveTemplate(null);
     if (mode === 'percentage') {
       setWidth(origW > 0 ? Math.round((curWPx / origW) * 100) : 100);
       setHeight(origH > 0 ? Math.round((curHPx / origH) * 100) : 100);
@@ -269,14 +568,17 @@ const ResizeImage = () => {
   /* --- compute final pixel dimensions for an image --- */
   const getFinalDims = (img) => {
     let targetW, targetH;
-    if (resizeMode === 'percentage') {
+    if (activeTemplate) {
+      targetW = activeTemplate.width;
+      targetH = activeTemplate.height;
+    } else if (resizeMode === 'percentage') {
       targetW = Math.round(img.origW * (width || 100) / 100);
       targetH = Math.round(img.origH * (height || 100) / 100);
     } else {
       targetW = pxFromUnit(width || unitFromPx(img.origW, resizeMode), resizeMode);
       targetH = pxFromUnit(height || unitFromPx(img.origH, resizeMode), resizeMode);
     }
-    if (dontEnlarge) {
+    if (!activeTemplate && dontEnlarge) {
       targetW = Math.min(targetW, img.origW);
       targetH = Math.min(targetH, img.origH);
     }
@@ -293,7 +595,7 @@ const ResizeImage = () => {
             return { id: img.id, blob: img.resizedBlob, size: img.resizedSize ?? img.resizedBlob.size };
           }
           const dims = getFinalDims(img);
-          const blob = await resizeImage(img.file, dims.w, dims.h);
+          const blob = await resizeOrCropImage(img.file, dims.w, dims.h, Boolean(activeTemplate));
           return { id: img.id, blob, size: blob.size };
         })
       );
@@ -470,15 +772,21 @@ const ResizeImage = () => {
   /* Unit suffix for inputs */
   const unitSuffix = resizeMode === 'pixel' ? 'px' : resizeMode === 'percentage' ? '%' : resizeMode === 'cm' ? 'cm' : 'in';
   const inputStep = resizeMode === 'pixel' || resizeMode === 'percentage' ? 1 : 0.1;
+  const seoUploadTitle = activeTemplate?.seoTitle || t('resizer.seo.uploadTitle');
+  const seoUploadDesc = activeTemplate?.seoDesc || t('resizer.seo.uploadDesc');
+  const seoUploadKeywords = activeTemplate?.seoKeywords || t('resizer.seo.uploadKeywords');
+  const seoWorkspaceTitle = activeTemplate?.seoTitle || t('resizer.seo.workspaceTitle');
+  const seoWorkspaceDesc = activeTemplate?.seoDesc || t('resizer.seo.workspaceDesc');
+  const seoWorkspaceKeywords = activeTemplate?.seoKeywords || t('resizer.seo.workspaceKeywords');
 
   /* =========================== UPLOAD VIEW =========================== */
   if (!images.length) {
     return (
       <>
         <SEO
-          title={t('resizer.seo.uploadTitle')}
-          description={t('resizer.seo.uploadDesc')}
-          keywords={t('resizer.seo.uploadKeywords')}
+          title={seoUploadTitle}
+          description={seoUploadDesc}
+          keywords={seoUploadKeywords}
         />
         <section className="rsz-upload">
           <div className="rsz-upload__inner">
@@ -616,9 +924,9 @@ const ResizeImage = () => {
   return (
     <>
       <SEO
-        title={t('resizer.seo.workspaceTitle')}
-        description={t('resizer.seo.workspaceDesc')}
-        keywords={t('resizer.seo.workspaceKeywords')}
+        title={seoWorkspaceTitle}
+        description={seoWorkspaceDesc}
+        keywords={seoWorkspaceKeywords}
       />
 
       <section
@@ -783,6 +1091,33 @@ const ResizeImage = () => {
               </div>
             </div>
 
+            {/* Templates strip */}
+            <div className="rsz-right__section">
+              <label className="rsz-right__label">Templates</label>
+              <div className="rsz-template-strip" role="list">
+                {templatePreview.map((tpl) => (
+                  <Link
+                    key={tpl.slug}
+                    to={localePath(`/resize-image?template=${tpl.slug}`)}
+                    className={`rsz-template-chip ${activeTemplate?.slug === tpl.slug ? 'active' : ''}`}
+                    onClick={() => applyTemplate(tpl)}
+                    role="listitem"
+                    aria-label={`${tpl.name} ${tpl.width}x${tpl.height}`}
+                  >
+                    <i className={tpl.icon}></i>
+                  </Link>
+                ))}
+                <button
+                  type="button"
+                  className="rsz-template-chip rsz-template-more"
+                  onClick={() => setTemplatesOpen(true)}
+                  aria-label="More templates"
+                >
+                  +{RESIZE_TEMPLATES.length}
+                </button>
+              </div>
+            </div>
+
             {/* Advanced options */}
             <div className="rsz-right__section">
               <label className="rsz-right__label">{t('resizer.advanced')}</label>
@@ -872,6 +1207,44 @@ const ResizeImage = () => {
           </div>
         </div>
       </section>
+
+      {templatesOpen && (
+        <div className="rsz-template-modal" role="dialog" aria-modal="true" aria-label="Resize templates">
+          <button className="rsz-template-modal__backdrop" onClick={() => setTemplatesOpen(false)} aria-label="Close templates" />
+          <div className="rsz-template-modal__card">
+            <div className="rsz-template-modal__header">
+              <h4>Resize Templates</h4>
+              <button type="button" onClick={() => setTemplatesOpen(false)} aria-label="Close">
+                <i className="fa-solid fa-xmark"></i>
+              </button>
+            </div>
+            <div className="rsz-template-search">
+              <i className="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+              <input
+                type="search"
+                value={templateQuery}
+                onChange={(e) => setTemplateQuery(e.target.value)}
+                placeholder="Search templates"
+                aria-label="Search templates"
+              />
+            </div>
+            <div className="rsz-template-grid">
+              {filteredTemplates.map((tpl) => (
+                <Link
+                  key={tpl.slug}
+                  to={localePath(`/resize-image?template=${tpl.slug}`)}
+                  className={`rsz-template-card ${activeTemplate?.slug === tpl.slug ? 'active' : ''}`}
+                  onClick={() => { applyTemplate(tpl); setTemplatesOpen(false); }}
+                >
+                  <span className="rsz-template-card__icon"><i className={tpl.icon}></i></span>
+                  <span className="rsz-template-card__name">{tpl.name}</span>
+                  <span className="rsz-template-card__size">{tpl.width} × {tpl.height} {tpl.unit}</span>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </div>
+      )}
     </>
   );
 };

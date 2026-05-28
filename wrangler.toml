@@ -1,0 +1,27 @@
+name = "photremium"
+pages_build_output_dir = "build"
+compatibility_date = "2024-05-15"
+
+# KV Namespaces for Image Sharing (session metadata, file manifests)
+kv_namespaces = [
+  { binding = "SESSIONS", id = "5c39a25eb1de4df1b65ec1bcecc2a931", preview_id = "893360fa178548d0b1c1b5978e643be9" },
+  { binding = "FILES", id = "d261b75c0dc5487e98efd1bdb7bafe0d", preview_id = "8e339a8fe62e4e8ab9cc022ec88bb4d1" }
+]
+
+# R2 Bucket for Image Sharing
+[[r2_buckets]]
+binding = "IMAGE_BUCKET"
+bucket_name = "photremium-sharing"
+preview_bucket_name = "photremium-sharing-preview"
+
+# Production bindings and cron trigger
+[env.production]
+kv_namespaces = [
+  { binding = "SESSIONS", id = "2f17a120f48d4ffa9683fd16cc36b32a" },
+  { binding = "FILES", id = "48194a1c29a74b55bbd0fa868c275adc" }
+]
+
+[[env.production.r2_buckets]]
+binding = "IMAGE_BUCKET"
+bucket_name = "photremium-sharing-prod"
+preview_bucket_name = "photremium-sharing-prod-preview"

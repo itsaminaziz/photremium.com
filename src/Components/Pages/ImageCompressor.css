@@ -2371,6 +2371,322 @@
   background: #fee2e2;
 }
 
+/* ---- Success popup ---- */
+.comp-success-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 4000;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+}
+
+.comp-success-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  animation: compFadeIn 0.25s ease-out both;
+}
+
+.comp-success-card {
+  position: relative;
+  width: min(560px, 92vw);
+  border-radius: 28px;
+  padding: 28px 28px 24px;
+  background: rgba(255, 255, 255, 0.96);
+  border: 1px solid rgba(148, 163, 184, 0.22);
+  box-shadow: 0 16px 36px rgba(15, 23, 42, 0.18);
+  animation: compPopupIn 0.38s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+  overflow: hidden;
+}
+
+.comp-success-close,
+.comp-success-share {
+  position: absolute;
+  top: 18px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid rgba(148, 163, 184, 0.4);
+  background: rgba(255, 255, 255, 0.9);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #1e1b4b;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.comp-success-close {
+  right: 18px;
+}
+
+.comp-success-share {
+  right: 62px;
+}
+
+.comp-success-close:hover,
+.comp-success-share:hover {
+  transform: translateY(-1px) scale(1.05);
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.16);
+}
+
+.comp-success-share::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  top: 44px;
+  right: 50%;
+  transform: translateX(50%);
+  background: #0f172a;
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 6px 8px;
+  border-radius: 8px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.15s ease;
+  white-space: nowrap;
+}
+
+.comp-success-share:hover::after {
+  opacity: 1;
+}
+
+.comp-success-ring {
+  position: relative;
+  width: 160px;
+  height: 160px;
+  margin: 18px auto 12px;
+}
+
+.comp-success-ring svg {
+  width: 100%;
+  height: 100%;
+  transform: rotate(-90deg);
+}
+
+.comp-success-ring__track {
+  fill: none;
+  stroke: rgba(148, 163, 184, 0.25);
+  stroke-width: 14;
+}
+
+.comp-success-ring__progress {
+  fill: none;
+  stroke: #6366f1;
+  stroke-width: 14;
+  stroke-linecap: round;
+  transition: none;
+}
+
+
+.comp-success-ring__center {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.comp-success-ring__label {
+  margin: 0;
+  font-size: 0.78rem;
+  color: #64748b;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.comp-success-ring__value {
+  margin: 4px 0 0;
+  font-size: 2.1rem;
+  font-weight: 800;
+  color: #1e1b4b;
+}
+
+.comp-success-head {
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.comp-success-title {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 6px;
+}
+
+.comp-success-title h2 {
+  margin: 0;
+  font-size: 1.4rem;
+  color: #16a34a;
+}
+
+.comp-success-title__tick {
+  width: 28px;
+  height: 28px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.comp-success-title__tick svg {
+  width: 100%;
+  height: 100%;
+}
+
+.comp-success-title__circle {
+  fill: none;
+  stroke: #22c55e;
+  stroke-width: 3;
+  stroke-dasharray: 160;
+  stroke-dashoffset: 160;
+  animation: compRingTickCircle 0.6s ease-out forwards;
+}
+
+.comp-success-title__check {
+  fill: none;
+  stroke: #16a34a;
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 60;
+  stroke-dashoffset: 60;
+  animation: compRingTickCheck 0.45s ease-out 0.2s forwards;
+}
+
+.comp-success-head p {
+  margin: 0;
+  color: #64748b;
+  font-size: 0.92rem;
+}
+
+
+.comp-success-stats {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.comp-success-stat {
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(203, 213, 225, 0.5);
+  border-radius: 14px;
+  padding: 12px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  box-shadow: 0 6px 14px rgba(15, 23, 42, 0.05);
+}
+
+.comp-success-stat span {
+  font-size: 0.72rem;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-weight: 600;
+}
+
+.comp-success-stat strong {
+  font-size: 0.98rem;
+  color: #1e1b4b;
+}
+
+.comp-success-bookmark {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 14px 16px;
+  border-radius: 16px;
+  background: rgba(226, 232, 240, 0.65);
+  border: 1px solid rgba(148, 163, 184, 0.3);
+}
+
+.comp-success-bookmark__text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 0.86rem;
+  color: #1e1b4b;
+  font-weight: 600;
+}
+
+.comp-success-bookmark__text em {
+  font-size: 0.76rem;
+  color: #6366f1;
+  font-style: normal;
+}
+
+.comp-success-bookmark__shortcut {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 84px;
+  padding: 9px 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(148, 163, 184, 0.6);
+  background: #f8fafc;
+  color: #0f172a;
+  font-size: 0.85rem;
+  font-weight: 700;
+  cursor: default;
+  pointer-events: none;
+  font-family: inherit;
+}
+
+@keyframes compPopupIn {
+  from {
+    opacity: 0;
+    transform: translateY(16px) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes compFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes compRingTickCircle {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes compRingTickCheck {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+  .comp-success-backdrop,
+  .comp-success-card {
+    animation: none !important;
+  }
+
+  .comp-success-title__tick,
+  .comp-success-title__circle,
+  .comp-success-title__check {
+    animation: none !important;
+    stroke-dashoffset: 0;
+    opacity: 1;
+  }
+}
+
 /* ---- Mobile settings toggle button ---- */
 .comp-settings-toggle {
   display: none;
@@ -2469,6 +2785,10 @@
     margin: 12px auto 0;
   }
 
+  .comp-success-bookmark {
+    display: none;
+  }
+
   .comp-cards {
     grid-template-columns: 1fr;
   }
@@ -2480,6 +2800,21 @@
   .comp-card__preview {
     width: 100%;
     height: 150px;
+  }
+}
+
+@media (max-width: 640px) {
+  .comp-success-card {
+    padding: 22px 20px 20px;
+  }
+
+  .comp-success-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .comp-success-bookmark {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
 

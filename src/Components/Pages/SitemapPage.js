@@ -2,6 +2,7 @@ import React, { useMemo } from 'react';
 import SEO from '../SEO/SEO';
 import { useLanguage } from '../../context/LanguageContext';
 import LANGUAGES, { DEFAULT_LANG } from '../../i18n/languages';
+import { blogCards } from '../Blogs/blogCards';
 import './SitemapPage.css';
 
 const CONVERSION_SLUGS = [
@@ -16,11 +17,12 @@ const CONVERSION_SLUGS = [
 const STATIC_ROUTES = [
   '/',
   '/about',
+  '/blogs',
   '/image-converter',
   '/image-compressor',
   '/resize-image',
   '/crop-image',
-  '/remove-background',
+  '/remove-background-ai',
   '/watermark-image',
   '/qr-code-generator',
   '/qr-code-scanner',
@@ -33,13 +35,15 @@ const BASE_URL = 'https://photremium.com';
 
 const SitemapPage = () => {
   const { localePath } = useLanguage();
+  const blogRoutes = useMemo(() => blogCards.map((card) => `/blogs/${card.slug}`), []);
 
   const allRoutes = useMemo(
     () => [
       ...STATIC_ROUTES,
       ...CONVERSION_SLUGS.map((slug) => `/convert/${slug}`),
+      ...blogRoutes,
     ],
-    []
+    [blogRoutes]
   );
 
   const localizedUrls = useMemo(() => {

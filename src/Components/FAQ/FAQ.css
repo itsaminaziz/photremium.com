@@ -88,6 +88,7 @@
 
 .faq-table__th--question {
   width: auto;
+  white-space: normal;
 }
 
 /* ---- Table Row ---- */
@@ -231,6 +232,46 @@
 
 .faq-table__answer-link:hover {
   color: #1d4ed8;
+}
+
+.faq-table__answer-markdown {
+  color: #475569;
+  line-height: 1.7;
+  display: grid;
+  gap: 10px;
+}
+
+.faq-table__answer-markdown > * {
+  margin: 0;
+}
+
+.faq-table__answer-markdown ul,
+.faq-table__answer-markdown ol {
+  padding-left: 1.2rem;
+  display: grid;
+  gap: 6px;
+}
+
+.faq-table__answer-markdown strong {
+  color: #111827;
+  font-weight: 700;
+}
+
+.faq-table__answer-markdown em {
+  color: #475569;
+}
+
+.faq-table__answer-markdown a {
+  color: #2563eb;
+  text-decoration: underline;
+}
+
+.faq-table__answer-markdown code {
+  background: #eef2ff;
+  color: #312e81;
+  padding: 2px 6px;
+  border-radius: 6px;
+  font-size: 0.85rem;
 }
 
 @keyframes faqFadeIn {

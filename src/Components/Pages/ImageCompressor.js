@@ -199,6 +199,13 @@ const ImageCompressor = () => {
   const [globalCompression, setGlobalCompression] = useState(30);
   const [downloadMode, setDownloadMode] = useState('zip');
   const [dragOver, setDragOver] = useState(false);
+  const [showSuccessPopup, setShowSuccessPopup] = useState(false);
+  const [popupMetrics, setPopupMetrics] = useState(null);
+  const [popupPercent, setPopupPercent] = useState(0);
+  const [ringProgress, setRingProgress] = useState(0);
+  const [showRingTick, setShowRingTick] = useState(false);
+  const [popupSavedBytes, setPopupSavedBytes] = useState(0);
+  const [reduceMotion, setReduceMotion] = useState(false);
   const [mobileToolsOpen, setMobileToolsOpen] = useState(false);
   const [mobileImportState, setMobileImportState] = useState('idle');
   const [mobileImportMessage, setMobileImportMessage] = useState('');
@@ -213,6 +220,9 @@ const ImageCompressor = () => {
   const addFileInputRef = useRef(null);
   const mobilePickerInputRef = useRef(null);
   const mobilePreviewTrackRef = useRef(null);
+  const popupCloseRef = useRef(null);
+  const lastFocusedRef = useRef(null);
+  const ringTickTimerRef = useRef(null);
   const didPrefillFromStateRef = useRef(false);
   const dragDepthRef = useRef(0);
 
@@ -231,6 +241,19 @@ const ImageCompressor = () => {
     window.addEventListener('beforeunload', handler);
     return () => window.removeEventListener('beforeunload', handler);
   }, [images.length]);
+
+  useEffect(() => {
+    if (!window.matchMedia) return;
+    const queryList = window.matchMedia('(prefers-reduced-motion: reduce)');
+    const handleChange = () => setReduceMotion(queryList.matches);
+    handleChange();
+    if (queryList.addEventListener) {
+      queryList.addEventListener('change', handleChange);
+      return () => queryList.removeEventListener('change', handleChange);
+    }
+    queryList.addListener(handleChange);
+    return () => queryList.removeListener(handleChange);
+  }, []);
 
   /* --- add files --- */
   const addFiles = useCallback(
@@ -717,10 +740,89 @@ const ImageCompressor = () => {
     URL.revokeObjectURL(a.href);
   };
 
+  const openSuccessPopup = useCallback(
+    (metrics) => {
+      setPopupMetrics(metrics);
+      setPopupPercent(0);
+      setRingProgress(0);
+      setPopupSavedBytes(metrics.savedBytes);
+      setShowRingTick(true);
+      if (ringTickTimerRef.current) {
+        clearTimeout(ringTickTimerRef.current);
+      }
+      setShowSuccessPopup(true);
+    },
+    []
+  );
+
+  const closeSuccessPopup = useCallback(() => {
+    setShowSuccessPopup(false);
+    setShowRingTick(false);
+    if (ringTickTimerRef.current) {
+      clearTimeout(ringTickTimerRef.current);
+      ringTickTimerRef.current = null;
+    }
+  }, []);
+
+  const handleShare = useCallback(() => {
+    closeSuccessPopup();
+    window.dispatchEvent(new Event('open-share-panel'));
+  }, [closeSuccessPopup]);
+
+  useEffect(() => {
+    if (!showSuccessPopup || !popupMetrics) return;
+    const targetPercent = popupMetrics.savedPercent;
+    if (reduceMotion) {
+      setPopupPercent(targetPercent);
+      setRingProgress(targetPercent);
+      return;
+    }
+
+    let start = null;
+    const duration = 1200;
+    const animate = (timestamp) => {
+      if (!start) start = timestamp;
+      const progress = Math.min(1, (timestamp - start) / duration);
+      const eased = 1 - Math.pow(1 - progress, 3);
+      setPopupPercent(targetPercent * eased);
+      setRingProgress(targetPercent * eased);
+      if (progress < 1) requestAnimationFrame(animate);
+    };
+    requestAnimationFrame(animate);
+  }, [showSuccessPopup, popupMetrics, reduceMotion]);
+
+  useEffect(() => {
+    if (!showSuccessPopup) return;
+    lastFocusedRef.current = document.activeElement;
+    popupCloseRef.current?.focus();
+
+    const handleKeyDown = (event) => {
+      if (event.key === 'Escape') {
+        event.preventDefault();
+        closeSuccessPopup();
+      }
+    };
+
+    document.addEventListener('keydown', handleKeyDown);
+    return () => {
+      document.removeEventListener('keydown', handleKeyDown);
+      if (lastFocusedRef.current?.focus) {
+        lastFocusedRef.current.focus();
+      }
+    };
+  }, [showSuccessPopup, closeSuccessPopup]);
+
   /* --- download all --- */
   const downloadAll = async () => {
     const ready = images.filter((i) => i.compressedBlob);
     if (!ready.length) return;
+
+    openSuccessPopup({
+      savedPercent,
+      savedBytes: Math.max(0, totalOriginal - totalCompressed),
+      originalSize: totalOriginal,
+      compressedSize: totalCompressed,
+    });
 
     const effectiveMode = ready.length === 1 ? 'separate' : downloadMode;
 
@@ -812,6 +914,9 @@ const ImageCompressor = () => {
   const globalQualityMeta = getCompressionQualityMeta(globalCompression);
   const savedPercent =
     totalOriginal > 0 ? Math.max(0, Math.round(((totalOriginal - totalCompressed) / totalOriginal) * 100)) : 0;
+  const ringRadius = 62;
+  const ringCircumference = 2 * Math.PI * ringRadius;
+  const ringOffset = ringCircumference * (1 - ringProgress / 100);
 
   /* =========================== UPLOAD VIEW =========================== */
   if (!images.length) {
@@ -1359,6 +1464,91 @@ const ImageCompressor = () => {
           </div>
         </div>
       </section>
+
+      {showSuccessPopup && popupMetrics && (
+        <div className="comp-success-modal" role="dialog" aria-modal="true" aria-labelledby="comp-success-title" aria-describedby="comp-success-desc">
+          <div className="comp-success-backdrop" onClick={closeSuccessPopup} aria-hidden="true" />
+          <div className="comp-success-card" role="document" onClick={(e) => e.stopPropagation()}>
+            <button
+              className="comp-success-close"
+              onClick={closeSuccessPopup}
+              ref={popupCloseRef}
+              aria-label="Close success dialog"
+            >
+              <i className="fa-solid fa-xmark"></i>
+            </button>
+
+            <button
+              className="comp-success-share"
+              onClick={handleShare}
+              aria-label="Share result"
+              data-tooltip="Share"
+            >
+              <i className="fa-solid fa-arrow-up-from-bracket"></i>
+            </button>
+
+            <div className="comp-success-ring">
+              <svg viewBox="0 0 160 160" aria-hidden="true">
+                <circle className="comp-success-ring__track" cx="80" cy="80" r={ringRadius} />
+                <circle
+                  className="comp-success-ring__progress"
+                  cx="80"
+                  cy="80"
+                  r={ringRadius}
+                  style={{ strokeDasharray: ringCircumference, strokeDashoffset: ringOffset }}
+                />
+              </svg>
+              <div className="comp-success-ring__center">
+                <p className="comp-success-ring__label">You Saved</p>
+                <p className="comp-success-ring__value">{Math.round(popupPercent)}%</p>
+              </div>
+            </div>
+
+            <div className="comp-success-head">
+              <div className="comp-success-title" id="comp-success-title">
+                {showRingTick ? (
+                  <span className="comp-success-title__tick" aria-hidden="true">
+                    <svg viewBox="0 0 52 52">
+                      <circle className="comp-success-title__circle" cx="26" cy="26" r="24" />
+                      <path className="comp-success-title__check" d="M15 27.4l7.2 7.2L37 19.8" />
+                    </svg>
+                  </span>
+                ) : null}
+                <h2>Downloaded Successfully</h2>
+              </div>
+              <p id="comp-success-desc">{fmtSize(popupSavedBytes)} reduced with premium quality.</p>
+            </div>
+
+            <div className="comp-success-stats">
+              <div className="comp-success-stat">
+                <span>Original size</span>
+                <strong>{fmtSize(popupMetrics.originalSize)}</strong>
+              </div>
+              <div className="comp-success-stat">
+                <span>Compressed size</span>
+                <strong>{fmtSize(popupMetrics.compressedSize)}</strong>
+              </div>
+              <div className="comp-success-stat">
+                <span>Total reduction</span>
+                <strong>{fmtSize(popupMetrics.savedBytes)}</strong>
+              </div>
+              <div className="comp-success-stat">
+                <span>Compression</span>
+                <strong>{popupMetrics.savedPercent}%</strong>
+              </div>
+            </div>
+
+            <div className="comp-success-bookmark">
+              <div className="comp-success-bookmark__text">
+                <span>Bookmark this page for quick access</span>
+              </div>
+              <button className="comp-success-bookmark__shortcut" type="button" disabled aria-disabled="true">
+                Ctrl + D
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </>
   );
 };

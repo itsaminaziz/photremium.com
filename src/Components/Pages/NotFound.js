@@ -9,7 +9,7 @@ const TOOLS = [
   { icon: 'fa-solid fa-right-left',   label: 'Convert',   path: '/image-converter' },
   { icon: 'fa-solid fa-compress',      label: 'Compress',  path: '/image-compressor' },
   { icon: 'fa-solid fa-crop-simple',   label: 'Crop',      path: '/crop-image' },
-  { icon: 'fa-solid fa-eraser',        label: 'Remove BG', path: '/remove-background' },
+  { icon: 'fa-solid fa-eraser',        label: 'Remove BG', path: '/remove-background-ai' },
   { icon: 'fa-solid fa-qrcode',        label: 'QR Code',   path: '/qr-code-generator' },
 ];
 

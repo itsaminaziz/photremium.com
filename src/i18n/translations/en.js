@@ -15,6 +15,7 @@ const en = {
     qrCodeScanner: 'QR Code Scanner',
     aboutUs: 'About Us',
     faceBlur: 'Face Blur',
+    blogs: 'Blogs',
   },
 
   /* ————— Hero / Home ————— */
@@ -44,6 +45,7 @@ const en = {
     qrCodeScanner: { title: 'QR Code Scanner', desc: 'Scan QR codes instantly using your camera or by uploading an image. Detect URLs, text, WiFi, contacts & more.' },
     blurFace: { title: 'Blur Face', desc: 'Automatically detect and blur faces in your images for privacy. Adjust blur intensity, shape, or add emoji overlays.' },
     removeBackground: { title: 'Remove Background', desc: 'Quickly remove image backgrounds with high accuracy. Instantly detect objects and cut out backgrounds.' },
+    removeBackgroundAI: { title: 'Remove Background (AI)', desc: 'High-accuracy background removal using cloud AI processing with beautiful edge detection.' },
     watermarkImage: { title: 'Watermark IMAGE', desc: 'Stamp an image or text over your images in seconds. Choose the typography, transparency and position.' },
   },
 
@@ -750,6 +752,44 @@ const en = {
     nextImage: 'Next Image',
   },
 
+  /* ————— Remove Background (AI) ————— */
+  removeBgAi: {
+    seo: {
+      uploadTitle: 'AI Background Remover — Remove Background Online | Photremium',
+      uploadDesc: 'Remove image backgrounds using cloud AI for higher accuracy. Upload up to 3 images at a time.',
+      uploadKeywords: 'ai background remover, remove background online, iloveimg background remover',
+      workspaceTitle: 'AI Background Removal — Photremium',
+      workspaceDesc: 'Remove image backgrounds online using cloud AI. Upload up to 3 images at a time.',
+      workspaceKeywords: 'ai background remover, remove background, cloud background removal',
+    },
+    title: 'AI Background Remover',
+    desc: 'High-accuracy background removal powered by cloud AI. Upload up to 3 images and get clean transparent PNGs.',
+    toRemoveBg: 'to remove background',
+    backgroundRemover: 'AI Background Remover',
+    processingProgress: 'Processing Progress',
+    processingNImages: 'Processing {n} image(s)…',
+    allNProcessed: 'All {n} image(s) processed!',
+    nOfTotalDone: '{n} / {total} done',
+    fileName: 'File Name',
+    dimensions: 'Dimensions',
+    status: 'Status',
+    statusDone: '✓ Done',
+    statusProcessing: '⏳ Processing',
+    statusError: '✗ Error',
+    statusPending: '⏸ Pending',
+    badgeDone: 'Done',
+    badgeError: 'Error',
+    stageUploading: 'Uploading image…',
+    stageDetecting: 'Detecting edges…',
+    stageFinalizing: 'Finalizing result…',
+    stageProcessing: 'Processing…',
+    stageDone: 'Completed',
+    retry: 'Retry',
+    downloading: 'Downloading…',
+    nextImage: 'Next Image',
+    limitError: 'You can upload up to {n} images for AI background removal.',
+  },
+
   /* ————— Watermark Image ————— */
   watermark: {
     seo: {
@@ -822,6 +862,239 @@ const en = {
     typeHere: 'Type here...',
     linkCorners: 'Link corners',
     separateCorners: 'Separate corners',
+    blog: {
+      tocTitle: 'Contents',
+      sections: [
+        {
+          id: 'wm-blog-intro',
+          tocLabel: 'Watermark Tool Overview',
+          title: 'How to Add a Watermark to Your Images Online — The Complete Guide to Photremium\'s Watermark Tool',
+          paragraphs: [
+            'You\'ve just finished editing a beautiful photograph. Maybe it\'s a product shot for your store, a portrait from a client session, or a piece of digital artwork you\'ve spent hours perfecting. And now comes the question every creator eventually faces: How do you protect it before sharing it?',
+            'The answer most professionals land on is a watermark — and for good reason. A properly placed watermark acts as a permanent signature on your work, making it traceable, branded, and significantly harder to steal.',
+            'Here\'s the problem most people run into: the tools available online are either too clunky, locked behind subscriptions, or produce such a heavy watermark that it ruins the image entirely.',
+            'Photremium\'s Watermark Image tool was built to fix all of that. It\'s a fully browser-based, free, no-account-required watermarking workspace that runs directly in your browser without ever uploading your files to a server. Everything stays local, everything stays fast, and the level of creative control it offers rivals what you\'d expect from a desktop software application. In this guide, we\'re going to walk you through exactly how it works, who it\'s built for, and how to get the best possible results — every time.',
+          ],
+        },
+        {
+          id: 'wm-blog-what-is',
+          tocLabel: 'What Is a Watermark',
+          title: 'What Is a Watermark and Why Does It Matter?',
+          paragraphs: [
+            'Before diving into the tool itself, it\'s worth understanding what a watermark does and why so many photographers, designers, and content creators consider it non-negotiable.',
+            'A watermark is a visible overlay added to an image — typically text, a logo, or a copyright symbol — that identifies the creator or owner of the content. Unlike metadata (which is hidden inside the file and can be stripped in seconds), a watermark is embedded visually into the image itself. You can\'t just right-click and remove it without noticeably degrading the image quality.',
+          ],
+          subSections: [
+            {
+              title: 'Why Creators Use Watermarks',
+              paragraphs: [
+                'The practical reasons for watermarking your images come down to three core concerns.',
+              ],
+              bullets: [
+                'Ownership identification. When your work gets shared across social media platforms, Pinterest boards, or embedded in blog posts, the original attribution is often stripped away. A watermark ensures your name or brand travels with the image wherever it ends up.',
+                'Theft deterrence. Most casual image thieves are looking for the path of least resistance. A professional-looking watermark, especially one that\'s well-positioned and slightly transparent, sends a clear signal: this image belongs to someone who cares about their work.',
+                'Client portfolio protection. Photographers who share previews with clients before final payment frequently use watermarks to prevent clients from using the preview without settling the invoice. A subtle watermark achieves this without making the preview too distracting to evaluate.',
+              ],
+            },
+            {
+              title: 'Who Should Be Watermarking Their Images',
+              paragraphs: [
+                'If you fall into any of the following categories, watermarking your images before sharing them online isn\'t optional — it\'s essential:',
+              ],
+              bullets: [
+                'Freelance photographers sharing galleries with clients',
+                'Graphic designers distributing portfolio samples',
+                'E-commerce sellers showing product photos before licensing deals',
+                'Digital artists sharing work on social platforms',
+                'Bloggers and content creators whose images are regularly repurposed',
+                'Stock photo contributors building a recognizable brand',
+              ],
+            },
+          ],
+        },
+        {
+          id: 'wm-blog-workspace',
+          tocLabel: 'Workspace Panels',
+          title: 'Inside Photremium\'s Watermark Tool: A Three-Panel Workspace Built for Real Workflows',
+          paragraphs: [
+            'What makes the Photremium watermark tool stand out from basic online watermarkers is its workspace design. Rather than offering a simple "type text, pick position, done" approach, the tool provides a three-panel layout that mirrors what you\'d find in professional design software — except it runs entirely in your browser, with zero installation required.',
+          ],
+          subSections: [
+            {
+              title: 'The Left Canvas Panel',
+              paragraphs: [
+                'The canvas panel takes up the largest portion of the screen and shows you exactly what your image looks like with the watermark applied in real time. Every change you make — adjusting opacity, repositioning a text layer, resizing a logo — reflects instantly on the canvas. There\'s no "preview" button to click. What you see is what you get.',
+                'The canvas also includes a built-in zoom toolbar, letting you zoom in for precise alignment and zoom out for the big picture. The zoom-to-fit feature automatically calculates the best initial scale based on your screen size, so even high-resolution images load at a comfortable working size. Alignment guides appear dynamically when you drag a layer near the horizontal or vertical center of the image, snapping the watermark into a perfectly centered position with a satisfying precision that you\'d normally only get from Photoshop.',
+              ],
+            },
+            {
+              title: 'The Right Settings Panel',
+              paragraphs: [
+                'The right panel is the control center. This is where you manage your watermark layers, customize their appearance, and trigger the final export. On desktop, it sits fixed to the right side of the screen. On mobile devices, it slides up as a bottom sheet — triggered by a floating gear button — so it never covers your canvas while you\'re working.',
+                'Within the right panel you\'ll find the layer manager, which lists every watermark element you\'ve added. Each layer entry shows the layer type (text or image), its current name or content, and three quick-action buttons: a visibility toggle (the eye icon), a lock toggle to freeze a layer\'s position while you work on others, and a delete button.',
+              ],
+            },
+            {
+              title: 'The Left Preview Strip (Multi-Image Mode)',
+              paragraphs: [
+                'When you\'re working with multiple images at once — a batch of product photos, a full portrait session — a vertical thumbnail strip appears on the far left of the screen. This is the image queue, showing miniaturized previews of every file you\'ve loaded. Clicking any thumbnail switches your canvas to that image instantly, letting you verify how the watermark looks across different compositions without losing your layer settings.',
+                'The strip also shows a size readout in KB or MB for each file, along with the file format tag (JPG, PNG, WEBP), so you always know what you\'re working with at a glance.',
+              ],
+            },
+          ],
+        },
+        {
+          id: 'wm-blog-steps',
+          tocLabel: 'Step-by-Step',
+          title: 'Step-by-Step: How to Add a Watermark to Your Image on Photremium',
+          paragraphs: [
+            'This walkthrough is based directly on how the tool works under the hood — from the drag-and-drop upload system to the canvas rendering engine that writes your watermark permanently onto the image before download.',
+          ],
+          steps: [
+            {
+              heading: 'Step 1 — Upload Your Image/s',
+              paragraphsBefore: [
+                'Head to photremium.com/watermark-image. You\'ll land on the upload screen, which presents a clean drag-and-drop dropzone in the center of the page.',
+                'You have three ways to get your image into the tool:',
+              ],
+              bullets: [
+                'Drag and drop. Drag one or more image files from your desktop directly onto the dropzone. The tool accepts any standard image format — JPEG, PNG, WEBP, and more. When you drag files over the workspace, a purple border activates around the entire area with a visual "Drop images to add for watermarking" prompt, so you know the drop is being registered.',
+                'Click to browse. Click the "Choose Files" button inside the dropzone to open your system\'s file picker. You can select multiple files at once using Ctrl+Click (Windows) or Cmd+Click (Mac).',
+                'Paste from clipboard. If you\'ve copied an image to your clipboard — from a screenshot, another app, or a web browser — simply press Ctrl+V (or Cmd+V on Mac) while on the watermark page and the image will load directly into the workspace. This works even when multiple images are already loaded.',
+              ],
+              paragraphsAfter: [
+                'Once the first image loads, the workspace transitions from the upload screen to the full three-panel editor, and the canvas displays your image at an automatically calculated fit-to-screen zoom level.',
+              ],
+            },
+            {
+              heading: 'Step 2 — Add a Text Watermark Layer',
+              paragraphsBefore: [
+                'Click the purple "Add Text" button in the right panel. A new text layer appears on your canvas with the default placeholder text "Type here..." pre-selected.',
+                'You can begin typing immediately. The text renders live on the canvas in white Arial at a default size tuned to your image dimensions. From the top toolbar that appears when the text layer is selected, you can customize every aspect of the text:',
+              ],
+              bullets: [
+                'Font family — choose from 12 built-in fonts including Arial, Georgia, Impact, Brush Script MT, Comic Sans MS, and more',
+                'Font size — type a custom pixel value directly or use the increment controls',
+                'Bold, italic, underline — toggle any combination of these styles',
+                'Text color — click the color swatch to open the color picker and choose any hex color',
+                'Background color — add a colored background behind your text for a label or badge look',
+                'Stroke (outline) — set a stroke width and color for maximum legibility on both light and dark images',
+                'Opacity — slide opacity from 0% (invisible) to 100% (fully opaque); most watermarks sit between 30% and 60%',
+                'Alignment — left, center, or right align the text within its bounding box',
+                'Rotation — rotate the text layer to any angle, with magnetic snap points at 0°, 90°, 180°, and 270° for quick straight-angle placement',
+              ],
+              paragraphsAfter: [
+                'To move the text, click and drag it anywhere on the canvas. For fine pixel-perfect positioning, use the arrow keys on your keyboard (hold Shift for 10-pixel steps). To resize the text box, drag any of the eight resize handles (corners and edges) that appear around the selected layer.',
+              ],
+            },
+            {
+              heading: 'Step 3 — Add an Image (Logo) Watermark Layer',
+              paragraphsBefore: [
+                'If you want to use a logo, signature, or any image as a watermark instead of — or in addition to — text, click the blue "Add Image" button in the right panel. Your file picker opens so you can choose the watermark image file from your device.',
+                'The tool automatically sizes the watermark image to roughly 30% of your canvas width while maintaining its original aspect ratio, and centers it on the canvas. From there, you can drag it to any position, resize it using the corner handles (which constrain the aspect ratio), or rotate it using the dedicated rotate handle that appears above the selected layer.',
+                'For image-type watermark layers, the right panel exposes additional controls:',
+              ],
+              bullets: [
+                'Opacity — same as text layers, ideal for transparent PNG logos',
+                'Flip horizontal / Flip vertical — mirror the watermark if needed',
+                'Border width, border color, and border style — add a visible border around the logo watermark',
+                'Border radius — round the corners of the logo watermark, either uniformly or with separate control over each corner',
+                'Rotation — same smooth rotation behavior as text layers',
+              ],
+            },
+            {
+              heading: 'Step 4 — Configure Tiling (Optional)',
+              paragraphsBefore: [
+                'One of the more powerful features in the tool is tiling — the ability to repeat your watermark across the entire image in a grid pattern. This is particularly useful when you want to make an image unusable for republication rather than simply branded.',
+                'With a layer selected, look for the tile option in the toolbar. You can set it to:',
+              ],
+              bullets: [
+                'None — single placement (default)',
+                'Grid 2×2 — repeats the watermark in a 2-column, 2-row pattern',
+                'Grid 3×3 — repeats in a 3×3 grid for denser coverage',
+              ],
+              paragraphsAfter: [
+                'You can also adjust the tile spacing, which controls the gap between each repeated instance. The canvas shows ghost previews of all the tiled copies so you can see the full coverage pattern before downloading.',
+              ],
+            },
+            {
+              heading: 'Step 5 — Use the Layer Manager for Multiple Watermarks',
+              paragraphsBefore: [
+                'You can add as many layers as you want — mixing text and image watermarks freely. The layer manager in the right panel lists them all. You can:',
+              ],
+              bullets: [
+                'Show/hide individual layers using the eye icon — useful for toggling between different watermark versions without deleting anything',
+                'Lock a layer to prevent accidental repositioning while working on other layers',
+                'Delete a layer permanently',
+              ],
+              paragraphsAfter: [
+                'Clicking any layer entry in the list selects it on the canvas simultaneously, making it easy to switch between layers without hunting around the image.',
+              ],
+            },
+            {
+              heading: 'Step 6 — Switch Between Multiple Images',
+              paragraphsBefore: [
+                'If you uploaded more than one image, use the thumbnail strip on the left to switch your active canvas image. The watermark layers you\'ve configured apply universally — they\'ll be rendered on every image in your batch when you export.',
+                'The tool also performs a resolution consistency check across your batch. If your images have significantly different dimensions (more than 5% difference in width or height), a warning appears letting you know the watermark positioning may look different across images due to the size variation. The engine handles this gracefully through a proportional repositioning algorithm: it calculates the watermark\'s position as a percentage of the reference image\'s dimensions and applies the same proportional placement to every other image in the batch, preserving the visual intent even across different resolutions.',
+              ],
+            },
+            {
+              heading: 'Step 7 — Set Your Download Preferences',
+              paragraphsBefore: [
+                'For single-image jobs, click the "Download" button below the canvas to save the watermarked image directly. The filename is automatically set to your original filename with "-watermarked" appended before the extension. JPEG images are exported at 0.95 quality — high enough to be indistinguishable from the original at normal viewing sizes. PNG images are exported as lossless PNG.',
+                'For batch jobs (multiple images), you have two download modes selectable in the right panel:',
+              ],
+              bullets: [
+                'ZIP file — all watermarked images are packaged into a single ZIP archive that downloads in one click. The tool loads JSZip dynamically to handle the compression.',
+                'Separate files — each image downloads as an individual file with a short delay between each download to prevent browser throttling.',
+              ],
+            },
+            {
+              heading: 'Step 8 — Download and Verify',
+              paragraphsBefore: [
+                'After clicking the download button (or the "Watermark & Download All" button for batches), the tool renders each image on a hidden HTML5 canvas element at full native resolution — not at the scaled preview size you see on screen. This means the exported image is at 100% of its original pixel dimensions with the watermark drawn at the proportionally correct size. Open the downloaded file and zoom in to verify the watermark placement and quality match your expectations.',
+                'If anything looks off, simply return to the workspace — your layers are still there — adjust, and download again.',
+              ],
+            },
+          ],
+        },
+        {
+          id: 'wm-blog-tips',
+          tocLabel: 'Pro Tips',
+          title: 'Pro Tips for Getting the Best Results',
+          bullets: [
+            'Use a semi-transparent PNG logo for maximum professionalism. A logo watermark with a transparent background at 40–50% opacity looks far more polished than solid text. Export your logo from your design tool as a PNG with alpha transparency before using it as an image layer.',
+            'Place your watermark where cropping it removes value. The bottom-right corner is the most common watermark placement — and the easiest to crop out. For stronger protection, consider placing your watermark across a visually important area of the image, such as over a face, a product detail, or the focal point. The diagonal tile option is even harder to remove without significantly degrading the image.',
+            'Use the lock feature when working with multiple layers. Once you\'re happy with your primary watermark position, lock that layer before adding secondary layers. This prevents accidentally nudging it while you work on other elements.',
+            'Test across light and dark areas of your image. A white watermark is invisible on a bright sky but perfectly readable on a dark shadow. Add a subtle stroke or background color to ensure legibility regardless of what the image contains beneath the watermark.',
+            'Keyboard shortcuts always save time. Arrow keys move selected layers one pixel at a time. Shift+Arrow moves ten pixels at a time. The Delete key removes the selected layer instantly. These shortcuts make fine-tuning placement much faster than dragging.',
+          ],
+        },
+        {
+          id: 'wm-blog-privacy',
+          tocLabel: 'Privacy and Security',
+          title: 'Privacy and Security: Why Browser-Based Processing Matters',
+          paragraphs: [
+            'One concern many creators have when using online tools is where their images actually go. With server-based watermarking tools, your image is uploaded to the provider\'s server, processed there, and then sent back to you. That means your unpublished work, client photos, or sensitive product images pass through someone else\'s infrastructure.',
+            'Photremium\'s watermark tool processes everything locally in your browser. Your images are loaded into your device\'s memory using the browser\'s File API and are never transmitted over the internet. The watermark rendering happens on an HTML5 canvas element running in JavaScript, entirely within your browser tab. When you close the page or click "Start Over," all image data is released from memory and discarded. Nothing is stored anywhere outside your own device.',
+          ],
+        },
+        {
+          id: 'wm-blog-summary',
+          tocLabel: 'Final Summary',
+          title: 'Why Photremium\'s Watermark Tool Earns a Place in Your Regular Workflow',
+          paragraphs: [
+            'There are dozens of watermarking tools available online. What separates a tool worth bookmarking from one worth forgetting is usually a combination of speed, control, and trustworthiness.',
+            'Speed matters because watermarking shouldn\'t add significant time to your post-processing workflow. The Photremium tool loads instantly, processes locally, and exports at full resolution in seconds — even for large batches. There\'s no waiting for server-side processing, no queue, no rendering time that scales with the number of users online at the same time.',
+            'Control matters because a watermark that looks wrong is worse than no watermark at all — it makes your brand look unprofessional. The layer system, the per-property controls in the toolbar, the real-time canvas preview, and the keyboard shortcut support all add up to a level of control that\'s genuinely comparable to dedicated desktop software.',
+            'Trustworthiness matters because your unpublished work is valuable. Knowing that your images never travel over the internet to a third-party server means you can watermark client photos, unreleased product images, and sensitive creative work without any concern about data handling, server-side breaches, or policy changes by a cloud provider.',
+            'Whether you\'re adding a quick copyright notice to a single photo or processing an entire shoot of 200 images before sharing a client gallery, Photremium\'s Watermark Image tool gives you the tools to do it right — completely free, completely private, and with enough creative flexibility to make the watermark look like it belongs on the image rather than stuck on top of it.',
+            'Head over to photremium.com/watermark-image and give it a try. Your first watermarked image is literally thirty seconds away.',
+            'Photremium offers a suite of browser-based image editing and processing tools. All tools run locally in your browser — your images stay on your device.',
+          ],
+        },
+      ],
+    },
   },
 
   /* ————— QR Code Generator ————— */
@@ -1325,11 +1598,16 @@ const en = {
       { q: 'Are my images sent to a server?', a: 'No. The AI model runs entirely in your browser using WebAssembly. Your images remain on your device at all times.' },
     ],
     watermarkImage: [
-      { q: 'What types of watermarks can I add?', a: 'You can add text watermarks with custom font, size, color, and opacity, as well as image watermarks (like a logo). Both can be positioned, rotated, and tiled.' },
-      { q: 'Can I apply the same watermark to multiple images?', a: 'Yes. Upload several images, configure your watermark once, and it will be applied to all of them in a single batch.' },
-      { q: 'Will the watermark reduce my image quality?', a: 'No. The watermark is composited onto the original image at full resolution. You get the same quality as the source file.' },
-      { q: 'Can I adjust the watermark opacity?', a: 'Absolutely. Use the opacity slider to make the watermark as subtle or as prominent as you like — from nearly invisible to fully solid.' },
-      { q: 'Is any data uploaded to a server?', a: 'No. All watermarking is done locally in your browser. Your images and logos are never transmitted anywhere.' },
+      { q: '1. Is the Photremium Watermark tool completely free to use?', a: 'Yes, the watermark tool at photremium.com/watermark-image is free to use with no account required and no subscription needed. You can watermark single images or entire batches without hitting a paywall, without seeing a forced registration prompt, and without any download limits. The tool is funded by making the overall Photremium platform valuable enough that users choose to come back — not by gating individual features.' },
+      { q: '2. How many images can I watermark at once?', a: 'The tool supports batch watermarking of multiple images simultaneously. You can drag and drop an entire folder of images onto the upload zone, or use Ctrl+Click in the file picker to select dozens of files at once. The left-side thumbnail strip holds all of them, and when you click "Watermark & Download All," the tool renders every single image with your configured watermark layers before packaging them into a single ZIP file (or downloading them as separate files — your choice). In practice, the batch size is limited by your device\'s available memory rather than any artificial cap in the tool.' },
+      { q: '3. What image formats are supported for input and output?', a: 'The input side accepts any image format your browser\'s File API can handle, which in practice means JPEG, JPG, PNG, WEBP, GIF (static), BMP, and SVG. For output, the format matches the input: if you upload a PNG, you get a PNG back; if you upload a JPEG, you get a JPEG at 0.95 quality. This format-preservation approach ensures you don\'t end up converting a lossless PNG to a lossy JPEG by accident.' },
+      { q: '4. Will my watermark look the same across images with different resolutions?', a: 'Yes, through the tool\'s proportional repositioning engine. When you have a batch of images with different dimensions, the watermark is authored on the reference image (whichever you had selected in the canvas). When exporting, the engine calculates the center of gravity of each watermark layer on the reference image, expresses that position as a fractional offset from the image center, and applies the same proportional offset on each target image. The watermark\'s size also scales proportionally using the smaller of the two scale factors (width ratio vs. height ratio) to ensure it never overflows the image boundaries. The result is a watermark that maintains its relative visual position and size across your entire batch, even if image dimensions vary.' },
+      { q: '5. Can I use my own logo or signature as a watermark instead of text?', a: 'Absolutely. The "Add Image" button in the right panel lets you upload any image file from your device to use as a watermark layer. PNG files with transparent backgrounds work best — the transparency is preserved, so only your logo artwork appears without a white or colored box behind it. You can resize the logo by dragging its corner handles (which maintain the aspect ratio automatically), rotate it, flip it, adjust its opacity, and even add a border or rounded corners. Many users keep a prepared transparent-background version of their logo specifically for watermarking purposes.' },
+      { q: '6. How do I make my watermark transparent or semi-transparent?', a: 'Select the watermark layer on the canvas by clicking it. In the top toolbar that appears, look for the opacity control — it displays a percentage value and lets you type a number directly or scrub the value. For a subtle, professional watermark that doesn\'t overwhelm the image, 30–50% opacity is the sweet spot most creators use. For a more assertive copyright notice that\'s harder to overlook, 70–80% opacity works well. You can also animate a quick comparison by toggling the layer\'s visibility in the layer manager (the eye icon) to see the image with and without the watermark.' },
+      { q: '7. Can I add multiple watermarks to a single image?', a: 'Yes — the layer system supports an unlimited number of watermark layers, each independently configurable. You can have a text copyright notice in the bottom-right corner, a logo in the top-left, and a tiled "SAMPLE" overlay all simultaneously. Each layer has its own opacity, rotation, position, size, and styling settings. The layer manager in the right panel keeps them organized, and you can toggle individual layers on and off without deleting them, making it easy to experiment with different combinations before finalizing.' },
+      { q: '8. What does the tiling feature do and when should I use it?', a: 'Tiling repeats your watermark in a grid pattern across the entire image. The Grid 2×2 option places four copies in a two-by-two arrangement; Grid 3×3 places nine copies in a three-by-three arrangement. The tile spacing control adjusts the gaps between copies. Tiling is most useful when you want to make an image unusable without authorization — a single-placement watermark is relatively easy to crop away if it\'s in a corner, but a full-coverage tile pattern makes the image essentially unusable without the watermark. This is the approach used for sharing contract previews, draft illustrations for client approval, or any content that shouldn\'t be freely usable before payment.' },
+      { q: '9. Does the tool work on mobile phones and tablets?', a: 'Yes, the tool is fully responsive and designed for mobile use. On screens narrower than 900 pixels, the three-panel layout switches to a stacked layout: the image thumbnail strip becomes a horizontal scrollable row at the top, the canvas fills the main area, and the settings panel becomes a bottom sheet that slides up when you tap the floating gear button. All interactive elements — layer dragging, resizing handles, rotation — are touch-enabled with touchstart and touchmove events. The resize handles are slightly larger on mobile (16×16 pixels versus the desktop size) to make them easier to tap accurately with a finger.' },
+      { q: '10. Is my image data private? Are my photos uploaded to any server?', a: 'Your images never leave your device. The entire watermark workflow — loading images, rendering layers, exporting the final file — happens inside your browser using JavaScript and the HTML5 Canvas API. When you upload an image, the File API creates an in-memory representation of the file. When you add a watermark layer, it\'s drawn onto an off-screen canvas element. When you download the result, the canvas\'s pixel data is converted to a Blob and handed to the browser for download — entirely locally. No network request is made that involves your image data. Additionally, the tool includes a page-unload guard: if you attempt to close or navigate away from the page while images are loaded, the browser prompts you to confirm, preventing accidental loss of your work-in-progress session.' },
     ],
     qrCodeGenerator: [
       { q: 'Does this QR code expire?', a: 'No, these QR codes do not expire and guarantee a lifetime support. As they store hardcoded instructions in the form of bits inside square boxes, the information stored in them cannot be changed or removed. You can access the information in code just by scanning it with any camera even after years.' },

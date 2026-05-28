@@ -1031,6 +1031,239 @@ common: {
     typeHere: 'Taip di sini...',
     linkCorners: 'Pautan Sudut',
     separateCorners: 'Asingkan Sudut',
+    blog: {
+      tocTitle: 'Kandungan',
+      sections: [
+        {
+          id: 'wm-blog-intro',
+          tocLabel: 'Gambaran Keseluruhan Alat Tera Air',
+          title: 'Cara Menambah Tera Air pada Imej Anda Dalam Talian — Panduan Lengkap Alat Tera Air Photremium',
+          paragraphs: [
+            'Anda baru sahaja selesai menyunting sekeping gambar yang indah. Mungkin ia foto produk untuk kedai anda, potret daripada sesi pelanggan, atau karya seni digital yang anda habiskan berjam-jam untuk menyempurnakannya. Dan kini timbul soalan yang akhirnya akan dihadapi oleh setiap pencipta: bagaimana anda melindunginya sebelum berkongsi?',
+            'Jawapan yang dipilih oleh kebanyakan profesional ialah tera air — dan ada sebab yang kukuh. Tera air yang diletakkan dengan betul bertindak sebagai tandatangan kekal pada hasil kerja anda, menjadikannya boleh dijejaki, berjenama, dan jauh lebih sukar untuk dicuri.',
+            'Masalah yang sering dihadapi kebanyakan orang ialah alat yang tersedia dalam talian sama ada terlalu janggal, dikunci di sebalik langganan, atau menghasilkan tera air yang terlalu berat sehingga merosakkan keseluruhan imej.',
+            'Alat Watermark Image Photremium dibina untuk menyelesaikan semua itu. Ia ialah ruang kerja tera air berasaskan pelayar sepenuhnya, percuma, dan tidak memerlukan akaun, yang berjalan terus dalam pelayar anda tanpa memuat naik fail ke pelayan. Semuanya kekal setempat, semuanya kekal pantas, dan tahap kawalan kreatif yang ditawarkannya setanding dengan apa yang anda jangka daripada perisian desktop. Dalam panduan ini, kami akan menunjukkan dengan tepat cara ia berfungsi, untuk siapa ia dibina, dan cara mendapatkan hasil terbaik — setiap kali.',
+          ],
+        },
+        {
+          id: 'wm-blog-what-is',
+          tocLabel: 'Apa Itu Tera Air',
+          title: 'Apa Itu Tera Air dan Mengapa Ia Penting?',
+          paragraphs: [
+            'Sebelum menyelami alat itu sendiri, ada baiknya memahami apa yang dilakukan oleh tera air dan mengapa ramai jurugambar, pereka, dan pencipta kandungan menganggapnya sesuatu yang tidak boleh dipandang ringan.',
+            'Tera air ialah tindihan yang jelas yang ditambah pada imej — biasanya teks, logo, atau simbol hak cipta — yang mengenal pasti pencipta atau pemilik kandungan. Tidak seperti metadata (yang tersembunyi di dalam fail dan boleh dibuang dalam beberapa saat), tera air dibenamkan secara visual ke dalam imej itu sendiri. Anda tidak boleh hanya klik kanan dan membuangnya tanpa menjejaskan kualiti imej dengan ketara.',
+          ],
+          subSections: [
+            {
+              title: 'Mengapa Pencipta Menggunakan Tera Air',
+              paragraphs: [
+                'Sebab praktikal untuk menambah tera air pada imej anda berpunca daripada tiga kebimbangan utama.',
+              ],
+              bullets: [
+                'Pengenalpastian pemilikan. Apabila karya anda dikongsi di platform media sosial, papan Pinterest, atau dibenamkan dalam catatan blog, atribusi asal sering hilang. Tera air memastikan nama atau jenama anda ikut bersama imej ke mana sahaja ia pergi.',
+                'Pencegahan kecurian. Kebanyakan pencuri imej biasa mencari jalan paling mudah. Tera air yang kelihatan profesional, terutama yang diletakkan dengan baik dan sedikit telus, menghantar isyarat yang jelas: imej ini milik seseorang yang menghargai hasil kerjanya.',
+                'Perlindungan portfolio pelanggan. Jurugambar yang berkongsi pratonton dengan pelanggan sebelum pembayaran akhir kerap menggunakan tera air untuk mengelakkan pelanggan daripada menggunakan pratonton tanpa menyelesaikan invois. Tera air yang halus mencapai tujuan ini tanpa menjadikan pratonton terlalu mengganggu untuk dinilai.',
+              ],
+            },
+            {
+              title: 'Siapa Yang Patut Meletakkan Tera Air pada Imej Mereka',
+              paragraphs: [
+                'Jika anda termasuk dalam mana-mana kategori berikut, meletakkan tera air pada imej anda sebelum berkongsi secara dalam talian bukan pilihan — ia amat penting:',
+              ],
+              bullets: [
+                'Jurugambar bebas yang berkongsi galeri dengan pelanggan',
+                'Pereka grafik yang mengedarkan sampel portfolio',
+                'Penjual e-dagang yang mempamerkan foto produk sebelum perjanjian pelesenan',
+                'Artis digital yang berkongsi karya di platform sosial',
+                'Pempengaruh blog dan pencipta kandungan yang imej mereka kerap digunakan semula',
+                'Penyumbang foto stok yang membina jenama yang mudah dikenali',
+              ],
+            },
+          ],
+        },
+        {
+          id: 'wm-blog-workspace',
+          tocLabel: 'Panel Ruang Kerja',
+          title: 'Di Dalam Alat Tera Air Photremium: Ruang Kerja Tiga Panel Dibina untuk Aliran Kerja Sebenar',
+          paragraphs: [
+            'Apa yang membezakan alat tera air Photremium daripada penanda air dalam talian asas ialah reka bentuk ruang kerjanya. Daripada pendekatan ringkas seperti “taip teks, pilih kedudukan, siap”, alat ini menyediakan susun atur tiga panel yang menyerupai apa yang anda akan temui dalam perisian reka bentuk profesional — cuma ia berjalan sepenuhnya dalam pelayar anda, tanpa pemasangan diperlukan.',
+          ],
+          subSections: [
+            {
+              title: 'Panel Kanvas Kiri',
+              paragraphs: [
+                'Panel kanvas mengambil bahagian terbesar skrin dan memaparkan dengan tepat rupa imej anda selepas tera air digunakan dalam masa nyata. Setiap perubahan yang anda buat — melaraskan kelegapan, mengubah kedudukan lapisan teks, mengubah saiz logo — dipaparkan serta-merta pada kanvas. Tiada butang “pratonton” untuk diklik. Apa yang anda lihat ialah apa yang anda dapat.',
+                'Kanvas juga mempunyai bar alat zum terbina dalam, membolehkan anda zum masuk untuk penjajaran tepat dan zum keluar untuk melihat gambaran besar. Ciri zum-untuk-sesuai mengira skala awal terbaik secara automatik berdasarkan saiz skrin anda, jadi walaupun imej resolusi tinggi dimuatkan pada saiz kerja yang selesa. Panduan penjajaran muncul secara dinamik apabila anda menyeret lapisan berhampiran tengah mendatar atau menegak imej, memakukan tera air ke kedudukan yang benar-benar berpusat dengan ketepatan memuaskan yang biasanya hanya anda dapat daripada Photoshop.',
+              ],
+            },
+            {
+              title: 'Panel Tetapan Kanan',
+              paragraphs: [
+                'Panel kanan ialah pusat kawalan. Di sinilah anda mengurus lapisan tera air, menyesuaikan penampilannya, dan mencetuskan eksport akhir. Pada desktop, ia kekal tetap di sebelah kanan skrin. Pada peranti mudah alih, ia muncul dari bawah sebagai helaian bawah — dicetuskan oleh butang gear terapung — supaya ia tidak menutup kanvas anda ketika anda bekerja.',
+                'Dalam panel kanan anda akan menemui pengurus lapisan, yang menyenaraikan setiap elemen tera air yang telah anda tambahkan. Setiap entri lapisan menunjukkan jenis lapisan (teks atau imej), nama atau kandungan semasanya, dan tiga butang tindakan pantas: suis keterlihatan (ikon mata), suis kunci untuk membekukan kedudukan lapisan semasa anda bekerja pada lapisan lain, dan butang padam.',
+              ],
+            },
+            {
+              title: 'Jalur Pratonton Kiri (Mod Berbilang Imej)',
+              paragraphs: [
+                'Apabila anda bekerja dengan berbilang imej serentak — satu kelompok foto produk, atau satu sesi potret penuh — jalur lakaran kecil menegak muncul di paling kiri skrin. Ini ialah barisan imej, yang memaparkan pratonton mini bagi setiap fail yang anda muatkan. Mengklik mana-mana lakaran kecil menukar kanvas anda kepada imej itu serta-merta, membolehkan anda mengesahkan rupa tera air merentasi komposisi yang berbeza tanpa kehilangan tetapan lapisan anda.',
+                'Jalur ini juga memaparkan bacaan saiz dalam KB atau MB bagi setiap fail, bersama label format fail (JPG, PNG, WEBP), supaya anda sentiasa tahu apa yang sedang anda gunakan sekilas pandang.',
+              ],
+            },
+          ],
+        },
+        {
+          id: 'wm-blog-steps',
+          tocLabel: 'Langkah Demi Langkah',
+          title: 'Langkah Demi Langkah: Cara Menambah Tera Air pada Imej Anda di Photremium',
+          paragraphs: [
+            'Panduan ini berdasarkan terus pada cara alat ini berfungsi di belakang tabir — daripada sistem muat naik seret dan lepas hinggalah kepada enjin rendering kanvas yang menulis tera air anda secara kekal pada imej sebelum muat turun.',
+          ],
+          steps: [
+            {
+              heading: 'Langkah 1 — Muat Naik Imej Anda',
+              paragraphsBefore: [
+                'Pergi ke photremium.com/watermark-image. Anda akan tiba pada skrin muat naik, yang memaparkan zon seret dan lepas yang kemas di tengah halaman.',
+                'Anda mempunyai tiga cara untuk membawa imej anda ke dalam alat ini:',
+              ],
+              bullets: [
+                'Seret dan lepas. Seret satu atau lebih fail imej dari desktop anda terus ke zon drop. Alat ini menerima sebarang format imej standard — JPEG, PNG, WEBP, dan banyak lagi. Apabila anda menyeret fail ke atas ruang kerja, sempadan ungu akan diaktifkan di sekeliling keseluruhan kawasan dengan arahan visual “Drop images to add for watermarking”, jadi anda tahu tindakan lepasan itu telah dikesan.',
+                'Klik untuk semak imbas. Klik butang “Choose Files” di dalam zon drop untuk membuka pemilih fail sistem anda. Anda boleh memilih berbilang fail sekaligus menggunakan Ctrl+Click (Windows) atau Cmd+Click (Mac).',
+                'Tampal daripada papan keratan. Jika anda telah menyalin imej ke papan keratan — daripada tangkapan skrin, aplikasi lain, atau pelayar web — hanya tekan Ctrl+V (atau Cmd+V pada Mac) semasa berada pada halaman tera air dan imej akan dimuatkan terus ke dalam ruang kerja. Ini berfungsi walaupun beberapa imej sudah dimuatkan.',
+              ],
+              paragraphsAfter: [
+                'Sebaik sahaja imej pertama dimuatkan, ruang kerja beralih daripada skrin muat naik kepada editor penuh tiga panel, dan kanvas memaparkan imej anda pada tahap zum muat-ikut-skrin yang dikira secara automatik.',
+              ],
+            },
+            {
+              heading: 'Langkah 2 — Tambah Lapisan Tera Air Teks',
+              paragraphsBefore: [
+                'Klik butang ungu “Add Text” dalam panel kanan. Lapisan teks baharu akan muncul pada kanvas anda dengan teks pemegang letak lalai “Type here...” telah dipilih.',
+                'Anda boleh mula menaip serta-merta. Teks dipaparkan secara langsung pada kanvas dalam Arial putih pada saiz lalai yang ditala mengikut dimensi imej anda. Daripada bar alat atas yang muncul apabila lapisan teks dipilih, anda boleh menyesuaikan setiap aspek teks:',
+              ],
+              bullets: [
+                'Keluarga fon — pilih daripada 12 fon terbina dalam termasuk Arial, Georgia, Impact, Brush Script MT, Comic Sans MS, dan banyak lagi',
+                'Saiz fon — taip nilai piksel tersuai secara langsung atau gunakan kawalan tambah/tolak',
+                'Tebal, condong, garis bawah — hidupkan mana-mana gabungan gaya ini',
+                'Warna teks — klik swatch warna untuk membuka pemilih warna dan pilih sebarang warna hex',
+                'Warna latar — tambah latar berwarna di belakang teks anda untuk rupa label atau lencana',
+                'Stroke (garis luar) — tetapkan lebar dan warna stroke untuk kebolehbacaan maksimum pada imej cerah dan gelap',
+                'Kelegapan — laraskan dari 0% (tidak kelihatan) hingga 100% (legap sepenuhnya); kebanyakan tera air berada antara 30% dan 60%',
+                'Penjajaran — rata kiri, tengah, atau kanan teks dalam kotak sempadannya',
+                'Putaran — putar lapisan teks ke mana-mana sudut, dengan titik snap magnetik pada 0°, 90°, 180°, dan 270° untuk peletakan sudut tepat yang pantas',
+              ],
+              paragraphsAfter: [
+                'Untuk menggerakkan teks, klik dan seretnya ke mana-mana pada kanvas. Untuk kedudukan tepat per piksel, gunakan kekunci anak panah pada papan kekunci anda (tahan Shift untuk langkah 10 piksel). Untuk mengubah saiz kotak teks, seret mana-mana daripada lapan pemegang ubah saiz (sudut dan tepi) yang muncul di sekeliling lapisan yang dipilih.',
+              ],
+            },
+            {
+              heading: 'Langkah 3 — Tambah Lapisan Tera Air Imej (Logo)',
+              paragraphsBefore: [
+                'Jika anda mahu menggunakan logo, tandatangan, atau sebarang imej sebagai tera air dan bukannya — atau sebagai tambahan kepada — teks, klik butang biru “Add Image” dalam panel kanan. Pemilih fail anda akan dibuka supaya anda boleh memilih fail imej tera air dari peranti anda.',
+                'Alat ini secara automatik mensaiz imej tera air kepada kira-kira 30% daripada lebar kanvas anda sambil mengekalkan nisbah aspek asalnya, dan memusatkannya pada kanvas. Dari situ, anda boleh menyeretnya ke mana-mana kedudukan, mengubah saiznya menggunakan pemegang sudut (yang mengekalkan nisbah aspek), atau memutarkannya menggunakan pemegang putar khusus yang muncul di atas lapisan yang dipilih.',
+                'Bagi lapisan tera air jenis imej, panel kanan memaparkan kawalan tambahan:',
+              ],
+              bullets: [
+                'Kelegapan — sama seperti lapisan teks, sesuai untuk logo PNG telus',
+                'Flip mendatar / Flip menegak — cerminkan tera air jika perlu',
+                'Lebar sempadan, warna sempadan, dan gaya sempadan — tambah sempadan yang kelihatan di sekeliling tera air logo',
+                'Jejari sempadan — bulatkan bucu tera air logo, sama ada secara seragam atau dengan kawalan berasingan untuk setiap bucu',
+                'Putaran — tingkah laku putaran yang sama lancar seperti lapisan teks',
+              ],
+            },
+            {
+              heading: 'Langkah 4 — Konfigurasikan Tiling (Pilihan)',
+              paragraphsBefore: [
+                'Salah satu ciri yang lebih berkuasa dalam alat ini ialah tiling — keupayaan untuk mengulang tera air anda merentasi keseluruhan imej dalam corak grid. Ini sangat berguna apabila anda mahu menjadikan imej tidak dapat digunakan untuk penerbitan semula, bukannya sekadar berjenama.',
+                'Dengan lapisan yang dipilih, cari pilihan tile dalam bar alat. Anda boleh menetapkannya kepada:',
+              ],
+              bullets: [
+                'None — peletakan tunggal (lalai)',
+                'Grid 2×2 — mengulang tera air dalam corak 2 lajur, 2 baris',
+                'Grid 3×3 — mengulang dalam grid 3×3 untuk liputan yang lebih padat',
+              ],
+              paragraphsAfter: [
+                'Anda juga boleh melaraskan jarak tile, yang mengawal ruang antara setiap pengulangan. Kanvas memaparkan pratonton bayangan bagi semua salinan bertile supaya anda dapat melihat corak liputan penuh sebelum memuat turun.',
+              ],
+            },
+            {
+              heading: 'Langkah 5 — Gunakan Pengurus Lapisan untuk Berbilang Tera Air',
+              paragraphsBefore: [
+                'Anda boleh menambah seberapa banyak lapisan yang anda mahu — menggabungkan tera air teks dan imej sesuka hati. Pengurus lapisan dalam panel kanan menyenaraikan semuanya. Anda boleh:',
+              ],
+              bullets: [
+                'Tunjuk/sembunyikan lapisan individu menggunakan ikon mata — berguna untuk menukar antara versi tera air yang berbeza tanpa memadam apa-apa',
+                'Kunci lapisan untuk mengelakkan kedudukan berubah secara tidak sengaja semasa anda bekerja pada lapisan lain',
+                'Padam lapisan secara kekal',
+              ],
+              paragraphsAfter: [
+                'Mengklik mana-mana entri lapisan dalam senarai akan memilihnya pada kanvas pada masa yang sama, menjadikannya mudah untuk bertukar antara lapisan tanpa perlu mencari-cari pada imej.',
+              ],
+            },
+            {
+              heading: 'Langkah 6 — Tukar Antara Berbilang Imej',
+              paragraphsBefore: [
+                'Jika anda memuat naik lebih daripada satu imej, gunakan jalur lakaran kecil di sebelah kiri untuk menukar imej kanvas aktif anda. Lapisan tera air yang anda konfigurasikan akan digunakan secara universal — ia akan dirender pada setiap imej dalam kelompok anda apabila anda mengeksport.',
+                'Alat ini juga melakukan semakan keseragaman resolusi merentasi kelompok anda. Jika imej anda mempunyai dimensi yang jauh berbeza (lebih daripada 5% perbezaan pada lebar atau tinggi), satu amaran akan muncul dan memberitahu anda bahawa kedudukan tera air mungkin kelihatan berbeza antara imej akibat variasi saiz. Enjin ini mengendalikannya dengan baik melalui algoritma kedudukan semula berkadar: ia mengira kedudukan tera air sebagai peratusan dimensi imej rujukan dan menggunakan peletakan berkadar yang sama pada setiap imej lain dalam kelompok, mengekalkan niat visual walaupun pada resolusi yang berbeza.',
+              ],
+            },
+            {
+              heading: 'Langkah 7 — Tetapkan Keutamaan Muat Turun Anda',
+              paragraphsBefore: [
+                'Bagi kerja satu imej, klik butang “Download” di bawah kanvas untuk menyimpan imej bertera air terus. Nama fail akan ditetapkan secara automatik kepada nama fail asal anda dengan “-watermarked” ditambah sebelum sambungan. Imej JPEG dieksport pada kualiti 0.95 — cukup tinggi sehingga tidak dapat dibezakan daripada asal pada saiz tontonan biasa. Imej PNG dieksport sebagai PNG tanpa kehilangan data.',
+                'Bagi kerja kelompok (berbilang imej), anda mempunyai dua mod muat turun yang boleh dipilih dalam panel kanan:',
+              ],
+              bullets: [
+                'Fail ZIP — semua imej bertera air dibungkus dalam satu arkib ZIP yang dimuat turun dengan satu klik. Alat ini memuatkan JSZip secara dinamik untuk mengendalikan pemampatan.',
+                'Fail berasingan — setiap imej dimuat turun sebagai fail individu dengan kelewatan singkat antara setiap muat turun untuk mengelakkan pembatasan pelayar.',
+              ],
+            },
+            {
+              heading: 'Langkah 8 — Muat Turun dan Sahkan',
+              paragraphsBefore: [
+                'Selepas mengklik butang muat turun (atau butang “Watermark & Download All” untuk kelompok), alat ini merender setiap imej pada elemen HTML5 canvas tersembunyi pada resolusi asli penuh — bukan pada saiz pratonton berskala yang anda lihat pada skrin. Ini bermakna imej yang dieksport berada pada 100% dimensi piksel asalnya dengan tera air dilukis pada saiz yang betul secara berkadar. Buka fail yang dimuat turun dan zum masuk untuk mengesahkan peletakan serta kualiti tera air sepadan dengan jangkaan anda.',
+                'Jika ada apa-apa yang kelihatan tidak betul, hanya kembali ke ruang kerja — lapisan anda masih ada — laraskan, dan muat turun semula.',
+              ],
+            },
+          ],
+        },
+        {
+          id: 'wm-blog-tips',
+          tocLabel: 'Petua Pro',
+          title: 'Petua Pro untuk Mendapatkan Hasil Terbaik',
+          bullets: [
+            'Gunakan logo PNG separa telus untuk rupa yang paling profesional. Tera air logo dengan latar belakang lutsinar pada kelegapan 40–50% kelihatan jauh lebih kemas daripada teks pepejal. Eksport logo anda daripada alat reka bentuk sebagai PNG dengan ketelusan alfa sebelum menggunakannya sebagai lapisan imej.',
+            'Letakkan tera air anda di tempat di mana pemotongan akan mengurangkan nilainya. Sudut kanan bawah ialah peletakan tera air yang paling biasa — dan yang paling mudah untuk dipotong keluar. Untuk perlindungan yang lebih kuat, pertimbangkan meletakkan tera air anda merentasi kawasan imej yang penting secara visual, seperti pada wajah, butiran produk, atau titik fokus. Pilihan tile diagonal lebih sukar untuk dibuang tanpa merosakkan imej dengan ketara.',
+            'Gunakan ciri kunci apabila bekerja dengan berbilang lapisan. Setelah anda berpuas hati dengan kedudukan tera air utama anda, kunci lapisan itu sebelum menambah lapisan sekunder. Ini mengelakkan anda tersalah anjak semasa bekerja pada elemen lain.',
+            'Uji pada kawasan terang dan gelap imej anda. Tera air putih tidak kelihatan pada langit cerah tetapi jelas dibaca pada bayang-bayang gelap. Tambahkan stroke halus atau warna latar untuk memastikan kebolehbacaan tanpa mengira apa yang terdapat di bawah tera air.',
+            'Pintasan papan kekunci sentiasa menjimatkan masa. Kekunci anak panah menggerakkan lapisan terpilih satu piksel pada satu masa. Shift+Arrow menggerakkan sepuluh piksel pada satu masa. Kekunci Delete membuang lapisan terpilih serta-merta. Pintasan ini menjadikan pelarasan kedudukan yang halus jauh lebih pantas daripada menyeret.',
+          ],
+        },
+        {
+          id: 'wm-blog-privacy',
+          tocLabel: 'Privasi dan Keselamatan',
+          title: 'Privasi dan Keselamatan: Mengapa Pemprosesan Berasaskan Pelayar Penting',
+          paragraphs: [
+            'Satu kebimbangan yang dimiliki ramai pencipta apabila menggunakan alat dalam talian ialah ke mana sebenarnya imej mereka pergi. Dengan alat tera air berasaskan pelayan, imej anda dimuat naik ke pelayan penyedia, diproses di sana, kemudian dihantar kembali kepada anda. Ini bermakna karya yang belum diterbitkan, foto pelanggan, atau imej produk sensitif anda melalui infrastruktur pihak lain.',
+            'Alat tera air Photremium memproses semuanya secara setempat dalam pelayar anda. Imej anda dimuatkan ke dalam memori peranti anda menggunakan File API pelayar dan tidak pernah dihantar melalui internet. Penerapan tera air berlaku pada elemen HTML5 canvas yang berjalan dalam JavaScript, sepenuhnya dalam tab pelayar anda. Apabila anda menutup halaman atau klik “Start Over,” semua data imej dilepaskan daripada memori dan dibuang. Tiada apa-apa disimpan di luar peranti anda sendiri.',
+          ],
+        },
+        {
+          id: 'wm-blog-summary',
+          tocLabel: 'Ringkasan Akhir',
+          title: 'Mengapa Alat Tera Air Photremium Layak Menjadi Sebahagian daripada Aliran Kerja Biasa Anda',
+          paragraphs: [
+            'Terdapat berpuluh-puluh alat tera air yang tersedia dalam talian. Apa yang membezakan alat yang wajar ditanda buku daripada yang wajar dilupakan biasanya ialah gabungan kelajuan, kawalan, dan kebolehpercayaan.',
+            'Kelajuan penting kerana proses tera air tidak sepatutnya menambah masa yang ketara pada aliran kerja pascapemprosesan anda. Alat Photremium dimuatkan serta-merta, memproses secara setempat, dan mengeksport pada resolusi penuh dalam beberapa saat — walaupun untuk kelompok besar. Tiada menunggu pemprosesan di sisi pelayan, tiada barisan, dan tiada masa rendering yang meningkat mengikut bilangan pengguna yang berada dalam talian pada masa yang sama.',
+            'Kawalan penting kerana tera air yang kelihatan salah lebih teruk daripada tiada tera air langsung — ia membuatkan jenama anda kelihatan tidak profesional. Sistem lapisan, kawalan per sifat dalam bar alat, pratonton kanvas masa nyata, dan sokongan pintasan papan kekunci semuanya memberikan tahap kawalan yang benar-benar setanding dengan perisian desktop khusus.',
+            'Kebolehpercayaan penting kerana karya yang belum diterbitkan sangat bernilai. Mengetahui bahawa imej anda tidak pernah bergerak melalui internet ke pelayan pihak ketiga bermakna anda boleh menanda air foto pelanggan, imej produk yang belum dilancarkan, dan karya kreatif sensitif tanpa sebarang kebimbangan tentang pengendalian data, pelanggaran di sisi pelayan, atau perubahan dasar oleh penyedia awan.',
+            'Sama ada anda menambah notis hak cipta pantas pada satu foto atau memproses keseluruhan sesi 200 imej sebelum berkongsi galeri pelanggan, alat Watermark Image Photremium memberi anda alat untuk melakukannya dengan betul — sepenuhnya percuma, sepenuhnya peribadi, dan cukup fleksibel dari segi kreatif untuk menjadikan tera air kelihatan seolah-olah memang sepatutnya berada pada imej, bukan sekadar ditampal di atasnya.',
+            'Pergilah ke photremium.com/watermark-image dan cubalah. Imej bertera air pertama anda benar-benar hanya tiga puluh saat lagi.',
+            'Photremium menawarkan rangkaian alat penyuntingan dan pemprosesan imej berasaskan pelayar. Semua alat berjalan secara setempat dalam pelayar anda — imej anda kekal pada peranti anda.',
+          ],
+        },
+      ],
+    },
   },
 
   qrGenerator: {
@@ -1516,11 +1749,16 @@ common: {
       { q: 'Adakah imej saya dihantar ke pelayan?', a: 'Tidak. Model AI berjalan sepenuhnya dalam pelayar menggunakan WebAssembly.' },
     ],
     watermarkImage: [
-      { q: 'Apa jenis tera air yang boleh ditambah?', a: 'Anda boleh menambah tera air teks dengan fon, saiz, warna dan kelegapan tersuai, serta tera air imej seperti logo.' },
-      { q: 'Bolehkah saya menggunakan tera air yang sama pada beberapa imej?', a: 'Ya. Muat naik beberapa imej, konfigurasi tera air sekali dan ia akan digunakan pada semua.' },
-      { q: 'Adakah tera air mengurangkan kualiti imej?', a: 'Tidak. Tera air digabungkan pada imej asal dengan resolusi penuh.' },
-      { q: 'Bolehkah saya melaraskan kelegapan tera air?', a: 'Sudah tentu. Gunakan gelongsor kelegapan untuk melaraskan.' },
-      { q: 'Adakah data dimuat naik ke pelayan?', a: 'Tidak. Semua pemprosesan tera air dilakukan secara tempatan dalam pelayar.' },
+      { q: '1. Adakah alat tera air Photremium percuma?', a: 'Ya, alat di photremium.com/watermark-image boleh digunakan secara percuma tanpa akaun atau langganan. Anda boleh tera air imej tunggal atau kumpulan tanpa sekatan atau paywall.' },
+      { q: '2. Berapakah bilangan imej yang boleh diproses serentak?', a: 'Alat ini menyokong pemprosesan berkumpulan. Seret folder gambar atau pilih banyak fail pada satu masa — had praktikal ditentukan oleh memori peranti anda.' },
+      { q: '3. Format imej input dan output yang disokong?', a: 'Menyokong format yang boleh dibaca oleh File API: JPEG, JPG, PNG, WEBP, GIF (statik), BMP dan SVG. Output mengekalkan format asal.' },
+      { q: '4. Adakah tera air kelihatan serupa pada resolusi berbeza?', a: 'Ya. Enjin penempatan berkadar mengira kedudukan relatif dan skala supaya tera air mengekalkan rupa yang sama merentasi semua imej dalam kumpulan.' },
+      { q: '5. Bolehkah saya gunakan logo sendiri sebagai tera air?', a: 'Boleh. Gunakan "Add Image" untuk memuat naik PNG dengan latar telus; anda boleh mengubah saiz, putar dan laraskan kelegapan.' },
+      { q: '6. Bagaimana menjadikan tera air separa telus?', a: 'Pilih lapisan tera air pada kanvas dan laraskan slider kelegapan — 30–50% biasa memberikan kesan profesional tanpa mengganggu imej.' },
+      { q: '7. Bolehkah saya menambah berbilang lapisan tera air dalam satu imej?', a: 'Ya. Sistem lapisan membenarkan berbilang lapisan dengan konfigurasi berasingan untuk setiap satu.' },
+      { q: '8. Apakah fungsi tiling dan bila digunakan?', a: 'Tiling mengulang tera air dalam grid di seluruh imej dan sesuai untuk memastikan imej tidak boleh digunakan tanpa kebenaran.' },
+      { q: '9. Adakah alat ini sesuai untuk mudah alih?', a: 'Ya — susun atur responsif menukar kepada paparan bertindih pada skrin sempit dan semua kawalan menyokong sentuhan.' },
+      { q: '10. Adakah imej saya peribadi dan adakah ia dihantar ke pelayan?', a: 'Imej anda tidak meninggalkan peranti. Semua pemprosesan berlaku secara tempatan dalam pelayar menggunakan Canvas API dan tiada muat naik imej dilakukan.' },
     ],
     qrCodeGenerator: [
       { q: 'Adakah kod QR ini akan luput?', a: 'Tidak, kod-kod QR ini tidak akan luput dan menjamin sokongan seumur hidup. Kerana ia menyimpan arahan berkod dalam bentuk bit di dalam kotak segi empat, maklumat yang disimpan di dalamnya tidak boleh diubah atau dibuang. Anda boleh mengakses maklumat dalam kod hanya dengan mengimbas ia dengan mana-mana kamera walaupun selepas bertahun-tahun.' },

@@ -5,7 +5,7 @@
   "description": "Compress, resize, crop, and convert images, or generate QR codes instantly with Photremium.",
   "icons": [
     {
-      "src": "logo192.png",
+      "src": "logo-192.png",
       "type": "image/png",
       "sizes": "192x192",
       "purpose": "any"
@@ -19,7 +19,7 @@
   ],
   "start_url": "/",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff",
+  "theme_color": "#1a1a2e", 
+  "background_color": "#f0f4f8",
   "orientation": "portrait"
 }

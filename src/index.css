@@ -63,10 +63,6 @@ select:focus {
   height: 0;
 }
 
-* {
-  scrollbar-width: thin;
-  scrollbar-color: #93c5fd #f1f5f9;
-}
 
 body {
   margin: 0;

@@ -1030,6 +1030,239 @@ common: {
     typeHere: 'Buraya yazın...',
     linkCorners: 'Köşeleri Bağla',
     separateCorners: 'Köşeleri Ayır',
+    blog: {
+      tocTitle: 'İçindekiler',
+      sections: [
+        {
+          id: 'wm-blog-intro',
+          tocLabel: 'Filigran Aracı Genel Bakış',
+          title: 'Görsellerinize Çevrimiçi Olarak Filigran Ekleme — Photremium Filigran Aracının Tam Rehberi',
+          paragraphs: [
+            'Güzel bir fotoğrafı düzenlemeyi yeni bitirdiniz. Bu, mağazanız için bir ürün fotoğrafı olabilir, bir müşteri çekiminden alınmış portre olabilir ya da saatlerce kusursuzlaştırdığınız dijital bir çalışma olabilir. Ve şimdi her üreticinin sonunda karşılaştığı soru geliyor: paylaşmadan önce bunu nasıl korursunuz?',
+            'Çoğu profesyonelin vardığı cevap filigrandır — ve bunun iyi bir nedeni var. Doğru yerleştirilmiş bir filigran, çalışmanız üzerinde kalıcı bir imza gibi davranır; eserinizi izlenebilir, markalı ve çalınması çok daha zor hale getirir.',
+            'İnsanların sık karşılaştığı sorun şudur: çevrimiçi araçlar ya çok hantal olur, ya aboneliklerin arkasına kilitlenmiştir, ya da o kadar ağır bir filigran üretir ki görseli tamamen mahveder.',
+            'Photremium’un Watermark Image aracı tüm bunları düzeltmek için tasarlandı. Bu, tamamen tarayıcı tabanlı, ücretsiz, hesap gerektirmeyen bir filigran çalışma alanıdır ve dosyalarınızı bir sunucuya yüklemeden doğrudan tarayıcınızda çalışır. Her şey yerel kalır, her şey hızlı kalır ve sunduğu yaratıcı kontrol seviyesi, masaüstü yazılımdan bekleyeceğiniz düzeyle yarışır. Bu rehberde, nasıl çalıştığını, kimler için tasarlandığını ve her seferinde en iyi sonuçları nasıl alacağınızı tam olarak göstereceğiz.',
+          ],
+        },
+        {
+          id: 'wm-blog-what-is',
+          tocLabel: 'Filigran Nedir',
+          title: 'Filigran Nedir ve Neden Önemlidir?',
+          paragraphs: [
+            'Aracın kendisine geçmeden önce, filigranın ne yaptığını ve neden birçok fotoğrafçı, tasarımcı ve içerik üreticisinin onu vazgeçilmez gördüğünü anlamak faydalıdır.',
+            'Filigran, bir görsele eklenen görünür bir bindirmedir — genellikle metin, bir logo veya bir telif hakkı simgesi — ve içeriğin üreticisini ya da sahibini tanımlar. Dosyanın içinde gizli olan ve saniyeler içinde silinebilen meta verilerin aksine, filigran görselin kendisine görsel olarak gömülür. Üzerine sağ tıklayıp kaliteyi belirgin şekilde düşürmeden kaldırmanız mümkün değildir.',
+          ],
+          subSections: [
+            {
+              title: 'Üreticiler Neden Filigran Kullanır',
+              paragraphs: [
+                'Görsellerinize filigran eklemenin pratik nedenleri üç temel kaygıya dayanır.',
+              ],
+              bullets: [
+                'Sahiplik tanımlaması. Çalışmanız sosyal medya platformlarında, Pinterest panolarında veya blog yazılarında paylaşıldığında orijinal atıf çoğu zaman kaybolur. Filigran, adınızın veya markanızın görsel nereye giderse gitsin onunla birlikte taşınmasını sağlar.',
+                'Hırsızlığı caydırma. Çoğu sıradan görsel hırsızı en kolay yolu arar. Profesyonel görünen, özellikle iyi konumlandırılmış ve biraz şeffaf bir filigran açık bir mesaj verir: bu görsel, işine önem veren birine aittir.',
+                'Müşteri portföyünü koruma. Nihai ödeme öncesinde müşterilere önizleme paylaşan fotoğrafçılar, müşterinin faturayı ödemeden önizlemeyi kullanmasını engellemek için sık sık filigran kullanır. İnce bir filigran bunu yaparken önizlemeyi gereğinden fazla dikkat dağıtıcı hale getirmez.',
+              ],
+            },
+            {
+              title: 'Kimler Görsellerini Filigranlamalı',
+              paragraphs: [
+                'Aşağıdaki kategorilerden herhangi birine giriyorsanız, görsellerinizi çevrimiçi paylaşmadan önce filigranlamak bir seçenek değil — zorunluluktur:',
+              ],
+              bullets: [
+                'Müşterilerle galeri paylaşan serbest fotoğrafçılar',
+                'Portföy örnekleri dağıtan grafik tasarımcılar',
+                'Lisans anlaşmalarından önce ürün fotoğrafları gösteren e-ticaret satıcıları',
+                'Çalışmalarını sosyal platformlarda paylaşan dijital sanatçılar',
+                'Görselleri sık sık yeniden kullanılan blog yazarları ve içerik üreticileri',
+                'Tanınabilir bir marka oluşturan stok fotoğraf katkıcıları',
+              ],
+            },
+          ],
+        },
+        {
+          id: 'wm-blog-workspace',
+          tocLabel: 'Çalışma Alanı Panelleri',
+          title: 'Photremium Filigran Aracının İçinde: Gerçek İş Akışları İçin Tasarlanmış Üç Panelli Çalışma Alanı',
+          paragraphs: [
+            'Photremium filigran aracını temel çevrimiçi filigran araçlarından ayıran şey çalışma alanı tasarımıdır. Basit bir “metni yaz, konumu seç, bitti” yaklaşımı yerine, profesyonel tasarım yazılımlarında bulacağınız yapıyı andıran üç panelli bir düzen sunar — tek fark, tamamen tarayıcıda çalışması ve kurulum gerektirmemesidir.',
+          ],
+          subSections: [
+            {
+              title: 'Sol Canvas Paneli',
+              paragraphs: [
+                'Canvas paneli ekranın en büyük bölümünü kaplar ve filigran uygulandığında görselinizin nasıl göründüğünü gerçek zamanlı olarak tam olarak gösterir. Yaptığınız her değişiklik — opaklığı ayarlama, bir metin katmanını yeniden konumlandırma, bir logoyu yeniden boyutlandırma — canvas üzerinde anında görünür. Tıklanacak bir “önizleme” düğmesi yoktur. Ne görüyorsanız onu alırsınız.',
+                'Canvas ayrıca yerleşik bir yakınlaştırma araç çubuğu içerir; hassas hizalama için yakınlaştırıp genel görünüm için uzaklaştırabilirsiniz. Ekrana sığdırma özelliği, ekran boyutunuza göre en iyi başlangıç ölçeğini otomatik olarak hesaplar; böylece yüksek çözünürlüklü görseller bile rahat bir çalışma boyutunda açılır. Bir katmanı görselin yatay veya dikey merkezine yaklaştırdığınızda hizalama kılavuzları dinamik olarak görünür ve filigranı genellikle yalnızca Photoshop’ta alabileceğiniz türden tatmin edici bir hassasiyetle tam ortaya oturtur.',
+              ],
+            },
+            {
+              title: 'Sağ Ayar Paneli',
+              paragraphs: [
+                'Sağ panel kontrol merkezidir. Filigran katmanlarınızı burada yönetir, görünümlerini özelleştirir ve son dışa aktarımı başlatırsınız. Masaüstünde ekranın sağ tarafına sabitlenmiştir. Mobil cihazlarda ise alttan kayan bir alt panel olarak açılır — yüzen dişli düğmesiyle tetiklenir — böylece çalışırken canvas’ınızı asla kapatmaz.',
+                'Sağ panelde, eklediğiniz tüm filigran öğelerini listeleyen katman yöneticisini bulacaksınız. Her katman girdisi katman türünü (metin veya görsel), mevcut adını ya da içeriğini ve üç hızlı eylem düğmesini gösterir: görünürlük anahtarı (göz simgesi), diğer katmanlarla çalışırken bir katmanın konumunu donduran kilit anahtarı ve silme düğmesi.',
+              ],
+            },
+            {
+              title: 'Sol Önizleme Şeridi (Çoklu Görsel Modu)',
+              paragraphs: [
+                'Aynı anda birden fazla görselle çalışırken — bir ürün fotoğrafı grubu ya da tam bir portre çekimi gibi — ekranın en solunda dikey bir küçük resim şeridi görünür. Bu, yüklediğiniz her dosyanın küçük önizlemelerini gösteren görsel kuyruğudur. Herhangi bir küçük resme tıklamak canvas’ınızı anında o görsele geçirir; böylece katman ayarlarınızı kaybetmeden filigranın farklı kompozisyonlarda nasıl göründüğünü kontrol edebilirsiniz.',
+                'Şerit ayrıca her dosya için KB veya MB cinsinden boyut bilgisini ve dosya biçimi etiketini (JPG, PNG, WEBP) gösterir; böylece ne üzerinde çalıştığınızı bir bakışta bilirsiniz.',
+              ],
+            },
+          ],
+        },
+        {
+          id: 'wm-blog-steps',
+          tocLabel: 'Adım Adım',
+          title: 'Adım Adım: Photremium’da Görselinize Filigran Nasıl Eklenir',
+          paragraphs: [
+            'Bu anlatım, aracın kaput altında nasıl çalıştığına doğrudan dayanır — sürükle bırak yükleme sisteminden, indirme öncesinde filigranınızı görsele kalıcı olarak yazan canvas render motoruna kadar.',
+          ],
+          steps: [
+            {
+              heading: '1. Adım — Görselinizi Yükleyin',
+              paragraphsBefore: [
+                'photremium.com/watermark-image adresine gidin. Sayfanın ortasında temiz bir sürükle-bırak alanı bulunan yükleme ekranına ulaşırsınız.',
+                'Görselinizi araca getirmenin üç yolu vardır:',
+              ],
+              bullets: [
+                'Sürükle ve bırak. Masaüstünüzden bir veya daha fazla görsel dosyasını doğrudan bırakma alanına sürükleyin. Araç JPEG, PNG, WEBP ve daha fazlası gibi tüm standart görsel biçimlerini kabul eder. Dosyaları çalışma alanının üzerine sürüklediğinizde, tüm alanın etrafında mor bir çerçeve etkinleşir ve “Drop images to add for watermarking” görsel istemi görünür; böylece bırakmanın kaydedildiğini bilirsiniz.',
+                'Tıklayarak göz atın. Sistem dosya seçicinizi açmak için bırakma alanının içindeki “Choose Files” düğmesine tıklayın. Windows’ta Ctrl+Click veya Mac’te Cmd+Click kullanarak aynı anda birden fazla dosya seçebilirsiniz.',
+                'Panodan yapıştırın. Bir görseli panoya kopyaladıysanız — bir ekran görüntüsünden, başka bir uygulamadan veya bir web tarayıcısından — filigran sayfasındayken Ctrl+V’ye (Mac’te Cmd+V) basmanız yeterlidir ve görsel doğrudan çalışma alanına yüklenir. Bu, zaten birden fazla görsel yüklenmiş olsa bile çalışır.',
+              ],
+              paragraphsAfter: [
+                'İlk görsel yüklendiğinde, çalışma alanı yükleme ekranından tam üç panelli düzenleyiciye geçer ve canvas, otomatik olarak hesaplanmış ekran uyumlu yakınlaştırma düzeyinde görselinizi gösterir.',
+              ],
+            },
+            {
+              heading: '2. Adım — Bir Metin Filigran Katmanı Ekleyin',
+              paragraphsBefore: [
+                'Sağ paneldeki mor “Add Text” düğmesine tıklayın. Canvas üzerinde yeni bir metin katmanı görünür ve varsayılan yer tutucu metin “Type here...” önceden seçili olur.',
+                'Hemen yazmaya başlayabilirsiniz. Metin, canvas üzerinde beyaz Arial olarak, görselinizin boyutlarına göre ayarlanmış varsayılan bir ölçüyle canlı olarak render edilir. Metin katmanı seçili olduğunda görünen üst araç çubuğundan metnin her yönünü özelleştirebilirsiniz:',
+              ],
+              bullets: [
+                'Yazı tipi ailesi — Arial, Georgia, Impact, Brush Script MT, Comic Sans MS ve daha fazlası dahil 12 yerleşik yazı tipinden seçin',
+                'Yazı tipi boyutu — özel bir piksel değeri doğrudan yazın veya artırma kontrollerini kullanın',
+                'Kalın, italik, altı çizili — bu stillerden istediğiniz kombinasyonu açın',
+                'Metin rengi — renk örneğine tıklayıp renk seçiciyi açın ve herhangi bir hex renk seçin',
+                'Arka plan rengi — metninizin arkasına renkli arka plan ekleyerek etiket veya rozet görünümü verin',
+                'Kontur (çerçeve) — hem açık hem koyu görsellerde maksimum okunabilirlik için çizgi kalınlığı ve rengi belirleyin',
+                'Opaklık — 0% (görünmez) ile 100% (tam opak) arasında ayarlayın; çoğu filigran %30 ile %60 arasındadır',
+                'Hizalama — metni sınır kutusu içinde sola, ortaya veya sağa hizalayın',
+                'Döndürme — metin katmanını herhangi bir açıya döndürün; 0°, 90°, 180° ve 270°’deki manyetik snap noktalarıyla hızlı düz konumlandırma yapın',
+              ],
+              paragraphsAfter: [
+                'Metni taşımak için canvas üzerinde tıklayıp sürükleyin. Piksel hassasiyetinde ince konumlama için klavyedeki ok tuşlarını kullanın (10 piksel adımlar için Shift’e basılı tutun). Metin kutusunu yeniden boyutlandırmak için seçili katmanın etrafında görünen sekiz yeniden boyutlandırma tutamaçlarından (köşeler ve kenarlar) herhangi birini sürükleyin.',
+              ],
+            },
+            {
+              heading: '3. Adım — Bir Görsel (Logo) Filigran Katmanı Ekleyin',
+              paragraphsBefore: [
+                'Metin yerine ya da metne ek olarak bir logo, imza veya herhangi bir görseli filigran olarak kullanmak istiyorsanız, sağ paneldeki mavi “Add Image” düğmesine tıklayın. Dosya seçiciniz açılır ve cihazınızdaki filigran görsel dosyasını seçebilirsiniz.',
+                'Araç, filigran görselini orijinal en-boy oranını koruyarak canvas genişliğinin yaklaşık %30’una otomatik olarak ölçeklendirir ve canvas üzerinde ortalar. Buradan sonra, onu herhangi bir konuma sürükleyebilir, köşe tutamaçlarını kullanarak yeniden boyutlandırabilir (en-boy oranı korunur) veya seçili katmanın üstünde beliren özel döndürme tutamacıyla döndürebilirsiniz.',
+                'Görsel türündeki filigran katmanları için sağ panel ek kontroller sunar:',
+              ],
+              bullets: [
+                'Opaklık — metin katmanlarıyla aynı, şeffaf PNG logolar için ideal',
+                'Yatay çevir / Dikey çevir — gerekirse filigranı aynalayın',
+                'Kenarlık genişliği, kenarlık rengi ve kenarlık stili — logo filigranın etrafına görünür bir çerçeve ekleyin',
+                'Köşe yarıçapı — logo filigranın köşelerini tek tip olarak veya her köşe için ayrı kontrolle yuvarlayın',
+                'Döndürme — metin katmanlarıyla aynı pürüzsüz döndürme davranışı',
+              ],
+            },
+            {
+              heading: '4. Adım — Döşemeyi Yapılandırın (İsteğe Bağlı)',
+              paragraphsBefore: [
+                'Aracın daha güçlü özelliklerinden biri döşemedir — filigranınızı tüm görsel boyunca bir ızgara düzeninde tekrar etme yeteneği. Bu, bir görseli yalnızca markalamak yerine yeniden yayınlamaya elverişsiz hale getirmek istediğinizde özellikle kullanışlıdır.',
+                'Bir katman seçiliyken araç çubuğundaki tile seçeneğini bulun. Şunlara ayarlayabilirsiniz:',
+              ],
+              bullets: [
+                'Yok — tek konumlandırma (varsayılan)',
+                '2×2 Izgara — filigranı 2 sütun, 2 satır düzeninde tekrarlar',
+                '3×3 Izgara — daha yoğun kapsama için 3×3 ızgarada tekrarlar',
+              ],
+              paragraphsAfter: [
+                'Döşeme aralığını da ayarlayabilirsiniz; bu, her tekrar arasındaki mesafeyi kontrol eder. Canvas, tüm döşemeli kopyaların hayalet önizlemelerini gösterir, böylece indirmeden önce tam kapsama desenini görebilirsiniz.',
+              ],
+            },
+            {
+              heading: '5. Adım — Birden Fazla Filigran için Katman Yöneticisini Kullanın',
+              paragraphsBefore: [
+                'İstediğiniz kadar katman ekleyebilirsiniz — metin ve görsel filigranları özgürce karıştırabilirsiniz. Sağ paneldeki katman yöneticisi hepsini listeler. Yapabilecekleriniz:',
+              ],
+              bullets: [
+                'Göz simgesini kullanarak tek tek katmanları göster/gizle — hiçbir şeyi silmeden farklı filigran sürümleri arasında geçiş yapmak için kullanışlı',
+                'Diğer katmanlar üzerinde çalışırken yanlışlıkla yer değiştirmesini önlemek için bir katmanı kilitle',
+                'Bir katmanı kalıcı olarak sil',
+              ],
+              paragraphsAfter: [
+                'Listedeki herhangi bir katman girdisine tıklamak, onu aynı anda canvas üzerinde de seçer; böylece görsel üzerinde aramak zorunda kalmadan katmanlar arasında geçiş yapmak kolaylaşır.',
+              ],
+            },
+            {
+              heading: '6. Adım — Birden Fazla Görsel Arasında Geçiş Yapın',
+              paragraphsBefore: [
+                'Birden fazla görsel yüklediyseniz, soldaki küçük resim şeridini kullanarak aktif canvas görselinizi değiştirin. Yapılandırdığınız filigran katmanları evrensel olarak uygulanır — dışa aktarırken toplu işleminizdeki her görsel üzerine render edilirler.',
+                'Araç ayrıca toplu işleminizde çözünürlük tutarlılığı kontrolü yapar. Görsellerinizin boyutları belirgin biçimde farklıysa (genişlik veya yükseklikte %5’ten fazla fark varsa), filigran konumunun görseller arasında boyut farkı nedeniyle farklı görünebileceğini belirten bir uyarı çıkar. Motor bunu orantılı yeniden konumlandırma algoritmasıyla zarif biçimde ele alır: filigran konumunu referans görselin boyutlarının yüzdesi olarak hesaplar ve aynı orantılı konumu topludaki diğer tüm görsellere uygular; böylece farklı çözünürlüklerde bile görsel niyet korunur.',
+              ],
+            },
+            {
+              heading: '7. Adım — İndirme Tercihlerinizi Ayarlayın',
+              paragraphsBefore: [
+                'Tek görsellik işler için, filigranlı görseli doğrudan kaydetmek üzere canvasın altındaki “Download” düğmesine tıklayın. Dosya adı otomatik olarak orijinal dosya adınıza uzantıdan önce “-watermarked” eklenmiş şekilde ayarlanır. JPEG görselleri 0.95 kaliteyle dışa aktarılır — normal görüntü boyutlarında orijinalden ayırt edilemeyecek kadar yüksektir. PNG görselleri kayıpsız PNG olarak dışa aktarılır.',
+                'Toplu işler için (birden fazla görsel) sağ panelde seçebileceğiniz iki indirme modu vardır:',
+              ],
+              bullets: [
+                'ZIP dosyası — tüm filigranlı görseller tek bir ZIP arşivinde paketlenir ve tek tıklamayla indirilir. Araç sıkıştırma için JSZip’i dinamik olarak yükler.',
+                'Ayrı dosyalar — her görsel ayrı bir dosya olarak indirilir; tarayıcı kısıtlamalarını önlemek için her indirme arasında kısa bir gecikme olur.',
+              ],
+            },
+            {
+              heading: '8. Adım — İndirin ve Doğrulayın',
+              paragraphsBefore: [
+                'İndirme düğmesine (veya toplu işlemler için “Watermark & Download All” düğmesine) tıkladıktan sonra araç, her görseli gizli bir HTML5 canvas öğesi üzerinde tam yerel çözünürlükte render eder — ekranda gördüğünüz ölçeklenmiş önizleme boyutunda değil. Bu, dışa aktarılan görselin orijinal piksel boyutlarının %100’ünde olduğu ve filigranın orantısal olarak doğru boyutta çizildiği anlamına gelir. İndirilen dosyayı açın ve yakınlaştırarak filigran konumunun ve kalitesinin beklentinizle uyumlu olduğunu doğrulayın.',
+                'Bir şey ters görünüyorsa, çalışma alanına geri dönün — katmanlarınız hâlâ orada olacak — ayarlayın ve tekrar indirin.',
+              ],
+            },
+          ],
+        },
+        {
+          id: 'wm-blog-tips',
+          tocLabel: 'Profesyonel ipuçları',
+          title: 'En iyi sonuçlar için profesyonel ipuçları',
+          bullets: [
+            'En profesyonel görünüm için yarı saydam bir PNG logo kullanın. Şeffaf arka planlı ve %40–50 opaklıktaki bir logo filigranı, düz metinden çok daha şık görünür. Görsel katman olarak kullanmadan önce logonuzu tasarım aracınızdan alfa şeffaflıklı PNG olarak dışa aktarın.',
+            'Filigranınızı kırpıldığında değerini yok edecek bir yere yerleştirin. Sağ alt köşe en yaygın filigran konumudur — ve kırpılması en kolay olanıdır. Daha güçlü koruma için, filigranınızı yüz, bir ürün detayı veya odak noktası gibi görsel açıdan önemli bir alanın üzerine yerleştirmeyi düşünün. Çapraz döşeme seçeneğini kaldırmak, görsele belirgin zarar vermeden çok daha zordur.',
+            'Birden fazla katmanla çalışırken kilit özelliğini kullanın. Ana filigran konumundan memnun kaldığınızda, ikincil katmanları eklemeden önce o katmanı kilitleyin. Bu, diğer öğeler üzerinde çalışırken yanlışlıkla oynatmanızı önler.',
+            'Görselinizin açık ve koyu alanlarında test edin. Beyaz bir filigran parlak gökyüzünde görünmezken, koyu bir gölgede rahatça okunur. Filigranın altındaki içerik ne olursa olsun okunabilirlik için ince bir stroke veya arka plan rengi ekleyin.',
+            'Klavye kısayolları her zaman zaman kazandırır. Ok tuşları seçili katmanı birer piksel hareket ettirir. Shift+Ok, onar piksel hareket ettirir. Delete tuşu seçili katmanı anında kaldırır. Bu kısayollar, konumu ince ayarlamayı sürüklemekten çok daha hızlı hale getirir.',
+          ],
+        },
+        {
+          id: 'wm-blog-privacy',
+          tocLabel: 'Gizlilik ve güvenlik',
+          title: 'Gizlilik ve güvenlik: tarayıcı tabanlı işlemenin neden önemli olduğu',
+          paragraphs: [
+            'Çevrimiçi araçları kullanırken birçok üreticinin en büyük kaygılarından biri, görsellerinin gerçekte nereye gittiğidir. Sunucu tabanlı filigran araçlarında görseliniz sağlayıcının sunucusuna yüklenir, orada işlenir ve ardından size geri gönderilir. Bu da yayımlanmamış çalışmalarınızın, müşteri fotoğraflarınızın veya hassas ürün görsellerinizin başka birinin altyapısından geçmesi anlamına gelir.',
+            'Photremium’un filigran aracı her şeyi tarayıcınızda yerel olarak işler. Görselleriniz tarayıcının File API’si kullanılarak cihazınızın belleğine yüklenir ve internet üzerinden asla aktarılmaz. Filigran oluşturma, JavaScript içinde çalışan bir HTML5 canvas öğesi üzerinde, tamamen tarayıcı sekmenizin içinde gerçekleşir. Sayfayı kapattığınızda veya “Start Over” düğmesine bastığınızda tüm görsel verileri bellektan çıkarılır ve atılır. Kendi cihazınızın dışında hiçbir yerde saklanmaz.',
+          ],
+        },
+        {
+          id: 'wm-blog-summary',
+          tocLabel: 'Son özet',
+          title: 'Photremium filigran aracının neden düzenli iş akışınızda yer almayı hak ettiği',
+          paragraphs: [
+            'Çevrimiçi olarak onlarca filigran aracı var. Bir aracı yer imlerine eklemeye değer kılan ile unutulmaya değer kılan şey genellikle hız, kontrol ve güvenilirliğin birleşimidir.',
+            'Hız önemlidir çünkü filigran ekleme işlemi, son iş akışınıza ciddi zaman eklememelidir. Photremium aracı anında yüklenir, yerel olarak işler ve büyük toplu işler için bile saniyeler içinde tam çözünürlükte dışa aktarır. Sunucu tarafı işlem bekleme süresi, kuyruk yoktur ve aynı anda çevrimiçi kullanıcı sayısıyla artan bir render süresi yoktur.',
+            'Kontrol önemlidir çünkü yanlış görünen bir filigran, hiç filigran olmamasından daha kötüdür — markanızı profesyonel olmayan gösterir. Katman sistemi, araç çubuğundaki öğe bazlı kontroller, gerçek zamanlı canvas önizlemesi ve klavye kısayolu desteği, özel masaüstü yazılımlarla gerçekten kıyaslanabilir bir kontrol seviyesi sunar.',
+            'Güvenilirlik önemlidir çünkü yayımlanmamış işleriniz değerlidir. Görsellerinizin internet üzerinden üçüncü taraf bir sunucuya hiç gitmediğini bilmek, müşteri fotoğraflarını, henüz piyasaya çıkmamış ürün görsellerini ve hassas yaratıcı çalışmaları veri işleme, sunucu tarafı ihlaller veya bulut sağlayıcılarının politika değişiklikleri konusunda endişe etmeden filigranlayabileceğiniz anlamına gelir.',
+            'İster tek bir fotoğrafa hızlı bir telif bildirimi ekliyor olun ister bir müşteri galerisi paylaşmadan önce 200 görsellik tüm çekimi işliyor olun, Photremium’un Watermark Image aracı bunu doğru şekilde yapmanız için size gereken araçları sağlar — tamamen ücretsiz, tamamen gizli ve filigranın görselin üstüne yapıştırılmış değil de görselin parçasıymış gibi görünmesi için yeterli yaratıcı esneklikle.',
+            'photremium.com/watermark-image adresine gidin ve deneyin. İlk filigranlı görseliniz gerçekten sadece otuz saniye uzakta.',
+            'Photremium, tarayıcı tabanlı görüntü düzenleme ve işleme araçlarından oluşan bir set sunar. Tüm araçlar tarayıcınızda yerel olarak çalışır — görselleriniz cihazınızda kalır.',
+          ],
+        },
+      ],
+    },
   },
 
   qrGenerator: {
@@ -1515,11 +1748,16 @@ common: {
       { q: 'Görüntülerim sunucuya gönderiliyor mu?', a: 'Hayır. AI modeli WebAssembly kullanılarak tamamen tarayıcıda çalışır.' },
     ],
     watermarkImage: [
-      { q: 'Hangi tür filigranlar eklenebilir?', a: 'Özel yazı tipi, boyut, renk ve opaklıkla metin filigranları ve logo gibi görüntü filigranları ekleyebilirsiniz.' },
-      { q: 'Birden fazla görüntüye aynı filigranı uygulayabilir miyim?', a: 'Evet. Birden fazla görüntü yükleyin, filigranı bir kez yapılandırın, tümüne uygulanacaktır.' },
-      { q: 'Filigran görüntü kalitesini düşürüyor mu?', a: 'Hayır. Filigran, orijinal görüntü üzerine tam çözünürlükte oluşturulur.' },
-      { q: 'Filigran opaklığını ayarlayabilir miyim?', a: 'Elbette. Ayarlamak için opaklık kaydırıcısını kullanın.' },
-      { q: 'Veriler sunucuya yükleniyor mu?', a: 'Hayır. Tüm filigran işlemleri tarayıcıda yerel olarak yapılır.' },
+      { q: '1. Photremium filigran aracı ücretsiz mi?', a: 'Evet — photremium.com/watermark-image adresindeki araç ücretsizdir ve hesap veya abonelik gerektirmez. Tek tek resimlere veya toplu halde filigran uygulayabilirsiniz.' },
+      { q: '2. Aynı anda kaç görüntü işleyebilirim?', a: 'Araç toplu işlemleri destekler. Bir klasörü sürükleyip bırakabilir veya çoklu dosya seçebilirsiniz; pratik sınır cihaz hafızası ile belirlenir.' },
+      { q: '3. Hangi resim formatları desteklenir?', a: 'Tarayıcı File API tarafından işlenebilen formatlar desteklenir: JPEG, JPG, PNG, WEBP, GIF (statik), BMP ve SVG. Çıkış formatı giriş formatıyla eşleşir.' },
+      { q: '4. Farklı çözünürlüklere sahip görüntülerde filigran aynı görünür mü?', a: 'Evet. Oransal yeniden konumlandırma motoru, referans görüntüdeki konumu hesaplayıp aynı oransal ofseti her hedef görüntüye uygulayarak görünümü korur.' },
+      { q: '5. Kendi logomu metin yerine kullanabilir miyim?', a: 'Evet. Sağ paneldeki "Add Image" düğmesi, şeffaf arka plana sahip bir PNG yüklemenize izin verir; bu, katman olarak kullanılabilir.' },
+      { q: '6. Filigranı yarı saydam nasıl yaparım?', a: 'Kanvasta filigran katmanını seçin ve opaklık kaydırıcısını ayarlayın. %30–50 genellikle profesyonel ve nazik bir görünüm verir.' },
+      { q: '7. Tek bir görselde birden fazla filigran katmanı olabilir mi?', a: 'Evet. Katman sistemi sınırsız katmanı destekler; her biri ayrı ayarlanabilir.' },
+      { q: '8. Tiling özelliği ne yapar ve ne zaman kullanılmalı?', a: 'Tiling, filigranı resim boyunca ızgara halinde tekrarlar; izinsiz kullanımın önlenmesi gereken durumlar için uygundur.' },
+      { q: '9. Araç mobilde çalışıyor mu?', a: 'Evet — arayüz duyarlıdır; küçük ekranlarda düzen üst üste gelir ve kontroller dokunmaya uygundur.' },
+      { q: '10. Görsellerim gizli mi ve sunucuya gönderiliyor mu?', a: 'Hayır — görseller cihazınızdan çıkmaz. Tüm işlem tarayıcıda Canvas API kullanılarak yerel olarak yapılır; veri yüklemesi yoktur.' },
     ],
     qrCodeGenerator: [
       { q: 'Bu QR kodu sona erer mi?', a: 'Hayır, bu QR kodları sona ermez ve ömür boyu destek garantisindedir. Kare kutular içinde bit şeklinde kodlanmış talimatları sakladığı için, bunlarda saklanan bilgiler değiştirilemez veya silinir. Kod bilgilerine, hatta yıllar sonra bile herhangi bir kamerayla tarayarak erişebilirsiniz.' },

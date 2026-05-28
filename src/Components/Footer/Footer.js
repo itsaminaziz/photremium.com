@@ -63,7 +63,7 @@ const Footer = () => {
           <div className="footer__col">
             <h4>{t('footer.moreTools')}</h4>
             <ul>
-              <li><Link to={localePath('/remove-background')}><i className="fa-solid fa-eraser"></i> {t('nav.removeBackground')}</Link></li>
+              <li><Link to={localePath('/remove-background-ai')}><i className="fa-solid fa-eraser"></i> {t('nav.removeBackground')}</Link></li>
               <li><Link to={localePath('/watermark-image')}><i className="fa-solid fa-stamp"></i> {t('nav.watermarkImage')}</Link></li>
               <li><Link to={localePath('/qr-code-generator')}><i className="fa-solid fa-qrcode"></i> {t('nav.qrCodeGenerator')}</Link></li>
               <li><Link to={localePath('/qr-code-scanner')}><i className="fa-solid fa-expand"></i> {t('nav.qrCodeScanner')}</Link></li>

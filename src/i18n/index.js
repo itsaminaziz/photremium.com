@@ -39,6 +39,7 @@ import th    from './translations/th';
 import uk    from './translations/uk';
 import sv    from './translations/sv';
 import bg    from './translations/bg';
+import blogEn from './blogs/en';
 
 /* ---- deep-merge helper (override wins over fallback) ---- */
 function deepMerge(fallback, override) {
@@ -91,7 +92,8 @@ const rawMap = {
 /* Pre-build merged cache synchronously at module load time */
 const cache = {};
 for (const [code, raw] of Object.entries(rawMap)) {
-  cache[code] = code === 'en' ? en : deepMerge(en, raw);
+  const base = code === 'en' ? en : deepMerge(en, raw);
+  cache[code] = deepMerge(base, blogEn);
 }
 
 /**

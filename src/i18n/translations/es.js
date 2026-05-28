@@ -895,6 +895,238 @@ const es = {
     typeHere: 'Escribe aquí...',
     linkCorners: 'Vincular esquinas',
     separateCorners: 'Separar esquinas',
+    blog: {
+      tocTitle: 'Contenido',
+      sections: [
+        {
+          id: 'wm-blog-intro',
+          tocLabel: 'Resumen de la herramienta',
+          title: 'Cómo añadir una marca de agua a tus imágenes online — La guía completa de la herramienta de marca de agua de Photremium',
+          paragraphs: [
+            'Acabas de terminar de editar una fotografía preciosa. Tal vez es una foto de producto para tu tienda, un retrato de una sesión con cliente o una pieza de arte digital en la que invertiste horas. Y ahora llega la pregunta que todo creador se hace tarde o temprano: ¿cómo la proteges antes de compartirla?',
+            'La respuesta a la que llegan la mayoría de profesionales es: una marca de agua — y con razón. Una marca de agua bien colocada actúa como una firma permanente, hace tu trabajo rastreable y con marca, y dificulta mucho el robo.',
+            'El problema con la mayoría de herramientas online es que son torpes, están detrás de suscripciones o ponen una marca tan pesada que arruina la imagen.',
+            'La herramienta de marca de agua de Photremium se creó para resolver eso. Es un espacio de trabajo 100% en el navegador, gratuito y sin cuenta, que nunca sube tus archivos a un servidor. Todo queda local, todo es rápido, y el control creativo rivaliza con aplicaciones de escritorio. En esta guía te mostramos cómo funciona, para quién está hecho y cómo obtener los mejores resultados en cada uso.',
+          ],
+        },
+        {
+          id: 'wm-blog-what-is',
+          tocLabel: 'Qué es una marca de agua',
+          title: '¿Qué es una marca de agua y por qué importa?',
+          paragraphs: [
+            'Antes de entrar al funcionamiento de la herramienta, conviene entender qué hace una marca de agua y por qué tantos fotógrafos, diseñadores y creadores la consideran imprescindible.',
+            'Una marca de agua es una superposición visible sobre una imagen — normalmente texto, un logotipo o un símbolo de copyright — que identifica al creador o propietario. A diferencia de los metadatos (que están ocultos en el archivo y pueden borrarse en segundos), la marca de agua está integrada visualmente en la imagen. No puedes quitarla con un clic sin degradar la calidad.',
+          ],
+          subSections: [
+            {
+              title: 'Por qué los creadores usan marcas de agua',
+              paragraphs: [
+                'Las razones prácticas para marcar tus imágenes se resumen en tres puntos clave.',
+              ],
+              bullets: [
+                'Identificación de autoría. Cuando tu trabajo se comparte en redes sociales, tableros de Pinterest o artículos, la atribución original se pierde. La marca de agua asegura que tu nombre o marca viaje con la imagen.',
+                'Disuasión de robo. La mayoría de quienes roban imágenes buscan la vía fácil. Una marca profesional, bien colocada y ligeramente transparente envía un mensaje claro: esta imagen pertenece a alguien que la protege.',
+                'Protección de portafolios de clientes. Fotógrafos que envían previsualizaciones antes del pago usan marcas de agua para evitar uso indebido. Una marca sutil protege sin impedir la evaluación del trabajo.',
+              ],
+            },
+            {
+              title: 'Quién debería poner marcas de agua',
+              paragraphs: [
+                'Si perteneces a alguna de estas categorías, marcar tus imágenes antes de compartir no es opcional — es esencial:',
+              ],
+              bullets: [
+                'Fotógrafos freelance que comparten galerías con clientes',
+                'Diseñadores gráficos que publican muestras de portafolio',
+                'Vendedores de e-commerce que muestran fotos de producto antes de licenciar',
+                'Artistas digitales que publican en redes sociales',
+                'Bloggers y creadores cuyas imágenes se reutilizan con frecuencia',
+                'Contribuidores de stock que construyen una marca reconocible',
+              ],
+            },
+          ],
+        },
+        {
+          id: 'wm-blog-workspace',
+          tocLabel: 'Paneles del espacio de trabajo',
+          title: 'Dentro de la herramienta de marca de agua de Photremium: un espacio de trabajo de tres paneles para flujos reales',
+          paragraphs: [
+            'Lo que diferencia a Photremium de los marcadores online básicos es su diseño de espacio de trabajo. En lugar de un flujo simple de “escribir texto, elegir posición, listo”, ofrece un layout de tres paneles similar al software profesional — pero en el navegador y sin instalación.',
+          ],
+          subSections: [
+            {
+              title: 'El panel de lienzo izquierdo',
+              paragraphs: [
+                'El panel del lienzo ocupa la mayor parte de la pantalla y muestra tu imagen con la marca aplicada en tiempo real. Cada ajuste — opacidad, posición del texto, tamaño del logo — se refleja al instante. No hay botón de “vista previa”. Lo que ves es lo que obtienes.',
+                'El lienzo incluye una barra de zoom para alineación precisa. La función de zoom automático calcula la mejor escala inicial según tu pantalla, para que incluso imágenes de alta resolución se vean cómodas. Aparecen guías dinámicas cuando arrastras una capa cerca del centro, y la marca se ajusta con precisión al medio, como en Photoshop.',
+              ],
+            },
+            {
+              title: 'El panel de ajustes derecho',
+              paragraphs: [
+                'El panel derecho es el centro de control. Aquí gestionas capas, personalizas su apariencia y haces el export final. En escritorio queda fijo a la derecha. En móvil aparece como una hoja inferior que se abre con un botón flotante, sin cubrir el lienzo.',
+                'En este panel está el administrador de capas, que lista cada elemento. Cada capa muestra tipo (texto o imagen), nombre o contenido, y tres acciones rápidas: visibilidad (icono de ojo), bloqueo de posición y eliminación.',
+              ],
+            },
+            {
+              title: 'La tira de previsualización izquierda (modo multiimagen)',
+              paragraphs: [
+                'Cuando trabajas con múltiples imágenes — por ejemplo fotos de producto o una sesión completa — aparece una tira vertical de miniaturas a la izquierda. Es la cola de imágenes. Al hacer clic en cualquier miniatura, el lienzo cambia instantáneamente a esa imagen sin perder tus capas.',
+                'La tira también muestra tamaño en KB/MB y formato (JPG, PNG, WEBP) para tener claridad inmediata de lo que estás editando.',
+              ],
+            },
+          ],
+        },
+        {
+          id: 'wm-blog-steps',
+          tocLabel: 'Paso a paso',
+          title: 'Paso a paso: cómo añadir una marca de agua en Photremium',
+          paragraphs: [
+            'Este recorrido se basa en cómo funciona realmente la herramienta — desde el upload drag-and-drop hasta el render en canvas antes de descargar.',
+          ],
+          steps: [
+            {
+              heading: 'Paso 1 — Sube tu(s) imagen(es)',
+              paragraphsBefore: [
+                'Ve a photremium.com/watermark-image. Llegarás a la pantalla de subida con una zona de drop en el centro.',
+                'Tienes tres formas de cargar imágenes:',
+              ],
+              bullets: [
+                'Drag and drop. Arrastra uno o varios archivos a la zona. Se aceptan JPEG, PNG, WEBP y más. Al arrastrar, aparece un borde morado con el mensaje “Drop images to add for watermarking”.',
+                'Click para explorar. Haz clic en “Choose Files” para abrir el selector. Puedes elegir múltiples archivos con Ctrl+Click (Windows) o Cmd+Click (Mac).',
+                'Pegar desde el portapapeles. Si copiaste una imagen, presiona Ctrl+V (Cmd+V en Mac). Funciona incluso con varias imágenes ya cargadas.',
+              ],
+              paragraphsAfter: [
+                'Cuando se carga la primera imagen, el espacio de trabajo cambia al editor de tres paneles y el lienzo muestra tu imagen con un zoom inicial automático.',
+              ],
+            },
+            {
+              heading: 'Paso 2 — Añadir una capa de texto',
+              paragraphsBefore: [
+                'Haz clic en el botón morado “Add Text” en el panel derecho. Aparece una nueva capa con el texto “Type here...”.',
+                'Puedes escribir de inmediato. El texto se renderiza en vivo. En la barra superior puedes ajustar:',
+              ],
+              bullets: [
+                'Font family — 12 fuentes integradas como Arial, Georgia, Impact, Brush Script MT, Comic Sans MS, etc.',
+                'Font size — escribe un valor en px o usa los controles',
+                'Bold, italic, underline — combinaciones de estilo',
+                'Text color — selecciona cualquier color',
+                'Background color — fondo de color para estilo badge',
+                'Stroke (outline) — contorno para legibilidad en fondos claros/oscuros',
+                'Opacity — de 0% a 100%; lo común es 30–60%',
+                'Alignment — izquierda, centro o derecha',
+                'Rotation — rotación libre con snaps a 0°, 90°, 180°, 270°',
+              ],
+              paragraphsAfter: [
+                'Para mover el texto, arrástralo. Para precisión, usa las flechas (Shift para 10 px). Para redimensionar, arrastra cualquiera de los 8 handles.',
+              ],
+            },
+            {
+              heading: 'Paso 3 — Añadir una capa de imagen (logo)',
+              paragraphsBefore: [
+                'Si quieres usar un logo o firma, pulsa “Add Image” en el panel derecho y elige el archivo. La herramienta lo escala automáticamente a ~30% del ancho del lienzo y lo centra.',
+                'Luego puedes moverlo, redimensionarlo desde las esquinas (con proporción fija) o rotarlo con el handle superior. Para capas de imagen hay controles adicionales:',
+              ],
+              bullets: [
+                'Opacity — igual que en texto, ideal para logos PNG',
+                'Flip horizontal / Flip vertical — espejo',
+                'Border width, border color, border style — borde visible',
+                'Border radius — esquinas redondeadas uniformes o por esquina',
+                'Rotation — misma rotación suave que en texto',
+              ],
+            },
+            {
+              heading: 'Paso 4 — Configurar el mosaico (opcional)',
+              paragraphsBefore: [
+                'Una función potente es el mosaico — repetir el watermark en una grilla sobre toda la imagen. Es útil si quieres evitar reutilización no autorizada.',
+                'Con una capa seleccionada, elige Tile:',
+              ],
+              bullets: [
+                'None — una sola colocación (por defecto)',
+                'Grid 2×2 — repite en patrón 2x2',
+                'Grid 3×3 — repite en patrón 3x3',
+              ],
+              paragraphsAfter: [
+                'También puedes ajustar el spacing para controlar la distancia entre repeticiones. El lienzo muestra copias fantasma para previsualización.',
+              ],
+            },
+            {
+              heading: 'Paso 5 — Usar el gestor de capas',
+              paragraphsBefore: [
+                'Puedes añadir tantas capas como quieras. El gestor las lista todas. Puedes:',
+              ],
+              bullets: [
+                'Mostrar/ocultar capas con el icono de ojo',
+                'Bloquear una capa para evitar movimientos accidentales',
+                'Eliminar una capa',
+              ],
+              paragraphsAfter: [
+                'Al hacer clic en una capa, se selecciona en el lienzo para editarla rápidamente.',
+              ],
+            },
+            {
+              heading: 'Paso 6 — Cambiar entre varias imágenes',
+              paragraphsBefore: [
+                'Si subiste más de una imagen, usa la tira de miniaturas para cambiar de imagen activa. Tus capas se aplican a todas al exportar.',
+                'La herramienta comprueba la consistencia de resolución. Si hay diferencias mayores al 5%, verás un aviso. La posición se recalcula proporcionalmente para mantener el aspecto coherente.',
+              ],
+            },
+            {
+              heading: 'Paso 7 — Configurar preferencias de descarga',
+              paragraphsBefore: [
+                'Para una sola imagen, pulsa “Download” debajo del lienzo. El nombre se guarda con “-watermarked”. JPEG se exporta a 0.95 de calidad; PNG es lossless.',
+                'Para lotes, tienes dos modos en el panel derecho:',
+              ],
+              bullets: [
+                'ZIP — todas las imágenes en un solo ZIP',
+                'Separate — cada imagen se descarga por separado con pequeñas pausas',
+              ],
+            },
+            {
+              heading: 'Paso 8 — Descargar y verificar',
+              paragraphsBefore: [
+                'Al descargar, la herramienta renderiza cada imagen en un canvas oculto a resolución completa — no a la escala del preview. Esto garantiza tamaño original con marca de agua bien proporcional. Abre el archivo y haz zoom para comprobar calidad y posición.',
+                'Si algo no queda bien, vuelve al espacio de trabajo, ajusta y descarga de nuevo.',
+              ],
+            },
+          ],
+        },
+        {
+          id: 'wm-blog-tips',
+          tocLabel: 'Consejos pro',
+          title: 'Consejos pro para mejores resultados',
+          bullets: [
+            'Usa un logo PNG semitransparente para un acabado profesional. Un logo con 40–50% de opacidad se ve mejor que texto sólido.',
+            'Coloca el watermark donde recortar afecte el valor. La esquina inferior derecha es la más común — y la más fácil de recortar. Para mayor protección, colócalo sobre un área importante. El mosaico diagonal es aún más difícil de quitar.',
+            'Usa el bloqueo al trabajar con varias capas. Una vez fijada la posición principal, bloquea la capa antes de añadir otras.',
+            'Prueba en áreas claras y oscuras. Un watermark blanco se pierde en cielo claro pero es legible en sombras. Añade contorno o fondo sutil para legibilidad.',
+            'Los atajos ahorran tiempo. Flechas mueven 1 px; Shift+Arrow mueve 10 px. Delete elimina el layer al instante.',
+          ],
+        },
+        {
+          id: 'wm-blog-privacy',
+          tocLabel: 'Privacidad y seguridad',
+          title: 'Privacidad y seguridad: por qué importa el procesamiento en el navegador',
+          paragraphs: [
+            'Una preocupación común con herramientas online es a dónde van las imágenes. En herramientas basadas en servidor, la imagen se sube, se procesa y se devuelve. Eso implica que trabajos inéditos pasan por infraestructura de terceros.',
+            'La herramienta de Photremium procesa todo localmente en tu navegador. Las imágenes se cargan en memoria mediante File API y no se transmiten a internet. El render se hace con HTML5 Canvas en la pestaña del navegador. Al cerrar o pulsar “Start Over”, los datos se liberan. No se almacena nada fuera de tu dispositivo.',
+          ],
+        },
+        {
+          id: 'wm-blog-summary',
+          tocLabel: 'Resumen final',
+          title: 'Por qué la herramienta de marca de agua de Photremium merece un lugar fijo en tu flujo',
+          paragraphs: [
+            'Hay decenas de herramientas de marcas de agua. La diferencia entre una que merece guardarse y otra que se olvida suele ser velocidad, control y confianza.',
+            'La velocidad importa porque el watermark no debería sumar tiempo. Photremium carga instantáneo, procesa localmente y exporta en resolución completa en segundos — incluso con grandes lotes. Sin colas ni esperas de servidor.',
+            'El control importa porque un watermark mal hecho es peor que no tenerlo. El sistema de capas, los controles por propiedad, la vista previa en tiempo real y los atajos ofrecen control de nivel profesional.',
+            'La confianza importa porque tu trabajo inédito es valioso. Saber que tus imágenes no viajan a ningún servidor permite marcar fotos de clientes, productos no lanzados o material sensible sin preocupación.',
+            'Ya sea un aviso rápido en una sola foto o un lote de 200 imágenes, la herramienta de Photremium te da lo necesario para hacerlo bien — completamente gratis, completamente privado, con flexibilidad creativa para que la marca de agua se vea integrada.',
+            'Entra en photremium.com/watermark-image y pruébalo. Tu primera imagen con marca está a literalmente treinta segundos.',
+            'Photremium ofrece una suite de herramientas de imagen en el navegador. Todas funcionan localmente — tus imágenes se quedan en tu dispositivo.',
+          ],
+        },
+      ],
+    },
   },
 
   qrGenerator: {
@@ -1394,11 +1626,16 @@ const es = {
       { q: '¿Se envían mis imágenes a un servidor?', a: 'No. El modelo de IA se ejecuta completamente en tu navegador usando WebAssembly.' },
     ],
     watermarkImage: [
-      { q: '¿Qué tipos de marcas de agua puedo añadir?', a: 'Puedes añadir marcas de agua de texto con fuente, tamaño, color y opacidad personalizados, así como marcas de agua de imagen como un logotipo.' },
-      { q: '¿Puedo aplicar la misma marca de agua a varias imágenes?', a: 'Sí. Sube varias imágenes, configura la marca de agua una vez y se aplicará a todas ellas en un solo lote.' },
-      { q: '¿La marca de agua reducirá la calidad de mi imagen?', a: 'No. La marca se compone sobre la imagen original a resolución completa.' },
-      { q: '¿Puedo ajustar la opacidad de la marca de agua?', a: 'Por supuesto. Usa el control deslizante de opacidad para ajustarla desde casi invisible hasta completamente sólida.' },
-      { q: '¿Se suben datos a un servidor?', a: 'No. Todo el proceso de marcado se realiza localmente en tu navegador.' },
+      { q: '1. ¿La herramienta de marca de agua de Photremium es completamente gratuita?', a: 'Sí, la herramienta de photremium.com/watermark-image es totalmente gratuita, sin cuenta y sin suscripción. Puedes marcar una sola imagen o lotes completos sin paywalls, sin registros forzados y sin límites de descarga. La herramienta se financia por el valor global de Photremium, no por bloquear funciones esenciales.' },
+      { q: '2. ¿Cuántas imágenes puedo marcar a la vez?', a: 'La herramienta permite marcar varias imágenes simultáneamente. Puedes arrastrar una carpeta completa a la zona de subida o seleccionar docenas de archivos con Ctrl+Click. La tira de miniaturas de la izquierda muestra todos los archivos y, al pulsar "Watermark & Download All", la herramienta renderiza cada imagen y las empaqueta en un ZIP (o las descarga por separado — tú eliges). En la práctica, el límite es la memoria disponible del dispositivo, no un tope impuesto.' },
+      { q: '3. ¿Qué formatos están soportados para entrada y salida?', a: 'La entrada admite formatos que el File API del navegador puede manejar — normalmente JPEG, JPG, PNG, WEBP, GIF (estático), BMP y SVG. La salida conserva el formato original: si subes PNG, recibes PNG; si subes JPEG, recibes JPEG a 0.95 de calidad. Esto evita convertir un PNG sin pérdida en un JPG con pérdida por accidente.' },
+      { q: '4. ¿La marca de agua se verá igual en imágenes con diferentes resoluciones?', a: 'Sí, gracias al motor de posicionamiento proporcional. Cuando trabajas con imágenes de distintos tamaños, la marca se diseña en la imagen de referencia. Al exportar, el motor calcula la posición de cada capa como un desplazamiento fraccional desde el centro y aplica la misma proporción a cada imagen. El tamaño también se escala proporcionalmente usando el menor factor (ancho vs. alto) para evitar que se salga del lienzo. Resultado: misma posición y tamaño relativos en todo el lote.' },
+      { q: '5. ¿Puedo usar mi propio logo o firma como marca de agua?', a: 'Sí. El botón "Add Image" del panel derecho te permite subir cualquier imagen como capa de marca de agua. Los PNG con fondo transparente funcionan mejor: la transparencia se mantiene y solo se ve el logo. Puedes redimensionarlo con las esquinas (manteniendo la proporción), rotarlo, voltearlo, ajustar la opacidad e incluso añadir borde o esquinas redondeadas. Muchos usuarios guardan una versión transparente del logo para este fin.' },
+      { q: '6. ¿Cómo hago la marca de agua transparente o semitransparente?', a: 'Selecciona la capa en el lienzo. En la barra superior verás el control de opacidad con porcentaje; puedes escribir un valor o arrastrar. Para una marca discreta, lo habitual es 30–50%. Para una más evidente, 70–80%. También puedes alternar la visibilidad desde el gestor de capas (icono del ojo) para comparar.' },
+      { q: '7. ¿Puedo añadir varias marcas de agua en una sola imagen?', a: 'Sí — el sistema de capas permite un número ilimitado de marcas, cada una con su propia configuración. Puedes combinar un aviso de copyright abajo a la derecha, un logo arriba a la izquierda y un patrón "SAMPLE" en mosaico. Cada capa tiene su opacidad, rotación, posición, tamaño y estilo. El gestor de capas las organiza y permite ocultarlas/mostrarlas sin borrarlas para probar variantes.' },
+      { q: '8. ¿Qué hace el mosaico y cuándo debería usarlo?', a: 'El mosaico repite la marca en una cuadrícula por toda la imagen. Grid 2×2 coloca cuatro copias; Grid 3×3 coloca nueve. El control de espaciado regula la distancia entre copias. Es ideal cuando quieres que la imagen no pueda reutilizarse sin permiso — una marca en una esquina se recorta fácilmente, pero un patrón completo es difícil de eliminar sin dañar la imagen. Se usa en previews de contratos, borradores o contenidos antes del pago.' },
+      { q: '9. ¿Funciona en móviles y tablets?', a: 'Sí, la herramienta es totalmente responsive y está pensada para móvil. En pantallas menores a 900 px, el diseño se apila: las miniaturas pasan a una fila horizontal, el lienzo ocupa el centro y el panel de ajustes aparece como hoja inferior activada por un botón flotante. Todas las interacciones — arrastrar, redimensionar, rotar — funcionan con gestos táctiles. Los tiradores son más grandes en móvil (16×16 px) para facilitar el uso.' },
+      { q: '10. ¿Mis datos son privados? ¿Se suben las fotos a un servidor?', a: 'Tus imágenes no salen de tu dispositivo. Todo el flujo — cargar, renderizar, exportar — se ejecuta en el navegador con JavaScript y la HTML5 Canvas API. La File API carga el archivo en memoria, las capas se dibujan en un canvas oculto y el resultado se convierte en un Blob para descargar localmente. No hay solicitudes de red con datos de imagen. Además, existe un aviso al salir: si intentas cerrar la página con imágenes cargadas, el navegador pide confirmación para evitar pérdida accidental de trabajo.' },
     ],
     qrCodeGenerator: [
       { q: '¿Este código QR caduca?', a: 'No, estos códigos QR no caducan y ofrecen soporte de por vida. Como almacenan instrucciones codificadas en forma de bits dentro de módulos cuadrados, la información guardada en ellos no puede eliminarse. Puedes acceder a la información escaneándolo con cualquier cámara incluso después de años.' },

@@ -73,6 +73,7 @@ This app is configured to deploy as a static Create React App build on Cloudflar
 
 - Build command: `CI=false npm run build`
 - Build output directory: `build`
+- Deploy command from this repo: `npm run deploy:pages`
 
 ### SPA routing
 
@@ -92,6 +93,18 @@ Set these in Cloudflare Pages Project Settings -> Environment Variables:
 - `REACT_APP_FIREBASE_STORAGE_BUCKET`
 - `REACT_APP_FIREBASE_MESSAGING_SENDER_ID`
 - `REACT_APP_FIREBASE_APP_ID`
+
+### Manual deploy with Wrangler
+
+Use this when you want to publish a local change without going through GitHub:
+
+1. Make your code changes.
+2. Run `npm install` if dependencies changed.
+3. Build the app with `CI=false npm run build`.
+4. Publish the build folder with `npx wrangler pages deploy build --project-name photremium`.
+5. Open the Pages URL shown by Wrangler and verify the update.
+
+If you prefer a single command, run `npm run deploy:pages` from the project root.
 
 ### `npm run build` fails to minify
 

@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
+import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
+import remarkBreaks from 'remark-breaks';
 import { useLanguage } from '../../context/LanguageContext';
 import { useContact } from '../../context/ContactContext';
 import './FAQ.css';
 
-const FAQ = ({ faqs, faqKey }) => {
+const FAQ = ({ faqs, faqKey, showHeader = true, questionHeader, renderMarkdown = false }) => {
   const [openIndex, setOpenIndex] = useState(null);
   const { t } = useLanguage();
   const { openContact } = useContact();
@@ -35,7 +38,18 @@ const FAQ = ({ faqs, faqKey }) => {
     });
   };
 
+  const renderMarkdownAnswer = (answer) => (
+    <div className="faq-table__answer-markdown">
+      <ReactMarkdown remarkPlugins={[remarkGfm, remarkBreaks]}>
+        {answer}
+      </ReactMarkdown>
+    </div>
+  );
+
   const renderAnswer = (answer) => {
+    if (renderMarkdown && typeof answer === 'string') {
+      return renderMarkdownAnswer(answer);
+    }
     if (typeof answer !== 'string') return answer;
 
     const clean = answer.trim();
@@ -145,18 +159,22 @@ const FAQ = ({ faqs, faqKey }) => {
 
   if (!items.length) return null;
 
+  const questionLabel = questionHeader || t('faq.questionHeader');
+
   return (
     <section className="faq-section">
       {/* Header */}
-      <div className="faq-header">
-        <span className="faq-header__badge">
-          <i className="fa-solid fa-circle-question"></i> {t('faq.badge')}
-        </span>
-        <h2 className="faq-header__title">{t('faq.heading')}</h2>
-        <p className="faq-header__subtitle">
-          {t('faq.subheading')}
-        </p>
-      </div>
+      {showHeader ? (
+        <div className="faq-header">
+          <span className="faq-header__badge">
+            <i className="fa-solid fa-circle-question"></i> {t('faq.badge')}
+          </span>
+          <h2 className="faq-header__title">{t('faq.heading')}</h2>
+          <p className="faq-header__subtitle">
+            {t('faq.subheading')}
+          </p>
+        </div>
+      ) : null}
 
       {/* FAQ Table */}
       <div className="faq-table-wrapper">
@@ -164,7 +182,7 @@ const FAQ = ({ faqs, faqKey }) => {
           <thead>
             <tr>
               <th className="faq-table__th faq-table__th--num">#</th>
-              <th className="faq-table__th faq-table__th--question">{t('faq.questionHeader')}</th>
+              <th className="faq-table__th faq-table__th--question">{questionLabel}</th>
             </tr>
           </thead>
           {items.map((item, i) => {

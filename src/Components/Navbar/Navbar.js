@@ -163,6 +163,12 @@ const Navbar = () => {
   }, []);
 
   useEffect(() => {
+    const onOpenSharePanel = () => handleOpenSharePanel();
+    window.addEventListener('open-share-panel', onOpenSharePanel);
+    return () => window.removeEventListener('open-share-panel', onOpenSharePanel);
+  }, []);
+
+  useEffect(() => {
     document.body.style.overflow = sharePanelOpen ? 'hidden' : '';
     return () => {
       document.body.style.overflow = '';
@@ -256,7 +262,7 @@ const Navbar = () => {
                 </Link>
               </li>
               <li>
-                <Link to={localePath('/remove-background')}>
+                <Link to={localePath('/remove-background-ai')}>
                   <i className="fa-solid fa-eraser"></i> {t('nav.removeBackground')}
                 </Link>
               </li>
@@ -281,6 +287,11 @@ const Navbar = () => {
                 </Link>
               </li>
             </ul>
+          </li>
+          <li>
+            <Link to={localePath('/blogs')} className={location.pathname === localePath('/blogs') ? 'active' : ''}>
+              <i className="fa-solid fa-book-open"></i> {t('nav.blogs')}
+            </Link>
           </li>
           {/* Mobile: Contact Us button */}
           <li className="navbar__contact-mobile">

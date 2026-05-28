@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import { useLanguage } from '../../context/LanguageContext';
 import './HeroCards.css';
 
+const HIDE_LEGACY_REMOVE_BG = true;
+
 const toolKeys = [
   { key: 'compressImage', image: 'image-compressor.webp', link: '/image-compressor' },
   { key: 'resizeImage',   image: 'image-resizer.webp',    link: '/resize-image' },
@@ -12,8 +14,10 @@ const toolKeys = [
   { key: 'qrCodeGenerator', image: 'qr-code-generator.webp', link: '/qr-code-generator' },
   { key: 'qrCodeScanner', image: 'qr-code-scanner.webp',  link: '/qr-code-scanner', badge: true },
   { key: 'blurFace',      image: 'blur-face.webp',        link: '/face-blur', badge: true },
-  { key: 'removeBackground', image: 'background-remover.webp', link: '/remove-background', badge: true },
+  { key: 'removeBackground', image: 'background-remover.webp', link: '/remove-background', badge: true, hidden: HIDE_LEGACY_REMOVE_BG },
+  { key: 'removeBackgroundAI', image: 'background-remover.webp', link: '/remove-background-ai', badge: true },
   { key: 'watermarkImage', image: 'watermark-image.webp',  link: '/watermark-image' },
+    { key: 'imageSharing',  image: 'image-sharing.webp', link: '/image-sharing', badge: true },
 ];
 
 const HeroCards = () => {
@@ -28,7 +32,7 @@ const HeroCards = () => {
       </div>
 
       <div className="hero-cards__grid">
-        {toolKeys.map((tool, i) => {
+        {toolKeys.filter((tool) => !tool.hidden).map((tool, i) => {
           const data = t(`tools.${tool.key}`);
           return (
             <Link to={localePath(tool.link)} key={i} className="hero-card">

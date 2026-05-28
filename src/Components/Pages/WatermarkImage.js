@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect, useCallback } from 'react';
+import React, { useState, useRef, useEffect, useCallback, useMemo } from 'react';
 import { useLocation } from 'react-router-dom';
 import SEO from '../SEO/SEO';
 import FAQ from '../FAQ/FAQ';
@@ -125,7 +125,26 @@ const roundRect = (ctx, x, y, w, h, r) => {
 /*          WATERMARK IMAGE PAGE                 */
 /* ============================================= */
 const WatermarkImage = () => {
-  const { t } = useLanguage();
+  const { t, lang } = useLanguage();
+  const isBlogRtl = lang === 'ur' || lang === 'ar';
+  const blog = t('watermark.blog');
+  const blogSections = useMemo(() => (Array.isArray(blog?.sections) ? blog.sections : []), [blog]);
+  const blogFaqId = 'wm-blog-faq';
+  const formatTocLabel = useCallback((section) => {
+    const label = section?.tocLabel || section?.title || '';
+    if (!label) return '';
+    const words = label.trim().split(/\s+/);
+    if (words.length <= 6) return label;
+    return `${words.slice(0, 6).join(' ')}...`;
+  }, []);
+  const blogToc = useMemo(
+    () => [
+      ...blogSections.map((section) => ({ id: section.id || section.title, label: formatTocLabel(section) })),
+      { id: blogFaqId, label: t('faq.heading') },
+    ],
+    [blogSections, blogFaqId, formatTocLabel, t]
+  );
+  const [activeBlogId, setActiveBlogId] = useState(blogSections[0]?.id || blogSections[0]?.title || '');
   const location = useLocation();
   const [images, setImages] = useState([]);
   const [selectedImgId, setSelectedImgId] = useState(null);
@@ -163,6 +182,12 @@ const WatermarkImage = () => {
   const selected = images.find((i) => i.id === selectedImgId) || null;
   const totalSize = images.reduce((s, i) => s + i.file.size, 0);
   const selectedLayer = layers.find((l) => l.id === selectedLayerId) || null;
+
+  useEffect(() => {
+    if (!activeBlogId && blogSections.length) {
+      setActiveBlogId(blogSections[0].id || blogSections[0].title || '');
+    }
+  }, [activeBlogId, blogSections]);
 
   /* Close dropdown when selection changes */
   useEffect(() => { setOpenDropdown(null); }, [selectedLayerId]);
@@ -892,6 +917,36 @@ const WatermarkImage = () => {
     addFiles(e.dataTransfer.files);
   };
 
+  const handleBlogTocClick = useCallback((e, id) => {
+    e.preventDefault();
+    const el = document.getElementById(id);
+    if (!el) return;
+    const top = el.getBoundingClientRect().top + window.pageYOffset - 110;
+    window.scrollTo({ top, behavior: 'smooth' });
+    setActiveBlogId(id);
+  }, []);
+
+  useEffect(() => {
+    if (images.length) return;
+    const observers = [];
+    blogToc.forEach((item) => {
+      const element = document.getElementById(item.id);
+      if (!element) return;
+      const observer = new IntersectionObserver(
+        ([entry]) => {
+          if (entry.isIntersecting) {
+            setActiveBlogId(item.id);
+          }
+        },
+        { rootMargin: '-20% 0px -70% 0px', threshold: 0 }
+      );
+      observer.observe(element);
+      observers.push(observer);
+    });
+
+    return () => observers.forEach((observer) => observer.disconnect());
+  }, [blogToc, images.length]);
+
   /* ========================= UPLOAD VIEW ========================= */
   if (!images.length) {
     return (
@@ -931,7 +986,145 @@ const WatermarkImage = () => {
           </div>
         </section>
 
-        <FAQ faqKey="watermarkImage" />
+        {blogSections.length ? (
+          <>
+            <nav
+              className={`wm-blog-toc--mobile ${isBlogRtl ? 'wm-blog-toc--mobile--rtl' : ''}`}
+              aria-label="Watermark blog sections"
+            >
+              {blogToc.map((item) => (
+                <a
+                  key={item.id}
+                  href={`#${item.id}`}
+                  className={activeBlogId === item.id ? 'toc-active' : ''}
+                  onClick={(e) => handleBlogTocClick(e, item.id)}
+                >
+                  {item.label}
+                </a>
+              ))}
+            </nav>
+
+            <div className={`wm-blog-layout ${isBlogRtl ? 'wm-blog-layout--rtl' : ''}`}>
+              <aside className="wm-blog-toc" aria-label="Watermark blog table of contents">
+                <p className="wm-blog-toc__title">{blog.tocTitle || 'Contents'}</p>
+                <ul className="wm-blog-toc__list">
+                  {blogToc.map((item) => (
+                    <li key={item.id}>
+                      <a
+                        href={`#${item.id}`}
+                        className={activeBlogId === item.id ? 'toc-active' : ''}
+                        onClick={(e) => handleBlogTocClick(e, item.id)}
+                      >
+                        {item.label}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </aside>
+
+              <section className="wm-blog">
+                {blogSections.map((section) => (
+                  <article className="wm-blog__card" id={section.id || section.title} key={section.id || section.title}>
+                    <h2>{section.title}</h2>
+
+                    {Array.isArray(section.paragraphs)
+                      ? section.paragraphs.map((p, idx) => <p key={`wm-p-${idx}`}>{p}</p>)
+                      : null}
+
+                    {Array.isArray(section.subSections)
+                      ? section.subSections.map((sub, subIdx) => (
+                          <div className="wm-blog__block" key={`wm-sub-${subIdx}`}>
+                            <h3>{sub.title}</h3>
+                            {Array.isArray(sub.paragraphs)
+                              ? sub.paragraphs.map((p, pIdx) => <p key={`wm-sub-p-${subIdx}-${pIdx}`}>{p}</p>)
+                              : null}
+                            {sub.listTitle ? <p className="wm-blog__subtitle">{sub.listTitle}</p> : null}
+                            {Array.isArray(sub.bullets) ? (
+                              <ul className="wm-blog__list">
+                                {sub.bullets.map((bullet, bIdx) => (
+                                  <li key={`wm-sub-b-${subIdx}-${bIdx}`}>{bullet}</li>
+                                ))}
+                              </ul>
+                            ) : null}
+                          </div>
+                        ))
+                      : null}
+
+                    {section.listTitle ? <p className="wm-blog__subtitle">{section.listTitle}</p> : null}
+                    {Array.isArray(section.bullets) ? (
+                      <ul className="wm-blog__list">
+                        {section.bullets.map((bullet, idx) => (
+                          <li key={`wm-b-${idx}`}>{bullet}</li>
+                        ))}
+                      </ul>
+                    ) : null}
+
+                    {Array.isArray(section.steps) ? (
+                      <ol className="wm-blog__ordered">
+                        {section.steps.map((step, idx) => (
+                          <li key={`wm-step-${idx}`}>
+                            <strong>{step.heading}</strong>
+                            {Array.isArray(step.paragraphsBefore)
+                              ? step.paragraphsBefore.map((p, pIdx) => <p key={`wm-step-pb-${idx}-${pIdx}`}>{p}</p>)
+                              : Array.isArray(step.paragraphs)
+                                ? step.paragraphs.map((p, pIdx) => <p key={`wm-step-p-${idx}-${pIdx}`}>{p}</p>)
+                                : null}
+                            {Array.isArray(step.bullets) ? (
+                              <ul className="wm-blog__ordered-sub">
+                                {step.bullets.map((bullet, bIdx) => (
+                                  <li key={`wm-step-b-${idx}-${bIdx}`}>{bullet}</li>
+                                ))}
+                              </ul>
+                            ) : null}
+                            {Array.isArray(step.paragraphsAfter)
+                              ? step.paragraphsAfter.map((p, pIdx) => <p key={`wm-step-pa-${idx}-${pIdx}`}>{p}</p>)
+                              : null}
+                            {Array.isArray(step.subSteps)
+                              ? step.subSteps.map((subStep, subIdx) => (
+                                  <div className="wm-blog__block" key={`wm-substep-${idx}-${subIdx}`}>
+                                    <strong>{subStep.heading}</strong>
+                                    {Array.isArray(subStep.paragraphs)
+                                      ? subStep.paragraphs.map((p, pIdx) => (
+                                          <p key={`wm-substep-p-${idx}-${subIdx}-${pIdx}`}>{p}</p>
+                                        ))
+                                      : null}
+                                    {Array.isArray(subStep.notes) ? (
+                                      <ul className="wm-blog__ordered-sub">
+                                        {subStep.notes.map((note, nIdx) => (
+                                          <li key={`wm-substep-note-${idx}-${subIdx}-${nIdx}`}>{note}</li>
+                                        ))}
+                                      </ul>
+                                    ) : null}
+                                  </div>
+                                ))
+                              : null}
+                          </li>
+                        ))}
+                      </ol>
+                    ) : null}
+
+                    {Array.isArray(section.qa) ? (
+                      <ul className="wm-blog__list">
+                        {section.qa.map((item, idx) => (
+                          <li key={`wm-qa-${idx}`}>
+                            <strong>{item.q}</strong>
+                            <p>{item.a}</p>
+                          </li>
+                        ))}
+                      </ul>
+                    ) : null}
+                  </article>
+                ))}
+
+                <section className="wm-blog__faq-section" id={blogFaqId}>
+                  <FAQ faqKey="watermarkImage" />
+                </section>
+              </section>
+            </div>
+          </>
+        ) : (
+          <FAQ faqKey="watermarkImage" />
+        )}
       </>
     );
   }

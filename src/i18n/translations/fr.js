@@ -895,6 +895,238 @@ const fr = {
     typeHere: 'Tapez ici...',
     linkCorners: 'Lier les coins',
     separateCorners: 'Séparer les coins',
+    blog: {
+      tocTitle: 'Sommaire',
+      sections: [
+        {
+          id: 'wm-blog-intro',
+          tocLabel: 'Aperçu de l’outil',
+          title: 'Comment ajouter un filigrane à vos images en ligne — Le guide complet de l’outil Filigrane de Photremium',
+          paragraphs: [
+            'Vous venez de terminer la retouche d’une belle photo. Peut-être un produit pour votre boutique, un portrait issu d’une séance client, ou une œuvre numérique peaufinée pendant des heures. Et maintenant vient la question que tout créateur finit par se poser : comment la protéger avant de la partager ?',
+            'La réponse la plus courante chez les professionnels est : un filigrane — et pour une bonne raison. Un filigrane bien placé agit comme une signature permanente, rend votre travail traçable et marqué, et complique fortement le vol.',
+            'Le problème, c’est que la plupart des outils en ligne sont soit trop lourds, soit bloqués par abonnement, soit produisent un filigrane si envahissant qu’il ruine l’image.',
+            'L’outil Filigrane de Photremium a été conçu pour corriger cela. Il fonctionne entièrement dans le navigateur, gratuitement, sans compte, et n’envoie jamais vos fichiers sur un serveur. Tout reste local, tout est rapide, et le niveau de contrôle rivalise avec les logiciels de bureau. Dans ce guide, nous allons vous montrer comment il fonctionne, à qui il s’adresse et comment obtenir les meilleurs résultats, à chaque fois.',
+          ],
+        },
+        {
+          id: 'wm-blog-what-is',
+          tocLabel: 'Qu’est-ce qu’un filigrane',
+          title: 'Qu’est-ce qu’un filigrane et pourquoi est-ce important ?',
+          paragraphs: [
+            'Avant de plonger dans l’outil, il est utile de comprendre ce que fait un filigrane et pourquoi tant de photographes, designers et créateurs le considèrent indispensable.',
+            'Un filigrane est une surcouche visible ajoutée à une image — généralement du texte, un logo ou un symbole de copyright — qui identifie le créateur ou le propriétaire du contenu. Contrairement aux métadonnées (cachées dans le fichier et supprimables en quelques secondes), un filigrane est intégré visuellement à l’image. On ne peut pas simplement le supprimer par clic droit sans dégrader visiblement la qualité.',
+          ],
+          subSections: [
+            {
+              title: 'Pourquoi les créateurs utilisent des filigranes',
+              paragraphs: [
+                'Les raisons pratiques de filigraner vos images se résument à trois points clés.',
+              ],
+              bullets: [
+                'Identification de la propriété. Quand votre travail est partagé sur les réseaux sociaux, Pinterest ou intégré dans des articles, l’attribution d’origine est souvent perdue. Un filigrane garantit que votre nom ou votre marque accompagne l’image.',
+                'Dissuasion du vol. La plupart des voleurs d’images cherchent la solution la plus facile. Un filigrane professionnel, bien positionné et légèrement transparent, envoie un signal clair : cette image appartient à quelqu’un qui protège son travail.',
+                'Protection des portefeuilles clients. Les photographes qui envoient des prévisualisations avant paiement utilisent des filigranes pour éviter l’usage non autorisé. Un filigrane subtil protège sans nuire à l’évaluation.',
+              ],
+            },
+            {
+              title: 'Qui devrait filigraner ses images',
+              paragraphs: [
+                'Si vous appartenez à l’une des catégories suivantes, filigraner vos images avant de les partager n’est pas optionnel — c’est essentiel :',
+              ],
+              bullets: [
+                'Photographes freelance partageant des galeries avec des clients',
+                'Graphistes diffusant des échantillons de portfolio',
+                'Vendeurs e-commerce montrant des photos de produits avant licensing',
+                'Artistes numériques partageant sur les réseaux sociaux',
+                'Blogueurs et créateurs dont les images sont régulièrement réutilisées',
+                'Contributeurs de photos stock développant une marque reconnaissable',
+              ],
+            },
+          ],
+        },
+        {
+          id: 'wm-blog-workspace',
+          tocLabel: 'Panels du workspace',
+          title: 'À l’intérieur de l’outil Filigrane de Photremium : un workspace en trois panneaux pour de vrais workflows',
+          paragraphs: [
+            'Ce qui distingue l’outil Photremium des filigraneurs basiques, c’est son design de workspace. Au lieu d’un simple “tapez un texte, choisissez la position, terminé”, il propose un layout en trois panneaux, proche des logiciels professionnels — mais entièrement dans le navigateur.',
+          ],
+          subSections: [
+            {
+              title: 'Le panneau Canvas de gauche',
+              paragraphs: [
+                'Le panneau Canvas occupe la plus grande partie de l’écran et affiche l’image avec le filigrane en temps réel. Chaque modification — opacité, position du texte, taille du logo — se répercute instantanément. Pas de bouton “aperçu”. Ce que vous voyez est ce que vous obtenez.',
+                'Le canvas inclut une barre de zoom pour un alignement précis. Le zoom-to-fit calcule automatiquement l’échelle optimale selon la taille de votre écran. Des guides d’alignement apparaissent lorsque vous approchez le centre horizontal ou vertical, et “snap” le filigrane au centre avec une précision digne de Photoshop.',
+              ],
+            },
+            {
+              title: 'Le panneau de réglages à droite',
+              paragraphs: [
+                'Le panneau droit est le centre de contrôle. Il permet de gérer les couches, personnaliser leur apparence et lancer l’export. Sur desktop, il est fixé à droite. Sur mobile, il apparaît en feuille inférieure via un bouton flottant, sans couvrir le canvas.',
+                'À l’intérieur, le gestionnaire de couches liste chaque élément ajouté. Chaque entrée montre le type (texte ou image), le nom ou contenu, et trois actions rapides : visibilité (icône œil), verrouillage et suppression.',
+              ],
+            },
+            {
+              title: 'La bande de prévisualisation à gauche (mode multi-image)',
+              paragraphs: [
+                'Lorsque vous travaillez sur plusieurs images — par exemple des photos produit ou une séance complète — une bande verticale de miniatures apparaît à l’extrême gauche. C’est la file d’images. Cliquer sur une miniature bascule instantanément le canvas sur cette image, sans perdre vos réglages.',
+                'La bande affiche aussi la taille en KB/MB et le format (JPG, PNG, WEBP), pour savoir exactement ce que vous traitez.',
+              ],
+            },
+          ],
+        },
+        {
+          id: 'wm-blog-steps',
+          tocLabel: 'Étapes',
+          title: 'Étape par étape : comment ajouter un filigrane avec Photremium',
+          paragraphs: [
+            'Ce guide suit le fonctionnement réel de l’outil — depuis l’upload drag-and-drop jusqu’au rendu Canvas avant téléchargement.',
+          ],
+          steps: [
+            {
+              heading: 'Étape 1 — Téléverser vos images',
+              paragraphsBefore: [
+                'Rendez-vous sur photremium.com/watermark-image. Vous arriverez sur l’écran d’upload avec une zone de dépôt au centre.',
+                'Vous avez trois façons d’importer vos images :',
+              ],
+              bullets: [
+                'Drag and drop. Glissez-déposez un ou plusieurs fichiers. L’outil accepte JPEG, PNG, WEBP et plus. En survolant, une bordure violette s’affiche avec “Drop images to add for watermarking”.',
+                'Cliquer pour parcourir. Cliquez sur “Choose Files” pour ouvrir le sélecteur. Vous pouvez sélectionner plusieurs fichiers avec Ctrl+Click (Windows) ou Cmd+Click (Mac).',
+                'Coller depuis le presse-papiers. Si vous avez copié une image, appuyez sur Ctrl+V (Cmd+V sur Mac). Cela fonctionne même si plusieurs images sont déjà chargées.',
+              ],
+              paragraphsAfter: [
+                'Dès que la première image est chargée, l’interface passe au workspace complet et le canvas s’affiche à un zoom adapté.',
+              ],
+            },
+            {
+              heading: 'Étape 2 — Ajouter un filigrane texte',
+              paragraphsBefore: [
+                'Cliquez sur le bouton violet “Add Text” dans le panneau droit. Un nouveau calque texte apparaît avec “Type here...” sélectionné.',
+                'Vous pouvez commencer à taper immédiatement. Le texte s’affiche en direct. La toolbar supérieure permet de régler :',
+              ],
+              bullets: [
+                'Font family — 12 polices intégrées comme Arial, Georgia, Impact, Brush Script MT, Comic Sans MS, etc.',
+                'Font size — saisir une valeur en px ou utiliser les contrôles',
+                'Bold, italic, underline — combiner les styles',
+                'Text color — choisir n’importe quelle couleur',
+                'Background color — arrière-plan coloré pour badge/étiquette',
+                'Stroke (outline) — contour pour meilleure lisibilité',
+                'Opacity — de 0% à 100%, souvent 30–60%',
+                'Alignment — gauche, centre, droite',
+                'Rotation — rotation libre avec snaps à 0°, 90°, 180°, 270°',
+              ],
+              paragraphsAfter: [
+                'Pour déplacer le texte, faites glisser. Pour un placement précis, utilisez les flèches (Shift pour 10 px). Pour redimensionner, utilisez les 8 poignées.',
+              ],
+            },
+            {
+              heading: 'Étape 3 — Ajouter un filigrane image (logo)',
+              paragraphsBefore: [
+                'Si vous préférez un logo ou une signature, cliquez “Add Image” dans le panneau droit et choisissez le fichier. L’outil le redimensionne automatiquement à environ 30% de la largeur et le centre.',
+                'Ensuite, vous pouvez le déplacer, redimensionner via les coins (proportions conservées) et le tourner. Pour les calques image, des réglages supplémentaires sont disponibles :',
+              ],
+              bullets: [
+                'Opacity — idem pour les textes, idéal pour logos PNG',
+                'Flip horizontal / Flip vertical — miroir',
+                'Border width, border color, border style — bordure visible',
+                'Border radius — coins arrondis uniformes ou séparés',
+                'Rotation — même comportement fluide que pour le texte',
+              ],
+            },
+            {
+              heading: 'Étape 4 — Configurer le tuilage (optionnel)',
+              paragraphsBefore: [
+                'L’une des fonctions puissantes est le tuilage — répéter le filigrane sur toute l’image en grille. Idéal pour empêcher la réutilisation.',
+                'Avec un calque sélectionné, choisissez :',
+              ],
+              bullets: [
+                'None — placement unique (par défaut)',
+                'Grid 2×2 — répète en 2x2',
+                'Grid 3×3 — répète en 3x3',
+              ],
+              paragraphsAfter: [
+                'Vous pouvez ajuster l’espacement pour contrôler la densité. Le canvas affiche des copies fantômes en prévisualisation.',
+              ],
+            },
+            {
+              heading: 'Étape 5 — Utiliser le gestionnaire de couches',
+              paragraphsBefore: [
+                'Vous pouvez ajouter autant de calques que vous voulez. Le gestionnaire liste tout. Vous pouvez :',
+              ],
+              bullets: [
+                'Afficher/masquer un calque via l’icône œil',
+                'Verrouiller un calque pour éviter les déplacements',
+                'Supprimer un calque',
+              ],
+              paragraphsAfter: [
+                'Cliquer sur un calque dans la liste le sélectionne sur le canvas pour édition rapide.',
+              ],
+            },
+            {
+              heading: 'Étape 6 — Basculer entre plusieurs images',
+              paragraphsBefore: [
+                'Si vous avez importé plusieurs images, utilisez la bande de miniatures à gauche. Vos calques s’appliquent à toutes les images lors de l’export.',
+                'L’outil détecte aussi les différences de résolution. Au-delà de 5%, un avertissement apparaît. La position est recalculée proportionnellement pour garder un rendu cohérent.',
+              ],
+            },
+            {
+              heading: 'Étape 7 — Choisir les préférences de téléchargement',
+              paragraphsBefore: [
+                'Pour un seul fichier, cliquez “Download” sous le canvas. Le nom de fichier reçoit “-watermarked”. Les JPEG sont exportés en 0.95, les PNG restent lossless.',
+                'Pour des lots, deux modes sont disponibles dans le panneau droit :',
+              ],
+              bullets: [
+                'ZIP — toutes les images dans un ZIP',
+                'Separate — chaque image est téléchargée séparément',
+              ],
+            },
+            {
+              heading: 'Étape 8 — Télécharger et vérifier',
+              paragraphsBefore: [
+                'Au téléchargement, l’outil rend chaque image sur une canvas cachée à pleine résolution — pas à l’échelle de prévisualisation. Vous obtenez la taille originale avec un filigrane correctement proportionné. Ouvrez le fichier et zoomez pour vérifier.',
+                'Si quelque chose ne va pas, revenez, ajustez et téléchargez à nouveau.',
+              ],
+            },
+          ],
+        },
+        {
+          id: 'wm-blog-tips',
+          tocLabel: 'Conseils pro',
+          title: 'Conseils pro pour de meilleurs résultats',
+          bullets: [
+            'Utilisez un logo PNG semi-transparent pour un rendu pro. Un logo à 40–50% d’opacité paraît plus élégant qu’un texte plein.',
+            'Placez le filigrane là où le recadrage enlève de la valeur. Le coin inférieur droit est le plus courant — et le plus facile à découper. Pour plus de protection, placez-le sur une zone clé. Le tuilage diagonal est encore plus difficile à retirer.',
+            'Utilisez le verrouillage quand vous travaillez avec plusieurs calques. Une fois la position principale fixée, verrouillez-la avant d’ajouter d’autres éléments.',
+            'Testez les zones claires et sombres. Un filigrane blanc disparaît sur un ciel clair mais est lisible sur les ombres. Ajoutez un léger contour ou fond pour la lisibilité.',
+            'Les raccourcis clavier font gagner du temps. Les flèches déplacent de 1 px, Shift+Arrow de 10 px. Delete supprime le calque instantanément.',
+          ],
+        },
+        {
+          id: 'wm-blog-privacy',
+          tocLabel: 'Confidentialité',
+          title: 'Confidentialité et sécurité : pourquoi le traitement dans le navigateur est important',
+          paragraphs: [
+            'Une inquiétude fréquente avec les outils en ligne est : où vont réellement les images ? Avec les outils basés sur serveur, l’image est envoyée, traitée puis renvoyée. Vos travaux non publiés passent donc par une infrastructure tierce.',
+            'L’outil Photremium traite tout localement dans votre navigateur. Vos images sont chargées en mémoire via File API et ne sont jamais transmises. Le rendu se fait via HTML5 Canvas dans l’onglet. Quand vous fermez la page ou cliquez “Start Over”, les données sont libérées. Rien n’est stocké en dehors de votre appareil.',
+          ],
+        },
+        {
+          id: 'wm-blog-summary',
+          tocLabel: 'Résumé final',
+          title: 'Pourquoi l’outil Filigrane de Photremium mérite une place régulière dans votre workflow',
+          paragraphs: [
+            'Il existe des dizaines d’outils de filigranage. Ce qui différencie un outil utile d’un outil oubliable, c’est souvent un mélange de vitesse, de contrôle et de confiance.',
+            'La vitesse compte parce que filigraner ne doit pas ralentir votre flux. Photremium se charge instantanément, traite localement et exporte en pleine résolution en quelques secondes — même sur de gros lots. Pas d’attente serveur, pas de file, pas de délai lié au trafic.',
+            'Le contrôle compte parce qu’un mauvais filigrane est pire que pas de filigrane. Le système de calques, les réglages par propriété, l’aperçu en direct et les raccourcis offrent un niveau de contrôle comparable à un logiciel de bureau.',
+            'La confiance compte parce que votre travail non publié a de la valeur. Savoir que vos images ne quittent jamais votre appareil permet de traiter des photos clients, des produits non lancés ou des contenus sensibles sans inquiétude.',
+            'Que vous ajoutiez un avis de copyright à une photo ou traitiez 200 images pour un client, l’outil Photremium vous permet de le faire correctement — gratuitement, en privé et avec suffisamment de flexibilité pour que le filigrane paraisse naturel.',
+            'Rendez-vous sur photremium.com/watermark-image et essayez. Votre première image filigranée est littéralement à trente secondes.',
+            'Photremium propose une suite d’outils d’image dans le navigateur. Tous fonctionnent localement — vos images restent sur votre appareil.',
+          ],
+        },
+      ],
+    },
   },
 
   qrGenerator: {
@@ -1394,11 +1626,16 @@ const fr = {
       { q: 'Mes images sont-elles envoyées à un serveur ?', a: 'Non. Le modèle d\'IA s\'exécute entièrement dans votre navigateur via WebAssembly.' },
     ],
     watermarkImage: [
-      { q: 'Quels types de filigranes puis-je ajouter ?', a: 'Vous pouvez ajouter des filigranes texte avec police, taille, couleur et opacité personnalisés, ainsi que des filigranes image (comme un logo).' },
-      { q: 'Puis-je appliquer le même filigrane à plusieurs images ?', a: 'Oui. Téléchargez plusieurs images, configurez votre filigrane une fois et il sera appliqué à toutes.' },
-      { q: 'Le filigrane réduira-t-il la qualité de mon image ?', a: 'Non. Le filigrane est composé sur l\'image originale à pleine résolution.' },
-      { q: 'Puis-je ajuster l\'opacité du filigrane ?', a: 'Absolument. Utilisez le curseur d\'opacité pour le rendre aussi discret ou aussi visible que vous le souhaitez.' },
-      { q: 'Des données sont-elles téléchargées sur un serveur ?', a: 'Non. Tout le filigranage est fait localement dans votre navigateur.' },
+      { q: '1. L\'outil de filigrane Photremium est-il entièrement gratuit ?', a: 'Oui, l\'outil de filigrane sur photremium.com/watermark-image est totalement gratuit, sans compte et sans abonnement. Vous pouvez filigraner une seule image ou des lots entiers sans paywall, sans inscription obligatoire et sans limite de téléchargement. L\'outil est financé par la valeur globale de Photremium, pas par le blocage des fonctions essentielles.' },
+      { q: '2. Combien d\'images puis-je filigraner en une fois ?', a: 'L\'outil prend en charge le filigranage par lots. Vous pouvez glisser-déposer un dossier complet dans la zone d\'upload ou sélectionner des dizaines de fichiers via Ctrl+Click. La colonne de miniatures à gauche affiche tout, et en cliquant sur "Watermark & Download All", l\'outil rend chaque image puis les regroupe dans un ZIP (ou les télécharge séparément — selon votre choix). En pratique, la limite vient de la mémoire disponible de votre appareil, pas d\'un plafond artificiel.' },
+      { q: '3. Quels formats sont pris en charge en entrée et en sortie ?', a: 'L\'entrée accepte les formats que le File API du navigateur sait gérer — généralement JPEG, JPG, PNG, WEBP, GIF (statique), BMP et SVG. La sortie conserve le format d\'origine : un PNG reste un PNG, un JPEG reste un JPEG avec une qualité de 0.95. Cela évite de convertir par erreur un PNG sans perte en JPG avec perte.' },
+      { q: '4. Le filigrane gardera-t-il le même rendu sur des images de résolutions différentes ?', a: 'Oui, grâce au moteur de repositionnement proportionnel. Quand vous travaillez sur un lot d\'images de tailles différentes, le filigrane est créé sur l\'image de référence. À l\'export, l\'algorithme calcule la position de chaque calque en proportion du centre de l\'image et applique la même proportion à chaque image cible. La taille est également mise à l\'échelle proportionnellement (selon le plus petit ratio largeur/hauteur) pour éviter tout débordement. Résultat : un filigrane cohérent en taille et position sur tout le lot.' },
+      { q: '5. Puis-je utiliser mon propre logo ou une signature comme filigrane ?', a: 'Oui. Le bouton "Add Image" dans le panneau droit permet de charger une image comme calque de filigrane. Les PNG avec transparence sont idéaux : la transparence est conservée et seul le logo est visible. Vous pouvez redimensionner via les coins (ratio conservé), faire pivoter, retourner, ajuster l\'opacité, et même ajouter un contour ou des coins arrondis. Beaucoup d\'utilisateurs préparent une version transparente de leur logo dédiée au filigrane.' },
+      { q: '6. Comment rendre le filigrane transparent ou semi-transparent ?', a: 'Sélectionnez le calque sur la toile. Dans la barre d\'outils, vous verrez le contrôle d\'opacité en pourcentage — vous pouvez saisir une valeur ou faire glisser. Pour un rendu discret et professionnel, 30–50% est un bon intervalle. Pour un filigrane plus visible, 70–80% fonctionne bien. Vous pouvez aussi basculer la visibilité dans le gestionnaire de calques (icône œil) pour comparer.' },
+      { q: '7. Puis-je ajouter plusieurs filigranes sur une même image ?', a: 'Oui — le système de calques permet un nombre illimité de filigranes, chacun configurable indépendamment. Vous pouvez avoir un texte de copyright en bas à droite, un logo en haut à gauche et un motif "SAMPLE" en tuilage. Chaque calque possède sa propre opacité, rotation, position, taille et style. Le gestionnaire de calques organise tout et permet d\'activer/désactiver sans supprimer pour tester différentes variantes.' },
+      { q: '8. Que fait la fonction de tuilage et quand l\'utiliser ?', a: 'Le tuilage répète le filigrane en grille sur toute l\'image. Grid 2×2 place quatre copies, Grid 3×3 en place neuf. Le réglage d\'espacement contrôle la distance entre les copies. C\'est utile quand vous voulez rendre l\'image inutilisable sans autorisation — un filigrane dans un coin peut être facilement recadré, alors qu\'un motif complet est difficile à retirer sans dégrader l\'image. C\'est courant pour les aperçus de contrat, les brouillons client ou les contenus avant paiement.' },
+      { q: '9. L\'outil fonctionne-t-il sur mobile et tablette ?', a: 'Oui, l\'outil est totalement responsive et pensé pour le mobile. Sous 900 px, la mise en page se superpose : la bande de miniatures devient horizontale, la toile reste au centre et les réglages apparaissent en panneau inférieur via un bouton flottant. Toutes les interactions — glisser, redimensionner, faire pivoter — sont tactiles. Les poignées sont un peu plus grandes sur mobile (16×16 px) pour faciliter la manipulation.' },
+      { q: '10. Mes données sont-elles privées ? Les photos sont-elles envoyées à un serveur ?', a: 'Vos images ne quittent jamais votre appareil. Tout le flux — chargement, rendu, export — s\'exécute dans le navigateur avec JavaScript et l\'HTML5 Canvas API. La File API charge le fichier en mémoire, les calques sont dessinés sur une canvas hors écran, puis les pixels sont convertis en Blob pour un téléchargement local. Aucune requête réseau ne contient vos données d\'image. Un garde-fou empêche également les pertes : si vous quittez la page avec des images chargées, le navigateur demande confirmation.' },
     ],
     qrCodeGenerator: [
       { q: 'Ce code QR expire-t-il ?', a: 'Non, ces codes QR n’expirent pas et garantissent un support à vie. Comme ils stockent des instructions codées en dur sous forme de bits dans des modules carrés, les informations qu’ils contiennent ne peuvent pas être supprimées. Vous pouvez accéder aux informations simplement en les scannant avec n’importe quelle caméra, même après des années.' },
